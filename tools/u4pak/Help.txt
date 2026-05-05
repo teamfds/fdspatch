@@ -1,0 +1,281 @@
+Rust U4Pak 1.4.0
+Mathias Panzenböck <grosser.meister.morti@gmx.net>:L. Sprengel <l.sprengel@pm.me>
+
+This is a tool to pack, unpack, check, and list the contents of Unreal Engine 4 packages. Note that only a limited
+number of pak versions are supported, depending on the kinds of paks I have seen.For reading that is version 1-11, for
+writing it is 1, 2, 3.
+
+Instead of passing arguments you can also put the arguments in a file with the extension .u4pak and pass the path to
+that instead. This is useful for Windows users that aren't used to a terminal. You can even associate the extension with
+u4pak.exe so that it will be automatically opened with it when you double click it. File paths in a .u4pak file are
+relative to the directory containing the file. The syntax of these files is not shell syntax. If you don't have any
+white space, double quotes ("), or hash marks (#) in your file names you don't have to worry about anything. # is used
+to start a comment line (only if it doesn't touch any non-white space on it's left) and " is used to quote arguments
+containing white space, #, or ". In order to write a " in an quoted argument you simply need to double it, meaning an
+argument that contains nothing but a single " is written as """". Newlines are ignored like any other white space. An
+example .u4pak file whould be:
+
+	# This is packing my project:
+	pack
+	--version=4
+	--mount-point=../../..
+	
+	":rename=/:C:\Users\Alice\My Documents\U4Project\Some Files"
+	":zlib,rename=/:Some Other Files"
+
+If u4pak.exe is run by double clicking or by dropping a .u4pak file on it it won't immediately close the terminal
+window, but will instead ask you to press ENTER. It does this so you have a chance to read the output. Since I don't use
+Windows (I cross compile on Linux and test with Wine) I could not test this particular feature. If it doesn't work
+please report a bug. In order to force the "Press ENTER to continue..." message you can pass the argument --pause-on-
+exit=always (Windows-only).
+
+Homepage: https://github.com/panzi/rust-u4pak
+Report issues to: https://github.com/panzi/rust-u4pak/issues
+
+USAGE:
+    u4pak [SUBCOMMAND]
+
+FLAGS:
+    -h, --help       Prints help information
+    -V, --version    Prints version information
+
+SUBCOMMANDS:
+    check     Check consistency of a package
+    help      Prints this message or the help of the given subcommand(s)
+    info      Show summarized information of a package
+    list      List content of a package
+    mount     Mount package as read-only filesystem
+    pack      Create a new package
+    unpack    Unpack content of a package
+
+========================================================================================================================
+u4pak-help 
+Prints this message or the help of the given subcommand(s)
+
+USAGE:
+    u4pak help [subcommand]...
+
+ARGS:
+    <subcommand>...    The subcommand whose help message to display
+
+========================================================================================================================
+u4pak-check 
+Check consistency of a package
+
+USAGE:
+    u4pak check [FLAGS] [OPTIONS] <PACKAGE> [PATH]...
+
+FLAGS:
+        --abort-on-error           Stop on the first found error.
+    -h, --help                     Prints help information
+        --ignore-magic             Ignore file magic.
+        --ignore-null-checksums    Ignore checksums that are all zeros.
+    -0, --print0                   Separate file names with NULL bytes. This is useful for use with xargs --null, to be
+                                   sure that possible new lines in file names aren't interpreted as file name
+                                   separators.
+    -v, --verbose                  Verbose output.
+
+OPTIONS:
+    -e, --encoding <ENCODING>                Use ENCODING to decode strings. Supported encodings: UTF-8, Latin1, ASCII
+                                             [default: UTF-8]
+    -k, --encryption-key <ENCRYPTION_KEY>    Base64 encoded 16 byte AES encryption key
+        --force-version <VERSION>            Assume package to be of given version.
+    -t, --threads <COUNT>                    Number of threads to use for the operation. 'auto' means use the number of
+                                             logical cores on your computer. [default: auto]
+    -a, --variant <variant>                  Pak variant: 'standard' or 'conan_exiles'. [default: standard]
+
+ARGS:
+    <PACKAGE>    An Unreal Engine 4 pak file
+    <PATH>...    If given, only consider these files from the package.
+
+========================================================================================================================
+u4pak-info 
+Show summarized information of a package
+
+USAGE:
+    u4pak info [FLAGS] [OPTIONS] <PACKAGE>
+
+FLAGS:
+        --help              Prints help information
+    -h, --human-readable    Print sizes like 1.0 K, 2.2 M, 4.1 G etc.
+        --ignore-magic      Ignore file magic.
+
+OPTIONS:
+    -e, --encoding <ENCODING>                Use ENCODING to decode strings. Supported encodings: UTF-8, Latin1, ASCII
+                                             [default: UTF-8]
+    -k, --encryption-key <ENCRYPTION_KEY>    Base64 encoded 16 byte AES encryption key
+        --force-version <VERSION>            Assume package to be of given version.
+    -a, --variant <variant>                  Pak variant: 'standard' or 'conan_exiles'. [default: standard]
+
+ARGS:
+    <PACKAGE>    An Unreal Engine 4 pak file
+
+========================================================================================================================
+u4pak-list 
+List content of a package
+
+USAGE:
+    u4pak list [FLAGS] [OPTIONS] <PACKAGE> [PATH]...
+
+FLAGS:
+        --help              Prints help information
+    -h, --human-readable    Print sizes like 1.0 K, 2.2 M, 4.1 G etc.
+        --ignore-magic      Ignore file magic.
+    -H, --no-header         Don't print table header
+    -n, --only-names        Only print file names. This is useful for use with xargs and the like.
+    -0, --print0            Separate file names with NULL bytes. This is useful for use with xargs --null, to be sure
+                            that possible new lines in file names aren't interpreted as file name separators.
+
+OPTIONS:
+    -e, --encoding <ENCODING>                Use ENCODING to decode strings. Supported encodings: UTF-8, Latin1, ASCII
+                                             [default: UTF-8]
+    -k, --encryption-key <ENCRYPTION_KEY>    Base64 encoded 16 byte AES encryption key
+        --force-version <VERSION>            Assume package to be of given version.
+    -s, --sort <ORDER>                       Sort order of list as comma separated keys:
+                                             
+                                             * p, path                   - path of the file inside the package
+                                             * o, offset                 - offset inside of the package
+                                             * s, size                   - size of the data embedded in the package
+                                             * u, uncompressed-size      - size of the data when uncompressed
+                                             * c, compression-method     - the compression method (zlib or none)
+                                             * b, compression-block-size - size of blocks a compressed file is split
+                                             into
+                                             * t, timestamp              - timestamp of a file (only in pak version 1)
+                                             * e, encrypted              - whether the file is encrypted
+                                             
+                                             You can invert the sort order by prepending - to the key. E.g.:
+                                             
+                                             u4pak list --sort=-size,-timestamp,name
+    -t, --threads <COUNT>                    Number of threads to use for the operation. 'auto' means use the number of
+                                             logical cores on your computer. [default: auto]
+    -a, --variant <variant>                  Pak variant: 'standard' or 'conan_exiles'. [default: standard]
+
+ARGS:
+    <PACKAGE>    An Unreal Engine 4 pak file
+    <PATH>...    If given, only consider these files from the package.
+
+========================================================================================================================
+u4pak-unpack 
+Unpack content of a package
+
+USAGE:
+    u4pak unpack [FLAGS] [OPTIONS] <PACKAGE> [PATH]...
+
+FLAGS:
+    -d, --dirname-from-compression    Put files that where compressed into separate folders. The folder names will be
+                                      'none' and 'zlib'.
+    -h, --help                        Prints help information
+        --ignore-magic                Ignore file magic.
+    -0, --print0                      Separate file names with NULL bytes. This is useful for use with xargs --null, to
+                                      be sure that possible new lines in file names aren't interpreted as file name
+                                      separators.
+    -v, --verbose                     Verbose output.
+
+OPTIONS:
+    -e, --encoding <ENCODING>                Use ENCODING to decode strings. Supported encodings: UTF-8, Latin1, ASCII
+                                             [default: UTF-8]
+    -k, --encryption-key <ENCRYPTION_KEY>    Base64 encoded 16 byte AES encryption key
+        --force-version <VERSION>            Assume package to be of given version.
+    -o, --outdir <DIR>                       Write unpacked files to DIR. [default: .]
+    -t, --threads <COUNT>                    Number of threads to use for the operation. 'auto' means use the number of
+                                             logical cores on your computer. [default: auto]
+    -a, --variant <variant>                  Pak variant: 'standard' or 'conan_exiles'. [default: standard]
+
+ARGS:
+    <PACKAGE>    An Unreal Engine 4 pak file
+    <PATH>...    If given, only consider these files from the package.
+
+========================================================================================================================
+u4pak-pack 
+Create a new package
+
+USAGE:
+    u4pak pack [FLAGS] [OPTIONS] <PACKAGE> [PATH]...
+
+FLAGS:
+    -h, --help       Prints help information
+    -0, --print0     Separate file names with NULL bytes. This is useful for use with xargs --null, to be sure that
+                     possible new lines in file names aren't interpreted as file name separators.
+    -v, --verbose    Verbose output.
+
+OPTIONS:
+    -b, --compression-block-size <compression-block-size>    Default compresison block size. [default: 65536]
+    -l, --compression-level <compression-level>
+            Default compression level. Allowed values are the integers from 1 to 9, or the strings 'fast' (=1), 'best'
+            (=9), and 'default' (=6). [default: default]
+    -c, --compression-method <compression-method>
+            Default compression method. See also: --compression-min-size [default: none]
+
+    -s, --compression-min-size <compression-min-size>
+            Minimum size of files to be compressed. Note that it makes no sense to try to compress files smaller than
+            100 bytes or so, because of the compression overhead. [default: 100]
+    -e, --encoding <ENCODING>
+            Use ENCODING to decode strings. Supported encodings: UTF-8, Latin1, ASCII [default: UTF-8]
+
+    -m, --mount-point <mount-point>                          Mount-point field of the package.
+    -t, --threads <COUNT>
+            Number of threads to use for the operation. 'auto' means use the number of logical cores on your computer.
+            [default: auto]
+    -a, --variant <variant>
+            Pak variant: 'standard' or 'conan_exiles'. [default: standard]
+
+    -V, --version <version>
+            Create package of given VERSION. Supported versions are: 1, 2, and 3 [default: 3 when --variant=standard, 4
+            when --variant=conan_exiles]
+
+ARGS:
+    <PACKAGE>    An Unreal Engine 4 pak file
+    <PATH>...    Pack these files or directories. You can overload certain settings for a path using a special
+                 syntax, e.g.:
+                 
+                 Linux/Unix:
+                 	u4pak pack Archive.pak :zlib,level=7,block_size=65536,rename=/Foo/Bar:/Some/Folder
+                 
+                 Windows:
+                 	u4pak pack Archive.pak :zlib,level=7,block_size=65536,rename=/Foo/Bar:C:\Some\Folder
+                 
+                 This means add the fiels from the folder '/Some/Folder' ('C:\Some\Folder') from your hard disk, use
+                 zlib compression at compression level 7 with a compression block size of 65536 bytes, and rename
+                 the folder to be 'Foo/Bar' inside of the pak archive file.
+                 
+                 Instead of 'zlib' you can also write 'none' to not compress the files from the given path. If you
+                 don't say any of either the default value provided by --compression-method is used. Same goes for
+                 all the other parameters. If you don't specify 'rename' then the same path is used for the folder
+                 inside of the pak archive as the files on your hard disk have.
+                 
+                 This is handy if you want to compress some files, but not all:
+                 	u4pak pack Archive.pak :zlib,rename=/:ZlibFiles :none,rename=/:UncompressedFiles
+                                     
+                 If the default parameters are all you need (and you provide relative paths that don't need
+                 renaming) you can simply say e.g.:
+                 
+                 Linux/Unix:
+                 	u4pak pack Archive.pak Some/Folder
+                 
+                 Windows:
+                 	u4pak pack Archive.pak Some\Folder
+
+========================================================================================================================
+u4pak-mount 
+Mount package as read-only filesystem
+
+USAGE:
+    u4pak mount [FLAGS] [OPTIONS] <PACKAGE> <MOUNTPT>
+
+FLAGS:
+    -g, --debug           Debug mode. Implies --foreground.
+    -f, --foreground      Keep process in foreground.
+    -h, --help            Prints help information
+        --ignore-magic    Ignore file magic.
+
+OPTIONS:
+    -e, --encoding <ENCODING>                Use ENCODING to decode strings. Supported encodings: UTF-8, Latin1, ASCII
+                                             [default: UTF-8]
+    -k, --encryption-key <ENCRYPTION_KEY>    Base64 encoded 16 byte AES encryption key
+        --force-version <VERSION>            Assume package to be of given version.
+    -a, --variant <variant>                  Pak variant: 'standard' or 'conan_exiles'. [default: standard]
+
+ARGS:
+    <PACKAGE>    An Unreal Engine 4 pak file
+    <MOUNTPT>    
+
