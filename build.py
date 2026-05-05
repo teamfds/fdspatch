@@ -23,17 +23,30 @@ for file in res_files:
     shutil.copy(file, dest)
 
 for file in src_files:
+    rebuilt_file = file.replace("src", mod_build_content).replace(".txt", ".bbscript")
     uasset = file.replace("src", mod_build_content).replace(".txt", ".uasset")
     uexp = file.replace("src", mod_build_content).replace(".txt", ".uexp")
-    subprocess.run(["tools/bbs_unpacker/target/debug/ggst-bbs-unpacker", "inject", file, uexp, uasset])
+    
+    subprocess.run(["tools/bbscript/target/debug/bbscript", "rebuild",
+        "--game", "ggst",
+        "--overwrite",
+        file, rebuilt_file
+    ])
+    subprocess.run(["tools/bbs_unpacker/target/debug/ggst-bbs-unpacker", "inject", rebuilt_file, uexp, uasset])
+    os.remove(rebuilt_file)
 
 
 if platform == 'linux':
-    subprocess.run(["tools/u4pak/u4pak", "pack", f"build/{mod_name}.pak", f"build/{mod_name}"])
+    subprocess.run(["tools/u4pak/u4pak", "pack", 
+        f"build/{mod_name}.pak", 
+        f":none,rename=/RED:build/{mod_name}/RED",
+        "--mount-point=../../..",
+        "--version=3"
+    ])
 elif platform == 'win32':
-    subprocess.run(["tools/u4pak/u4pak.exe", "pack", f"build/{mod_name}.pak", f"build/{mod_name}"])
+    subprocess.run(["tools/u4pak/u4pak.exe", "pack", f"build/{mod_name}.pak", f":none,rename=/RED:build/{mod_name}/RED"])
 else:
     print("Se mata negao")
     
 shutil.copy("res/Content/pakchunk0-WindowsNoEditor.sig", f"build/{mod_name}.sig")
-shutil.rmtree(mod_build_root)
+# shutil.rmtree(mod_build_root)
