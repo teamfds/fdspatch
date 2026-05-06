@@ -1,0 +1,1986 @@
+beginState: s32'ArcadeEvtGIO_A'
+endState: 
+
+beginState: s32'ArcadeEvtGIO_B'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_111', 30, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_112', 30, 1
+  eventSetAction: s32'Event301', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_113', 30, 0
+  eventSetAction: s32'Event640_2', 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtGIO_C'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_101', 30, 1
+  eventSetAction: s32'Event305', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_102', 30, 0
+  eventSetAction: s32'Event640', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_103', 30, 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtGIO_D'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+    eventSetAction: s32'EventFall', 2
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_201', 30, 2
+  eventSetAction: s32'Event001', 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_202', 30, 0
+  sprite: s32'null', 1
+  eventSetAction: s32'CmnActStand', 0
+  eventSetAction: s32'CmnActStand', 1
+  eventSetAction: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtGIO_E'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'Event085', 1
+    eventSetAction: s32'EventStand', 2
+  endUpon: 
+  sprite: s32'null', 120
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_211', 30, 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_212', 30, 0
+  eventSetAction: s32'Event640', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_213', 30, 2
+  eventSetAction: s32'Event640', 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_214', 30, 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtGIO_F'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+    eventSetAction: s32'EventFall', 2
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_401', 30, 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_402', 30, 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_403', 30, 1
+  eventSetAction: s32'Event001', 1
+  sprite: s32'null', 1
+  eventSetAction: s32'CmnActStand', 0
+  eventSetAction: s32'CmnActStand', 1
+  eventSetAction: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtGIO_G'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+    eventSetAction: s32'EventFall', 2
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L2_401', 30, 2
+  eventSetAction: s32'Event001', 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L2_402', 30, 0
+  eventSetAction: s32'Event001', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L2_403', 30, 1
+  eventSetAction: s32'Event300', 1
+  sprite: s32'null', 1
+  eventSetAction: s32'CmnActStand', 0
+  eventSetAction: s32'CmnActStand', 1
+  eventSetAction: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtGIO_H'
+  upon: (IMMEDIATE)
+    lockScreenPosition: 1
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+    eventSetAction: s32'EventStand', 2
+  endUpon: 
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_411', 30, 0
+  eventSetAction: s32'Event640_2', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_412', 30, 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_413', 30, 1
+  sprite: s32'null', 60
+  eventSetAction: s32'Event022', 1
+  eventSetAction: s32'EventStand_2', 0
+  sprite: s32'null', 30
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_414', 30, 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtGIO_I'
+  upon: (IMMEDIATE)
+    lockScreenPosition: 1
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'Event085_2', 1
+    eventSetAction: s32'EventStand', 2
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L2_411', 30, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L2_412', 30, 2
+  eventSetAction: s32'Event306', 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L2_413', 30, 2
+  eventSetAction: s32'Event301', 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L2_414', 30, 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L2_415', 30, 0
+  eventSetAction: s32'Event301_2', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L2_416', 30, 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtGIO_J'
+endState: 
+
+beginState: s32'ArcadeEvtGIO_K'
+  upon: (IMMEDIATE)
+    lockScreenPosition: 1
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_421', 30, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_422', 30, 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_423', 30, 0
+  sprite: s32'null', 60
+  eventSetAction: s32'Event022', 0
+  sprite: s32'null', 30
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L1_424', 30, 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtGIO_L'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'Event085_2', 1
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_401', 30, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_402', 30, 0
+  eventSetAction: s32'Event640', 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtGIO_M'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_301', 30, 1
+  eventSetAction: s32'Event305', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_302', 30, 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_303', 30, 1
+  eventSetAction: s32'Event001', 1
+  sprite: s32'null', 1
+  eventSetAction: s32'CmnActStand', 0
+  eventSetAction: s32'CmnActStand', 1
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtGIO_N'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_321', 30, 1
+  eventSetAction: s32'Event306', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_322', 30, 0
+  eventSetAction: s32'Event616', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_323', 30, 1
+  eventSetAction: s32'Event305', 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtGIO_O'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_311', 30, 0
+  eventSetAction: s32'Event640', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_312', 30, 1
+  eventSetAction: s32'Event001', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_313', 30, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_314', 30, 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtGIO_P'
+endState: 
+
+beginState: s32'ArcadeEvtGIO_Q'
+  upon: (IMMEDIATE)
+    lockScreenPosition: 1
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'Event085_2', 1
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_501', 30, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_502', 30, 0
+  eventSetAction: s32'Event640', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_503', 30, 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_504', 30, 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_GIO_L3_505', 30, 1
+  sprite: s32'null', 60
+  eventSetAction: s32'Event022', 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'RomanCancel_Mirage'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnRomanCancel_Mirage'
+    linkModelSelfTeam: s32'gio', s32''
+    beginMeshSet: s32'RomanCancel_Mirage'
+    addToMeshSet: s32'Body'
+    addToMeshSet: s32'Head_Low'
+    addToMeshSet: s32'wolf_body_ghost'
+    addToMeshSet: s32'wolf_body_ghost_aura'
+    addToMeshSet: s32'wolf_head_high'
+    endMeshSet: 
+    swapMeshSet: s32'RomanCancel_Mirage'
+    setDefaultMeshSet: s32'RomanCancel_Mirage'
+    ifOperationInObject: (IS_GREATER_OR_EQUAL), (PLAYER), Mem(ObjReg0), Val(2)
+      setCmnMaterialParam: 19, 1000, 0
+    endIf: 
+    ifOperationInObject: (IS_EQUAL), (PLAYER), Mem(ObjReg0), Val(3)
+      setCmnMaterialParam: 18, 1000, 0
+    endIf: 
+  endUpon: 
+  gotoLabelIfNot: s32'air', Mem(SentToObject0)
+  sprite: s32'gio350_01', 6
+  sprite: s32'gio350_02', 3
+  sprite: s32'gio350_03', 3
+  sprite: s32'gio350_04', 3
+  sprite: s32'gio350_05', 3
+  sprite: s32'gio350_06', 3
+  sprite: s32'gio350_07', 3
+  sprite: s32'gio350_08', 2
+  sprite: s32'gio350_09', 2
+  sprite: s32'gio350_11', 2
+  sprite: s32'gio350_12', 3
+  sprite: s32'gio350_13', 3
+  sprite: s32'gio350_14', 3
+  sprite: s32'gio350_12', 3
+  sprite: s32'gio350_15', 2
+  sprite: s32'gio350_16', 2
+  sprite: s32'gio350_17', 2
+  endLabel: 
+  exitState: 
+  beginLabel: s32'air'
+  sprite: s32'gio351_01', 6
+  sprite: s32'gio351_02', 3
+  sprite: s32'gio351_03', 3
+  sprite: s32'gio351_04', 3
+  sprite: s32'gio351_05', 3
+  sprite: s32'gio351_06', 3
+  sprite: s32'gio351_07', 3
+  sprite: s32'gio351_08', 2
+  sprite: s32'gio351_09', 2
+  sprite: s32'gio351_11', 2
+  sprite: s32'gio351_12', 3
+  sprite: s32'gio351_13', 3
+  sprite: s32'gio351_14', 3
+  sprite: s32'gio351_12', 3
+  sprite: s32'gio351_15', 2
+  sprite: s32'gio351_16', 2
+  sprite: s32'gio351_17', 2
+endState: 
+
+beginState: s32'gio_tension01'
+  upon: (IMMEDIATE)
+    linkParticle: s32'gio_tension01'
+    ignoreSuperFreeze: 1
+    ignoreFinishStop: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'gio_tension02'
+  upon: (IMMEDIATE)
+    linkParticle: s32'gio_tension02'
+    ignoreSuperFreeze: 1
+    ignoreFinishStop: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'Dash_zanzo'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    linkParticle: s32'gio_dash_zanzo01'
+    ignoreSlowdown: 1
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      linkObjPosition: 0
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'000wolf_aura'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+  endUpon: 
+  sprite: s32'null', 300
+endState: 
+
+beginState: s32'300wolf_aura'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+  endUpon: 
+  sprite: s32'null', 300
+endState: 
+
+beginState: s32'wolf_throw'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkModelSelfTeam: s32'gio', s32''
+    displayMesh: s32'wolf_body_ghost', 1
+    displayMesh: s32'wolf_body_ghost_aura', 1
+    displayMesh: s32'wolf_head_high', 1
+    displayMesh: s32'Body', 0
+    displayMesh: s32'Head_Low', 0
+    displayMesh: s32'toge', 0
+    ifOperation: (IS_NOT_EQUAL), Mem(SentToObject0), Val(1)
+      setCmnMaterialParam: 19, 1000, 0
+    endIf: 
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (SIGNAL0)
+      gotoLabelRequests: s32'land'
+    endUpon: 
+    upon: (SIGNAL1)
+      clearRegisteredUponCode: (SIGNAL1)
+      gotoLabelRequests: s32'next'
+    endUpon: 
+  endUpon: 
+  sprite: s32'wolf310_00', 4
+  sprite: s32'wolf310_01', 4
+  sprite: s32'wolf310_02', 4
+  sprite: s32'wolf310_03', 4
+  sprite: s32'wolf310_04', 4
+  zLine: (FAR_DISTANCE), 5
+  addPositionX: 0, 120000
+  sprite: s32'wolf310_05', 3
+  moveToPosTypeToPosTypeEx: (ENEMY), (PLAYER_LAND), (SELF), (PLAYER)
+  addPositionX: 0, 190000
+  sprite: s32'wolf310_06', 4
+  sprite: s32'wolf310_07', 4
+  sprite: s32'wolf310_08', 3
+  sprite: s32'wolf310_09', 3
+  sprite: s32'wolf310_10', 4
+  sprite: s32'wolf310_11', 3
+  sprite: s32'wolf310_12', 3
+  sprite: s32'wolf310_13', 3
+  sprite: s32'wolf310_14', 4
+  warp: (PLAYER), (PLAYER_LAND), Val(112000), Val(0), Val(16)
+  sprite: s32'wolf310_15', 3
+  sprite: s32'wolf310_16', 2
+  storeValue: Mem(ActReg0), Val(1480000)
+  storeValue: Mem(ActReg1), Val(4)
+  storeValue: Mem(ActReg2), Val(6)
+  storeValue: Mem(ActReg3), Val(0)
+  storeValue: Mem(ActReg4), Val(0)
+  callSubroutine: s32'cmnThrowPosition_F_Wall'
+  sprite: s32'wolf310_17', 3
+  sprite: s32'wolf310_18', 3
+  sprite: s32'wolf310_19', 4
+  haltMomentum: 1
+  sprite: s32'wolf310_20', 4
+  endLabel: 
+  beginLabel: s32'land'
+  sprite: s32'wolf310_21', 3
+  linkObjPosition: 3
+  setPositionX: 0
+  physicsXImpulse: 0, 0
+  resetGravity: 
+  landingHeight: 0
+  sprite: s32'wolf310_22', 3
+  sprite: s32'wolf310_23', 3
+  sprite: s32'wolf310_24', 4
+  sprite: s32'wolf310_24', 60
+  endLabel: 
+  beginLabel: s32'next'
+  sprite: s32'wolf310_25', 2
+  sprite: s32'wolf310_26', 3
+  sprite: s32'wolf310_27', 2
+  sprite: s32'wolf310_28', 3
+  sprite: s32'wolf310_29', 3
+  sprite: s32'wolf310_30', 3
+  sprite: s32'wolf310_31', 4
+  sprite: s32'wolf310_32', 4
+  sprite: s32'wolf310_33', 4
+  sprite: s32'wolf310_34', 4
+  sprite: s32'wolf310_35', 3
+endState: 
+
+beginState: s32'wolf_ultimate'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    setLinkObjectDestroyOnDamage: 3
+    stopLinkObject: 3
+    linkObjPosition: 3
+    linkObjectDirection: 3
+    ifOperation: (IS_NOT_EQUAL), Mem(SentToObject0), Val(1)
+      setCmnMaterialParam: 19, 1000, 0
+    endIf: 
+    linkModelSelfTeam: s32'gio', s32''
+    displayMesh: s32'Body', 0
+    displayMesh: s32'Head_Low', 0
+    displayMesh: s32'toge', 0
+    displayMesh: s32'wolf_body_fourlegs', 1
+    addPositionX: 0, -48000
+    addPositionY: 0, 88000
+  endUpon: 
+  sprite: s32'Wolf501_06', 3
+  sprite: s32'wolf501_07', 3
+  sprite: s32'wolf501_08', 3
+  sprite: s32'wolf501_09', 4
+  sprite: s32'wolf501_10', 5
+endState: 
+
+beginState: s32'wolf_ultimate1'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    setLinkObjectDestroyOnDamage: 3
+    stopLinkObject: 3
+    ifOperation: (IS_NOT_EQUAL), Mem(SentToObject0), Val(1)
+      setCmnMaterialParam: 19, 1000, 0
+    endIf: 
+    linkModelSelfTeam: s32'gio', s32''
+    displayMesh: s32'Body', 0
+    displayMesh: s32'Head_Low', 0
+    displayMesh: s32'toge', 0
+    displayMesh: s32'wolf_body_fourlegs', 1
+    addPositionX: 0, -880000
+    zLine: (NEAR_DISTANCE), 5
+  endUpon: 
+  sprite: s32'wolf501_11', 4
+  sprite: s32'wolf501_12', 5
+  warp: (PLAYER), (PLAYER), Val(0), Val(0), Val(14)
+  sprite: s32'wolf501_13', 4
+  sprite: s32'wolf501_14', 4
+  sprite: s32'wolf501_15', 4
+  sprite: s32'wolf501_13', 4
+  sprite: s32'gio400_04', 4
+  haltMomentum: 1
+  ignoreZLine: 1
+  addPositionX: 0, 128000
+  sprite: s32'gio400_05', 4
+  ignoreZLine: 0
+  zLine: (FAR_DISTANCE), 5
+  addPositionX: 0, 88000
+  sprite: s32'gio400_06', 4
+endState: 
+
+beginState: s32'wolf_ultimate2'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    setLinkObjectDestroyOnDamage: 3
+    ifOperation: (IS_NOT_EQUAL), Mem(SentToObject0), Val(1)
+      setCmnMaterialParam: 19, 1000, 0
+    endIf: 
+    linkModelSelfTeam: s32'gio', s32''
+    displayMesh: s32'Body', 0
+    displayMesh: s32'Head_Low', 0
+    displayMesh: s32'toge', 0
+    displayMesh: s32'wolf_body_fourlegs', 1
+    addPositionX: 0, 500000
+    addPositionY: 0, 540000
+    setDepth: -120000
+    physicsYImpulse: 0, -52000
+    resetGravity: 
+    landingHeight: 0
+    upon: (TOUCH_GROUND)
+      velocityXPercentEachFrame: 90
+      createParticleWithArg: s32'bg_land', (PLAYER_LAND)
+    endUpon: 
+  endUpon: 
+  sprite: s32'gio501_03', 3
+  setAngleY: 280000
+  reverseDisplay: 1
+  warp: (PLAYER), (PLAYER_LAND), Val(260000), Val(0), Val(12)
+  zLine: (NEAR_DISTANCE), 5
+  sprite: s32'gio501_04', 3
+  warp: (PLAYER), (PLAYER_LAND), Val(260000), Val(0), Val(10)
+  sprite: s32'gio501_05', 3
+  sprite: s32'gio501_06', 3
+  sprite: s32'gio501_07', 4
+  haltMomentum: 1
+  sprite: s32'gio501_08', 3
+  sprite: s32'gio501_09', 2
+  sprite: s32'gio501_10', 2
+  zLine: (FAR_DISTANCE), 5
+  sprite: s32'gio501_11', 2
+  sprite: s32'gio501_12', 4
+  sprite: s32'gio501_13', 5
+  sprite: s32'gio501_14', 3
+  sprite: s32'gio501_15', 2
+  sprite: s32'gio501_16', 2
+  sprite: s32'gio501_17', 3
+  sprite: s32'gio501_18', 3
+endState: 
+
+beginState: s32'wolf_ultimate3'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    setLinkObjectDestroyOnDamage: 3
+    ifOperation: (IS_NOT_EQUAL), Mem(SentToObject0), Val(1)
+      setCmnMaterialParam: 19, 1000, 0
+    endIf: 
+    linkModelSelfTeam: s32'gio', s32''
+    displayMesh: s32'Body', 0
+    displayMesh: s32'Head_Low', 0
+    displayMesh: s32'toge', 0
+    displayMesh: s32'wolf_body_fourlegs', 1
+    addPositionX: 0, -380000
+    setDepth: 80000
+    zLine: (NEAR_DISTANCE), 5
+  endUpon: 
+  sprite: s32'wolf501_13', 3
+  warp: (PLAYER), (PLAYER), Val(60000), Val(0), Val(10)
+  sprite: s32'wolf501_14', 3
+  warp: (PLAYER), (PLAYER), Val(60000), Val(0), Val(10)
+  sprite: s32'wolf501_15', 4
+  sprite: s32'gio400_04', 5
+  haltMomentum: 1
+  ignoreZLine: 1
+  addPositionX: 0, 128000
+  sprite: s32'gio400_05', 4
+  ignoreZLine: 0
+  zLine: (FAR_DISTANCE), 5
+  addPositionX: 0, 118000
+  sprite: s32'gio400_06', 6
+endState: 
+
+beginState: s32'Gio201_bake'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    ignoreFinishStop: 1
+  endUpon: 
+  sprite: s32'null', 2
+  linkParticle: s32'gio201_01bake'
+  sprite: s32'null', 1
+  linkParticle: s32'gio201_02bake'
+endState: 
+
+beginState: s32'Gio203_01bake'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    addPositionY: 0, 500
+    ignoreSuperFreezeFromAlly: 1
+    ignoreFinishStop: 1
+  endUpon: 
+  sprite: s32'null', 1
+  linkParticle: s32'gio203_11bake'
+  sprite: s32'null', 1
+  linkParticle: s32'gio203_12bake'
+endState: 
+
+beginState: s32'Gio203_02bake'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    ignoreFinishStop: 1
+  endUpon: 
+  sprite: s32'null', 1
+  linkParticle: s32'gio203_21bake'
+  sprite: s32'null', 1
+  linkParticle: s32'gio203_22bake'
+endState: 
+
+beginState: s32'Gio203_03bake'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    ignoreFinishStop: 1
+  endUpon: 
+  sprite: s32'null', 1
+  linkParticle: s32'gio203_31bake'
+  sprite: s32'null', 1
+  linkParticle: s32'gio203_32bake'
+endState: 
+
+beginState: s32'Gio204_Eff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    flipDirection: 
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        modifyVar: (ADD), Mem(ActReg0), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ActReg0), Val(20)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (FRAME_STEP)
+          ignoreSuperFreeze: 1
+        endIf: 
+      endIf: 
+    endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'gio204_Eff'
+  createParticle: s32'gio204_ringEff', (PLAYER)
+endState: 
+
+beginState: s32'Gio205_burstEff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'gio205_burstEff'
+endState: 
+
+beginState: s32'Gio205_twistEff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'gio205_twistEff'
+  ifTrueInObject: (PLAYER), Mem(ActReg7)
+    linkParticle: s32''
+    linkParticle: s32'gio205_twistlongEff'
+  endIf: 
+endState: 
+
+beginState: s32'Gio205_attackEff'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    addDepth: 0, 1500
+    ignoreSuperFreezeFromAlly: 1
+    ignoreFinishStop: 1
+    ignoreSlowdown: 1
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        modifyVar: (ADD), Mem(ActReg0), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ActReg0), Val(20)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (FRAME_STEP)
+          ignoreSuperFreeze: 1
+        endIf: 
+      endIf: 
+    endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'gio205_attackEff'
+endState: 
+
+beginState: s32'Gio231_bake'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    ignoreFinishStop: 1
+  endUpon: 
+  sprite: s32'null', 2
+  linkParticle: s32'gio231_01bake'
+  sprite: s32'null', 1
+  linkParticle: s32'gio231_02bake'
+endState: 
+
+beginState: s32'Gio232_01bake'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    ignoreFinishStop: 1
+  endUpon: 
+  sprite: s32'null', 2
+  linkParticle: s32'gio232_11bake'
+  sprite: s32'null', 1
+  linkParticle: s32'gio232_12bake'
+endState: 
+
+beginState: s32'Gio232_02bake'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    ignoreFinishStop: 1
+  endUpon: 
+  sprite: s32'null', 1
+  linkParticle: s32'gio232_21bake'
+  sprite: s32'null', 1
+  linkParticle: s32'gio232_22bake'
+endState: 
+
+beginState: s32'Gio233_Eff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        modifyVar: (ADD), Mem(ActReg0), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ActReg0), Val(20)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (FRAME_STEP)
+          ignoreSuperFreeze: 1
+        endIf: 
+      endIf: 
+    endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      linkObjPosition: 0
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'gio233_Eff'
+endState: 
+
+beginState: s32'Gio234_Eff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    ignoreSlowdown: 1
+    callSubroutine: s32'cmn_Effect_NoLink'
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        modifyVar: (ADD), Mem(ActReg0), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ActReg0), Val(10)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (FRAME_STEP)
+          ignoreSuperFreeze: 1
+        endIf: 
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'gio_234atk'
+endState: 
+
+beginState: s32'Gio251_bake'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    ignoreFinishStop: 1
+  endUpon: 
+  sprite: s32'null', 2
+  linkParticle: s32'gio251_01bake'
+  sprite: s32'null', 1
+  linkParticle: s32'gio251_02bake'
+endState: 
+
+beginState: s32'Gio252_bake'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    ignoreSuperFreezeFromAlly: 1
+    ignoreFinishStop: 1
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        modifyVar: (ADD), Mem(ActReg0), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ActReg0), Val(20)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (FRAME_STEP)
+          ignoreSuperFreeze: 1
+        endIf: 
+      endIf: 
+    endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+  endUpon: 
+  sprite: s32'null', 2
+  linkParticle: s32'gio252_01bake'
+  sprite: s32'null', 1
+  linkParticle: s32'gio252_02bake'
+  sprite: s32'null', 1
+  linkParticle: s32'gio252_03bake'
+endState: 
+
+beginState: s32'Gio253_Eff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    upon: (NO_STOP_IDLING)
+      ifOperationInObject: (IS_EQUAL), (PLAYER), Mem(ActReg0), Val(1)
+        ifNot: Mem(ActReg0)
+          linkParticle: s32'gio253_01Eff'
+        endIf: 
+        storeValue: Mem(ActReg0), Val(1)
+      endIf: 
+      ifOperationInObject: (IS_EQUAL), (PLAYER), Mem(ActReg0), Val(2)
+        ifNot: Mem(ActReg1)
+          linkParticle: s32'gio253_02Eff'
+        endIf: 
+        storeValue: Mem(ActReg1), Val(1)
+      endIf: 
+      ifOperationInObject: (IS_EQUAL), (PLAYER), Mem(ActReg0), Val(3)
+        ifNot: Mem(ActReg2)
+          linkParticle: s32'gio253_03Eff'
+        endIf: 
+        storeValue: Mem(ActReg2), Val(1)
+      endIf: 
+    endUpon: 
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 13
+endState: 
+
+beginState: s32'Gio254_01Eff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        modifyVar: (ADD), Mem(ActReg0), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ActReg0), Val(20)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (FRAME_STEP)
+          ignoreSuperFreeze: 1
+        endIf: 
+      endIf: 
+    endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'gio254_01Eff'
+endState: 
+
+beginState: s32'Gio254_02Eff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        modifyVar: (ADD), Mem(ActReg0), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ActReg0), Val(20)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (FRAME_STEP)
+          ignoreSuperFreeze: 1
+        endIf: 
+      endIf: 
+    endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'gio254_02Eff'
+endState: 
+
+beginState: s32'Gio254_01bake'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    ignoreFinishStop: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 2
+  linkParticle: s32'gio254_11bake'
+  sprite: s32'null', 1
+  linkParticle: s32'gio254_12bake'
+endState: 
+
+beginState: s32'Gio254_02bake'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    ignoreFinishStop: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 2
+  linkParticle: s32'gio254_21bake'
+  sprite: s32'null', 1
+  linkParticle: s32'gio254_22bake'
+endState: 
+
+beginState: s32'Gio271_Eff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    ignoreSuperFreezeFromAlly: 1
+    ignoreFinishStop: 1
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'gio271_01Eff'
+  sprite: s32'null', 10
+  linkParticle: s32'gio271_02Eff'
+endState: 
+
+beginState: s32'Gio305_phone'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (SIGNAL0)
+      gotoLabelRequests: s32'end'
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 6
+  linkParticle: s32'gio_305_phone01'
+  sprite: s32'null', 46
+  linkParticle: s32'gio_305_phone02'
+  sprite: s32'null', 6
+  linkParticle: s32'gio_305_phone03'
+  sprite: s32'null', 6
+  linkParticle: s32'gio_305_phone04'
+  sprite: s32'null', 7
+  linkParticle: s32'gio_305_phone05'
+  sprite: s32'null', 26
+  linkParticle: s32'gio_305_phone06'
+  sprite: s32'null', 5
+  linkParticle: s32'gio_305_phone07'
+  sprite: s32'null', 5
+  linkParticle: s32'gio_305_phone08'
+  sprite: s32'null', 5
+  linkParticle: s32'gio_305_phone09'
+  sprite: s32'null', 500
+  linkParticle: s32'gio_305_phone10'
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 5
+  linkParticle: s32'gio_305_phone11'
+  sprite: s32'null', 5
+endState: 
+
+beginState: s32'Gio401_wolfappear'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'gio_401wolf_appear'
+endState: 
+
+beginState: s32'400atk'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    linkParticle: s32'gio_400atk'
+    ignoreSlowdown: 1
+    characterSfx: s32'SE_BTL_GIO_01'
+  endUpon: 
+  sprite: s32'null', 80
+endState: 
+
+beginState: s32'Gio401_01Eff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    ifOperation: (IS_EQUAL), Mem(SentToObject0), Val(1)
+      linkParticle: s32'gio401_atk01'
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(SentToObject0), Val(2)
+      linkParticle: s32'gio401_atk02'
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(SentToObject0), Val(3)
+      linkParticle: s32'gio401_atk03'
+    endIf: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 80
+  privateSE: s32'SE_BTL_GIO_02'
+endState: 
+
+beginState: s32'Gio401_sub'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    linkParticle: s32'gio401_02Eff'
+    ignoreSlowdown: 1
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 8
+  sprite: s32'null', 60
+  linkObjPosition: 0
+  characterSfx: s32'SE_BTL_GIO_02_1'
+endState: 
+
+beginState: s32'Gio401_sousai'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    ignoreSlowdown: 1
+    specialAttack: 
+    callSubroutine: s32'cmn_AtkLv2'
+    setProjectileDurability: 2
+    clashOnly: 1
+    attackIgnoreCaution: 1
+    damage: Val(0)
+    tensionGainOnConnect: 0
+  endUpon: 
+  sprite: s32'_gio401_sousai', 10
+  hit: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'402wolf'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    linkParticle: s32'gio_402wolf'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    upon: (NO_STOP_IDLING)
+      ifNot: Mem(BattleDoing)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        zLine: (FAR_DISTANCE), 5
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 30
+  characterSfx: s32'SE_BTL_GIO_02'
+endState: 
+
+beginState: s32'402atk1'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    reverseDisplay: 1
+    linkParticle: s32'gio_402atk01'
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 80
+endState: 
+
+beginState: s32'402atk2'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    reverseDisplay: 1
+    linkParticle: s32'gio_402atk02'
+    ignoreSlowdown: 1
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        clearRegisteredUponCode: (FRAME_STEP)
+        deactivateObjectById: (SELF)
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 80
+  characterSfx: s32'SE_BTL_GIO_03'
+endState: 
+
+beginState: s32'Step_mahojin'
+  upon: (IMMEDIATE)
+    linkParticle: s32'cmn_step_mahojin'
+    setAngleX: 5000
+    ignoreSuperFreeze: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 30
+endState: 
+
+beginState: s32'403atk'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    linkParticle: s32'gio_403atk'
+    ignoreSlowdown: 1
+    if: Mem(SentToObject0)
+      upon: (WALL_BREAK)
+        clearRegisteredUponCode: (WALL_BREAK)
+        linkObjPosition: 3
+      endUpon: 
+    endIf: 
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 4
+  characterSfx: s32'SE_BTL_GIO_01'
+  sprite: s32'null', 80
+  linkObjPosition: 0
+endState: 
+
+beginState: s32'GIO_500CS_ryuhai'
+  upon: (IMMEDIATE)
+    linkObjPosition: 2
+    setLinkObjectDestroyOnStateChange: 2
+    ignoreSuperFreeze: 1
+    ignoreHideAllButSelf: 1
+    upon: (IDLING)
+      ifOnFrame: Val(67)
+        postProcessEffect: s32'Ryuhai_cs500', 1, 20
+      endIf: 
+      ifOnFrame: Val(92)
+        postProcessEffect: s32'Ryuhai_cs500', 0, 20
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 160
+endState: 
+
+beginState: s32'Gio500_Eff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'gio_500atk02re'
+  characterSfx: s32'SE_BTL_GIO_KAKUSEI_01'
+  sprite: s32'null', 3
+  linkParticle: s32'gio_500atk03re'
+  characterSfx: s32'SE_BTL_GIO_KAKUSEI_01_1'
+  sprite: s32'null', 3
+  linkParticle: s32'gio_500atk01re'
+  characterSfx: s32'SE_BTL_GIO_KAKUSEI_01'
+  sprite: s32'null', 3
+  linkParticle: s32'gio_500atk02re'
+  characterSfx: s32'SE_BTL_GIO_KAKUSEI_01_1'
+  sprite: s32'null', 3
+  linkParticle: s32'gio_500atk03re'
+  characterSfx: s32'SE_BTL_GIO_KAKUSEI_01'
+  sprite: s32'null', 3
+  linkParticle: s32'gio_500atk01re'
+  characterSfx: s32'SE_BTL_GIO_KAKUSEI_01_1'
+  sprite: s32'null', 3
+  linkParticle: s32'gio_500atk02re'
+  characterSfx: s32'SE_BTL_GIO_KAKUSEI_01'
+  sprite: s32'null', 3
+  linkParticle: s32'gio_500atk03re'
+  characterSfx: s32'SE_BTL_GIO_KAKUSEI_01_1'
+  sprite: s32'null', 20
+  linkParticle: s32'gio_500atk01re'
+  characterSfx: s32'SE_BTL_GIO_KAKUSEI_01'
+endState: 
+
+beginState: s32'Gio500_Floor'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    linkParticle: s32'gio_500kaiten'
+  endUpon: 
+  sprite: s32'null', 4
+  sprite: s32'null', 4
+  linkParticle: s32'gio_500kaiten'
+  characterSfx: s32'SE_BTL_GIO_KAKUSEI_02'
+  characterSfx: s32'SE_BTL_GIO_02_01'
+  sprite: s32'null', 4
+  linkParticle: s32'gio_500kaiten'
+  characterSfx: s32'SE_BTL_GIO_02_01'
+  sprite: s32'null', 4
+  linkParticle: s32'gio_500kaiten'
+  characterSfx: s32'SE_BTL_GIO_02_01'
+  sprite: s32'null', 4
+  linkParticle: s32'gio_500kaiten'
+  characterSfx: s32'SE_BTL_GIO_02_01'
+  sprite: s32'null', 4
+  linkParticle: s32'gio_500kaiten'
+  characterSfx: s32'SE_BTL_GIO_02_01'
+  sprite: s32'null', 4
+  characterSfx: s32'SE_BTL_GIO_02_01'
+  sprite: s32'null', 10
+  characterSfx: s32'SE_BTL_GIO_02_01'
+endState: 
+
+beginState: s32'Gio500_wolfappear'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'gio_500wolf_appear01'
+  sprite: s32'null', 3
+  linkParticle: s32'gio_500wolf_appear02'
+  sprite: s32'null', 3
+  linkParticle: s32'gio_500wolf_appear03'
+  sprite: s32'null', 4
+  linkParticle: s32'gio_500wolf_appear04'
+endState: 
+
+beginState: s32'Gio500_tunagi'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    flipDirection: 
+    ignoreSuperFreezeFromAlly: 1
+  endUpon: 
+  sprite: s32'null', 60
+  linkParticle: s32'gio_500tunagi'
+endState: 
+
+beginState: s32'CS500_scr_smoke'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    linkParticle: s32'gio_cs500_scr_smoke'
+    ignoreHideAllButSelf: 1
+  endUpon: 
+  sprite: s32'null', 300
+endState: 
+
+beginState: s32'CS500_scr_eye'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    linkParticle: s32'gio_cs500_scr_eye'
+    ignoreHideAllButSelf: 1
+  endUpon: 
+  sprite: s32'null', 300
+endState: 
+
+beginState: s32'CS500_scr_tail'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    linkParticle: s32'gio_cs500_scr_tail'
+    ignoreHideAllButSelf: 1
+  endUpon: 
+  sprite: s32'null', 300
+endState: 
+
+beginState: s32'CS500_kickcircle'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    linkParticle: s32'gio_cs500_kickcircle'
+    ignoreHideAllButSelf: 1
+  endUpon: 
+  sprite: s32'null', 300
+endState: 
+
+beginState: s32'500_tailend'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    reverseDisplay: 1
+    linkParticle: s32'gio_500_tailend'
+  endUpon: 
+  sprite: s32'null', 120
+endState: 
+
+beginState: s32'Gio615_floorsmoke'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+  endUpon: 
+  sprite: s32'null', 400
+  linkParticle: s32'gio_615_floorsmoke'
+endState: 
+
+beginState: s32'RoundWin1'
+  upon: (IMMEDIATE)
+    linkModelSelfTeam: s32'gio', s32''
+    linkObjPosition: 3
+    setLinkObjectDestroyOnStateChange: 3
+    displayMesh: s32'Body', 0
+    displayMesh: s32'Head_Low', 0
+    displayMesh: s32'toge', 0
+    displayMesh: s32'wolf_head_high', 1
+    displayMesh: s32'wolf_body_ghost', 1
+    displayMesh: s32'wolf_body_ghost_aura', 1
+    displayMesh: s32'wolf_body_leg_only', 1
+  endUpon: 
+  sprite: s32'wolf615_00', 5
+  sprite: s32'wolf615_01', 5
+  displayMesh: s32'wolf_head_high_fourlegs', 1
+  displayMesh: s32'wolf_body_fourlegs', 1
+  displayMesh: s32'wolf_head_high', 0
+  displayMesh: s32'wolf_body_ghost', 0
+  displayMesh: s32'wolf_body_ghost_aura', 0
+  displayMesh: s32'wolf_body_leg_only', 0
+  sprite: s32'wolf615_02', 5
+  sprite: s32'wolf615_03', 5
+  sprite: s32'wolf615_04', 5
+  sprite: s32'wolf615_05', 5
+  sprite: s32'wolf615_06', 5
+  sprite: s32'wolf615_07', 5
+  endLabel: 
+  sprite: s32'wolf615_08', 5
+  sprite: s32'wolf615_09', 5
+  sprite: s32'wolf615_10', 5
+  sprite: s32'wolf615_11', 5
+  sprite: s32'wolf615_12', 5
+  sprite: s32'wolf615_13', 5
+  endLabel: 
+  sprite: s32'wolf615_14', 5
+  sprite: s32'wolf615_15', 5
+  sprite: s32'wolf615_16', 5
+  sprite: s32'wolf615_17', 5
+  sprite: s32'wolf615_18', 5
+  sprite: s32'wolf615_19', 5
+  createObject: s32'Gio615_floorsmoke', (PLAYER)
+  sprite: s32'wolf615_20', 5
+  sprite: s32'wolf615_21', 5
+  sprite: s32'wolf615_22', 5
+  sprite: s32'wolf615_23', 5
+  sprite: s32'wolf615_24', 5
+  sprite: s32'wolf615_25', 5
+  sprite: s32'wolf615_26', 5
+  sprite: s32'wolf615_27', 5
+  sprite: s32'wolf615_28', 5
+  sprite: s32'wolf615_29', 5
+  sprite: s32'wolf615_30', 5
+  sprite: s32'wolf615_31', 5
+  sprite: s32'wolf615_32', 5
+  sprite: s32'wolf615_33', 5
+  sprite: s32'wolf615_34', 5
+  sprite: s32'wolf615_35', 5
+  sprite: s32'wolf615_36', 5
+  sprite: s32'wolf615_37', 5
+  sprite: s32'wolf615_38', 5
+  sprite: s32'wolf615_39', 5
+  sprite: s32'wolf615_40', 5
+  sprite: s32'wolf615_41', 5
+  sprite: s32'wolf615_42', 5
+  sprite: s32'wolf615_43', 5
+  sprite: s32'wolf615_44', 5
+  sprite: s32'wolf615_45', 5
+  sprite: s32'wolf615_46', 5
+  sprite: s32'wolf615_47', 5
+  sprite: s32'wolf615_48', 5
+  sprite: s32'wolf615_49', 5
+  sprite: s32'wolf615_50', 5
+  sprite: s32'wolf615_51', 5
+  sprite: s32'wolf615_52', 5
+  sprite: s32'wolf615_53', 5
+  sprite: s32'wolf615_54', 5
+  sprite: s32'wolf615_55', 5
+  sprite: s32'wolf615_56', 5
+  sprite: s32'wolf615_57', 5
+  sprite: s32'wolf615_58', 5
+  sprite: s32'wolf615_59', 5
+  sprite: s32'wolf615_60', 5
+  sprite: s32'wolf615_61', 5
+  sprite: s32'wolf615_62', 2147483647
+endState: 
+
+beginState: s32'Cam_Throw'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1400000), Val(1200000), Val(-1400000), Val(1200000)
+    moveCameraTargetCameraOnBlend: 4, 40, s32'accel_brake'
+    moveCameraBasePosOffset: 0, 0, 0, 560000, 0, 35000, 0, 20, 0, 1000, 0, 0, s32'accel_brake', s32'linear'
+    moveCameraTargetPosOffset: 0, 138000, 0, 95000, 0, 95000, 0, 20, 0, 1000, 0, 0, s32'accel_brake', s32'accel_brake'
+    moveCameraTargetRotRate: 0, 1000, 0, 1000, 0, 20, 0, 1000, 0, 0, s32'linear', s32'linear'
+    moveCameraTargetPosRate: 0, 1000, 0, 1000, 0, 20, 0, 1000, 0, 0, s32'linear', s32'linear'
+    moveCameraTargetPercent: 0, 0, 0, 100, 0, 0, 0, 1000, 0, 0, s32'linear', s32'linear'
+    moveCameraSplinePosRate: 0, 1000, 0, 1000, 0, 20, 0, 80, 0, 0, s32'linear', s32'linear'
+    moveCameraSpline: s32'gio_throw', 0, 0, 0, 1000, 0, 90, s32'linear'
+    moveCameraFOV: 0, 78, 0, 20, 0, 56, 0, 22, s32'accel_brake', s32'brake'
+    resetDOF: 1, 0
+    focalDistance: -1, 2000, 8
+    focalRegion: -1, 0, 0
+    focalNearTransition: -1, 0, 0
+    focalFarTransition: -1, 1000, 30
+    focalNearBlurSize: -1, 0, 0
+    focalFarBlurSize: -1, 15, 30
+    resetDiffusion: 1, 1
+    setDiffusionLuminance: -1, 1600, 30
+    setDiffusionThreshold: -1, 0, 30
+  endUpon: 
+  sprite: s32'null', 50
+  sprite: s32'null', 16
+  moveCameraTargetPosOffset: 0, 198000, 0, 95000, 0, 135000, 0, 20, 0, 1000, 0, 0, s32'accel_brake', s32'accel_brake'
+  sprite: s32'null', 22
+  moveCameraTargetCameraOnBlend: 22, 32, s32'accel_brake'
+  moveCameraTargetPosRate: 0, 1000, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetRotRate: 0, 1000, 0, 0, 0, 22, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraSplinePosRate: 0, 1000, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  resetDOF: 0, 20
+  resetDiffusion: 0, 20
+endState: 
+
+beginState: s32'Cam_AirThrow'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1400000), Val(1400000), Val(-1400000), Val(1400000)
+    moveCameraTargetCameraOnBlend: 4, 40, s32'accel_brake'
+    moveCameraBasePosOffset: 0, 0, 0, 560000, 0, 35000, 0, 20, 0, 100, 0, 0, s32'accel_brake', s32'linear'
+    moveCameraTargetPosOffset: 0, 38000, 0, 95000, 0, 95000, 0, 20, 0, 100, 0, 0, s32'accel_brake', s32'accel_brake'
+    moveCameraTargetRotRate: 0, 1000, 0, 1000, 0, 20, 0, 100, 0, 0, s32'linear', s32'linear'
+    moveCameraTargetPosRate: 0, 1000, 0, 1000, 0, 20, 0, 100, 0, 0, s32'linear', s32'linear'
+    moveCameraTargetPercent: 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, s32'linear', s32'linear'
+    moveCameraSplinePosRate: 0, 1000, 0, 1000, 0, 20, 0, 80, 0, 0, s32'linear', s32'linear'
+    moveCameraSpline: s32'gio_airthrow', 0, 0, 0, 1000, 0, 90, s32'linear'
+    moveCameraFOV: 0, 62, 0, 20, 0, 20, 0, 22, s32'accel_brake', s32'brake'
+    resetDOF: 1, 0
+    focalDistance: -1, 2000, 8
+    focalRegion: -1, 0, 0
+    focalNearTransition: -1, 0, 0
+    focalFarTransition: -1, 1000, 30
+    focalNearBlurSize: -1, 0, 0
+    focalFarBlurSize: -1, 15, 30
+    resetDiffusion: 1, 1
+    setDiffusionLuminance: -1, 1600, 30
+    setDiffusionThreshold: -1, 0, 30
+  endUpon: 
+  sprite: s32'null', 40
+  sprite: s32'null', 22
+  moveCameraTargetCameraOnBlend: 22, 22, s32'accel_brake'
+  moveCameraTargetPosRate: 0, 1000, 0, 0, 0, 22, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetRotRate: 0, 1000, 0, 0, 0, 22, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraSplinePosRate: 0, 1000, 0, 0, 0, 22, 0, 0, 0, 0, s32'brake', s32'brake'
+  resetDOF: 0, 20
+  resetDiffusion: 0, 20
+endState: 
+
+beginState: s32'Cam_AirUltimate'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1400000), Val(1200000), Val(-1400000), Val(1200000)
+    moveCameraTargetCameraOnBlend: 4, 12, s32'brake'
+    moveCameraBasePosOffset: 0, -98000, 0, 460000, 0, 585000, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'linear'
+    moveCameraTargetPosOffset: 0, 98000, 0, 60000, 0, 65000, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'brake'
+    moveCameraTargetPosRate: 0, 0, 0, 600, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'accel_brake'
+    moveCameraTargetRotRate: 0, 0, 0, 800, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'linear'
+    moveCameraTargetPercent: 0, 100, 0, 100, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'brake'
+    moveCameraTargetRotRoll: 0, 0, 0, 3500, 0, 0, 0, 80, 0, 0, s32'accel_brake', s32'brake'
+    moveCameraSplinePosRate: 0, 0, 0, 600, 0, 0, 0, 80, 0, 0, s32'linear', s32'brake'
+    moveCameraSpline: s32'gio_airultimate', 0, 0, 0, 1000, 0, 100, s32'linear'
+    moveCameraFOV: 0, 60, 0, 0, 0, 200, 0, 0, s32'accel_brake', s32'brake'
+    ignoreSuperFreeze: 1
+    runOnObject: (STACK0)
+      ignoreSuperFreeze: 1
+    endRunOnObject: 
+    if: Mem(CmnCharaReg5)
+      moveCameraTargetPosRate: 0, 0, 0, 1000, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'accel_brake'
+      moveCameraTargetRotRate: 0, 0, 0, 1000, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'linear'
+      moveCameraSplinePosRate: 0, 0, 0, 1000, 0, 0, 0, 100, 0, 0, s32'linear', s32'brake'
+    endIf: 
+    resetDOF: 1, 1
+    focalDistance: -1, 700, 0
+    focalRegion: -1, 0, 0
+    focalNearTransition: -1, 0, 0
+    focalFarTransition: -1, 500, 0
+    focalNearBlurSize: -1, 0, 0
+    focalFarBlurSize: -1, 40, 10
+    resetDiffusion: 1, 1
+    setDiffusionLuminance: -1, 1400, 40
+    setDiffusionThreshold: -1, 0, 40
+  endUpon: 
+  sprite: s32'null', 28
+  sprite: s32'null', 8
+  runOnObject: (STACK0)
+    setPosXBetweenObject: 3, 22
+  endRunOnObject: 
+  moveCameraBasePosObject: (STACK0)
+  moveCameraTargetCameraOnBlend: 23, 8, s32'accel_brake'
+  moveCameraTargetPosRate: 0, 600, 0, 0, 0, 8, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetRotRate: 0, 800, 0, 0, 0, 8, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraSplinePosRate: 0, 600, 0, 0, 0, 8, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraSpline: s32'gio_airultimate', 0, 0, 0, 1000, 0, 8, s32'brake'
+  moveCameraFOV: 0, 65, 0, 8, 0, 0, 0, 0, s32'accel_brake', s32'brake'
+  callSubroutine: s32'cmnCam_CommonCameraEnd'
+  resetDOF: 0, 8
+  resetDiffusion: 0, 8
+endState: 
+
+beginState: s32'Cam_AirUltimate1'
+  upon: (IMMEDIATE)
+    addPositionX: 0, -248000
+    addPositionY: 0, 48000
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-900000), Val(900000), Val(-1000000), Val(1000000)
+    upon: (AFTER_FRAME_STEP)
+      warp: (ENEMY), (FRONT_1_BODY), Val(0), Val(0), Val(4)
+    endUpon: 
+    moveCameraBasePosObject: (STACK0)
+    moveCameraTargetCameraOnBlend: 23, 40, s32'accel_brake'
+    moveCameraBasePosOffset: 0, 68000, 0, 400000, 0, 65000, 0, 20, 0, 300, 0, 0, s32'accel_brake', s32'linear'
+    moveCameraTargetPosOffset: 0, 88000, 0, 0, 0, 202500, 0, 20, 0, 300, 0, 0, s32'accel_brake', s32'accel_brake'
+    moveCameraTargetRotRate: 0, 500, 0, 600, 0, 20, 0, 300, 0, 0, s32'linear', s32'linear'
+    moveCameraTargetPosRate: 0, 500, 0, 700, 0, 20, 0, 300, 0, 0, s32'linear', s32'linear'
+    moveCameraTargetPercent: 0, 0, 0, 100, 0, 0, 0, 300, 0, 0, s32'linear', s32'linear'
+    moveCameraFOV: 0, 75, 0, 20, 0, 300, 0, 22, s32'accel_brake', s32'brake'
+    resetDOF: 1, 30
+    focalDistance: -1, 1500, 0
+    focalRegion: -1, 0, 0
+    focalNearTransition: -1, 0, 0
+    focalFarTransition: -1, 1500, 0
+    focalNearBlurSize: -1, 0, 0
+    focalFarBlurSize: -1, 10, 10
+    resetDiffusion: 1, 1
+    setDiffusionLuminance: -1, 1600, 40
+    setDiffusionThreshold: -1, 0, 40
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (SIGNAL0)
+      gotoLabelRequests: s32'end'
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 30
+  moveCameraTrackUp: 0, 0, 0, 20000, 0, 32, 0, 200, 0, 0, s32'accel', s32'brake'
+  moveCameraRot: 0, -400, 0, 1800, 0, 0, 0, 52, 0, 12, 0, 16, s32'accel', s32'brake'
+  endLabel: 
+  beginLabel: s32'hit2'
+  sprite: s32'null', 32
+  moveCameraRot: 0, -4400, 0, 0, 0, 0, 0, 52, 0, 300, 0, 16, s32'accel', s32'brake'
+  moveCameraTargetPosOffset: 0, 88000, 0, -14000, 0, 85000, 0, 52, 0, 200, 0, 0, s32'accel', s32'accel_brake'
+  endLabel: 
+  beginLabel: s32'hit3'
+  sprite: s32'null', 26
+  moveCameraFOV: 0, 78, 0, 16, 0, 0, 0, 0, s32'accel', s32'brake'
+  moveCameraTrackUp: 0, 0, 0, 20000, 0, 32, 0, 200, 0, 0, s32'accel', s32'brake'
+  moveCameraBasePosOffset: 0, -68000, 0, 280000, 0, 105000, 0, 48, 0, 300, 0, 0, s32'accel', s32'linear'
+  moveCameraTargetRotRate: 0, 600, 0, 800, 0, 32, 0, 300, 0, 0, s32'accel', s32'linear'
+  endLabel: 
+  beginLabel: s32'hit4'
+  sprite: s32'null', 128
+  moveCameraTargetPosOffset: 0, 58000, 0, 64000, 0, 60000, 0, 32, 0, 200, 0, 0, s32'accel', s32'accel_brake'
+  moveCameraBasePosOffset: 0, -88000, 0, 360000, 0, 125000, 0, 32, 0, 300, 0, 0, s32'accel', s32'linear'
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 32
+  runOnObject: (STACK0)
+    warp: (PLAYER), (FRONT_1_BODY), Val(0), Val(0), Val(16)
+    setGravity: 500
+    landingHeight: 0
+  endRunOnObject: 
+  clearRegisteredUponCode: (SIGNAL0)
+  moveCameraRot: 0, -4400, 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetPosRate: 0, 1000, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetRotRate: 0, 1000, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraTrackUp: 0, 0, 0, 20000, 0, 0, 0, 0, 0, 32, s32'brake', s32'brake'
+  moveCameraFOV: 0, 65, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraOrthoCurve: s32'orthoone', 0, 0, s32'orthoone'
+  resetDOF: 0, 32
+  resetDiffusion: 0, 32
+endState: 
+
+beginSubroutine: s32'atk'
+  grabOrRelease: 
+  callSubroutine: s32'cmn_AtkLv3'
+  damage: Val(10)
+  tensionGainOnConnect: 0
+  groundBounceGravity: 1500
+  groundBounceXVelocity: 5000
+  groundBounceYVelocity: 25000
+  groundBounceCount: 1
+  wallBounceCount: 1
+  attackFrontDirection: (SELF)
+  attackDirectionReverse: 0
+  onlyHitPlayer: 1
+  hitSoftKnockdown: 0
+  callSubroutine: s32'cmnNohosei_kakusei'
+  storeValue: Mem(CmnCharaReg11), Val(1000000000)
+  storeValue: Mem(CmnCharaReg12), Val(0)
+  storeValue: Mem(CmnCharaReg13), Val(1)
+  callSubroutineWithArgs: s32'cmn_hosei', Val(1), Val(0), Val(0), Val(0)
+  forcedComboScaleCount: 0
+  riscConsume: 0
+endSubroutine: 
+
+beginState: s32'ultimate_obj_gio'
+  upon: (IMMEDIATE)
+    linkModelSelfTeam: s32'gio', s32''
+    setLinkObjectDestroyOnStateChange: 3
+    displayMesh: s32'wolf_body_ghost', 0
+    displayMesh: s32'wolf_body_ghost_aura', 0
+    displayMesh: s32'wolf_body_fourlegs', 0
+    displayMesh: s32'wolf_head_high', 0
+    displayMesh: s32'toge', 0
+    worldCollision: 1
+    ifOperationInObject: (IS_GREATER_OR_EQUAL), (PLAYER), Mem(ObjReg0), Val(2)
+      setCmnMaterialParam: 19, 1000, 0
+    endIf: 
+    ifOperationInObject: (IS_EQUAL), (PLAYER), Mem(ObjReg0), Val(3)
+      setCmnMaterialParam: 18, 1000, 0
+    endIf: 
+    spriteSlowParam: 0, 0, 0, 0, 0, 0
+    spriteSlowParamFinishStop: 0, 0, 0, 0, 0, 0
+  endUpon: 
+  sprite: s32'gio010_08', 5
+  linkObjectZ: 0
+  zLine: (FAR_DISTANCE), 5
+  sprite: s32'gio010_09', 5
+  sprite: s32'gio010_10', 5
+  sprite: s32'gio021_00', 3
+  zLine: (NEAR_DISTANCE), 5
+  sprite: s32'gio021_01', 3
+  warp: (ENEMY), (PLAYER_LAND), Val(-500000), Val(0), Val(30)
+  physicsYImpulse: 0, 50000
+  setGravity: 2500
+  sprite: s32'gio021_02', 3
+  sprite: s32'gio021_03', 3
+  sprite: s32'gio021_02', 3
+  sprite: s32'gio021_03', 3
+  sprite: s32'gio021_04', 3
+  sprite: s32'gio021_05', 2
+  sprite: s32'gio021_06', 2
+  sprite: s32'gio021_07', 2
+  velocityXPercentEachFrame: 95
+  velocityYPercentEachFrame: 95
+  sprite: s32'gio023_00', 2
+  setGravity: 0
+  flipDirection: 
+  sprite: s32'gio023_01', 2
+  sprite: s32'gio023_02', 2
+  sprite: s32'gio023_03', 2
+  sprite: s32'gio253_01', 3
+  displayMesh: s32'wolf_head_high_fourlegs', 0
+  displayMesh: s32'wolf_body_fourlegs', 0
+  displayMesh: s32'wolf_head_high', 0
+  displayMesh: s32'wolf_body_ghost', 0
+  displayMesh: s32'wolf_body_ghost_aura', 0
+  displayMesh: s32'wolf_body_leg_only', 0
+  haltMomentum: 1
+  faceOpponent: 
+  screenAdditionalWidth: -10000
+  sprite: s32'gio253_02', 3
+  createArgDirection: 1
+  createParticleWithArg2: s32'gio253_01Eff', (PLAYER)
+  cmnSfx: s32'SE_BTL_CMN_Swing_Grap_Heavy_M'
+  attackVoiceLine: 2, -1
+  sprite: s32'gio253_03', 15
+  createArgDirection: 1
+  createParticleWithArg2: s32'gio253_02Eff', (PLAYER)
+  sprite: s32'gio035_00', 2
+  exPointFReset: (PLAYER), 0, 100000
+  createObject: s32'cmn_Step_mahojin', (EX_POINT_F)
+  physicsXImpulse: 0, 5000
+  sprite: s32'gio035_01', 2
+  sprite: s32'gio035_02', 2
+  sprite: s32'gio035_03', 2
+  sprite: s32'gio035_04', 2
+  characterSfx: s32'SE_BTL_GIO_00'
+  sprite: s32'gio035_05', 3
+  clearRegisteredUponCode: (IDLING)
+  warp: (ENEMY), (PLAYER_LAND), Val(-500000), Val(0), Val(20)
+  physicsYImpulse: 0, 10000
+  setGravity: 5000
+  landingHeight: 0
+  upon: (TOUCH_GROUND)
+    gotoLabelRequests: s32'landing'
+    haltMomentum: 1
+  endUpon: 
+  createParticle: s32'cmn_air_dash', (HEAD)
+  cmnSfx: s32'SE_BTL_CMN_DashAir'
+  sprite: s32'gio035_06', 3
+  sprite: s32'gio035_07', 3
+  sprite: s32'gio035_05', 3
+  sprite: s32'gio035_06', 3
+  sprite: s32'gio035_07', 3
+  sprite: s32'gio035_05', 3
+  sprite: s32'gio035_06', 3
+  sprite: s32'gio035_07', 3
+  sprite: s32'gio035_05', 3
+  sprite: s32'gio035_06', 3
+  sprite: s32'gio035_07', 3
+  beginLabel: s32'landing'
+  sprite: s32'gio032_06', 5
+  floorEffect: 2, 125
+  faceOpponent: 
+  physicsXImpulse: 0, -30000
+  velocityXPercentEachFrame: 90
+  sprite: s32'gio032_07', 5
+  floorEffect: 2, 125
+  sprite: s32'gio032_08', 5
+  floorEffect: 2, 125
+  sprite: s32'gio032_09', 4
+  floorEffect: 2, 125
+  sprite: s32'gio032_10', 4
+  floorEffect: 2, 125
+  sprite: s32'gio032_11', 4
+  sprite: s32'gio032_12', 4
+  sprite: s32'gio032_13', 4
+  sprite: s32'gio032_14', 4
+  sprite: s32'gio032_15', 4
+  sprite: s32'gio032_16', 3
+  storeValue: Mem(ActReg0), Val(1)
+  sprite: s32'gio032_16', 30
+endState: 
+
+beginState: s32'ultimate_obj_wolf'
+  upon: (IMMEDIATE)
+    linkModelSelfTeam: s32'gio', s32''
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      deactivateCurrentObject: 
+      exPointFReset: (PLAYER), 0, 150000
+      createParticle: s32'cmn_rc_zanzo', (EX_POINT_F)
+    endUpon: 
+    worldCollision: 1
+    ifOperationInObject: (IS_GREATER_OR_EQUAL), (PLAYER), Mem(ObjReg0), Val(2)
+      setCmnMaterialParam: 19, 1000, 0
+    endIf: 
+    ifOperationInObject: (IS_EQUAL), (PLAYER), Mem(ObjReg0), Val(3)
+      setCmnMaterialParam: 18, 1000, 0
+    endIf: 
+    spriteSlowParam: 0, 0, 0, 0, 0, 0
+    spriteSlowParamFinishStop: 0, 0, 0, 0, 0, 0
+    overdriveAttack: 
+    ignoreSlowdown: 1
+    faceOpponent: 
+    missionName: s32'null'
+  endUpon: 
+  sprite: s32'gio501_07', 3
+  displayMesh: s32'Body', 0
+  displayMesh: s32'Head_Low', 0
+  displayMesh: s32'toge', 0
+  displayMesh: s32'wolf_head_high_fourlegs', 1
+  displayMesh: s32'wolf_body_fourlegs', 1
+  displayMesh: s32'wolf_head_high', 0
+  displayMesh: s32'wolf_body_ghost', 0
+  displayMesh: s32'wolf_body_ghost_aura', 0
+  linkObjectZ: 0
+  zLine: (NEAR_DISTANCE), 5
+  sprite: s32'gio501_08', 3
+  sprite: s32'gio501_09', 2
+  sprite: s32'gio501_10', 2
+  sprite: s32'gio501_11', 2
+  physicsXImpulse: 0, 40000
+  upon: (IDLING)
+    ifOperation: (IS_LESSER_OR_EQUAL), Mem(EnemyFrontDistance), Val(250000)
+      velocityXPercent: 80
+    endIf: 
+  endUpon: 
+  sprite: s32'gio501_12', 3
+  sprite: s32'gio501_13', 3
+  sprite: s32'gio501_14', 3
+  haltMomentum: 1
+  physicsXImpulse: 0, 25000
+  velocityXPercentEachFrame: 80
+  sprite: s32'gio501_15', 2
+  sprite: s32'gio501_16', 2
+  sprite: s32'gio501_17', 3
+  grabOrRelease: 
+  fuwafuwa: 0
+  callSubroutine: s32'atk'
+  atkAngle: 90
+  hitAirPushbackX: Val(15000)
+  hitAirPushbackY: Val(45000)
+  upon: (MAIN_PLAYER_RECEIVE_ATTACK)
+    clearRegisteredUponCode: (MAIN_PLAYER_RECEIVE_ATTACK)
+    sendSignal: (PLAYER), (SIGNAL0)
+  endUpon: 
+  sprite: s32'gio501_18', 16
+  sprite: s32'wolf501_00', 4
+  sprite: s32'wolf501_01', 4
+  sprite: s32'wolf501_02', 15
+  clearRegisteredUponCode: (IDLING)
+  haltMomentum: 1
+  storeValue: Mem(ActReg0), Val(0)
+  findState: s32'ultimate_obj_gio', 3, 2, 45
+  warp: (PLAYER), (PLAYER), Val(600000), Val(200000), Val(15)
+  sprite: s32'wolf501_06', 23
+  physicsXImpulse: 0, 0
+  physicsYImpulse: 0, 30000
+  setGravity: 1500
+  sprite: s32'wolf501_07', 4
+  sprite: s32'wolf501_08', 4
+  haltMomentum: 1
+  callSubroutine: s32'atk'
+  atkAngle: -90
+  fuwafuwa: 1
+  hitAirPushbackX: Val(5000)
+  hitAirPushbackY: Val(-80000)
+  hitGravity: Val(1000)
+  groundBounceGravity: 0
+  groundBounceYVelocity: 10000
+  hitGravityOverTime: Val(200), Val(15), Val(30)
+  attackDirectionReverse: 1
+  upon: (MAIN_PLAYER_RECEIVE_ATTACK)
+    clearRegisteredUponCode: (MAIN_PLAYER_RECEIVE_ATTACK)
+    sendSignal: (PLAYER), (SIGNAL0)
+  endUpon: 
+  upon: (HIT_OR_GUARD)
+    clearRegisteredUponCode: (HIT_OR_GUARD)
+    finishCameraRequest: s32'Cam_Finish_AirUltimate2'
+  endUpon: 
+  sprite: s32'wolf501_09', 4
+  sprite: s32'wolf501_10', 20
+  sprite: s32'gio400_10', 10
+  storeValue: Mem(ActReg0), Val(0)
+  findState: s32'ultimate_obj_gio', 3, 2, 45
+  warp: (PLAYER), (PLAYER), Val(-50000), Val(0), Val(10)
+  landingHeight: 0
+  upon: (TOUCH_GROUND)
+    gotoLabelRequests: s32'landing'
+    haltMomentum: 1
+  endUpon: 
+  displayMesh: s32'wolf_head_high_fourlegs', 0
+  displayMesh: s32'wolf_body_fourlegs', 0
+  displayMesh: s32'wolf_head_high', 1
+  displayMesh: s32'wolf_body_ghost', 1
+  displayMesh: s32'wolf_body_ghost_aura', 1
+  endLabel: 
+  beginLabel: s32'landing'
+  sprite: s32'gio400_11', 2
+  sprite: s32'gio400_12', 2
+  sprite: s32'gio400_13', 2
+  sprite: s32'gio400_14', 2
+  sprite: s32'gio400_15', 2
+  sprite: s32'gio400_16', 2
+  sprite: s32'gio400_17', 2
+  sprite: s32'gio400_18', 2
+  sprite: s32'gio400_19', 2
+  sprite: s32'gio400_20', 2
+  sprite: s32'gio400_19', 3
+  sprite: s32'gio400_20', 2
+  sprite: s32'gio400_21', 2
+  sprite: s32'gio400_22', 2
+endState: 
+
+beginState: s32'Cam_Finish_LandUltimate'
+  callSubroutineWithArgs: s32'cmn_FinishCamera_Init', Val(2), Val(0), Val(0), Val(0)
+endState: 
+
+beginState: s32'Cam_Finish_AirUltimate'
+  callSubroutineWithArgs: s32'cmn_FinishCamera_Init', Val(9), Val(0), Val(0), Val(0)
+  setAngleY: 30000
+  setAngleX: -50000
+  setObjectSize: 5000
+endState: 
+
+beginState: s32'Cam_Finish_AirUltimate2'
+  callSubroutineWithArgs: s32'cmn_FinishCamera_Init', Val(9), Val(0), Val(0), Val(0)
+  setPosXBetweenObject: 2, 2
+  setPosYBetweenObject: 2, 2
+  setAngleY: 0
+  setAngleX: 20000
+endState: 
+
+beginState: s32'Cam_Finish_AirUltimate3'
+  callSubroutineWithArgs: s32'cmn_FinishCamera_Init', Val(5), Val(0), Val(0), Val(0)
+endState: 
+
+beginState: s32'DUMMY'
+  sprite: s32'e0ea04_01', 2
+endState: 
+

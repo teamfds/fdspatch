@@ -1,0 +1,5307 @@
+beginState: s32'ArcadeEvtZAT_A'
+endState: 
+
+beginState: s32'ArcadeEvtZAT_B'
+  upon: (IMMEDIATE)
+    lockScreenPosition: 1
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_111', 30, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_112', 30, 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_113', 30, 1
+  sprite: s32'null', 60
+  eventSetAction: s32'Event022', 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtZAT_C'
+  upon: (IMMEDIATE)
+    lockScreenPosition: 1
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_101', 30, 0
+  eventSetAction: s32'Event301', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_102', 30, 1
+  eventSetAction: s32'Event305', 1
+  sprite: s32'null', 60
+  eventSetAction: s32'Event022', 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtZAT_D'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+    eventSetAction: s32'EventFall', 2
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_201', 30, 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_202', 30, 0
+  sprite: s32'null', 1
+  eventSetAction: s32'CmnActStand', 0
+  eventSetAction: s32'CmnActStand', 1
+  eventSetAction: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtZAT_E'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'Event085', 1
+    eventSetAction: s32'EventStand', 2
+  endUpon: 
+  sprite: s32'null', 120
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_211', 30, 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_212', 30, 2
+  eventSetAction: s32'Event305', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_213', 30, 2
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtZAT_F'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+    eventSetAction: s32'EventFall', 2
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_401', 30, 2
+  eventSetAction: s32'Event001', 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_402', 30, 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_403', 30, 2
+  sprite: s32'null', 1
+  eventSetAction: s32'CmnActStand', 0
+  eventSetAction: s32'CmnActStand', 1
+  eventSetAction: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtZAT_G'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+    eventSetAction: s32'EventFall', 2
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L2_401', 30, 1
+  eventSetAction: s32'Event001', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L2_402', 30, 0
+  eventSetAction: s32'Event001', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L2_403', 30, 2
+  eventSetAction: s32'Event001', 2
+  sprite: s32'null', 1
+  eventSetAction: s32'CmnActStand', 0
+  eventSetAction: s32'CmnActStand', 1
+  eventSetAction: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtZAT_H'
+  upon: (IMMEDIATE)
+    lockScreenPosition: 1
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'Event085_2', 1
+    eventSetAction: s32'EventStand', 2
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_411', 30, 1
+  sprite: s32'null', 60
+  eventSetAction: s32'Event022', 1
+  sprite: s32'null', 30
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_412', 30, 0
+  eventSetAction: s32'Event640', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_413', 30, 2
+  eventSetAction: s32'Event305', 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_414', 30, 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtZAT_I'
+  upon: (IMMEDIATE)
+    lockScreenPosition: 1
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'Event085_2', 1
+    eventSetAction: s32'EventStand', 2
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L2_411', 30, 1
+  sprite: s32'null', 60
+  eventSetAction: s32'Event022', 1
+  sprite: s32'null', 30
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L2_412', 30, 0
+  eventSetAction: s32'Event640', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L2_413', 30, 2
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtZAT_J'
+endState: 
+
+beginState: s32'ArcadeEvtZAT_K'
+  upon: (IMMEDIATE)
+    lockScreenPosition: 1
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_421', 30, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_422', 30, 1
+  sprite: s32'null', 60
+  eventSetAction: s32'Event022', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L1_423', 30, 0
+  eventSetAction: s32'Event640', 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtZAT_L'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'Event085_2', 1
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L3_401', 30, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L3_402', 30, 0
+  eventSetAction: s32'Event305', 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtZAT_M'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L3_301', 30, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L3_302', 30, 0
+  eventSetAction: s32'Event301', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L3_303', 30, 1
+  eventSetAction: s32'Event001', 1
+  sprite: s32'null', 1
+  eventSetAction: s32'CmnActStand', 0
+  eventSetAction: s32'CmnActStand', 1
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtZAT_N'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L3_321', 30, 1
+  eventSetAction: s32'Event300', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L3_322', 30, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L3_323', 30, 0
+  eventSetAction: s32'Event001', 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtZAT_O'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L3_311', 30, 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L3_312', 30, 0
+  eventSetAction: s32'Event301', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L3_313', 30, 1
+  eventSetAction: s32'Event305', 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtZAT_P'
+endState: 
+
+beginState: s32'ArcadeEvtZAT_Q'
+  upon: (IMMEDIATE)
+    lockScreenPosition: 1
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'Event085_2', 1
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L3_501', 30, 1
+  sprite: s32'null', 60
+  eventSetAction: s32'Event022', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_ZAT_L3_502', 30, 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'RomanCancel_Mirage'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnRomanCancel_Mirage'
+    linkModelSelfTeam: s32'zat', s32''
+    if: Mem(IsLand)
+      beginMeshSet: s32'RomanCancel_Mirage'
+      addToMeshSet: s32'Body'
+      addToMeshSet: s32'Head_Low'
+      endMeshSet: 
+      swapMeshSet: s32'RomanCancel_Mirage'
+      setDefaultMeshSet: s32'RomanCancel_Mirage'
+    endIf: 
+    else: 
+      beginMeshSet: s32'RomanCancel_Mirage'
+      addToMeshSet: s32'Edy_Body'
+      addToMeshSet: s32'Edy_Head'
+      addToMeshSet: s32'Edy_wing'
+      endMeshSet: 
+      swapMeshSet: s32'RomanCancel_Mirage'
+      setDefaultMeshSet: s32'RomanCancel_Mirage'
+    endElse: 
+  endUpon: 
+  gotoLabelIfNot: s32'air', Mem(SentToObject0)
+  sprite: s32'zat350_01', 6
+  sprite: s32'zat350_02', 3
+  sprite: s32'zat350_03', 3
+  sprite: s32'zat350_04', 3
+  sprite: s32'zat350_05', 3
+  sprite: s32'zat350_06', 3
+  sprite: s32'zat350_07', 3
+  sprite: s32'zat350_08', 2
+  sprite: s32'zat350_09', 2
+  sprite: s32'zat350_11', 2
+  sprite: s32'zat350_12', 3
+  sprite: s32'zat350_13', 3
+  sprite: s32'zat350_14', 3
+  sprite: s32'zat350_12', 3
+  sprite: s32'zat350_15', 2
+  sprite: s32'zat350_16', 2
+  sprite: s32'zat350_17', 2
+  endLabel: 
+  exitState: 
+  beginLabel: s32'air'
+  sprite: s32'zat351_01', 6
+  sprite: s32'zat351_02', 3
+  sprite: s32'zat351_03', 3
+  sprite: s32'zat351_04', 3
+  sprite: s32'zat351_05', 3
+  sprite: s32'zat351_06', 3
+  sprite: s32'zat351_07', 3
+  sprite: s32'zat351_08', 2
+  sprite: s32'zat351_09', 2
+  sprite: s32'zat351_11', 2
+  sprite: s32'zat351_12', 3
+  sprite: s32'zat351_13', 3
+  sprite: s32'zat351_14', 3
+  sprite: s32'zat351_12', 3
+  sprite: s32'zat351_15', 2
+  sprite: s32'zat351_16', 2
+  sprite: s32'zat351_17', 2
+endState: 
+
+beginState: s32'UzuStart'
+  sprite: s32'null', 20
+  linkParticle: s32'zat_stand_start'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+endState: 
+
+beginState: s32'UzuDelete'
+  sprite: s32'null', 30
+  linkParticle: s32'zat_stand_end'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+endState: 
+
+beginState: s32'UzuDeleteNoLink'
+  sprite: s32'null', 30
+  linkParticle: s32'zat_stand_end'
+endState: 
+
+beginState: s32'UzuStand'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    linkObjectDirection: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+  endUpon: 
+  gotoLabelIf: s32'zat_stand_start', Mem(SentToObject0)
+  beginLabel: s32'loop'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_stand_loop'
+  endLabel: 
+  beginLabel: s32'zat_stand_start'
+  sprite: s32'null', 10
+  linkParticle: s32'zat_stand_start'
+  gotoLabel: s32'loop'
+endState: 
+
+beginState: s32'UzuCrouch'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_crouch_loop'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+  ignoreSlowdown: 1
+endState: 
+
+beginState: s32'UzuStand2Crouch'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_shadow_nakawari1'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+  ignoreSlowdown: 1
+endState: 
+
+beginState: s32'UzuLanding'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_stand_start'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+  ignoreSlowdown: 1
+endState: 
+
+beginState: s32'UzuNokezori'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_nokezori_stup'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+  ignoreSlowdown: 1
+endState: 
+
+beginState: s32'UzuFWalk'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_walk_loop'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+  ignoreSlowdown: 1
+endState: 
+
+beginState: s32'Uzu2B'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_walk_loop'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+endState: 
+
+beginState: s32'UzuBWalk'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_walkback_loop'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+endState: 
+
+beginState: s32'Uzu6DStart'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_6duzu_start'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+endState: 
+
+beginState: s32'Uzu6DEnd'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_6duzu_end'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+  ignoreSlowdown: 1
+endState: 
+
+beginState: s32'UzuFDashStop'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_dashstop'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+  ignoreSlowdown: 1
+  ignoreSuperFreeze: 1
+  ignoreFinishStop: 1
+endState: 
+
+beginState: s32'UzuJitabata'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_yoroke'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+  ignoreSlowdown: 1
+endState: 
+
+beginState: s32'UzuBreakTheLaw'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_btl_floor'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+  ignoreSlowdown: 1
+endState: 
+
+beginState: s32'UzuBreakTheLawEddie'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_btl_floor'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  linkObjectDirection: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+  ignoreSlowdown: 1
+endState: 
+
+beginState: s32'ShadowJump01'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        modifyVar: (ADD), Mem(ActReg0), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ActReg0), Val(20)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (FRAME_STEP)
+          ignoreSuperFreeze: 1
+          ignoreFinishStop: 1
+        endIf: 
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 1
+  sprite: s32'null', 60
+  linkParticle: s32'zat_jump01'
+endState: 
+
+beginState: s32'ShadowJump02'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    addPositionX: 0, -48951
+    addPositionY: 0, 0
+    addDepth: 0, 0
+    reverseDisplay: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        modifyVar: (ADD), Mem(ActReg0), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ActReg0), Val(20)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (FRAME_STEP)
+          ignoreSuperFreeze: 1
+          ignoreFinishStop: 1
+        endIf: 
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 2
+  sprite: s32'null', 60
+  linkParticle: s32'zat_jump02'
+endState: 
+
+beginState: s32'ShadowJump03'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    addPositionX: 0, 39992
+    addPositionY: 0, 0
+    addDepth: 0, 0
+    reverseDisplay: 1
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        modifyVar: (ADD), Mem(ActReg0), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ActReg0), Val(20)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (FRAME_STEP)
+          ignoreSuperFreeze: 1
+          ignoreFinishStop: 1
+        endIf: 
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 2
+  sprite: s32'null', 60
+  linkParticle: s32'zat_jump03'
+endState: 
+
+beginState: s32'Dashbrake'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    linkParticle: s32'zat_dashbrake'
+    linkObjPosition: 3
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+    ignoreSlowdown: 1
+    ignoreSuperFreeze: 1
+    ignoreFinishStop: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'ShadowBackdash'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    linkParticle: s32'zat_backdash'
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'ShadowDown'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_down_floor'
+    setObjectSize: 900
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'ShadowDown_sp'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_Ndown_sp'
+    setObjectSize: 1200
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'ShadowDamageRandom'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    ignoreSlowdown: 1
+    ifOperation: (PERCENT), Val(33), Val(100)
+      linkParticle: s32'zat_damage01'
+    endIf: 
+    else: 
+      ifOperation: (PERCENT), Val(50), Val(100)
+        linkParticle: s32'zat_damage02'
+      endIf: 
+      else: 
+        linkParticle: s32'zat_damage03'
+      endElse: 
+    endElse: 
+    flipDirection: 
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'ShadowDamage1'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_damage01'
+    flipDirection: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'ShadowDamage2'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_damage02'
+    flipDirection: 
+    ignoreSlowdown: 1
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(PosY), Val(50000)
+      deactivateCurrentObject: 
+    endIf: 
+    else: 
+      setPositionY: 0
+    endElse: 
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'ShadowDamage3'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_damage03'
+    flipDirection: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'SmallShadowDamageRandom'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    ignoreSlowdown: 1
+    ifOperation: (PERCENT), Val(33), Val(100)
+      linkParticle: s32'zat_damage01'
+    endIf: 
+    else: 
+      ifOperation: (PERCENT), Val(50), Val(100)
+        linkParticle: s32'zat_damage02'
+      endIf: 
+      else: 
+        linkParticle: s32'zat_damage03'
+      endElse: 
+    endElse: 
+    flipDirection: 
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'SmallShadowDamage1'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_damage01'
+    flipDirection: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'SmallShadowDamage2'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_damage02'
+    flipDirection: 
+    setObjectSize: 900
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'SmallShadowDamage3'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_damage03'
+    flipDirection: 
+    setObjectSize: 900
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'Shadowdown'
+  upon: (IMMEDIATE)
+    linkParticle: s32'zat_down'
+    flipDirection: 
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'ShadowCrouch_start'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_crouch'
+  endUpon: 
+  sprite: s32'null', 40
+endState: 
+
+beginState: s32'ShadowFurimuki'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_shadow_furimuki'
+  endUpon: 
+  sprite: s32'null', 40
+endState: 
+
+beginState: s32'zat_dash'
+  upon: (IMMEDIATE)
+    linkParticle: s32'zat_dash'
+    setDepth: -80000
+    addPositionX: 0, 100000
+    ignoreSlowdown: 1
+    ignoreSuperFreeze: 1
+    ignoreFinishStop: 1
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreFinishStop: 1
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 45
+  characterSfx: s32'SE_BTL_ZAT_17'
+endState: 
+
+beginState: s32'Rakka1'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnDamage: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_rakka01'
+    flipDirection: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 70
+endState: 
+
+beginState: s32'Rakka2'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnDamage: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_rakka02'
+    flipDirection: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 70
+endState: 
+
+beginState: s32'Rakka3'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnDamage: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_rakka03'
+    flipDirection: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 70
+endState: 
+
+beginState: s32'Standmorph'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_standmorph01'
+  endUpon: 
+  sprite: s32'null', 70
+endState: 
+
+beginState: s32'Reaction_crouch'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_reaction_crouch'
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    flipDirection: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 200
+endState: 
+
+beginState: s32'Keii1'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_keii1'
+    flipDirection: 
+    addPositionX: 0, 162973
+    addPositionY: 0, 0
+    addDepth: 0, -139972
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 300
+  characterSfx: s32'SE_BTL_ZAT_30'
+endState: 
+
+beginState: s32'Keii2'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_keii2'
+    flipDirection: 
+    addPositionX: 0, 38961
+    addPositionY: 0, 0
+    addDepth: 0, 0
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 192
+endState: 
+
+beginState: s32'Roundwin2'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_win02'
+    flipDirection: 
+    addPositionX: 0, -46985
+    addPositionY: 0, 0
+    addDepth: 0, -139972
+  endUpon: 
+  sprite: s32'null', 2147483647
+endState: 
+
+beginState: s32'Guard_start'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_guard_start'
+    ignoreSuperFreezeFromAlly: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'Guard_end'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_guard_end'
+    ignoreSuperFreezeFromAlly: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 40
+endState: 
+
+beginState: s32'Guard_Lv1'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_guard_lv1'
+    deactivateObjectByNameExceptSelf: s32'Guard_Lv1'
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'Guard_Lv2'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_guard_lv2'
+    deactivateObjectByNameExceptSelf: s32'Guard_Lv2'
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'Guard_Lv3'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_guard_lv3'
+    deactivateObjectByNameExceptSelf: s32'Guard_Lv3'
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'Guard_crouch_start'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_guard_crouch_start'
+    ignoreSuperFreezeFromAlly: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 40
+endState: 
+
+beginState: s32'Guard_crouch_end'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_guard_crouch_end'
+    ignoreSuperFreezeFromAlly: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 40
+endState: 
+
+beginState: s32'Guard_crouch_Lv1'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_guard_lv1_crouch'
+    deactivateObjectByNameExceptSelf: s32'Guard_crouch_Lv1'
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'Guard_crouch_Lv2'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_guard_lv2_crouch'
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'Guard_crouch_Lv3'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_guard_lv3_crouch'
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'CS500aura'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_amorphous_aura'
+    ignoreSuperFreezeFromAlly: 1
+    ignoreHideAllButSelf: 1
+  endUpon: 
+  sprite: s32'null', 300
+endState: 
+
+beginState: s32'530aura'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_amorphous_aura530'
+    ignoreSuperFreezeFromAlly: 1
+    ignoreHideAllButSelf: 1
+  endUpon: 
+  sprite: s32'null', 300
+endState: 
+
+beginState: s32'Sword3D'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    ignoreSuperFreezeFromAlly: 1
+    setAngle: 320000
+    createObject: s32'SwordAngle', (PLAYER)
+    stackObject: (STACK7), (PREVIOUS)
+    upon: (ON_DELETE)
+      storeValueFromObject: (PARENT), Mem(Angle), (SELF), Mem(Angle)
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 48
+  sprite: s32'null', 4
+  linkParticle: s32'zat_Executor_start'
+  upon: (FRAME_STEP)
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(ObjReg0), Val(140000)
+      ifOperation: (IS_LESSER_OR_EQUAL), Mem(ObjReg0), Val(320000)
+        ifOperation: (IS_GREATER), Mem(Angle), Mem(ObjReg0)
+          addAngle: -1000
+        endIf: 
+      endIf: 
+    endIf: 
+    ifOperation: (IS_GREATER), Mem(ObjReg0), Val(320000)
+      ifOperation: (IS_LESSER_OR_EQUAL), Mem(ObjReg0), Val(360000)
+        ifOperation: (IS_LESSER), Mem(Angle), Mem(ObjReg0)
+          ifOperation: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(320000)
+            addAngle: 1000
+          endIf: 
+        endIf: 
+      endIf: 
+    endIf: 
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(ObjReg0), Val(0)
+      ifOperation: (IS_LESSER), Mem(ObjReg0), Val(140000)
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(320000)
+          ifOperation: (IS_LESSER_OR_EQUAL), Mem(Angle), Val(360000)
+            addAngle: 1000
+          endIf: 
+        endIf: 
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(0)
+          ifOperation: (IS_LESSER), Mem(Angle), Mem(ObjReg0)
+            addAngle: 1000
+          endIf: 
+        endIf: 
+      endIf: 
+    endIf: 
+  endUpon: 
+  sprite: s32'null', 4
+  upon: (FRAME_STEP)
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(ObjReg0), Val(140000)
+      ifOperation: (IS_LESSER_OR_EQUAL), Mem(ObjReg0), Val(320000)
+        ifOperation: (IS_GREATER), Mem(Angle), Mem(ObjReg0)
+          addAngle: -2000
+        endIf: 
+      endIf: 
+    endIf: 
+    ifOperation: (IS_GREATER), Mem(ObjReg0), Val(320000)
+      ifOperation: (IS_LESSER_OR_EQUAL), Mem(ObjReg0), Val(360000)
+        ifOperation: (IS_LESSER), Mem(Angle), Mem(ObjReg0)
+          ifOperation: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(320000)
+            addAngle: 2000
+          endIf: 
+        endIf: 
+      endIf: 
+    endIf: 
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(ObjReg0), Val(0)
+      ifOperation: (IS_LESSER), Mem(ObjReg0), Val(140000)
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(320000)
+          ifOperation: (IS_LESSER_OR_EQUAL), Mem(Angle), Val(360000)
+            addAngle: 2000
+          endIf: 
+        endIf: 
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(0)
+          ifOperation: (IS_LESSER), Mem(Angle), Mem(ObjReg0)
+            addAngle: 2000
+          endIf: 
+        endIf: 
+      endIf: 
+    endIf: 
+  endUpon: 
+  sprite: s32'null', 4
+  upon: (FRAME_STEP)
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(ObjReg0), Val(140000)
+      ifOperation: (IS_LESSER_OR_EQUAL), Mem(ObjReg0), Val(320000)
+        ifOperation: (IS_GREATER), Mem(Angle), Mem(ObjReg0)
+          addAngle: -6000
+        endIf: 
+      endIf: 
+    endIf: 
+    ifOperation: (IS_GREATER), Mem(ObjReg0), Val(320000)
+      ifOperation: (IS_LESSER_OR_EQUAL), Mem(ObjReg0), Val(360000)
+        ifOperation: (IS_LESSER), Mem(Angle), Mem(ObjReg0)
+          ifOperation: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(320000)
+            addAngle: 6000
+          endIf: 
+        endIf: 
+      endIf: 
+    endIf: 
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(ObjReg0), Val(0)
+      ifOperation: (IS_LESSER), Mem(ObjReg0), Val(140000)
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(320000)
+          ifOperation: (IS_LESSER_OR_EQUAL), Mem(Angle), Val(360000)
+            addAngle: 6000
+          endIf: 
+        endIf: 
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(0)
+          ifOperation: (IS_LESSER), Mem(Angle), Mem(ObjReg0)
+            addAngle: 6000
+          endIf: 
+        endIf: 
+      endIf: 
+    endIf: 
+  endUpon: 
+  sprite: s32'null', 100
+endState: 
+
+beginState: s32'SwordAngle'
+  upon: (IMMEDIATE)
+    ignoreSuperFreezeFromAlly: 1
+    setLinkObjectDestroyOnStateChange: 3
+  endUpon: 
+  sprite: s32'null', 1
+  homing: (FIXED_ACCELERATION), (ENEMY), (CENTER), 0, 0, 0, 0, 0, 50000, 0, 0
+  sprite: s32'null', 100
+  homingClear: 
+  setAngleBySpeed: 0
+  haltMomentum: 1
+  storeValueFromObject: (PARENT), Mem(ObjReg0), (SELF), Mem(Angle)
+endState: 
+
+beginSubroutine: s32'SwordPointDown'
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(270000)
+    ifOperation: (IS_LESSER), Mem(Angle), Val(360000)
+      addAngle: -1500
+    endIf: 
+  endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(0)
+    ifOperation: (IS_LESSER_OR_EQUAL), Mem(Angle), Val(90000)
+      addAngle: -1500
+    endIf: 
+  endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(90000)
+    ifOperation: (IS_LESSER_OR_EQUAL), Mem(Angle), Val(270000)
+      addAngle: 1500
+    endIf: 
+  endIf: 
+endSubroutine: 
+
+beginState: s32'501aura'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_kakusei_aura'
+    ignoreSuperFreezeFromAlly: 1
+  endUpon: 
+  sprite: s32'null', 180
+endState: 
+
+beginState: s32'501aura_air'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_kakusei_aura_air'
+    ignoreSuperFreezeFromAlly: 1
+    addPositionX: 0, 17185
+    addPositionY: 0, -12640
+    addDepth: 0, -7119
+    setAngleY: 306000
+  endUpon: 
+  sprite: s32'null', 180
+endState: 
+
+beginState: s32'Swordmorphing_noedy'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_kakusei501_noedy'
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    addPositionX: 0, 10000
+  endUpon: 
+  sprite: s32'null', 120
+endState: 
+
+beginState: s32'Swordmorphing_edy'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_kakusei501_edy'
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    addPositionX: 0, 25000
+  endUpon: 
+  sprite: s32'null', 120
+endState: 
+
+beginState: s32'Swordmorphing_air'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_kakusei501_air'
+    reverseDisplay: 1
+    ignoreSuperFreezeFromAlly: 1
+    addPositionX: 0, 22000
+  endUpon: 
+  sprite: s32'null', 120
+endState: 
+
+beginState: s32'501_swordlanding'
+  upon: (IMMEDIATE)
+    linkObjectZ: 2
+    linkObjPosition: 2
+    linkParticle: s32'zat_kakusei_landing'
+    ignoreSuperFreezeFromAlly: 1
+    addPositionX: 0, 150000
+  endUpon: 
+  sprite: s32'null', 80
+endState: 
+
+beginState: s32'800cs_shadow01'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    ignoreHideAllButSelf: 1
+    linkParticle: s32'zat_800_floorshadow01'
+  endUpon: 
+  sprite: s32'null', 600
+endState: 
+
+beginState: s32'800cs_shadow02'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    ignoreHideAllButSelf: 1
+    linkParticle: s32'zat_800_floorshadow02'
+    addPositionX: 0, -686085
+    addPositionY: 0, -212302
+    addDepth: 0, 156148
+  endUpon: 
+  sprite: s32'null', 600
+endState: 
+
+beginState: s32'StandAtk_shadow_start01'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_standatk_shadow_end01'
+    linkObjPosition: 3
+    ignoreSlowdown: 1
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'StandAtk_shadow_start02'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_standatk_shadow_end02'
+    linkObjPosition: 3
+    ignoreSlowdown: 1
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 30
+endState: 
+
+beginState: s32'StandAtk_shadow_end01'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_standatk_shadow_start01'
+    linkObjPosition: 3
+    ignoreSlowdown: 1
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 30
+endState: 
+
+beginState: s32'StandAtk_shadow_end02'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_standatk_shadow_start02'
+    linkObjPosition: 3
+    ignoreSlowdown: 1
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 30
+endState: 
+
+beginState: s32'CrouchAtk_shadow_start01'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_crouchatk_shadow_end01'
+    linkObjPosition: 3
+    ignoreSlowdown: 1
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 30
+endState: 
+
+beginState: s32'CrouchAtk_shadow_end01'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_crouchatk_shadow_start01'
+    linkObjPosition: 3
+    ignoreSlowdown: 1
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 30
+endState: 
+
+beginState: s32'CrouchAtk_shadow_start02'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_crouchatk_shadow_end02'
+    linkObjPosition: 3
+    ignoreSlowdown: 1
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 70
+endState: 
+
+beginState: s32'CrouchAtk_shadow_end02'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_crouchatk_shadow_start02'
+    linkObjPosition: 3
+    ignoreSlowdown: 1
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 70
+endState: 
+
+beginState: s32'200Atk'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_200eff01'
+    linkObjPosition: 3
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      storeValue: Mem(ActReg0), Val(1)
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 3
+  sprite: s32'null', 60
+  ifNot: Mem(ActReg0)
+    characterSfx: s32'SE_BTL_ZAT_01'
+  endIf: 
+endState: 
+
+beginState: s32'201Atk'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    linkParticle: s32'zat_201eff01'
+    linkObjPosition: 3
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 60
+  createParticle: s32'zat_201eff02', (PLAYER)
+  characterSfx: s32'SE_BTL_ZAT_01'
+endState: 
+
+beginState: s32'202Atk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    linkObjectZ: 3
+    linkParticle: s32'zat_202Saw00'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    addPositionX: 0, 19018
+    addPositionY: 0, 127000
+    addDepth: 0, 33539
+    setAngleX: 49600
+    setAngleY: 85600
+    setAngle: 345600
+    setObjectWidth: 1130
+    setObjectHeight: 1130
+    setObjectDepth: 1130
+    upon: (WALL_BREAK)
+      clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+      linkObjectZ: 0
+      zLine: (FAR_DISTANCE), 5
+      ifOperation: (IS_EQUAL), Mem(StageSplitCount), Val(3)
+        ifNot: Mem(CmnCharaReg5)
+        endIf: 
+      endIf: 
+    endUpon: 
+    upon: (PLAYER_RECEIVE_ATTACK)
+      clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+      linkParticle: s32'zat_202SawEnd'
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 13
+  characterSfx: s32'SE_BTL_ZAT_05'
+  sprite: s32'null', 5
+  linkParticle: s32''
+  linkParticle: s32'zat_202Saw01'
+  sprite: s32'null', 5
+  linkParticle: s32''
+  linkParticle: s32'zat_202Saw02'
+  sprite: s32'null', 20
+  clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+  linkObjPosition: 0
+  linkParticle: s32''
+  linkParticle: s32'zat_202SawEnd'
+endState: 
+
+beginState: s32'202footshadow'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    linkObjectZ: 3
+    linkParticle: s32'zat_202footshadow'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    addPositionX: 0, -252000
+    addPositionY: 0, 0
+    addDepth: 0, -24995
+    setAngleX: 0
+    setAngleY: 214000
+    setAngle: 0
+    upon: (WALL_BREAK)
+      linkObjectZ: 0
+      zLine: (FAR_DISTANCE), 5
+      ifOperation: (IS_EQUAL), Mem(StageSplitCount), Val(3)
+        ifNot: Mem(CmnCharaReg5)
+          linkObjectAngle: 3
+        endIf: 
+      endIf: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'202AtkSpark'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    linkObjectZ: 3
+    linkParticle: s32'zat_202spark'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    addPositionX: 0, 19996
+    addPositionY: 0, 0
+    addDepth: 0, 199960
+    flipDirection: 
+    upon: (WALL_BREAK)
+      linkObjectZ: 0
+      zLine: (FAR_DISTANCE), 5
+      ifOperation: (IS_EQUAL), Mem(StageSplitCount), Val(3)
+        ifNot: Mem(CmnCharaReg5)
+          linkObjPosition: 3
+          linkObjectAngle: 3
+        endIf: 
+      endIf: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'203Atk'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_203eff01'
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'203dragon'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_dragon01'
+    addPositionX: 0, 180000
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    setLinkObjectDestroyOnStateChange: 3
+    setEventTrigger: (TIMER), 3
+    upon: (TIMER)
+      clearRegisteredUponCode: (TIMER)
+      setLinkObjectDestroyOnStateChange: 0
+    endUpon: 
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        modifyVar: (ADD), Mem(ActReg0), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ActReg0), Val(1)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (FRAME_STEP)
+          ignoreSuperFreeze: 1
+          ignoreFinishStop: 1
+        endIf: 
+      endIf: 
+    endUpon: 
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      linkParticle: s32'zat_dragon01_reverse2'
+    endUpon: 
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (SIGNAL0)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      upon: (AFTER_EXIT)
+        clearRegisteredUponCode: (AFTER_EXIT)
+        stopLinkObject: 0
+        linkObjPosition: 0
+        ignoreSuperFreeze: 1
+        ignoreSlowdown: 1
+      endUpon: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 5
+  sprite: s32'null', 80
+  characterSfx: s32'SE_BTL_ZAT_02'
+endState: 
+
+beginState: s32'205Atk01'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_205eff01'
+    flipDirection: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+  characterSfx: s32'SE_BTL_ZAT_02_1'
+endState: 
+
+beginState: s32'205Atk02'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_205eff02'
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'210Atk01'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    linkParticle: s32'zat_210eff01'
+    linkObjPosition: 3
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 120
+  characterSfx: s32'SE_BTL_ZAT_01_1'
+endState: 
+
+beginState: s32'211floor'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjectZ: 3
+    linkParticle: s32'zat_211floor'
+    linkObjPosition: 3
+    ignoreSlowdown: 1
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 80
+endState: 
+
+beginState: s32'211footshadow'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkObjectZ: 3
+    linkParticle: s32'zat_211liquid01'
+    flipDirection: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 3
+  characterSfx: s32'SE_BTL_ZAT_01_2'
+  sprite: s32'null', 3
+  linkParticle: s32'zat_211liquid02'
+  sprite: s32'null', 3
+  linkParticle: s32'zat_211liquid03'
+  characterSfx: s32'SE_BTL_ZAT_16'
+endState: 
+
+beginState: s32'213eff'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkObjectDirection: 3
+    linkParticle: s32'zat_213eff'
+    ignoreSlowdown: 1
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      storeValue: Mem(ActReg0), Val(1)
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 3
+  sprite: s32'null', 90
+  ifNot: Mem(ActReg0)
+    characterSfx: s32'SE_BTL_ZAT_02_1'
+  endIf: 
+endState: 
+
+beginState: s32'213atk'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    linkObjPosition: 3
+    flipDirection: 
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'zat_213liquid01'
+  sprite: s32'null', 2
+  linkParticle: s32'zat_213liquid02'
+  sprite: s32'null', 2
+  linkParticle: s32'zat_213liquid03'
+endState: 
+
+beginState: s32'213atk_sub'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    ignoreSuperFreeze: 1
+    linkObjPosition: 3
+    callSubroutine: s32'cmn_Effect_NoLink'
+  endUpon: 
+  sprite: s32'null', 50
+  linkParticle: s32'zat_213liquid04'
+endState: 
+
+beginState: s32'213eff_landing'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkObjectDirection: 3
+    linkParticle: s32'zat_213landing'
+    setObjectSize: 900
+    addPositionX: 0, -36020
+    addPositionY: 0, 0
+    addDepth: 0, 0
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 90
+endState: 
+
+beginState: s32'230Atk'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_230eff'
+    addPositionX: 0, 74985
+    addPositionY: 0, 0
+    addDepth: 0, 69986
+    setObjectSize: 920
+    linkObjPosition: 3
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      storeValue: Mem(ActReg0), Val(1)
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 3
+  createParticle: s32'zat_200eff02', (PLAYER)
+  sprite: s32'null', 60
+  ifNot: Mem(ActReg0)
+    characterSfx: s32'SE_BTL_ZAT_01'
+  endIf: 
+endState: 
+
+beginState: s32'231Atk'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkParticle: s32'zat_231eff'
+    linkObjPosition: 3
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      ignoreFinishStop: 1
+      upon: (NO_STOP_IDLING)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (PLAYER), Mem(PosXRaw)
+      endUpon: 
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 60
+  characterSfx: s32'SE_BTL_ZAT_01'
+endState: 
+
+beginState: s32'233shark'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_shark01'
+    addPositionX: 0, 15000
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    setLinkObjectDestroyOnStateChange: 3
+    setEventTrigger: (TIMER), 7
+    upon: (TIMER)
+      clearRegisteredUponCode: (TIMER)
+      setLinkObjectDestroyOnStateChange: 0
+    endUpon: 
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        modifyVar: (ADD), Mem(ActReg0), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ActReg0), Val(20)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (FRAME_STEP)
+          ignoreSuperFreeze: 1
+          ignoreFinishStop: 1
+        endIf: 
+      endIf: 
+    endUpon: 
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      linkParticle: s32'zat_shark01_reverse2'
+    endUpon: 
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (SIGNAL0)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      upon: (AFTER_EXIT)
+        clearRegisteredUponCode: (AFTER_EXIT)
+        stopLinkObject: 0
+        linkObjPosition: 0
+        ignoreSuperFreeze: 1
+        ignoreSlowdown: 1
+      endUpon: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 3
+  sprite: s32'null', 80
+  characterSfx: s32'SE_BTL_ZAT_02'
+endState: 
+
+beginState: s32'234floor'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_234eff01'
+    flipDirection: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 80
+endState: 
+
+beginState: s32'234kidou'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_234eff02'
+    flipDirection: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 80
+  characterSfx: s32'SE_BTL_ZAT_01'
+endState: 
+
+beginState: s32'204Cerberus'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    linkObjPosition: 3
+    setLinkObjectDestroyOnStateChange: 3
+    setEventTrigger: (TIMER), 8
+    upon: (TIMER)
+      clearRegisteredUponCode: (TIMER)
+      setLinkObjectDestroyOnStateChange: 0
+    endUpon: 
+    linkParticle: s32'zat_204_cerberus'
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    reverseDisplay: 1
+    setObjectSize: 750
+    ignoreSlowdown: 1
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        modifyVar: (ADD), Mem(ActReg0), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ActReg0), Val(20)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (FRAME_STEP)
+          ignoreSuperFreeze: 1
+          ignoreFinishStop: 1
+        endIf: 
+      endIf: 
+    endUpon: 
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      stopLinkObject: 0
+      linkObjPosition: 0
+      ignoreSuperFreeze: 1
+      ignoreSlowdown: 1
+      linkParticle: s32'zat_204_cerberus_reverse2'
+    endUpon: 
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (SIGNAL0)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      upon: (AFTER_EXIT)
+        clearRegisteredUponCode: (AFTER_EXIT)
+        stopLinkObject: 0
+        linkObjPosition: 0
+        ignoreSuperFreeze: 1
+        ignoreSlowdown: 1
+      endUpon: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 5
+  sprite: s32'null', 80
+  characterSfx: s32'SE_BTL_ZAT_02_1'
+  characterSfx: s32'SE_BTL_ZAT_03'
+endState: 
+
+beginState: s32'232Eff'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkObjPosition: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    setEventTrigger: (TIMER), 3
+    upon: (TIMER)
+      clearRegisteredUponCode: (TIMER)
+      setLinkObjectDestroyOnStateChange: 0
+    endUpon: 
+    linkParticle: s32'zat_232eff01'
+    zLine: (NEAR_DISTANCE), 5
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    reverseDisplay: 1
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (SIGNAL0)
+      createParticle: s32'zat_crouchatk_shadow_start02', (PLAYER)
+    endUpon: 
+    callSubroutine: s32'cmn_Effect_NoLink'
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        modifyVar: (ADD), Mem(ActReg0), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ActReg0), Val(20)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (FRAME_STEP)
+          ignoreSuperFreeze: 1
+          ignoreFinishStop: 1
+        endIf: 
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 8
+  sprite: s32'null', 80
+  linkParticle: s32'zat_232eff02'
+  characterSfx: s32'SE_BTL_ZAT_02'
+endState: 
+
+beginState: s32'ThrowEff'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_throw'
+    flipDirection: 
+  endUpon: 
+  sprite: s32'null', 70
+endState: 
+
+beginState: s32'ThrowEff_air'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_throw_air'
+    ignoreSuperFreezeFromAlly: 1
+    addPositionX: 0, 38856
+    addPositionY: 0, 80008
+    addDepth: 0, 9312
+    setAngleX: 0
+    setAngleY: 164000
+    setAngle: 0
+    flipDirection: 
+  endUpon: 
+  sprite: s32'null', 70
+endState: 
+
+beginState: s32'ThrowshadowEff'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_throw_eff'
+  endUpon: 
+  sprite: s32'null', 70
+endState: 
+
+beginState: s32'HomingEffect'
+  sprite: s32'null', 2147483647
+  linkParticle: s32'zat_homing_mesh'
+  linkObjectZ: 3
+  stopLinkObject: 3
+  setLinkObjectDestroyOnStateChange: 3
+  linkObjPosition: 3
+endState: 
+
+beginState: s32'Bursteff'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkObjPosition: 3
+    createParticle: s32'zat_burst', (PLAYER_LAND)
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'350eff'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkObjPosition: 3
+    createParticle: s32'zat_350eff', (PLAYER_LAND)
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'Eddie_shadowstretch'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_eddie_stretch'
+  endUpon: 
+  sprite: s32'null', 500
+endState: 
+
+beginState: s32'Eddie_return'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    linkObjPosition: 3
+    createParticle: s32'zat_403eff', (PLAYER_LAND)
+  endUpon: 
+  sprite: s32'null', 120
+endState: 
+
+beginState: s32'Eddie_move1'
+  upon: (IMMEDIATE)
+    linkObjectZ: 2
+    linkParticle: s32'zat_eddiemove01'
+  endUpon: 
+  sprite: s32'null', 100
+endState: 
+
+beginState: s32'EddieA_eff1'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 2
+    linkParticle: s32'zat_eddieA'
+    setObjectWidth: 1400
+    addPositionX: 0, 394949
+    addPositionY: 0, 107000
+    addDepth: 0, -52979
+    setAngleX: 0
+    setAngleY: 188000
+    setAngle: 16800
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(1), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'EddieA_eff2'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 2
+    linkParticle: s32'zat_eddieA'
+    addPositionX: 0, 372927
+    addPositionY: 0, 104000
+    addDepth: 0, 6030
+    setObjectWidth: 1400
+    setObjectHeight: 800
+    setObjectDepth: 700
+    setAngleX: 0
+    setAngleY: 188000
+    setAngle: 800
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(1), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 80
+endState: 
+
+beginState: s32'EddieD_eff'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    linkParticle: s32'zat_eddieD'
+  endUpon: 
+  sprite: s32'null', 120
+  characterSfx: s32'SE_BTL_ZAT_30'
+  characterSfx: s32'SE_BTL_ZAT_34'
+endState: 
+
+beginState: s32'407liquid'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    linkParticle: s32'zat_407splash'
+  endUpon: 
+  sprite: s32'null', 80
+endState: 
+
+beginState: s32'407floor'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    linkParticle: s32'zat_407floor'
+    addPositionX: 0, 49990
+    addPositionY: 0, 0
+    addDepth: 0, -139972
+  endUpon: 
+  sprite: s32'null', 80
+  characterSfx: s32'SE_BTL_ZAT_02'
+endState: 
+
+beginState: s32'Damned_wave01'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    linkObjPosition: 3
+    linkParticle: s32'zat_damned_wave01'
+    addPositionX: 0, 139972
+    addPositionY: 0, 0
+    addDepth: 0, 0
+    ignoreSlowdown: 1
+    callSubroutine: s32'cmn_Effect_NoLink'
+  endUpon: 
+  sprite: s32'null', 80
+endState: 
+
+beginState: s32'Damned_wave02'
+  upon: (IMMEDIATE)
+    linkObjectZ: 3
+    stopLinkObject: 3
+    linkObjPosition: 3
+    addPositionX: 0, 307768
+    addPositionY: 0, -2976
+    addDepth: 0, -36642
+    setObjectWidth: 1500
+    setObjectHeight: 1500
+    setObjectDepth: 1700
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 120
+  characterSfx: s32'SE_BTL_ZAT_13'
+endState: 
+
+beginState: s32'DamnedFangShark'
+  upon: (IMMEDIATE)
+    linkPawnWithAnimation: s32'Edyx_damned_fang', s32''
+    linkObjPosition: 22
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    ignoreSuperFreezeFromAlly: 1
+    setAngleX: 40000
+    setObjectSize: 1200
+    addPositionY: 0, 240000
+    zLine: (NEAR_DISTANCE), (LV_MAX)
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'damned406_00', 6
+  createObject: s32'Damned_wave01', (PLAYER)
+  sprite: s32'damned406_01', 6
+  sprite: s32'damned406_02', 6
+  sprite: s32'damned406_03', 6
+  sprite: s32'damned406_04', 6
+  sprite: s32'damned406_05', 6
+  sprite: s32'damned406_06', 6
+  sprite: s32'damned406_07', 6
+  sprite: s32'damned406_08', 6
+  sprite: s32'damned406_09', 6
+  sprite: s32'damned406_10', 6
+  sprite: s32'damned406_11', 6
+  sprite: s32'damned406_12', 6
+  sprite: s32'damned406_13', 6
+  sprite: s32'damned406_14', 6
+  sprite: s32'damned406_15', 6
+  sprite: s32'damned406_16', 6
+  sprite: s32'damned406_17', 6
+  sprite: s32'damned406_18', 6
+  sprite: s32'damned406_19', 6
+  sprite: s32'damned406_20', 6
+  sprite: s32'damned406_21', 6
+  sprite: s32'damned406_22', 6
+  sprite: s32'damned406_23', 6
+  sprite: s32'damned406_24', 6
+  setAngleX: 30000
+  sprite: s32'damned406_25', 6
+  setAngleX: 20000
+  sprite: s32'damned406_26', 6
+  setAngleX: 10000
+  sprite: s32'damned406_27', 6
+  setAngleX: 0
+  sprite: s32'damned406_28', 4
+  linkObjPosition: 0
+  zLine: (FAR_DISTANCE), 5
+  sprite: s32'damned406_29', 5
+  addPositionY: 0, -100000
+  sprite: s32'damned406_30', 6
+  addPositionY: 0, -50000
+  sprite: s32'damned406_31', 5
+  addPositionY: 0, -50000
+  sprite: s32'damned406_32', 5
+  sprite: s32'damned406_33', 4
+  sprite: s32'damned406_34', 4
+  sprite: s32'damned406_35', 3
+endState: 
+
+beginState: s32'Damnedstart00'
+  upon: (IMMEDIATE)
+    linkParticle: s32'zat_Danmed_Emergence00'
+    addPositionX: 0, 300000
+    addPositionY: 0, 0
+    addDepth: 0, 80000
+    setObjectSize: 700
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 100
+  characterSfx: s32'SE_BTL_ZAT_20'
+endState: 
+
+beginState: s32'Damnedstart01'
+  upon: (IMMEDIATE)
+    linkParticle: s32'zat_Danmed_Emergence01'
+    addPositionX: 0, 350000
+    addPositionY: 0, 400000
+    addDepth: 0, 20000
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 100
+endState: 
+
+beginState: s32'Damnedstartline'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 22
+    linkParticle: s32'zat_Damnedstart'
+    setObjectSize: 1200
+    addPositionY: 0, 240000
+    flipDirection: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 100
+endState: 
+
+beginState: s32'Damnedline'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_Damnedline'
+    setObjectSize: 1200
+    addPositionY: 0, 240000
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 300
+endState: 
+
+beginState: s32'Damnedin'
+  upon: (IMMEDIATE)
+    linkParticle: s32'zat_Damned_zatin'
+    setObjectSize: 1200
+    addPositionY: 0, 240000
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 50
+endState: 
+
+beginState: s32'DamnedEnd'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    flipDirection: 
+    setObjectSize: 1200
+    addPositionY: 0, 240000
+    setAngleX: 348400
+    setAngleY: 20000
+    setAngle: 9200
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 15
+  linkParticle: s32'zat_DamnedEnd'
+  sprite: s32'null', 60
+  setLinkObjectDestroyOnStateChange: 0
+endState: 
+
+beginState: s32'Damnedsplash'
+  upon: (IMMEDIATE)
+    flipDirection: 
+    setPositionY: -10000
+    zLine: (NEAR_DISTANCE), (LV_MAX)
+    setDepth: 20000
+    setObjectSize: 2200
+    setLinkObjectDestroyOnStateChange: 3
+    upon: (SIGNAL0)
+      setLinkObjectDestroyOnStateChange: 0
+    endUpon: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 15
+  sprite: s32'null', 55
+  linkParticle: s32'zat_Damnedsplash'
+endState: 
+
+beginSubroutine: s32'EddieDeleteYoyaku_Move'
+  upon: (NO_STOP_IDLING)
+    if: Mem(PlayerVal6)
+      ifNot: Mem(ActReg6)
+        storeValueFromObject: (PLAYER), Mem(ObjReg0), (SELF), Val(0)
+        storeValue: Mem(PlayerVal0), Val(0)
+        createObject: s32'EddieReturn', (PLAYER)
+        deactivateObjectById: (SELF)
+        storeValue: Mem(ActReg6), Val(1)
+        storeValue: Mem(PlayerVal3), Val(0)
+        sendSignal: (STACK0), (SIGNAL0)
+      endIf: 
+    endIf: 
+  endUpon: 
+endSubroutine: 
+
+beginSubroutine: s32'EddieDeleteYoyaku_Atk'
+  upon: (BEFORE_EXIT)
+    if: Mem(PlayerVal6)
+      ifNot: Mem(ActReg6)
+        storeValueFromObject: (PLAYER), Mem(ObjReg0), (SELF), Val(0)
+        storeValue: Mem(PlayerVal0), Val(0)
+        createObject: s32'EddieReturn', (PLAYER)
+        deactivateObjectById: (SELF)
+        storeValue: Mem(ActReg6), Val(1)
+        storeValue: Mem(PlayerVal3), Val(0)
+        sendSignal: (STACK0), (SIGNAL0)
+      endIf: 
+    endIf: 
+  endUpon: 
+endSubroutine: 
+
+beginSubroutine: s32'EddieSukkarakanCheck'
+  ifOperation: (IS_LESSER_OR_EQUAL), Mem(ExGauge0), Val(0)
+    storeValue: Mem(PlayerVal1), Val(1)
+  endIf: 
+  else: 
+    getTrainingItemVal: s32'TRP_ZAT', 2, 157
+    ifOperation: (IS_EQUAL), Mem(TrainingValue), Val(2)
+      modifyVar: (ADD), Mem(ExGauge0), Val(999999)
+    endIf: 
+  endElse: 
+endSubroutine: 
+
+beginSubroutine: s32'EddieActionReqNeutral'
+  jumpToState: s32'Eddie'
+endSubroutine: 
+
+beginSubroutine: s32'EddieInitialize'
+  zLine: (FAR_DISTANCE), 5
+  checkScreenCollision: 1
+  haltMomentum: 1
+  invulnForce: 0
+  storeValue: Mem(ActReg0), Val(5)
+  storeValue: Mem(PlayerVal3), Val(1)
+  storeValueFromObject: (PLAYER), Mem(ObjReg0), (SELF), Val(0)
+  storeValue: Mem(PlayerVal0), Val(1)
+  ignoreSlowdown: 1
+  spriteSlowParam: 0, 0, 0, 0, 0, 0
+  spriteSlowParamFinishStop: 0, 0, 0, 0, 0, 0
+  enableSuperArmor: 0
+  multiObjectAttackStop: 0
+  setNoCollision: 0
+  attackIgnoreCaution: 1
+  initializeDestroy: 
+  numberOfHits: 1
+  destroyOnDamageCollision: 1
+  destroyOnPlayerGuard: 1
+  destroyAiuchi: 1
+  upon: (ON_DESTROY)
+    storeValue: Mem(PlayerVal0), Val(0)
+    ifNot: Mem(PlayerVal1)
+      createObject: s32'EddieReturn', (PLAYER)
+    endIf: 
+    else: 
+      createObject: s32'EddieDelete', (PLAYER)
+    endElse: 
+    deactivateObjectById: (SELF)
+    storeValue: Mem(ActReg6), Val(1)
+    storeValue: Mem(PlayerVal3), Val(0)
+    sendSignal: (STACK0), (SIGNAL0)
+  endUpon: 
+  upon: (RECEIVE_ATTACK)
+    storeValue: Mem(ExGauge0), Val(0)
+    storeValue: Mem(PlayerVal1), Val(1)
+    sendSignal: (STACK0), (SIGNAL0)
+  endUpon: 
+  upon: (SIGNAL1)
+    ifNot: Mem(ActReg6)
+      storeValueFromObject: (PLAYER), Mem(ObjReg0), (SELF), Val(0)
+      storeValue: Mem(PlayerVal0), Val(0)
+      createObject: s32'EddieReturn', (PLAYER)
+      deactivateObjectById: (SELF)
+      storeValue: Mem(ActReg6), Val(1)
+      storeValue: Mem(ExGauge0), Val(0)
+      storeValue: Mem(PlayerVal1), Val(1)
+      storeValue: Mem(PlayerVal3), Val(0)
+      sendSignal: (STACK0), (SIGNAL0)
+    endIf: 
+  endUpon: 
+  upon: (SIGNAL2)
+    storeValue: Mem(PlayerVal0), Val(0)
+    storeValue: Mem(ExGauge0), Val(0)
+    storeValue: Mem(PlayerVal1), Val(1)
+    createObject: s32'EddieDelete', (PLAYER)
+    deactivateObjectById: (SELF)
+    storeValue: Mem(ActReg6), Val(1)
+    storeValue: Mem(PlayerVal3), Val(0)
+    sendSignal: (STACK0), (SIGNAL0)
+  endUpon: 
+  upon: (SIGNAL4)
+    hitStopTime: 
+    ignoreSuperFreeze: 1
+    jumpToState: s32'SunVoidShotObj'
+    clearRegisteredUponCode: (TOUCH_GROUND)
+  endUpon: 
+  upon: (SIGNAL5)
+    jumpToState: s32'EddieMove'
+  endUpon: 
+  upon: (SIGNAL6)
+    ifOperation: (IS_EQUAL), Mem(PlayerVal3), Val(3)
+      faceOpponent: 
+      storeValue: Mem(PlayerVal5), Val(10)
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(PlayerVal3), Val(2)
+      faceOpponent: 
+      storeValue: Mem(PlayerVal5), Val(1)
+      jumpToState: s32'EddieCommand_StayA'
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(PlayerVal3), Val(0)
+      faceOpponent: 
+      storeValue: Mem(PlayerVal5), Val(1)
+      jumpToState: s32'EddieCommand_StayA'
+    endIf: 
+  endUpon: 
+  upon: (SIGNAL7)
+    ifOperation: (IS_EQUAL), Mem(PlayerVal3), Val(3)
+      faceOpponent: 
+      storeValue: Mem(PlayerVal5), Val(20)
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(PlayerVal3), Val(2)
+      faceOpponent: 
+      storeValue: Mem(PlayerVal5), Val(2)
+      jumpToState: s32'EddieCommand_StayB'
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(PlayerVal3), Val(0)
+      faceOpponent: 
+      storeValue: Mem(PlayerVal5), Val(2)
+      jumpToState: s32'EddieCommand_StayB'
+    endIf: 
+  endUpon: 
+  upon: (SIGNAL8)
+    ifOperation: (IS_EQUAL), Mem(PlayerVal3), Val(3)
+      storeValue: Mem(PlayerVal5), Val(30)
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(PlayerVal3), Val(2)
+      faceOpponent: 
+      storeValue: Mem(PlayerVal5), Val(3)
+      jumpToState: s32'EddieCommand_StayC'
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(PlayerVal3), Val(0)
+      faceOpponent: 
+      storeValue: Mem(PlayerVal5), Val(3)
+      jumpToState: s32'EddieCommand_StayC'
+    endIf: 
+  endUpon: 
+  upon: (SIGNAL9)
+    ifOperation: (IS_EQUAL), Mem(PlayerVal3), Val(3)
+      faceOpponent: 
+      storeValue: Mem(PlayerVal5), Val(40)
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(PlayerVal3), Val(2)
+      faceOpponent: 
+      storeValue: Mem(PlayerVal5), Val(4)
+      jumpToState: s32'EddieCommand_StayD'
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(PlayerVal3), Val(0)
+      faceOpponent: 
+      storeValue: Mem(PlayerVal5), Val(4)
+      jumpToState: s32'EddieCommand_StayD'
+    endIf: 
+  endUpon: 
+  upon: (BEFORE_EXIT)
+    storeValue: Mem(PlayerVal0), Val(0)
+  endUpon: 
+  linkParticle: s32''
+  collisionDisplay: 0
+  setLightColor: 0
+  linkPawnWithAnimation: s32'edyz_body', s32''
+  changeMaterialSet: s32'ChangeColor'
+  isObjectActive: (STACK0)
+  ifNot: Mem(Tmp)
+    createObject: s32'EddieShadow', (PLAYER)
+    stackObject: (STACK0), (PREVIOUS)
+  endIf: 
+  upon: (IDLING)
+    storeValue: Mem(ActReg1), Val(0)
+    ifNot: Mem(PlayerVal3)
+      ifOperation: (IS_LESSER), Mem(EnemyFrontDistance), Val(16100)
+        faceOpponent: 
+      endIf: 
+      ifNot: Mem(ActReg1)
+        ifNot: Mem(ExGauge0)
+          storeValue: Mem(ActReg1), Val(1)
+          sendSignal: (SELF), (SIGNAL1)
+        endIf: 
+      endIf: 
+      storeValue: Mem(PgActReg0), Val(0)
+      ifNot: Mem(PlayerVal1)
+        ifNot: Mem(ActReg1)
+          checkInputExDirection: 121, 2, 32
+          if: Mem(Tmp)
+            storeValue: Mem(PgActReg0), Val(8)
+          endIf: 
+        endIf: 
+        ifNot: Mem(ActReg1)
+          checkInputExDirection: 95, 2, 32
+          if: Mem(Tmp)
+            storeValue: Mem(PgActReg0), Val(7)
+          endIf: 
+        endIf: 
+        ifNot: Mem(ActReg1)
+          checkInput: 33
+          if: Mem(Tmp)
+            storeValue: Mem(PgActReg0), Val(5)
+          endIf: 
+        endIf: 
+        ifNot: Mem(ActReg1)
+          checkInput: 24
+          if: Mem(Tmp)
+            storeValue: Mem(PgActReg0), Val(4)
+          endIf: 
+        endIf: 
+        ifNot: Mem(ActReg1)
+          checkInput: 15
+          if: Mem(Tmp)
+            storeValue: Mem(PgActReg0), Val(3)
+          endIf: 
+        endIf: 
+        ifNot: Mem(ActReg1)
+          checkInput: 6
+          if: Mem(Tmp)
+            storeValue: Mem(PgActReg0), Val(2)
+          endIf: 
+        endIf: 
+        callPrivateFunction: s32'zat_EddieCPU', 0, 0, 0, 0, 0, 0, 0, 0
+        ifNot: Mem(ActReg1)
+          ifOperation: (IS_EQUAL), Mem(PgActReg0), Val(2)
+            storeValue: Mem(ActReg1), Val(1)
+            jumpToState: s32'EddieA'
+          endIf: 
+        endIf: 
+        ifNot: Mem(ActReg1)
+          ifOperation: (IS_EQUAL), Mem(PgActReg0), Val(3)
+            storeValue: Mem(ActReg1), Val(1)
+            jumpToState: s32'EddieB'
+          endIf: 
+        endIf: 
+        ifNot: Mem(ActReg1)
+          ifOperation: (IS_EQUAL), Mem(PgActReg0), Val(4)
+            storeValue: Mem(ActReg1), Val(1)
+            jumpToState: s32'EddieC'
+          endIf: 
+        endIf: 
+        ifNot: Mem(ActReg1)
+          ifOperation: (IS_EQUAL), Mem(PgActReg0), Val(5)
+            storeValue: Mem(ActReg1), Val(1)
+            jumpToState: s32'EddieD'
+          endIf: 
+        endIf: 
+        ifNot: Mem(ActReg1)
+          ifOperation: (IS_EQUAL), Mem(PgActReg0), Val(7)
+            storeValue: Mem(ActReg1), Val(1)
+            ifOperation: (IS_NOT_EQUAL), Mem(ActReg0), Val(4)
+              jumpToState: s32'Eddie4'
+            endIf: 
+          endIf: 
+        endIf: 
+        ifNot: Mem(ActReg1)
+          ifOperation: (IS_EQUAL), Mem(PgActReg0), Val(8)
+            storeValue: Mem(ActReg1), Val(1)
+            ifOperation: (IS_NOT_EQUAL), Mem(ActReg0), Val(6)
+              jumpToState: s32'Eddie6'
+            endIf: 
+          endIf: 
+        endIf: 
+        ifNot: Mem(ActReg1)
+          ifOperation: (IS_NOT_EQUAL), Mem(ActReg0), Val(5)
+            storeValue: Mem(ActReg1), Val(1)
+            jumpToState: s32'Eddie'
+          endIf: 
+        endIf: 
+      endIf: 
+    endIf: 
+    else: 
+      ifNot: Mem(ActReg3)
+        if: Mem(ActReg4)
+          ifNot: Mem(ActReg1)
+            checkInput: 33
+            if: Mem(Tmp)
+              storeValue: Mem(PgActReg0), Val(5)
+            endIf: 
+          endIf: 
+          ifOperation: (IS_EQUAL), Mem(PgActReg0), Val(5)
+            storeValue: Mem(ActReg1), Val(1)
+            sendSignal: (SELF), (SIGNAL0)
+          endIf: 
+          checkInput: (INPUT_ANY_FORWARD)
+          if: Mem(Tmp)
+            addNamerakaMoveX: 2000
+          endIf: 
+          checkInput: (INPUT_ANY_BACK)
+          if: Mem(Tmp)
+            addNamerakaMoveX: -2000
+          endIf: 
+          upon: (BEFORE_EXIT)
+            storeValue: Mem(PlayerVal0), Val(0)
+            setNoCollision: 0
+          endUpon: 
+        endIf: 
+      endIf: 
+    endElse: 
+    ifNot: Mem(ExGauge0)
+      storeValue: Mem(PlayerVal1), Val(1)
+      storeValue: Mem(PlayerVal5), Val(0)
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(ActReg0), Val(103)
+      ifOperation: (IS_EQUAL), Mem(TrainingValue), Val(2)
+        modifyVar: (ADD), Mem(ExGauge0), Val(999999)
+      endIf: 
+      else: 
+        ifNot: Mem(PlayerVal2)
+          checkLastStateName: s32'EddieCommand_StayD'
+          ifNot: Mem(Tmp)
+            modifyVar: (ADD), Mem(ExGauge0), Val(-20)
+          endIf: 
+          else: 
+            modifyVar: (ADD), Mem(ExGauge0), Val(-15)
+          endElse: 
+        endIf: 
+      endElse: 
+    endIf: 
+  endUpon: 
+  upon: (WALL_BREAK)
+    clearRegisteredUponCode: (WALL_BREAK)
+    linkObjPosition: 22
+    linkObjectAngle: 3
+    landingHeight: -268435455
+    upon: (AFTER_FRAME_STEP_EX)
+      if: Mem(CmnCharaReg3)
+        linkObjPosition: 0
+        linkObjectAngle: 0
+        storeValue: Mem(PlayerVal6), Val(1)
+        callSubroutine: s32'EddieDeleteYoyaku_Move'
+        ignoreSuperFreeze: 1
+        ignoreFinishStop: 1
+      endIf: 
+      if: Mem(CmnCharaReg5)
+        linkObjPosition: 0
+        linkObjectAngle: 0
+        storeValue: Mem(PlayerVal6), Val(1)
+        callSubroutine: s32'EddieDeleteYoyaku_Move'
+        ignoreSuperFreeze: 1
+        ignoreFinishStop: 1
+      endIf: 
+    endUpon: 
+  endUpon: 
+  if: Mem(PosY)
+    linkParticle: s32'zat_under_edy'
+    checkCurrentStateName: (SELF), s32'EddieC'
+    if: Mem(Tmp)
+      linkParticle: s32''
+    endIf: 
+    checkCurrentStateName: (SELF), s32'SunVoidObj'
+    if: Mem(Tmp)
+      linkParticle: s32''
+    endIf: 
+    checkCurrentStateName: (SELF), s32'AirSunVoidObj'
+    if: Mem(Tmp)
+      linkParticle: s32''
+    endIf: 
+    checkCurrentStateName: (SELF), s32'SunVoidShotObj'
+    if: Mem(Tmp)
+      linkParticle: s32''
+    endIf: 
+  endIf: 
+endSubroutine: 
+
+beginSubroutine: s32'EddieDefault'
+  displayMesh: s32'Edyz_body', 1
+  displayMesh: s32'edyw_bake', 1
+  displayMesh: s32'EDYX_ameba', 1
+  displayMesh: s32'Edyz_snakehand', 0
+  displayMesh: s32'Edyz_edyarms', 0
+  displayMesh: s32'edyz_handblade', 0
+  displayMesh: s32'EDYX_ameba_add', 0
+  displayMesh: s32'edyw_edyeye', 0
+  displayMesh: s32'Edyz_frog', 0
+endSubroutine: 
+
+beginState: s32'EddieDelete'
+  upon: (IMMEDIATE)
+    linkPawnWithAnimation: s32'edyz_body', s32''
+    callSubroutine: s32'EddieDefault'
+    if: Mem(IsLand)
+      displayMesh: s32'EDYX_ameba_add', 1
+      displayMesh: s32'Edyz_edyarms', 1
+    endIf: 
+    else: 
+      displayMesh: s32'EDYX_ameba_add', 1
+    endElse: 
+    spriteSlowParam: 0, 0, 0, 0, 0, 0
+    spriteSlowParamFinishStop: 0, 0, 0, 0, 0, 0
+    zLine: (FAR_DISTANCE), 5
+    deactivateObjectByName: s32'EddieReturn'
+    ignoreSuperFreeze: 1
+    ignoreFinishStop: 1
+    deactivateObjectByNameExceptSelf: s32'EddieDelete'
+  endUpon: 
+  gotoLabelIf: s32'air', Mem(IsAir)
+  sprite: s32'edy060_00', 5
+  physicsXImpulse: 0, -5000
+  sprite: s32'edy060_01', 5
+  velocityXPercentEachFrame: 95
+  characterSfx: s32'SE_BTL_ZAT_38'
+  voiceLine: s16'vxxx901'
+  sprite: s32'edy060_02', 5
+  sprite: s32'edy060_03', 5
+  sprite: s32'edy060_04', 5
+  createParticle: s32'zat_eddiedelete_floor', (PLAYER)
+  characterSfx: s32'SE_BTL_ZAT_12'
+  sprite: s32'edy060_05', 5
+  sprite: s32'edy060_06', 5
+  sprite: s32'edy060_07', 5
+  sprite: s32'edy060_08', 5
+  sprite: s32'edy060_09', 5
+  sprite: s32'edy060_10', 30
+  sprite: s32'edy060_10', 90
+  physicsYImpulse: 0, -500
+  endLabel: 
+  exitState: 
+  beginLabel: s32'air'
+  sprite: s32'edy061_00', 5
+  sprite: s32'edy061_01', 5
+  characterSfx: s32'SE_BTL_ZAT_38'
+  sprite: s32'edy061_02', 5
+  displayMesh: s32'edyw_edyeye', 1
+  displayMesh: s32'Edyz_body', 0
+  sprite: s32'edy061_03', 5
+  sprite: s32'edy061_04', 5
+  displayMesh: s32'edyw_edyeye', 0
+  sprite: s32'edy061_05', 5
+  sprite: s32'edy061_07', 5
+endState: 
+
+beginState: s32'EddieReturn'
+  upon: (IMMEDIATE)
+    linkPawnWithAnimation: s32'edyz_body', s32''
+    callSubroutine: s32'EddieDefault'
+    if: Mem(IsLand)
+      displayMesh: s32'edyw_bake', 0
+      displayMesh: s32'EDYX_ameba_add', 1
+    endIf: 
+    else: 
+      displayMesh: s32'EDYX_ameba_add', 1
+    endElse: 
+    spriteSlowParam: 0, 0, 0, 0, 0, 0
+    spriteSlowParamFinishStop: 0, 0, 0, 0, 0, 0
+    ignoreSuperFreeze: 1
+    ignoreFinishStop: 1
+  endUpon: 
+  gotoLabelIf: s32'air', Mem(IsAir)
+  sprite: s32'edy450_04', 4
+  characterSfx: s32'SE_BTL_ZAT_12'
+  createParticle: s32'zat_shadow_del_floor', (PLAYER)
+  sprite: s32'edy450_03', 3
+  sprite: s32'edy450_02', 3
+  sprite: s32'edy450_01', 5
+  endLabel: 
+  exitState: 
+  beginLabel: s32'air'
+  sprite: s32'null', 3
+  displayModel: 0
+  addPositionY: 0, 150000
+  createArgScale: 0, 1200
+  createParticleWithArg2: s32'zat_shadow_del', (PLAYER)
+  sprite: s32'null', 9
+  createArgScale: 0, 800
+  createParticleWithArg2: s32'zat_shadow_del', (PLAYER)
+  sprite: s32'null', 3
+  endLabel: 
+  characterSfx: s32'SE_BTL_ZAT_38'
+  endLabel: 
+  exitState: 
+  beginLabel: s32'wsb'
+  sprite: s32'null', 3
+  displayModel: 0
+  createArgScale: 0, 1500
+  createParticleWithArg2: s32'zat_shadow_del', (PLAYER)
+  sprite: s32'null', 3
+  createArgScale: 0, 1400
+  createParticleWithArg2: s32'zat_shadow_del', (PLAYER)
+  sprite: s32'null', 3
+  createArgScale: 0, 1300
+  createParticleWithArg2: s32'zat_shadow_del', (PLAYER)
+  sprite: s32'null', 3
+  createArgScale: 0, 1200
+  createParticleWithArg2: s32'zat_shadow_del', (PLAYER)
+  sprite: s32'null', 3
+  createArgScale: 0, 1100
+  createParticleWithArg2: s32'zat_shadow_del', (PLAYER)
+  sprite: s32'edy061_01', 3
+  createParticleWithArg2: s32'zat_shadow_del', (PLAYER)
+  characterSfx: s32'SE_BTL_ZAT_38'
+endState: 
+
+beginState: s32'EddieShadow'
+  upon: (IMMEDIATE)
+    deactivateObjectByNameExceptSelf: s32'EddieShadow'
+    linkParticle: s32'zat_eddie_stretch'
+    upon: (NO_STOP_IDLING)
+      ifNot: Mem(CmnCharaReg3)
+        storeValueFromObject: (SELF), Mem(Dir), (PLAYER), Mem(Dir)
+        setPosXBetweenObject: 3, 2
+        calcDistanceEx: (DISTANCE_X), (PLAYER), (PLAYER_LAND), (PARENT), (PLAYER_LAND)
+        storeValue: Mem(ActReg0), Mem(Tmp)
+        setObjectWidth: 1000
+        setObjectDepth: 1500
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(ActReg0), Val(250000)
+          modifyVar: (SUB), Mem(ActReg0), Val(250000)
+          modifyVar: (DIV), Mem(ActReg0), Val(300)
+          beginLabel: s32'loop'
+          addObjectWidth: 100
+          addObjectDepth: -25
+          modifyVar: (ADD), Mem(ActReg0), Val(-100)
+          gotoForLoop: s32'loop', 12, 2, 45, 0, 0
+        endIf: 
+        if: Mem(IsAir)
+          deactivateObjectById: (SELF)
+        endIf: 
+      endIf: 
+      else: 
+        ignoreSuperFreeze: 1
+        ignoreFinishStop: 1
+        gotoLabelRequests: s32'end'
+        clearRegisteredUponCode: (SIGNAL0)
+        storeValue: Mem(ActReg1), Val(1)
+      endElse: 
+      ifOperation: (IS_GREATER), Mem(ActionTime), Val(1)
+        isObjectActive: (PARENT)
+        ifNot: Mem(Tmp)
+          clearRegisteredUponCode: (SIGNAL0)
+          clearRegisteredUponCode: (NO_STOP_IDLING)
+          gotoLabelRequests: s32'end'
+        endIf: 
+      endIf: 
+    endUpon: 
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (SIGNAL0)
+      clearRegisteredUponCode: (NO_STOP_IDLING)
+      gotoLabelRequests: s32'end'
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 2147483647
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 30
+  upon: (NO_STOP_IDLING)
+    objectDepthPercent: 80
+    if: Mem(ActReg1)
+      objectWidthPercent: 80
+    endIf: 
+  endUpon: 
+endState: 
+
+beginState: s32'Eddie'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    storeValue: Mem(ActReg0), Val(5)
+    storeValue: Mem(PlayerVal3), Val(0)
+    callSubroutine: s32'EddieDeleteYoyaku_Move'
+    linkPawnWithAnimation: s32'Edyz_body', s32''
+    haltMomentum: 1
+    callSubroutine: s32'EddieDefault'
+  endUpon: 
+  checkLastStateName: s32'Eddie6'
+  gotoLabelIf: s32'Eddie6', Mem(Tmp)
+  checkLastStateName: s32'Eddie4'
+  gotoLabelIf: s32'Eddie4', Mem(Tmp)
+  checkLastStateName: s32'EddieMove'
+  gotoLabelIf: s32'EddieMove', Mem(Tmp)
+  beginLabel: s32'loop'
+  sprite: s32'edy000_00', 4
+  sprite: s32'edy000_01', 4
+  sprite: s32'edy000_02', 4
+  sprite: s32'edy000_03', 4
+  sprite: s32'edy000_04', 4
+  sprite: s32'edy000_05', 4
+  sprite: s32'edy000_06', 4
+  sprite: s32'edy000_07', 4
+  sprite: s32'edy000_08', 4
+  sprite: s32'edy000_09', 4
+  sprite: s32'edy000_10', 4
+  sprite: s32'edy000_11', 4
+  sprite: s32'edy000_12', 4
+  sprite: s32'edy000_13', 4
+  sprite: s32'edy000_14', 4
+  sprite: s32'edy000_15', 4
+  sprite: s32'edy000_16', 4
+  sprite: s32'edy000_17', 4
+  sprite: s32'edy000_18', 4
+  sprite: s32'edy000_19', 4
+  sprite: s32'edy000_20', 4
+  sprite: s32'edy000_21', 4
+  sprite: s32'edy000_22', 4
+  endLabel: 
+  gotoLabel: s32'loop'
+  beginLabel: s32'Eddie6'
+  sprite: s32'edy030_02', 4
+  displayMesh: s32'edyw_bake', 0
+  displayMesh: s32'EDYX_ameba_add', 1
+  sprite: s32'edy030_01', 4
+  sprite: s32'edy030_00', 4
+  endLabel: 
+  displayMesh: s32'edyw_bake', 1
+  displayMesh: s32'EDYX_ameba_add', 0
+  gotoLabel: s32'loop'
+  beginLabel: s32'Eddie4'
+  sprite: s32'edy031_02', 4
+  displayMesh: s32'edyw_bake', 0
+  displayMesh: s32'EDYX_ameba_add', 1
+  sprite: s32'edy031_01', 4
+  sprite: s32'edy031_00', 4
+  endLabel: 
+  displayMesh: s32'edyw_bake', 1
+  displayMesh: s32'EDYX_ameba_add', 0
+  gotoLabel: s32'loop'
+  beginLabel: s32'EddieMove'
+  sprite: s32'edy450_02', 4
+  zLine: (FAR_DISTANCE), 5
+  displayMesh: s32'edyw_bake', 0
+  faceOpponent: 
+  sprite: s32'edy450_03', 4
+  sprite: s32'edy450_04', 4
+  gotoLabel: s32'loop'
+endState: 
+
+beginState: s32'Eddie6'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    storeValue: Mem(ActReg0), Val(6)
+    storeValue: Mem(PlayerVal3), Val(0)
+    callSubroutine: s32'EddieDeleteYoyaku_Move'
+    linkPawnWithAnimation: s32'Edyz_body', s32''
+    physicsXImpulse: 0, 15000
+    callSubroutine: s32'EddieDefault'
+    displayMesh: s32'edyw_bake', 0
+    displayMesh: s32'EDYX_ameba_add', 1
+  endUpon: 
+  sprite: s32'edy030_00', 4
+  sprite: s32'edy030_01', 4
+  characterSfx: s32'SE_BTL_ZAT_36'
+  sprite: s32'edy030_02', 4
+  endLabel: 
+  beginLabel: s32'loop'
+  sprite: s32'edy030_03', 4
+  sprite: s32'edy030_04', 4
+  sprite: s32'edy030_05', 4
+  characterSfx: s32'SE_BTL_ZAT_36'
+  sprite: s32'edy030_06', 4
+  sprite: s32'edy030_07', 4
+  sprite: s32'edy030_08', 4
+  sprite: s32'edy030_09', 4
+  characterSfx: s32'SE_BTL_ZAT_36'
+  sprite: s32'edy030_10', 4
+  sprite: s32'edy030_11', 4
+  sprite: s32'edy030_12', 4
+  sprite: s32'edy030_13', 4
+  characterSfx: s32'SE_BTL_ZAT_36'
+  sprite: s32'edy030_14', 4
+  sprite: s32'edy030_15', 4
+  endLabel: 
+  gotoLabel: s32'loop'
+endState: 
+
+beginState: s32'Eddie4'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    storeValue: Mem(ActReg0), Val(4)
+    storeValue: Mem(PlayerVal3), Val(0)
+    callSubroutine: s32'EddieDeleteYoyaku_Move'
+    linkPawnWithAnimation: s32'Edyz_body', s32''
+    physicsXImpulse: 0, -12500
+    callSubroutine: s32'EddieDefault'
+    displayMesh: s32'edyw_bake', 0
+    displayMesh: s32'EDYX_ameba_add', 1
+  endUpon: 
+  sprite: s32'edy031_00', 4
+  sprite: s32'edy031_01', 4
+  characterSfx: s32'SE_BTL_ZAT_36'
+  sprite: s32'edy031_02', 4
+  endLabel: 
+  beginLabel: s32'loop'
+  sprite: s32'edy031_03', 4
+  sprite: s32'edy031_04', 4
+  sprite: s32'edy031_05', 4
+  characterSfx: s32'SE_BTL_ZAT_36'
+  sprite: s32'edy031_06', 4
+  sprite: s32'edy031_07', 4
+  sprite: s32'edy031_08', 4
+  sprite: s32'edy031_09', 4
+  characterSfx: s32'SE_BTL_ZAT_36'
+  sprite: s32'edy031_10', 4
+  sprite: s32'edy031_11', 4
+  sprite: s32'edy031_12', 4
+  sprite: s32'edy031_13', 4
+  characterSfx: s32'SE_BTL_ZAT_36'
+  sprite: s32'edy031_14', 4
+  sprite: s32'edy031_15', 4
+  endLabel: 
+  gotoLabel: s32'loop'
+endState: 
+
+beginState: s32'EddieA'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    storeValue: Mem(ActReg0), Val(100)
+    storeValue: Mem(PlayerVal3), Val(2)
+    specialAttack: 
+    callSubroutineWithArgs: s32'cmn_AtkLv2', Val(2), Val(2), Val(0), Val(0)
+    storeValue: Mem(CmnCharaReg11), Val(10000)
+    storeValue: Mem(CmnCharaReg12), Val(3)
+    storeValue: Mem(CmnCharaReg13), Val(2)
+    callSubroutine: s32'cmn_hosei'
+    callSubroutineWithArgs: s32'cmn_SameAttack', Val(2), Val(0), Val(0), Val(0)
+    setProjectileDurability: 0
+    damage: Val(20)
+    hitAirPushbackX: Val(20000)
+    hitAirPushbackXOverTime: Val(80), Val(6), Val(10)
+    hitAirPushbackY: Val(-100000)
+    hitAirPushbackYOverTime: Val(70), Val(6), Val(10)
+    hitGravity: Val(1000)
+    groundBounceYVelocityPercent: 100
+    groundBounceYVelocity: 16000
+    groundBounceCount: 1
+    disableHitstopForSelf: 0
+    shortHitstop: 1
+    attackFrontDirection: (SELF)
+    hitEffectTsuki: 1
+    attackReflect: 0
+    callSubroutine: s32'EddieDeleteYoyaku_Move'
+    callSubroutine: s32'EddieDefault'
+    displayMesh: s32'edyw_bake', 0
+    displayMesh: s32'edyz_handblade', 1
+    damageEffect: (EX_POINT_4), s32'cmn_hit_sp_simple'
+    guardEffect: (EX_POINT_4), s32'cmn_guard_sp_simple'
+    exOutlineOn: 1, 0
+    checkLastStateName: s32'EddieCommand_StayA'
+    if: Mem(Tmp)
+      storeValue: Mem(ActReg7), Val(1)
+    endIf: 
+  endUpon: 
+  sprite: s32'edy452_00', 1
+  callSubroutine: s32'EddieSukkarakanCheck'
+  physicsXImpulse: 0, -3000
+  sprite: s32'edy452_01', 2
+  characterSfx: s32'SE_BTL_ZAT_30'
+  sprite: s32'edy452_02', 3
+  voiceLine: s16'vxxx207'
+  sprite: s32'edy452_03', 3
+  sprite: s32'edy452_04', 3
+  setNoCollision: 1
+  physicsXImpulse: 0, 50000
+  ifOperation: (IS_EQUAL), Mem(TrainingValue), Val(2)
+    modifyVar: (ADD), Mem(ExGauge0), Val(999999)
+  endIf: 
+  else: 
+    ifNot: Mem(ActReg7)
+      modifyVar: (ADD), Mem(ExGauge0), Val(-500)
+    endIf: 
+    else: 
+      modifyVar: (ADD), Mem(ExGauge0), Val(-375)
+    endElse: 
+  endElse: 
+  sprite: s32'edy452_05', 3
+  exPointFReset: (PLAYER), 120000, 180000
+  createParticle: s32'zat_liquid07', (EX_POINT_F)
+  createObject: s32'EddieA_eff1', (PLAYER)
+  hit: 
+  velocityXPercentEachFrame: 90
+  characterSfx: s32'SE_BTL_ZAT_31'
+  sprite: s32'edy452_06', 5
+  velocityXPercentEachFrame: 80
+  sprite: s32'edy452_07', 7
+  sprite: s32'edy452_08', 4
+  velocityXPercentEachFrame: 20
+  sprite: s32'edy452_09', 2
+  exPointFReset: (PLAYER), -10000, 0
+  createParticle: s32'zat_liquid08', (EX_POINT_F)
+  createObject: s32'EddieA_eff2', (PLAYER)
+  ifOperation: (IS_EQUAL), Mem(TrainingValue), Val(2)
+    modifyVar: (ADD), Mem(ExGauge0), Val(999999)
+  endIf: 
+  else: 
+    ifNot: Mem(ActReg7)
+      modifyVar: (ADD), Mem(ExGauge0), Val(-500)
+    endIf: 
+    else: 
+      modifyVar: (ADD), Mem(ExGauge0), Val(-375)
+    endElse: 
+  endElse: 
+  hit: 
+  callSubroutine: s32'cmn_fuwafuwafuwa'
+  groundHitEffect: (TAILSPIN_B)
+  airHitEffect: (TAILSPIN_B)
+  hitAirPushbackX: Val(35000)
+  hitAirPushbackXOverTime: Val(80), Val(8), Val(15)
+  hitAirPushbackY: Val(45000)
+  hitAirPushbackYOverTime: Val(60), Val(4), Val(15)
+  hitGravity: Val(0)
+  hitGravityOverTime: Val(125), Val(10), Val(50)
+  groundBounceCount: 0
+  disableHitstopForSelf: 0
+  shortHitstop: 1
+  attackFrontDirection: (SELF)
+  hitEffectTsuki: 1
+  physicsXImpulse: 0, 40000
+  velocityXPercentEachFrame: 80
+  characterSfx: s32'SE_BTL_ZAT_31'
+  sprite: s32'edy452_10', 5
+  setNoCollision: 0
+  recoveryState: 
+  exOutlineOn: 0, 6
+  sprite: s32'edy452_11', 5
+  sprite: s32'edy452_12', 6
+  sprite: s32'edy452_13', 4
+  sprite: s32'edy452_14', 4
+  sprite: s32'keep', 2147483647
+  callSubroutine: s32'EddieActionReqNeutral'
+endState: 
+
+beginState: s32'EddieB'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    storeValue: Mem(ActReg0), Val(101)
+    storeValue: Mem(PlayerVal3), Val(2)
+    callSubroutine: s32'EddieDeleteYoyaku_Move'
+    callSubroutine: s32'EddieDefault'
+    displayMesh: s32'edyw_bake', 0
+    ignoreSlowdown: 1
+    checkLastStateName: s32'EddieCommand_StayB'
+    if: Mem(Tmp)
+      storeValue: Mem(ActReg7), Val(1)
+    endIf: 
+    modifyVar: (ADD), Mem(ObjReg1), Val(1)
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(ObjReg1), Val(2)
+      storeValue: Mem(ObjReg1), Val(0)
+    endIf: 
+    storeValue: Mem(ObjReg2), Val(0)
+    ifOperation: (IS_EQUAL), Mem(ObjReg1), Val(0)
+      upon: (SIGNAL0)
+        clearRegisteredUponCode: (SIGNAL0)
+        storeValue: Mem(ObjReg2), Val(1)
+      endUpon: 
+    endIf: 
+    else: 
+      upon: (SIGNAL3)
+        clearRegisteredUponCode: (SIGNAL3)
+        storeValue: Mem(ObjReg2), Val(1)
+      endUpon: 
+    endElse: 
+    upon: (BEFORE_EXIT)
+      storeValue: Mem(ObjReg2), Val(0)
+    endUpon: 
+  endUpon: 
+  sprite: s32'edy453_00', 3
+  sprite: s32'edy453_01', 3
+  characterSfx: s32'SE_BTL_ZAT_30'
+  sprite: s32'edy453_02', 3
+  voiceLine: s16'vxxx209'
+  sprite: s32'edy453_03', 3
+  ifOperation: (IS_EQUAL), Mem(TrainingValue), Val(2)
+    modifyVar: (ADD), Mem(ExGauge0), Val(999999)
+  endIf: 
+  else: 
+    ifNot: Mem(ActReg7)
+      modifyVar: (ADD), Mem(ExGauge0), Val(-375)
+    endIf: 
+    else: 
+      modifyVar: (ADD), Mem(ExGauge0), Val(-281)
+    endElse: 
+  endElse: 
+  sprite: s32'edy453_04', 3
+  sendValuesToObject: 2, 54, 2, 55
+  exPointFReset: (PLAYER), 200000, 0
+  createObjectWithArg: s32'EddieB_Obj', (EX_POINT_F)
+  exPointFReset: (PLAYER), 200000, 0
+  createObject: s32'zat_edy_k2', (EX_POINT_F)
+  characterSfx: s32'SE_BTL_ZAT_32'
+  callSubroutineWithArgs: s32'cmn_screenshake', Val(1), Val(1), Val(0), Val(0)
+  sprite: s32'edy453_05', 3
+  sprite: s32'edy453_06', 3
+  sprite: s32'edy453_07', 3
+  sprite: s32'edy453_08', 3
+  sprite: s32'edy453_09', 3
+  sendValuesToObject: 2, 54, 2, 55
+  exPointFReset: (PLAYER), 380000, 0
+  createObjectWithArg: s32'EddieB_Obj', (EX_POINT_F)
+  exPointFReset: (PLAYER), 380000, 0
+  createObject: s32'zat_edy_k2', (EX_POINT_F)
+  ifOperation: (IS_EQUAL), Mem(TrainingValue), Val(2)
+    modifyVar: (ADD), Mem(ExGauge0), Val(999999)
+  endIf: 
+  else: 
+    ifNot: Mem(ActReg7)
+      modifyVar: (ADD), Mem(ExGauge0), Val(-375)
+    endIf: 
+    else: 
+      modifyVar: (ADD), Mem(ExGauge0), Val(-281)
+    endElse: 
+  endElse: 
+  callSubroutineWithArgs: s32'cmn_screenshake', Val(1), Val(0), Val(0), Val(0)
+  sprite: s32'edy453_10', 3
+  sprite: s32'edy453_11', 3
+  sprite: s32'edy453_12', 3
+  sprite: s32'edy453_13', 3
+  sprite: s32'edy453_14', 3
+  sendValuesToObject: 2, 54, 2, 55
+  exPointFReset: (PLAYER), 560000, 0
+  createObjectWithArg: s32'EddieB_Obj', (EX_POINT_F)
+  exPointFReset: (PLAYER), 560000, 0
+  createObject: s32'zat_edy_k2', (EX_POINT_F)
+  characterSfx: s32'SE_BTL_ZAT_32'
+  ifOperation: (IS_EQUAL), Mem(TrainingValue), Val(2)
+    modifyVar: (ADD), Mem(ExGauge0), Val(999999)
+  endIf: 
+  else: 
+    ifNot: Mem(ActReg7)
+      modifyVar: (ADD), Mem(ExGauge0), Val(-375)
+    endIf: 
+    else: 
+      modifyVar: (ADD), Mem(ExGauge0), Val(-281)
+    endElse: 
+  endElse: 
+  callSubroutineWithArgs: s32'cmn_screenshake', Val(1), Val(0), Val(0), Val(0)
+  sprite: s32'edy453_15', 3
+  sprite: s32'edy453_16', 3
+  sprite: s32'edy453_17', 3
+  sprite: s32'edy453_18', 3
+  sprite: s32'edy453_19', 3
+  sendValuesToObject: 2, 54, 2, 55
+  exPointFReset: (PLAYER), 740000, 0
+  createObjectWithArg: s32'EddieB_Obj', (EX_POINT_F)
+  exPointFReset: (PLAYER), 740000, 0
+  createObject: s32'zat_edy_k2', (EX_POINT_F)
+  ifOperation: (IS_EQUAL), Mem(TrainingValue), Val(2)
+    modifyVar: (ADD), Mem(ExGauge0), Val(999999)
+  endIf: 
+  else: 
+    ifNot: Mem(ActReg7)
+      modifyVar: (ADD), Mem(ExGauge0), Val(-375)
+    endIf: 
+    else: 
+      modifyVar: (ADD), Mem(ExGauge0), Val(-281)
+    endElse: 
+  endElse: 
+  callSubroutineWithArgs: s32'cmn_screenshake', Val(1), Val(0), Val(0), Val(0)
+  sprite: s32'edy453_20', 3
+  sprite: s32'edy453_00', 3
+  sprite: s32'keep', 2147483647
+  callSubroutine: s32'EddieActionReqNeutral'
+endState: 
+
+beginState: s32'EddieB_Obj'
+  upon: (IMMEDIATE)
+    specialAttack: 
+    callSubroutineWithArgs: s32'cmn_AtkLv2', Val(4), Val(4), Val(0), Val(0)
+    storeValue: Mem(CmnCharaReg11), Val(10000)
+    storeValue: Mem(CmnCharaReg12), Val(3)
+    storeValue: Mem(CmnCharaReg13), Val(4)
+    callSubroutine: s32'cmn_hosei'
+    callSubroutineWithArgs: s32'cmn_SameAttack', Val(9), Val(0), Val(0), Val(0)
+    setProjectileDurability: 1
+    damage: Val(20)
+    atkAngle: 90
+    hitAirPushbackX: Val(16000)
+    hitAirPushbackY: Val(18000)
+    considerHitAirPushbackY: 10
+    groundHitEffect: (AIR_FACE_UP)
+    hitEffectSlash: 1
+    shortHitstop: 1
+    checkScreenCollision: 1
+    attackFrontDirection: (SELF)
+    ignoreSlowdown: 1
+    attackIgnoreCaution: 1
+    setObjectWidth: 1400
+    damageEffect: (EX_POINT_4), s32'cmn_hit_sp_simple'
+    guardEffect: (EX_POINT_4), s32'cmn_guard_sp_simple'
+    initializeDestroy: 
+    numberOfHits: 1
+    destroyOnPlayerEnemy: 1
+    destroyOnPlayerGuard: 1
+    upon: (MAIN_PLAYER_RECEIVE_ATTACK)
+      clearRegisteredUponCode: (MAIN_PLAYER_RECEIVE_ATTACK)
+      ifOperation: (IS_EQUAL), Mem(SentToObject1), Val(0)
+        ifOperation: (IS_EQUAL), Mem(SentToObject0), Val(0)
+          clearRegisteredUponCode: (SIGNAL0)
+          sendSignalToAction: s32'EddieB_Obj', (SIGNAL0)
+          sendSignalToAction: s32'EddieB', (SIGNAL0)
+        endIf: 
+        else: 
+          clearRegisteredUponCode: (SIGNAL3)
+          sendSignalToAction: s32'EddieB_Obj', (SIGNAL3)
+          sendSignalToAction: s32'EddieB', (SIGNAL3)
+        endElse: 
+      endIf: 
+    endUpon: 
+    ifOperation: (IS_EQUAL), Mem(SentToObject0), Val(0)
+      upon: (SIGNAL0)
+        clearRegisteredUponCode: (SIGNAL0)
+        riscConsume: 0
+        forcedComboScaleCount: 0
+      endUpon: 
+    endIf: 
+    else: 
+      upon: (SIGNAL3)
+        clearRegisteredUponCode: (SIGNAL3)
+        riscConsume: 0
+        forcedComboScaleCount: 0
+      endUpon: 
+    endElse: 
+    ifOperation: (IS_EQUAL), Mem(SentToObject1), Val(1)
+      riscConsume: 0
+      forcedComboScaleCount: 0
+    endIf: 
+    upon: (ON_DESTROY)
+      deactivateObjectById: (SELF)
+    endUpon: 
+  endUpon: 
+  sprite: s32'drill', 6
+  sprite: s32'drill', 6
+  hit: 
+  characterSfx: s32'SE_BTL_ZAT_04'
+  characterSfx: s32'SE_BTL_ZAT_00_1'
+  sprite: s32'drill', 20
+endState: 
+
+beginState: s32'zat_edy_k2'
+  upon: (IMMEDIATE)
+    linkParticle: s32'zat_edy_k2'
+    ignoreSlowdown: 1
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    checkScreenCollision: 1
+    upon: (WALL_BREAK)
+      clearRegisteredUponCode: (WALL_BREAK)
+      linkObjPosition: 22
+      linkObjectAngle: 3
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    initializeDestroy: 
+    numberOfHits: 1
+    destroyOnPlayerEnemy: 1
+    destroyOnPlayerGuard: 1
+    upon: (ON_DESTROY)
+      deactivateObjectById: (SELF)
+      createObject: s32'zat_edy_k2_del', (PLAYER)
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 32
+endState: 
+
+beginState: s32'zat_edy_k2_del'
+  upon: (IMMEDIATE)
+    linkParticle: s32'zat_edy_k2_del'
+    ignoreSlowdown: 1
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    checkScreenCollision: 1
+    upon: (WALL_BREAK)
+      clearRegisteredUponCode: (WALL_BREAK)
+      linkObjPosition: 22
+      linkObjectAngle: 3
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 32
+endState: 
+
+beginState: s32'EddieC'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    storeValue: Mem(ActReg0), Val(102)
+    storeValue: Mem(PlayerVal3), Val(3)
+    specialAttack: 
+    callSubroutineWithArgs: s32'cmn_AtkLv3', Val(2), Val(2), Val(0), Val(0)
+    storeValue: Mem(CmnCharaReg11), Val(10000)
+    storeValue: Mem(CmnCharaReg12), Val(5)
+    storeValue: Mem(CmnCharaReg13), Val(2)
+    callSubroutine: s32'cmn_hosei'
+    callSubroutineWithArgs: s32'cmn_SameAttack', Val(2), Val(0), Val(0), Val(0)
+    setProjectileDurability: 0
+    damage: Val(20)
+    atkAngle: 60
+    pushbackX: 150
+    disableHitstopForSelf: 0
+    attackFrontDirection: (SELF)
+    atkAngle: 90
+    callSubroutine: s32'cmn_fuwafuwafuwa'
+    groundHitEffect: (TAILSPIN)
+    airHitEffect: (TAILSPIN)
+    hitAirPushbackX: Val(100000)
+    hitAirPushbackXOverTime: Val(70), Val(3), Val(6)
+    hitAirPushbackY: Val(15000)
+    hitAirPushbackYOverTime: Val(70), Val(6), Val(15)
+    hitGravity: Val(1200)
+    hitGravityOverTime: Val(150), Val(6), Val(50)
+    attackReflect: 0
+    checkScreenCollision: 1
+    landingHeight: 0
+    upon: (TOUCH_GROUND)
+      gotoLabelRequests: s32'landing'
+    endUpon: 
+    callSubroutine: s32'EddieDeleteYoyaku_Move'
+    callSubroutine: s32'EddieDefault'
+    displayMesh: s32'Edyz_frog', 1
+    displayMesh: s32'edyw_bake', 0
+    exOutlineOn: 1, 0
+    upon: (HIT_OR_GUARD)
+      callSubroutineWithArgs: s32'cmn_screenshake', Val(3), Val(2), Val(0), Val(0)
+    endUpon: 
+    checkLastStateName: s32'EddieCommand_StayC'
+    if: Mem(Tmp)
+      storeValue: Mem(ActReg7), Val(1)
+    endIf: 
+  endUpon: 
+  sprite: s32'edy454_00', 2
+  sprite: s32'edy454_01', 1
+  sprite: s32'edy454_01', 1
+  ifOperation: (IS_EQUAL), Mem(TrainingValue), Val(2)
+    modifyVar: (ADD), Mem(ExGauge0), Val(999999)
+  endIf: 
+  else: 
+    ifNot: Mem(ActReg7)
+      modifyVar: (ADD), Mem(ExGauge0), Val(-1500)
+    endIf: 
+    else: 
+      modifyVar: (ADD), Mem(ExGauge0), Val(-1125)
+    endElse: 
+  endElse: 
+  characterSfx: s32'SE_BTL_ZAT_30'
+  sprite: s32'edy454_02', 2
+  voiceLine: s16'vxxx208'
+  sprite: s32'edy454_03', 2
+  sprite: s32'edy454_04', 2
+  sprite: s32'edy454_05', 2
+  clearRegisteredUponCode: (NO_STOP_IDLING)
+  physicsXImpulse: 0, 20000
+  physicsYImpulse: 0, 40000
+  setGravity: 3000
+  characterSfx: s32'SE_BTL_ZAT_33'
+  sprite: s32'edy454_06', 2
+  hit: 
+  sprite: s32'edy454_07', 3
+  sprite: s32'edy454_08', 6
+  sprite: s32'edy454_09', 6
+  attackOff: 
+  sprite: s32'edy454_10', 4
+  hit: 
+  damage: Val(50)
+  atkAngle: -60
+  groundHitEffect: (NORMAL_UPPER)
+  hitAirPushbackX: Val(20000)
+  hitAirPushbackXOverTime: Val(90), Val(4), Val(10)
+  hitAirPushbackY: Val(-100000)
+  rollDuration: 1
+  rollCount: 1
+  hitSoftKnockdown: 0
+  groundBounceYVelocityPercent: 100
+  groundBounceYVelocity: 18000
+  groundBounceCount: 1
+  groundBounceNextAction: s32'CmnActBlowoff'
+  groundBounceGravity: 0
+  callSubroutine: s32'cmn_fuwafuwafuwa'
+  hitAirPushbackX: Val(20000)
+  hitAirPushbackXOverTime: Val(80), Val(6), Val(10)
+  hitAirPushbackY: Val(-100000)
+  hitAirPushbackYOverTime: Val(70), Val(6), Val(10)
+  hitGravity: Val(0)
+  hitGravityOverTime: Val(150), Val(10), Val(30)
+  groundBounceYVelocityPercent: 100
+  groundBounceYVelocity: 18000
+  groundBounceCount: 1
+  groundBounceNextAction: s32'CmnActBlowoff'
+  groundBounceGravity: 0
+  sprite: s32'edy454_11', 4
+  endLabel: 
+  beginLabel: s32'loop'
+  sprite: s32'edy454_10', 4
+  sprite: s32'edy454_11', 4
+  endLabel: 
+  gotoLabel: s32'loop'
+  beginLabel: s32'landing'
+  sprite: s32'edy454_12', 2
+  callSubroutine: s32'EddieDeleteYoyaku_Move'
+  storeValue: Mem(PlayerVal3), Val(2)
+  haltMomentum: 1
+  recoveryState: 
+  ifOperation: (IS_EQUAL), Mem(PlayerVal5), Val(10)
+    storeValue: Mem(PlayerVal5), Val(1)
+    jumpToState: s32'EddieCommand_StayA'
+  endIf: 
+  ifOperation: (IS_EQUAL), Mem(PlayerVal5), Val(20)
+    storeValue: Mem(PlayerVal5), Val(2)
+    jumpToState: s32'EddieCommand_StayB'
+  endIf: 
+  ifOperation: (IS_EQUAL), Mem(PlayerVal5), Val(30)
+    storeValue: Mem(PlayerVal5), Val(3)
+    faceOpponent: 
+    jumpToState: s32'EddieCommand_StayC'
+  endIf: 
+  ifOperation: (IS_EQUAL), Mem(PlayerVal5), Val(40)
+    storeValue: Mem(PlayerVal5), Val(4)
+    jumpToState: s32'EddieCommand_StayD'
+  endIf: 
+  characterSfx: s32'SE_BTL_ZAT_12'
+  exOutlineOn: 0, 6
+  callSubroutineWithArgs: s32'cmn_screenshake', Val(1), Val(1), Val(0), Val(0)
+  sprite: s32'edy454_13', 2
+  sprite: s32'edy454_14', 2
+  sprite: s32'edy454_15', 2
+  sprite: s32'edy454_16', 2
+  sprite: s32'edy454_17', 2
+  characterSfx: s32'SE_BTL_ZAT_30'
+  sprite: s32'edy454_18', 2
+  sprite: s32'edy454_19', 3
+  sprite: s32'edy454_20', 4
+  sprite: s32'edy454_21', 4
+  sprite: s32'edy454_22', 6
+  sprite: s32'edy454_23', 3
+  sprite: s32'keep', 2147483647
+  callSubroutine: s32'EddieActionReqNeutral'
+endState: 
+
+beginState: s32'EddieD'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    storeValue: Mem(ActReg0), Val(103)
+    storeValue: Mem(PlayerVal3), Val(2)
+    specialAttack: 
+    callSubroutineWithArgs: s32'cmn_AtkLv4', Val(3), Val(3), Val(0), Val(0)
+    storeValue: Mem(CmnCharaReg11), Val(11000)
+    storeValue: Mem(CmnCharaReg12), Val(5)
+    storeValue: Mem(CmnCharaReg13), Val(3)
+    callSubroutine: s32'cmn_hosei'
+    setProjectileDurability: 0
+    damage: Val(30)
+    atkAngle: -45
+    attackRange: 500000, 0, -1, -1
+    callSubroutine: s32'cmn_fuwafuwafuwa'
+    groundHitEffect: (AIR_FACE_UP)
+    hitAirPushbackX: Val(15000)
+    hitAirPushbackXOverTime: Val(80), Val(6), Val(10)
+    hitAirPushbackY: Val(-100000)
+    hitAirPushbackYOverTime: Val(70), Val(6), Val(10)
+    hitGravity: Val(0)
+    hitGravityOverTime: Val(50), Val(10), Val(20)
+    groundBounceYVelocityPercent: 100
+    groundBounceYVelocity: 8000
+    groundBounceCount: 1
+    groundBounceNextAction: s32'CmnActBlowoff'
+    groundBounceGravity: 0
+    disableHitstopForSelf: 0
+    shortHitstop: 1
+    pushbackX: 50
+    attackIgnoreCaution: 1
+    attackFrontDirection: (SELF)
+    damageEffect: (EX_POINT_4), s32'cmn_hit_sp_simple'
+    guardEffect: (EX_POINT_4), s32'cmn_guard_sp_simple'
+    attackReflect: 0
+    callSubroutine: s32'EddieDeleteYoyaku_Move'
+    callSubroutine: s32'EddieDefault'
+    displayMesh: s32'edyw_bake', 0
+    displayMesh: s32'Edyz_snakehand', 1
+    displayMesh: s32'Edyz_edyarms', 1
+    spriteSlowParam: 0, 0, 0, 0, 0, 0
+    spriteSlowParamFinishStop: 0, 0, 0, 0, 0, 0
+    zLine: (FAR_DISTANCE), 5
+    checkLastStateName: s32'EddieCommand_StayD'
+    if: Mem(Tmp)
+      storeValue: Mem(ActReg7), Val(1)
+    endIf: 
+  endUpon: 
+  sprite: s32'edy455_00', 1
+  callSubroutine: s32'EddieSukkarakanCheck'
+  createObject: s32'EddieD_eff', (PLAYER)
+  sprite: s32'edy455_01', 1
+  characterSfx: s32'SE_BTL_ZAT_30'
+  sprite: s32'edy455_02', 1
+  voiceLine: s16'vxxx210'
+  sprite: s32'edy455_03', 2
+  sprite: s32'edy455_04', 2
+  sprite: s32'edy455_05', 6
+  physicsXImpulse: 0, 2000
+  enableSuperArmor: 1
+  superArmorType: (ARMOR)
+  superArmorThrow: 0
+  superArmorOverdrive: 0
+  initializeDestroy: 
+  destroyOnPlayerEnemy: 1
+  destroyOnPlayerGuard: 1
+  numberOfHits: 1
+  destroyOnDamageOnly: 1
+  destroyAiuchi: 1
+  multiObjectAttackStop: 1
+  upon: (NO_STOP_IDLING)
+    if: Mem(PlayerVal6)
+      ifNot: Mem(ActReg6)
+        storeValueFromObject: (PLAYER), Mem(ObjReg0), (SELF), Val(0)
+        storeValue: Mem(PlayerVal0), Val(0)
+        createObject: s32'EddieReturn', (PLAYER)
+        deactivateObjectById: (SELF)
+        storeValue: Mem(ActReg6), Val(1)
+        storeValue: Mem(PlayerVal3), Val(0)
+        sendSignal: (STACK0), (SIGNAL0)
+      endIf: 
+    endIf: 
+  endUpon: 
+  sprite: s32'edy455_06', 6
+  sprite: s32'edy455_07', 6
+  sprite: s32'edy455_08', 6
+  sprite: s32'edy455_09', 6
+  sprite: s32'edy455_05', 6
+  sprite: s32'edy455_06', 4
+  exOutlineOn: 1, 30
+  sprite: s32'edy455_07', 4
+  sprite: s32'edy455_08', 4
+  sprite: s32'edy455_09', 4
+  sprite: s32'edy455_10', 2
+  physicsXImpulse: 0, 0
+  setNoCollision: 1
+  sprite: s32'edy455_11', 4
+  characterSfx: s32'SE_BTL_ZAT_35'
+  characterSfx: s32'SE_BTL_ZAT_00_1'
+  sprite: s32'edy455_12', 3
+  enableSuperArmor: 0
+  multiObjectAttackStop: 0
+  clearRegisteredUponCode: (NO_STOP_IDLING)
+  initializeDestroy: 
+  numberOfHits: 1
+  destroyOnDamageCollision: 1
+  destroyOnPlayerEnemy: 1
+  destroyOnPlayerGuard: 1
+  destroyAiuchi: 1
+  hit: 
+  ifOperation: (IS_EQUAL), Mem(TrainingValue), Val(2)
+    modifyVar: (ADD), Mem(ExGauge0), Val(999999)
+  endIf: 
+  else: 
+    ifNot: Mem(ActReg7)
+      modifyVar: (ADD), Mem(ExGauge0), Val(-500)
+    endIf: 
+    else: 
+      modifyVar: (ADD), Mem(ExGauge0), Val(-375)
+    endElse: 
+  endElse: 
+  callSubroutineWithArgs: s32'cmn_screenshake', Val(3), Val(3), Val(0), Val(0)
+  sprite: s32'edy455_13', 3
+  hit: 
+  ifOperation: (IS_EQUAL), Mem(TrainingValue), Val(2)
+    modifyVar: (ADD), Mem(ExGauge0), Val(999999)
+  endIf: 
+  else: 
+    ifNot: Mem(ActReg7)
+      modifyVar: (ADD), Mem(ExGauge0), Val(-500)
+    endIf: 
+    else: 
+      modifyVar: (ADD), Mem(ExGauge0), Val(-375)
+    endElse: 
+  endElse: 
+  sprite: s32'edy455_14', 4
+  sprite: s32'edy455_15', 3
+  hit: 
+  ifOperation: (IS_EQUAL), Mem(TrainingValue), Val(2)
+    modifyVar: (ADD), Mem(ExGauge0), Val(999999)
+  endIf: 
+  else: 
+    ifNot: Mem(ActReg7)
+      modifyVar: (ADD), Mem(ExGauge0), Val(-500)
+    endIf: 
+    else: 
+      modifyVar: (ADD), Mem(ExGauge0), Val(-375)
+    endElse: 
+  endElse: 
+  sprite: s32'edy455_16', 5
+  sprite: s32'edy455_17', 6
+  recoveryState: 
+  setNoCollision: 0
+  exOutlineOn: 0, 6
+  sprite: s32'edy455_18', 4
+  sprite: s32'edy455_19', 5
+  sprite: s32'edy455_20', 3
+  sprite: s32'edy455_21', 5
+  sprite: s32'edy455_22', 4
+  sprite: s32'keep', 2147483647
+  callSubroutine: s32'EddieActionReqNeutral'
+endState: 
+
+beginState: s32'EddieGo_HS'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    storeValue: Mem(ActReg0), Val(5)
+    storeValue: Mem(PlayerVal3), Val(1)
+    invulnForce: 1
+    createObject: s32'UzuDeleteNoLink', (PLAYER)
+    callSubroutine: s32'EddieDefault'
+    displayMesh: s32'edyw_bake', 0
+    displayMesh: s32'EDYX_ameba_add', 1
+    zLine: (FAR_DISTANCE), 5
+  endUpon: 
+  beginLabel: s32'start'
+  sprite: s32'edy450_01', 3
+  addPositionX: 0, 150000
+  sprite: s32'edy450_02', 3
+  sprite: s32'edy450_03', 3
+  sprite: s32'edy450_04', 3
+  sprite: s32'keep', 2147483647
+  callSubroutine: s32'EddieActionReqNeutral'
+endState: 
+
+beginState: s32'EddieCommand_StayA'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    storeValue: Mem(ActReg0), Val(104)
+    storeValue: Mem(PlayerVal3), Val(1)
+    specialAttack: 
+    createObject: s32'UzuDeleteNoLink', (PLAYER)
+    callSubroutine: s32'EddieDefault'
+    displayMesh: s32'edyw_bake', 0
+    displayMesh: s32'EDYX_ameba_add', 1
+    zLine: (FAR_DISTANCE), 5
+  endUpon: 
+  sprite: s32'edy450_01', 2
+  createParticle: s32'zat_edycall', (PLAYER)
+  sprite: s32'edy450_02', 2
+  sprite: s32'edy450_03', 2
+  jumpToState: s32'EddieA'
+endState: 
+
+beginState: s32'EddieCommand_StayB'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    storeValue: Mem(ActReg0), Val(105)
+    storeValue: Mem(PlayerVal3), Val(1)
+    specialAttack: 
+    createObject: s32'UzuDeleteNoLink', (PLAYER)
+    callSubroutine: s32'EddieDefault'
+    displayMesh: s32'edyw_bake', 0
+    displayMesh: s32'EDYX_ameba_add', 1
+    zLine: (FAR_DISTANCE), 5
+  endUpon: 
+  sprite: s32'edy450_01', 2
+  createParticle: s32'zat_edycall', (PLAYER)
+  sprite: s32'edy450_02', 2
+  sprite: s32'edy450_03', 2
+  jumpToState: s32'EddieB'
+endState: 
+
+beginState: s32'EddieCommand_StayC'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    storeValue: Mem(ActReg0), Val(106)
+    storeValue: Mem(PlayerVal3), Val(1)
+    specialAttack: 
+    createObject: s32'UzuDeleteNoLink', (PLAYER)
+    callSubroutine: s32'EddieDefault'
+    displayMesh: s32'edyw_bake', 0
+    displayMesh: s32'EDYX_ameba_add', 1
+    zLine: (FAR_DISTANCE), 5
+  endUpon: 
+  sprite: s32'edy450_01', 2
+  createParticle: s32'zat_edycall', (PLAYER)
+  sprite: s32'edy450_02', 2
+  sprite: s32'edy450_03', 2
+  jumpToState: s32'EddieC'
+endState: 
+
+beginState: s32'EddieCommand_StayD'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    storeValue: Mem(ActReg0), Val(107)
+    storeValue: Mem(PlayerVal3), Val(1)
+    specialAttack: 
+    createObject: s32'UzuDeleteNoLink', (PLAYER)
+    callSubroutine: s32'EddieDefault'
+    displayMesh: s32'edyw_bake', 0
+    displayMesh: s32'EDYX_ameba_add', 1
+    zLine: (FAR_DISTANCE), 5
+  endUpon: 
+  sprite: s32'edy450_01', 2
+  createParticle: s32'zat_edycall', (PLAYER)
+  sprite: s32'edy450_02', 2
+  sprite: s32'edy450_03', 2
+  jumpToState: s32'EddieD'
+endState: 
+
+beginState: s32'EddieMove'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    storeValue: Mem(ActReg0), Val(7)
+    storeValue: Mem(PlayerVal3), Val(2)
+    callSubroutine: s32'EddieDeleteYoyaku_Move'
+    callSubroutine: s32'EddieDefault'
+    displayMesh: s32'EDYX_ameba_add', 1
+    zLine: (NEAR_DISTANCE), 5
+    storeValueFromObject: (SELF), Mem(Dir), (PLAYER), Mem(Dir)
+    moveToObject: (PLAYER)
+    addPositionX: 0, 250000
+    zLine: (FAR_DISTANCE), 5
+  endUpon: 
+  sprite: s32'edy032_00', 4
+  enableSuperArmor: 1
+  sprite: s32'edy032_01', 2
+  physicsXImpulse: 0, 10000
+  sprite: s32'edy032_02', 3
+  createObject: s32'Eddie_move1', (PLAYER)
+  physicsXImpulse: 0, 50000
+  sprite: s32'edy032_03', 3
+  sprite: s32'edy032_04', 3
+  sprite: s32'edy032_05', 3
+  velocityXPercentEachFrame: 85
+  enableSuperArmor: 0
+  sprite: s32'edy032_06', 4
+  upon: (IDLING)
+    ifNot: Mem(PlayerVal1)
+      checkInput: 33
+      if: Mem(Tmp)
+        faceOpponent: 
+        jumpToState: s32'EddieD'
+      endIf: 
+      checkInput: 24
+      if: Mem(Tmp)
+        faceOpponent: 
+        jumpToState: s32'EddieC'
+      endIf: 
+      checkInput: 15
+      if: Mem(Tmp)
+        faceOpponent: 
+        jumpToState: s32'EddieB'
+      endIf: 
+      checkInput: 6
+      if: Mem(Tmp)
+        faceOpponent: 
+        jumpToState: s32'EddieA'
+      endIf: 
+    endIf: 
+  endUpon: 
+  sprite: s32'edy032_07', 4
+  sprite: s32'edy032_08', 4
+  sprite: s32'keep', 2147483647
+  clearRegisteredUponCode: (IDLING)
+  callSubroutine: s32'EddieActionReqNeutral'
+endState: 
+
+beginState: s32'DrillObj_Master'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    setLinkObjectDestroyOnStateChange: 3
+    ignoreSlowdown: 1
+    callSubroutine: s32'cmnCutScene_ObjHide'
+  endUpon: 
+  sprite: s32'null', 6
+  sprite: s32'null', 6
+  setLinkObjectDestroyOnStateChange: 0
+  sprite: s32'null', 5
+  sprite: s32'null', 1
+  createObject: s32'DrillObj', (PLAYER)
+  createObject: s32'DrilleffObj', (PLAYER)
+endState: 
+
+beginState: s32'DrillObj'
+  upon: (IMMEDIATE)
+    specialAttack: 
+    callSubroutine: s32'cmn_AtkLv2'
+    storeValue: Mem(CmnCharaReg11), Val(10000)
+    storeValue: Mem(CmnCharaReg12), Val(0)
+    storeValue: Mem(CmnCharaReg13), Val(1)
+    callSubroutine: s32'cmn_hosei'
+    attackIgnoreCaution: 1
+    setProjectileDurability: 1
+    damage: Val(30)
+    hitEffectSlash: 1
+    atkAngle: 90
+    ignoreSlowdown: 1
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    groundHitEffect: (AIR_FACE_UP)
+    hitAirPushbackX: Val(10000)
+    hitAirPushbackY: Val(20000)
+    initializeDestroy: 
+    destroyOnPlayerEnemy: 1
+    numberOfHits: 1
+    destroyOnEnemyDamage: 1
+    destroyOnEnemyGuard: 1
+    destroyOnHit: 1
+    destroyOnClash: 1
+    setPositionY: 0
+  endUpon: 
+  sprite: s32'_drill_00', 1
+  hit: 
+  addMoveForceDisableFlag: 1
+  sprite: s32'_drill_00', 5
+  characterSfx: s32'SE_BTL_ZAT_04'
+  sprite: s32'_drill_01', 12
+  setObjectWidthScaleSpeed: 70
+  setObjectHeightScaleSpeed: -50
+  sprite: s32'_drill_01', 5
+  setObjectWidthScaleSpeed: 0
+  setObjectHeightScaleSpeed: 0
+  sprite: s32'_drill_01', 9
+  setObjectWidthScaleSpeed: 0
+  setObjectHeightScaleSpeed: -5
+  sprite: s32'_drill_01', 6
+  recoveryState: 
+endState: 
+
+beginState: s32'DrilleffObj'
+  upon: (IMMEDIATE)
+    linkParticle: s32'zat_drill2'
+    stopLinkObject: 0
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    ignoreSlowdown: 1
+    initializeDestroy: 
+    destroyOnPlayerEnemy: 1
+    numberOfHits: 1
+    upon: (ON_DESTROY)
+      deactivateObjectById: (SELF)
+      createObject: s32'DrilleffObj2', (PLAYER)
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 35
+  sprite: s32'null', 60
+  clearRegisteredUponCode: (ON_DESTROY)
+endState: 
+
+beginState: s32'DrilleffObj2'
+  upon: (IMMEDIATE)
+    linkParticle: s32'zat_drill2_del'
+    stopLinkObject: 0
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'zat_drill2_start'
+  upon: (IMMEDIATE)
+    linkParticle: s32'zat_drill2_start'
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    ignoreSlowdown: 1
+    initializeDestroy: 
+    numberOfHits: 1
+    destroyOnPlayerEnemy: 1
+    upon: (ON_DESTROY)
+      deactivateObjectById: (SELF)
+      createObject: s32'zat_drill2_start_del', (PLAYER)
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'zat_drill2_start_del'
+  upon: (IMMEDIATE)
+    linkParticle: s32'zat_drill2_start_del'
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutine: s32'cmnCutScene_ObjHide'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 60
+endState: 
+
+beginState: s32'AmorphousObj'
+  upon: (IMMEDIATE)
+    overdriveAttack: 
+    callSubroutine: s32'cmn_AtkLv4'
+    setProjectileDurability: 5
+    damage: Val(150)
+    atkAngle: 60
+    disableHitstop: 1
+    hitSoftKnockdown: 0
+    ignoreSlowdown: 1
+    callSubroutine: s32'cmnNohosei_kakusei'
+    attackReflect: 0
+    tensionGainOnConnect: 0
+    attackIgnoreCaution: 1
+    storeValue: Mem(CmnCharaReg11), Val(1000000000)
+    storeValue: Mem(CmnCharaReg12), Val(0)
+    storeValue: Mem(CmnCharaReg13), Val(1)
+    callSubroutineWithArgs: s32'cmn_hosei', Val(1), Val(0), Val(0), Val(0)
+    callSubroutine: s32'cmn_fuwafuwafuwa'
+    groundHitEffect: (Z_SPIN)
+    airHitEffect: (Z_SPIN)
+    hitAirPushbackX: Val(40000)
+    hitAirPushbackXOverTime: Val(80), Val(8), Val(15)
+    hitAirPushbackY: Val(80000)
+    hitAirPushbackYOverTime: Val(60), Val(4), Val(15)
+    hitGravity: Val(0)
+    hitGravityOverTime: Val(200), Val(5), Val(50)
+    attackHitPositionType: (EX_POINT_6), 0, 100000
+    callSubroutineWithArgs: s32'cmn_AtkVectorAirGuard', Val(8), Val(0), Val(0), Val(0)
+    callSubroutine: s32'cmn_AtkTemplWSB'
+    attackExHitParam: Val(0), 0, 0, 1, (ENEMY), Mem(CmnCharaReg7)
+    forceWallBreak: 1
+    wallBreakLimitTime: 5
+    wallBlowoffType: (BLOWOFF_UP)
+    upon: (WALL_BREAK)
+      clearRegisteredUponCode: (WALL_BREAK)
+      clearRegisteredUponCode: (SIGNAL0)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      ignoreSuperFreezeFromAlly: 1
+      ignoreFinishStop: 1
+      stopLinkObject: 0
+      linkParticle: s32'zat_amorphous_wave_end'
+      gotoLabelRequests: s32'End'
+    endUpon: 
+    addMoveForceDisableFlag: 2
+    upon: (HIT_OR_GUARD_ANY_OBJECT)
+      finishCameraRequest: s32'Cam_Finish_Amorphous'
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 1
+  linkParticle: s32'zat_amorphous_wave'
+  zLine: (FAR_DISTANCE), 5
+  ignoreSuperFreezeFromAlly: 1
+  upon: (SIGNAL0)
+    clearRegisteredUponCode: (SIGNAL0)
+    clearRegisteredUponCode: (AFTER_EXIT)
+    ignoreSuperFreezeFromAlly: 0
+    storeValue: Mem(ActReg0), Val(1)
+  endUpon: 
+  upon: (AFTER_EXIT)
+    clearRegisteredUponCode: (AFTER_EXIT)
+    clearRegisteredUponCode: (SIGNAL0)
+    ignoreSuperFreezeFromAlly: 0
+    storeValue: Mem(ActReg0), Val(1)
+  endUpon: 
+  physicsXImpulse: 0, 22500
+  beginLabel: s32'Move'
+  sprite: s32'null', 1
+  ifOperation: (IS_LESSER), Mem(EnemyFrontDistance), Val(250000)
+    velocityXPercent: 90
+    if: Mem(ActReg0)
+      gotoLabelRequests: s32'Attack'
+    endIf: 
+  endIf: 
+  privateSE: s32'SE_BTL_ZAT_17'
+  endLabel: 
+  gotoLabel: s32'Move'
+  beginLabel: s32'Attack'
+  sprite: s32'ZTE2_01', 1
+  clearRegisteredUponCode: (WALL_BREAK)
+  upon: (FRAME_STEP)
+    if: Mem(CmnCharaReg3)
+      modifyVar: (ADD), Mem(ActReg1), Val(1)
+      ifOperation: (IS_EQUAL), Mem(ActReg1), Val(1)
+        linkObjectZ: 0
+        zLine: (FAR_DISTANCE), 5
+        storeValueFromObject: (SELF), Mem(PosZ), (ENEMY), Mem(PosZ)
+        storeValueFromObject: (SELF), Mem(PosXRaw), (ENEMY), Mem(PosXRaw)
+      endIf: 
+      ifOperation: (IS_EQUAL), Mem(ActReg1), Val(10)
+        stopLinkObject: 0
+        clearRegisteredUponCode: (FRAME_STEP)
+        ignoreSuperFreeze: 1
+        ignoreFinishStop: 1
+      endIf: 
+    endIf: 
+  endUpon: 
+  sprite: s32'ZTE2_01', 3
+  exPointFReset: (PLAYER), 200000, 0
+  linkParticle: s32'zat_amorphous_shark'
+  reverseDisplay: 1
+  velocityXPercentEachFrame: 80
+  sprite: s32'ZTE2_02', 3
+  characterSfx: s32'SE_BTL_ZAT_KAKUSEI_06'
+  sprite: s32'ZTE2_05test', 3
+  hit: 
+  callSubroutineWithArgs: s32'cmn_screenshake', Val(4), Val(1), Val(0), Val(0)
+  sprite: s32'ZTE2_05test', 3
+  sprite: s32'ZTE2_05test', 3
+  sprite: s32'ZTE2_06', 3
+  recoveryState: 
+  sprite: s32'ZTE2_07', 3
+  sprite: s32'ZTE2_08', 3
+  sprite: s32'ZTE2_09', 3
+  sprite: s32'ZTE2_10', 3
+  sprite: s32'null', 30
+  sprite: s32'null', 60
+  deleteMoveForceDisableFlag: 2
+  beginLabel: s32'End'
+  sprite: s32'null', 30
+  deleteMoveForceDisableFlag: 2
+endState: 
+
+beginState: s32'Appear_s'
+  upon: (IMMEDIATE)
+    linkObjectZ: 2
+    stopLinkObject: 2
+    linkParticle: s32'zat_appear_s'
+  endUpon: 
+  sprite: s32'null', 50
+endState: 
+
+beginState: s32'Appear_m'
+  upon: (IMMEDIATE)
+    linkObjectZ: 2
+    stopLinkObject: 2
+    linkParticle: s32'zat_appear_m'
+  endUpon: 
+  sprite: s32'null', 50
+endState: 
+
+beginState: s32'Appear_l'
+  upon: (IMMEDIATE)
+    linkObjectZ: 2
+    stopLinkObject: 2
+    linkParticle: s32'zat_appear_l'
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 90
+endState: 
+
+beginState: s32'300shadow'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkObjectZ: 3
+    linkParticle: s32'zat_300chohatu01'
+    flipDirection: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 360
+endState: 
+
+beginState: s32'301Floor_shadowloop'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkObjectZ: 3
+    linkParticle: s32'zat_301floor'
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 600
+endState: 
+
+beginState: s32'500Amorphous_CS'
+  upon: (IMMEDIATE)
+    stopLinkObject: 3
+    ifNotInObject: (PLAYER), Mem(Afro)
+      linkParticle: s32'zat_amorphous_cs'
+    endIf: 
+    else: 
+      linkParticle: s32'zat_amorphous_cs_afro'
+    endElse: 
+    flipDirection: 
+    ignoreHideAllButSelf: 1
+  endUpon: 
+  sprite: s32'null', 600
+endState: 
+
+beginState: s32'500lightball_CS'
+  upon: (IMMEDIATE)
+    stopLinkObject: 3
+    linkParticle: s32'zat_amorphous_lightball01'
+    flipDirection: 
+  endUpon: 
+  sprite: s32'null', 200
+  characterSfx: s32'SE_BTL_ZAT_KAKUSEI_05'
+endState: 
+
+beginState: s32'500lightball_battle'
+  upon: (IMMEDIATE)
+    stopLinkObject: 3
+    linkParticle: s32'zat_amorphous_lightball02'
+    addPositionX: 0, -24995
+    addPositionY: 0, 283000
+    addDepth: 0, 0
+    callSubroutine: s32'cmnWSB_Effect_Angle'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 200
+endState: 
+
+beginState: s32'500Amorphous'
+  upon: (IMMEDIATE)
+    stopLinkObject: 3
+    linkParticle: s32'zat_amorphous_shark'
+    flipDirection: 
+  endUpon: 
+  sprite: s32'null', 7
+  sprite: s32'null', 180
+  cameraShakeEX: s32'Impact', 3400, 0, 30, 0, s32'shake_easeout'
+endState: 
+
+beginState: s32'500Amorphous_wave'
+  upon: (IMMEDIATE)
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkParticle: s32'zat_amorphous_wave'
+    physicsXImpulse: 0, 20000
+    ignoreFinishStop: 1
+  endUpon: 
+  sprite: s32'null', 300
+endState: 
+
+beginState: s32'615Floor_shadowloop'
+  upon: (IMMEDIATE)
+    linkObjPosition: 2
+    linkObjectZ: 2
+    linkParticle: s32'zat_615floor'
+  endUpon: 
+  sprite: s32'null', 2147483647
+endState: 
+
+beginState: s32'616Floor_shadowloop'
+  upon: (IMMEDIATE)
+    linkObjPosition: 2
+    linkObjectZ: 2
+    linkParticle: s32'zat_616floor'
+  endUpon: 
+  sprite: s32'null', 2147483647
+endState: 
+
+beginState: s32'Edy'
+  upon: (IMMEDIATE)
+    linkPawnWithAnimation: s32'edyz_body', s32'zat700cs_body'
+    stepAnimationMode: 0
+  endUpon: 
+  sprite: s32'null', 1200
+endState: 
+
+beginState: s32'Tojo_eyebloom'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 2
+    linkParticle: s32'zat_tojo_edyeye'
+  endUpon: 
+  sprite: s32'null', 800
+endState: 
+
+beginState: s32'Edy615'
+  upon: (IMMEDIATE)
+    linkPawnWithAnimation: s32'Edy_Normal_win1', s32''
+    addPositionX: 0, 200000
+  endUpon: 
+  sprite: s32'edy615_00', 4
+  sprite: s32'edy615_01', 4
+  sprite: s32'edy615_02', 4
+  sprite: s32'edy615_03', 4
+  sprite: s32'edy615_04', 4
+  sprite: s32'edy615_05', 4
+  sprite: s32'edy615_06', 4
+  sprite: s32'edy615_07', 4
+  sprite: s32'edy615_08', 4
+  sprite: s32'edy615_09', 4
+  sprite: s32'edy615_10', 4
+  sprite: s32'edy615_11', 4
+  sprite: s32'edy615_12', 4
+  sprite: s32'edy615_13', 4
+  sprite: s32'edy615_14', 4
+  sprite: s32'edy615_15', 4
+  sprite: s32'edy615_16', 4
+  sprite: s32'edy615_17', 4
+  sprite: s32'edy615_18', 4
+  sprite: s32'edy615_19', 4
+  sprite: s32'edy615_20', 4
+  sprite: s32'edy615_21', 2147483647
+endState: 
+
+beginSubroutine: s32'SunVoidObjAtkAngle'
+  upon: (HIT_OR_GUARD_ANY_OBJECT)
+    modifyVar2: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(0)
+    if: Mem(Tmp)
+      atkAngle: 22
+      modifyVar2: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(45000)
+      if: Mem(Tmp)
+        atkAngle: 67
+        modifyVar2: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(90000)
+        if: Mem(Tmp)
+          atkAngle: 112
+          modifyVar2: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(135000)
+          if: Mem(Tmp)
+            atkAngle: 156
+            modifyVar2: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(180000)
+            if: Mem(Tmp)
+              atkAngle: 201
+              modifyVar2: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(225000)
+              if: Mem(Tmp)
+                atkAngle: 246
+                modifyVar2: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(270000)
+                if: Mem(Tmp)
+                  atkAngle: 301
+                  modifyVar2: (IS_GREATER_OR_EQUAL), Mem(Angle), Val(315000)
+                  if: Mem(Tmp)
+                    atkAngle: 346
+                  endIf: 
+                endIf: 
+              endIf: 
+            endIf: 
+          endIf: 
+        endIf: 
+      endIf: 
+    endIf: 
+  endUpon: 
+endSubroutine: 
+
+beginState: s32'SunVoidObj'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    overdriveAttack: 
+    storeValue: Mem(PlayerVal3), Val(1)
+    createObject: s32'Swordmorphing_noedy', (PLAYER)
+    invulnForce: 1
+    linkPawnWithAnimation: s32'', s32''
+    callSubroutineWithArgs: s32'cmn_AtkLv4', Val(3), Val(3), Val(0), Val(0)
+    setProjectileDurability: 4
+    damage: Val(20)
+    groundHitEffect: (AIR_FACE_UP)
+    hitAirPushbackX: Val(25000)
+    hitAirPushbackY: Val(30000)
+    hitGravity: Val(2900)
+    pushbackX: 80
+    disableHitstopForSelf: 0
+    hitStop: 3
+    enemyHitstopAddition: 5, 5, 5
+    hitSoftKnockdown: 0
+    hitEffectSlash: 1
+    ignoreSlowdown: 1
+    callSubroutine: s32'cmnNohosei_kakusei'
+    attackReflect: 0
+    tensionGainOnConnect: 0
+    attackIgnoreCaution: 1
+    addMoveForceDisableFlag: 4
+    attackFrontDirection: (PLAYER_TO_ENEMY)
+    storeValue: Mem(CmnCharaReg11), Val(1000000000)
+    storeValue: Mem(CmnCharaReg12), Val(0)
+    storeValue: Mem(CmnCharaReg13), Val(1)
+    callSubroutineWithArgs: s32'cmn_hosei', Val(1), Val(0), Val(0), Val(0)
+    scaleForLinkX: 1000
+    scaleForLinkY: 1000
+    addPositionX: 0, -50000
+    addPositionY: 0, 550000
+    upon: (SIGNAL0)
+      gotoLabelRequests: s32'shot'
+    endUpon: 
+    landingHeight: 60000
+    upon: (TOUCH_GROUND)
+      gotoLabelRequests: s32'landing'
+      clearRegisteredUponCode: (HIT_OR_GUARD)
+    endUpon: 
+    upon: (HIT_OR_GUARD)
+      modifyVar: (ADD), Mem(ActReg7), Val(1)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(ActReg7), Val(3)
+        groundHitEffect: (AIR_FACE_UP)
+        hitAirPushbackX: Val(25000)
+        hitAirPushbackY: Val(30000)
+        pushbackX: 130
+        enemyHitstopAddition: 5, 5, 5
+        hitSoftKnockdown: 0
+        ifNotInObject: (PLAYER), Mem(CmnCharaReg5)
+          callSubroutine: s32'cmn_AtkTemplWSB'
+          attackExHitParam: Val(0), 0, 0, 1, (ENEMY), Mem(CmnCharaReg7)
+          forceWallBreak: 1
+          wallBreakLimitTime: 5
+          wallBlowoffType: (BLOWOFF_SLIDE)
+        endIf: 
+        clearRegisteredUponCode: (TOUCH_GROUND)
+        clearRegisteredUponCode: (HIT_OR_GUARD)
+        gotoLabelRequests: s32'end'
+      endIf: 
+      callSubroutineWithArgs: s32'cmn_screenshake', Val(3), Val(2), Val(0), Val(0)
+      finishCameraRequest: s32'Cam_Finish_Sunvoid'
+    endUpon: 
+    callSubroutine: s32'SunVoidObjAtkAngle'
+  endUpon: 
+  sprite: s32'EddieUltimate', 100
+  createObject: s32'Sword3D', (PLAYER)
+  characterSfx: s32'SE_BTL_ZAT_KAKUSEI_01'
+  endLabel: 
+  beginLabel: s32'shot'
+  sprite: s32'EddieUltimate', 10
+  linkParticle: s32'zat_Executor'
+  deactivateObjectByNameAll: s32'Sword3D'
+  deactivateObjectByName: s32'Swordmorphing_noedy'
+  sprite: s32'EddieUltimate', 4
+  setSpeedByAngle: 50000, 0
+  privateSE: s32'SE_BTL_ZAT_KAKUSEI_02'
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  setSpeedByAngle: 65000, 0
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  setSpeedByAngle: 80000, 0
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  endLabel: 
+  gotoLabel: s32'end'
+  beginLabel: s32'landing'
+  sprite: s32'EddieUltimate', 6
+  deleteMoveForceDisableFlag: 4
+  createObject: s32'501_swordlanding', (PLAYER)
+  if: Mem(ActReg7)
+    hit: 
+  endIf: 
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: Val(25000)
+  hitAirPushbackY: Val(30000)
+  pushbackX: 130
+  enemyHitstopAddition: 5, 5, 5
+  hitSoftKnockdown: 0
+  callSubroutine: s32'cmn_AtkTemplWSB'
+  attackExHitParam: Val(0), 0, 0, 1, (ENEMY), Mem(CmnCharaReg7)
+  forceWallBreak: 1
+  wallBreakLimitTime: 5
+  wallBlowoffType: (BLOWOFF_SLIDE)
+  haltMomentum: 1
+  sprite: s32'edy450_01', 1
+  setAngle: 0
+  recoveryState: 
+  faceOpponent: 
+  deleteMoveForceDisableFlag: 4
+  callSubroutine: s32'EddieInitialize'
+  storeValue: Mem(ActReg0), Val(5)
+  storeValue: Mem(PlayerVal3), Val(1)
+  invulnForce: 1
+  linkParticle: s32''
+  callSubroutine: s32'EddieDefault'
+  displayMesh: s32'edyw_bake', 0
+  displayMesh: s32'EDYX_ameba_add', 1
+  landingHeight: 0
+  setPositionY: 0
+  sprite: s32'edy450_01', 1
+  setAlphaColor: 255
+  sprite: s32'edy450_02', 1
+  sprite: s32'edy450_03', 1
+  sprite: s32'edy450_04', 1
+  sprite: s32'keep', 2147483647
+  callSubroutine: s32'EddieActionReqNeutral'
+  exitState: 
+  beginLabel: s32'end'
+  sprite: s32'zat417_body_01', 25
+  recoveryState: 
+  linkParticle: s32'zat_sunvoid_spheremorph'
+  ifOperation: (IS_GREATER), Mem(PosY), Val(360000)
+    velocityXPercentEachFrame: 85
+    velocityYPercentEachFrame: 85
+  endIf: 
+  else: 
+    velocityXPercentEachFrame: 85
+    physicsYImpulse: 0, 0
+    gotoLabelRequests: s32'landing2'
+  endElse: 
+  sprite: s32'zat417_body_01', 2147483647
+  clearRegisteredUponCode: (FRAME_STEP)
+  landingHeight: 50000
+  setAngle: 0
+  physicsXImpulse: 0, 0
+  setGravity: 10000
+  physicsYImpulse: 0, -12000
+  clearRegisteredUponCode: (TOUCH_GROUND)
+  upon: (TOUCH_GROUND)
+    gotoLabelRequests: s32'landing2'
+  endUpon: 
+  endLabel: 
+  beginLabel: s32'landing2'
+  sprite: s32'edy450_01', 1
+  setAlphaColor: 0
+  createParticle: s32'zat_shadow_del', (PLAYER_LAND)
+  faceOpponent: 
+  deleteMoveForceDisableFlag: 4
+  callSubroutine: s32'EddieInitialize'
+  storeValue: Mem(ActReg0), Val(5)
+  storeValue: Mem(PlayerVal3), Val(1)
+  invulnForce: 1
+  linkParticle: s32''
+  callSubroutine: s32'EddieDefault'
+  displayMesh: s32'edyw_bake', 0
+  displayMesh: s32'EDYX_ameba_add', 1
+  landingHeight: 0
+  setPositionY: 0
+  sprite: s32'edy450_01', 1
+  setAlphaColor: 255
+  sprite: s32'edy450_02', 1
+  sprite: s32'edy450_03', 1
+  sprite: s32'edy450_04', 1
+  sprite: s32'keep', 2147483647
+  callSubroutine: s32'EddieActionReqNeutral'
+endState: 
+
+beginState: s32'AirSunVoidObj'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    overdriveAttack: 
+    storeValue: Mem(PlayerVal3), Val(1)
+    createObject: s32'Swordmorphing_air', (PLAYER)
+    invulnForce: 1
+    linkPawnWithAnimation: s32'', s32''
+    callSubroutineWithArgs: s32'cmn_AtkLv4', Val(3), Val(3), Val(0), Val(0)
+    setProjectileDurability: 4
+    damage: Val(20)
+    groundHitEffect: (AIR_FACE_UP)
+    hitAirPushbackX: Val(25000)
+    hitAirPushbackY: Val(30000)
+    hitGravity: Val(2900)
+    pushbackX: 80
+    disableHitstopForSelf: 0
+    hitStop: 3
+    enemyHitstopAddition: 5, 5, 5
+    hitSoftKnockdown: 0
+    hitEffectSlash: 1
+    ignoreSlowdown: 1
+    callSubroutine: s32'cmnNohosei_kakusei'
+    attackReflect: 0
+    tensionGainOnConnect: 0
+    attackIgnoreCaution: 1
+    addMoveForceDisableFlag: 4
+    storeValue: Mem(CmnCharaReg11), Val(1000000000)
+    storeValue: Mem(CmnCharaReg12), Val(0)
+    storeValue: Mem(CmnCharaReg13), Val(1)
+    callSubroutineWithArgs: s32'cmn_hosei', Val(1), Val(0), Val(0), Val(0)
+    attackFrontDirection: (PLAYER_TO_ENEMY)
+    scaleForLinkX: 1000
+    scaleForLinkY: 1000
+    addPositionX: 0, -50000
+    addPositionY: 0, 550000
+    upon: (SIGNAL0)
+      gotoLabelRequests: s32'shot'
+    endUpon: 
+    landingHeight: 60000
+    upon: (TOUCH_GROUND)
+      gotoLabelRequests: s32'landing'
+      clearRegisteredUponCode: (HIT_OR_GUARD)
+    endUpon: 
+    upon: (HIT_OR_GUARD)
+      modifyVar: (ADD), Mem(ActReg7), Val(1)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(ActReg7), Val(3)
+        groundHitEffect: (AIR_FACE_UP)
+        hitAirPushbackX: Val(25000)
+        hitAirPushbackY: Val(30000)
+        pushbackX: 130
+        enemyHitstopAddition: 5, 5, 5
+        hitSoftKnockdown: 0
+        ifNotInObject: (PLAYER), Mem(CmnCharaReg5)
+          callSubroutine: s32'cmn_AtkTemplWSB'
+          attackExHitParam: Val(0), 0, 0, 1, (ENEMY), Mem(CmnCharaReg7)
+          forceWallBreak: 1
+          wallBreakLimitTime: 5
+          wallBlowoffType: (BLOWOFF_SLIDE)
+        endIf: 
+        clearRegisteredUponCode: (TOUCH_GROUND)
+        clearRegisteredUponCode: (HIT_OR_GUARD)
+        gotoLabelRequests: s32'end'
+      endIf: 
+      cameraShakeEX: s32'Impact', 300, 0, 30, 0, s32'shake_easeout'
+      finishCameraRequest: s32'Cam_Finish_Sunvoid'
+    endUpon: 
+    callSubroutine: s32'SunVoidObjAtkAngle'
+  endUpon: 
+  sprite: s32'EddieUltimate', 100
+  createObject: s32'Sword3D', (PLAYER)
+  characterSfx: s32'SE_BTL_ZAT_KAKUSEI_01'
+  endLabel: 
+  beginLabel: s32'shot'
+  sprite: s32'EddieUltimate', 10
+  linkParticle: s32'zat_Executor'
+  deactivateObjectByNameAll: s32'Sword3D'
+  deactivateObjectByName: s32'Swordmorphing_air'
+  sprite: s32'EddieUltimate', 4
+  setSpeedByAngle: 50000, 0
+  privateSE: s32'SE_BTL_ZAT_KAKUSEI_02'
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  setSpeedByAngle: 65000, 0
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  setSpeedByAngle: 80000, 0
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  endLabel: 
+  gotoLabel: s32'end'
+  beginLabel: s32'landing'
+  sprite: s32'EddieUltimate', 6
+  deleteMoveForceDisableFlag: 4
+  createObject: s32'501_swordlanding', (PLAYER)
+  if: Mem(ActReg7)
+    hit: 
+  endIf: 
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: Val(25000)
+  hitAirPushbackY: Val(30000)
+  pushbackX: 130
+  enemyHitstopAddition: 5, 5, 5
+  hitSoftKnockdown: 0
+  callSubroutine: s32'cmn_AtkTemplWSB'
+  attackExHitParam: Val(0), 0, 0, 1, (ENEMY), Mem(CmnCharaReg7)
+  forceWallBreak: 1
+  wallBreakLimitTime: 5
+  wallBlowoffType: (BLOWOFF_SLIDE)
+  haltMomentum: 1
+  sprite: s32'edy450_01', 1
+  setAngle: 0
+  recoveryState: 
+  faceOpponent: 
+  deleteMoveForceDisableFlag: 4
+  callSubroutine: s32'EddieInitialize'
+  storeValue: Mem(ActReg0), Val(5)
+  storeValue: Mem(PlayerVal3), Val(1)
+  invulnForce: 1
+  linkParticle: s32''
+  callSubroutine: s32'EddieDefault'
+  displayMesh: s32'edyw_bake', 0
+  displayMesh: s32'EDYX_ameba_add', 1
+  landingHeight: 0
+  setPositionY: 0
+  sprite: s32'edy450_01', 1
+  setAlphaColor: 255
+  sprite: s32'edy450_02', 1
+  sprite: s32'edy450_03', 1
+  sprite: s32'edy450_04', 1
+  sprite: s32'keep', 2147483647
+  callSubroutine: s32'EddieActionReqNeutral'
+  exitState: 
+  beginLabel: s32'end'
+  sprite: s32'zat417_body_01', 25
+  recoveryState: 
+  linkParticle: s32'zat_sunvoid_spheremorph'
+  ifOperation: (IS_GREATER), Mem(PosY), Val(360000)
+    velocityXPercentEachFrame: 85
+    velocityYPercentEachFrame: 85
+  endIf: 
+  else: 
+    velocityXPercentEachFrame: 85
+    physicsYImpulse: 0, 0
+    gotoLabelRequests: s32'landing2'
+  endElse: 
+  sprite: s32'zat417_body_01', 2147483647
+  clearRegisteredUponCode: (FRAME_STEP)
+  landingHeight: 50000
+  setAngle: 0
+  physicsXImpulse: 0, 0
+  setGravity: 10000
+  physicsYImpulse: 0, -12000
+  clearRegisteredUponCode: (TOUCH_GROUND)
+  upon: (TOUCH_GROUND)
+    gotoLabelRequests: s32'landing2'
+  endUpon: 
+  endLabel: 
+  beginLabel: s32'landing2'
+  sprite: s32'edy450_01', 1
+  setAlphaColor: 0
+  createParticle: s32'zat_shadow_del', (PLAYER_LAND)
+  faceOpponent: 
+  deleteMoveForceDisableFlag: 4
+  callSubroutine: s32'EddieInitialize'
+  storeValue: Mem(ActReg0), Val(5)
+  storeValue: Mem(PlayerVal3), Val(1)
+  invulnForce: 1
+  linkParticle: s32''
+  callSubroutine: s32'EddieDefault'
+  displayMesh: s32'edyw_bake', 0
+  displayMesh: s32'EDYX_ameba_add', 1
+  landingHeight: 0
+  setPositionY: 0
+  sprite: s32'edy450_01', 1
+  setAlphaColor: 255
+  sprite: s32'edy450_02', 1
+  sprite: s32'edy450_03', 1
+  sprite: s32'edy450_04', 1
+  sprite: s32'keep', 2147483647
+  callSubroutine: s32'EddieActionReqNeutral'
+endState: 
+
+beginState: s32'SunVoidShotObj'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'EddieInitialize'
+    overdriveAttack: 
+    storeValue: Mem(PlayerVal3), Val(1)
+    ifOperation: (IS_EQUAL), Mem(PosY), Val(0)
+      createObject: s32'Swordmorphing_edy', (PLAYER)
+      createObject: s32'501aura', (PLAYER)
+    endIf: 
+    else: 
+      exPointFReset: (PLAYER), 0, -76000
+      createObject: s32'Swordmorphing_edy', (EX_POINT_F)
+      exPointFReset: (PLAYER), 0, 170000
+      createObject: s32'501aura_air', (EX_POINT_F)
+    endElse: 
+    invulnForce: 1
+    linkPawnWithAnimation: s32'', s32''
+    callSubroutineWithArgs: s32'cmn_AtkLv4', Val(3), Val(3), Val(0), Val(0)
+    setProjectileDurability: 4
+    damage: Val(20)
+    groundHitEffect: (AIR_FACE_UP)
+    hitAirPushbackX: Val(25000)
+    hitAirPushbackY: Val(30000)
+    hitGravity: Val(2900)
+    pushbackX: 80
+    disableHitstopForSelf: 0
+    hitStop: 3
+    enemyHitstopAddition: 5, 5, 5
+    hitSoftKnockdown: 0
+    hitEffectSlash: 1
+    ignoreSlowdown: 1
+    callSubroutine: s32'cmnNohosei_kakusei'
+    attackReflect: 0
+    tensionGainOnConnect: 0
+    attackIgnoreCaution: 1
+    addMoveForceDisableFlag: 4
+    storeValue: Mem(CmnCharaReg11), Val(1000000000)
+    storeValue: Mem(CmnCharaReg12), Val(0)
+    storeValue: Mem(CmnCharaReg13), Val(1)
+    callSubroutineWithArgs: s32'cmn_hosei', Val(1), Val(0), Val(0), Val(0)
+    scaleForLinkX: 1000
+    scaleForLinkY: 1000
+    upon: (SIGNAL0)
+      gotoLabelRequests: s32'shot'
+    endUpon: 
+    landingHeight: 60000
+    upon: (TOUCH_GROUND)
+      gotoLabelRequests: s32'landing'
+      clearRegisteredUponCode: (HIT_OR_GUARD)
+    endUpon: 
+    upon: (HIT_OR_GUARD)
+      modifyVar: (ADD), Mem(ActReg7), Val(1)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(ActReg7), Val(3)
+        groundHitEffect: (AIR_FACE_UP)
+        hitAirPushbackX: Val(25000)
+        hitAirPushbackY: Val(30000)
+        pushbackX: 130
+        enemyHitstopAddition: 5, 5, 5
+        hitSoftKnockdown: 0
+        ifNotInObject: (PLAYER), Mem(CmnCharaReg5)
+          callSubroutine: s32'cmn_AtkTemplWSB'
+          attackExHitParam: Val(0), 0, 0, 1, (ENEMY), Mem(CmnCharaReg7)
+          forceWallBreak: 1
+          wallBreakLimitTime: 5
+          wallBlowoffType: (BLOWOFF_SLIDE)
+        endIf: 
+        clearRegisteredUponCode: (TOUCH_GROUND)
+        clearRegisteredUponCode: (HIT_OR_GUARD)
+        gotoLabelRequests: s32'end'
+      endIf: 
+      finishCameraRequest: s32'Cam_Finish_Sunvoid'
+      cameraShakeEX: s32'Impact', 300, 0, 30, 0, s32'shake_easeout'
+    endUpon: 
+    checkCurrentStateName: (PLAYER), s32'SunVoid2_Air'
+    if: Mem(Tmp)
+      statsActionName: s32'AirSunVoidShotObj'
+      missionName: s32'AirSunVoidObj'
+    endIf: 
+    else: 
+      missionName: s32'SunVoidObj'
+    endElse: 
+    callSubroutine: s32'SunVoidObjAtkAngle'
+  endUpon: 
+  sprite: s32'null', 100
+  exPointFReset: (PLAYER), -70000, 480000
+  createObject: s32'Sword3D', (EX_POINT_F)
+  stackObject: (STACK6), (PREVIOUS)
+  moveToObject: (STACK6)
+  endLabel: 
+  beginLabel: s32'shot'
+  sprite: s32'EddieUltimate', 10
+  linkParticle: s32'zat_Executor'
+  deactivateObjectByNameAll: s32'Sword3D'
+  deactivateObjectByName: s32'Swordmorphing_edy'
+  characterSfx: s32'SE_BTL_ZAT_KAKUSEI_01'
+  sprite: s32'EddieUltimate', 4
+  setSpeedByAngle: 50000, 0
+  privateSE: s32'SE_BTL_ZAT_KAKUSEI_02'
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  setSpeedByAngle: 65000, 0
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  setSpeedByAngle: 80000, 0
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  sprite: s32'EddieUltimate', 3
+  hit: 
+  endLabel: 
+  gotoLabel: s32'end'
+  beginLabel: s32'landing'
+  sprite: s32'EddieUltimate', 6
+  deleteMoveForceDisableFlag: 4
+  createObject: s32'501_swordlanding', (PLAYER)
+  if: Mem(ActReg7)
+    hit: 
+  endIf: 
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: Val(25000)
+  hitAirPushbackY: Val(30000)
+  pushbackX: 130
+  enemyHitstopAddition: 5, 5, 5
+  hitSoftKnockdown: 0
+  callSubroutine: s32'cmn_AtkTemplWSB'
+  attackExHitParam: Val(0), 0, 0, 1, (ENEMY), Mem(CmnCharaReg7)
+  forceWallBreak: 1
+  wallBreakLimitTime: 5
+  wallBlowoffType: (BLOWOFF_SLIDE)
+  haltMomentum: 1
+  sprite: s32'edy450_01', 1
+  setAngle: 0
+  recoveryState: 
+  faceOpponent: 
+  deleteMoveForceDisableFlag: 4
+  callSubroutine: s32'EddieInitialize'
+  storeValue: Mem(ActReg0), Val(5)
+  storeValue: Mem(PlayerVal3), Val(1)
+  invulnForce: 1
+  linkParticle: s32''
+  callSubroutine: s32'EddieDefault'
+  displayMesh: s32'edyw_bake', 0
+  displayMesh: s32'EDYX_ameba_add', 1
+  landingHeight: 0
+  setPositionY: 0
+  sprite: s32'edy450_01', 1
+  setAlphaColor: 255
+  sprite: s32'edy450_02', 1
+  sprite: s32'edy450_03', 1
+  sprite: s32'edy450_04', 1
+  sprite: s32'keep', 2147483647
+  callSubroutine: s32'EddieActionReqNeutral'
+  exitState: 
+  beginLabel: s32'end'
+  sprite: s32'zat417_body_01', 25
+  recoveryState: 
+  linkParticle: s32'zat_sunvoid_spheremorph'
+  ifOperation: (IS_GREATER), Mem(PosY), Val(360000)
+    velocityXPercentEachFrame: 85
+    velocityYPercentEachFrame: 85
+  endIf: 
+  else: 
+    velocityXPercentEachFrame: 85
+    physicsYImpulse: 0, 0
+    gotoLabelRequests: s32'landing2'
+  endElse: 
+  sprite: s32'zat417_body_01', 2147483647
+  clearRegisteredUponCode: (FRAME_STEP)
+  landingHeight: 50000
+  setAngle: 0
+  physicsXImpulse: 0, 0
+  setGravity: 10000
+  physicsYImpulse: 0, -12000
+  clearRegisteredUponCode: (TOUCH_GROUND)
+  upon: (TOUCH_GROUND)
+    gotoLabelRequests: s32'landing2'
+  endUpon: 
+  endLabel: 
+  beginLabel: s32'landing2'
+  sprite: s32'edy450_01', 1
+  setAlphaColor: 0
+  createParticle: s32'zat_shadow_del', (PLAYER_LAND)
+  faceOpponent: 
+  deleteMoveForceDisableFlag: 4
+  callSubroutine: s32'EddieInitialize'
+  storeValue: Mem(ActReg0), Val(5)
+  storeValue: Mem(PlayerVal3), Val(1)
+  invulnForce: 1
+  linkParticle: s32''
+  callSubroutine: s32'EddieDefault'
+  displayMesh: s32'edyw_bake', 0
+  displayMesh: s32'EDYX_ameba_add', 1
+  landingHeight: 0
+  setPositionY: 0
+  sprite: s32'edy450_01', 1
+  setAlphaColor: 255
+  sprite: s32'edy450_02', 1
+  sprite: s32'edy450_03', 1
+  sprite: s32'edy450_04', 1
+  sprite: s32'keep', 2147483647
+  callSubroutine: s32'EddieActionReqNeutral'
+endState: 
+
+beginSubroutine: s32'EDY_ShadowParticle'
+  createObject: s32'Edy_Particle', (PLAYER)
+endSubroutine: 
+
+beginState: s32'Edy_Particle'
+  upon: (IMMEDIATE)
+    linkObjPosition: 2
+    setLinkObjectDestroyOnStateChange: 3
+  endUpon: 
+  sprite: s32'null', 36
+  createArgFromSocket: s32'eff_edy_head_top', 0, 2
+  linkParticleWithArg2: s32'edy_shadow_particle'
+endState: 
+
+beginState: s32'Cam_Amorphous'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1500000), Val(1500000), Val(-1500000), Val(1500000)
+    moveCameraTargetCameraOnBlend: 4, 8, s32'accel_brake'
+    moveCameraBasePosOffset: 0, 38000, 0, 460000, 0, 185000, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'linear'
+    moveCameraTargetPosOffset: 0, 48000, 0, 120000, 0, 65000, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'brake'
+    moveCameraTargetPosRate: 0, 0, 0, 600, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'accel_brake'
+    moveCameraTargetRotRate: 0, 0, 0, 800, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'linear'
+    moveCameraTargetPercent: 0, 100, 0, 100, 0, 0, 0, 100, 0, 0, s32'accel_brake', s32'brake'
+    moveCameraTargetRotRoll: 0, 0, 0, 3500, 0, 0, 0, 80, 0, 0, s32'accel_brake', s32'brake'
+    moveCameraSplinePosRate: 0, 0, 0, 600, 0, 0, 0, 100, 0, 0, s32'linear', s32'brake'
+    moveCameraSpline: s32'zat_amorphous', 0, 0, 0, 1000, 0, 100, s32'linear'
+    ignoreSuperFreeze: 1
+    moveCameraFOV: 0, 65, 0, 0, 0, 200, 0, 0, s32'accel_brake', s32'brake'
+  endUpon: 
+  sprite: s32'null', 32
+  sprite: s32'null', 8
+  runOnObject: (STACK0)
+    setPosXBetweenObject: 3, 22
+  endRunOnObject: 
+  moveCameraBasePosObject: (STACK0)
+  moveCameraTargetCameraOnBlend: 23, 22, s32'accel_brake'
+  moveCameraTargetPosRate: 0, 600, 0, 0, 0, 22, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetRotRate: 0, 800, 0, 0, 0, 22, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraSplinePosRate: 0, 600, 0, 0, 0, 22, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraSpline: s32'zat_amorphous', 0, 0, 0, 1000, 0, 22, s32'brake'
+  moveCameraFOV: 0, 65, 0, 22, 0, 0, 0, 0, s32'accel_brake', s32'brake'
+endState: 
+
+beginState: s32'Cam_DamnedFang'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1200000), Val(1200000), Val(-1500000), Val(1200000)
+    moveCameraTargetCameraOnBlend: 4, 42, s32'accel_brake'
+    moveCameraBasePosOffset: 0, 0, 0, 460000, 0, 35000, 0, 20, 0, 1000, 0, 0, s32'accel_brake', s32'linear'
+    moveCameraTargetPosOffset: 0, 50000, 0, 0, 0, 185000, 0, 20, 0, 1000, 0, 0, s32'accel_brake', s32'accel_brake'
+    moveCameraTargetRotRate: 0, 1000, 0, 1000, 0, 20, 0, 1000, 0, 0, s32'linear', s32'linear'
+    moveCameraTargetPosRate: 0, 1000, 0, 1000, 0, 20, 0, 1000, 0, 0, s32'linear', s32'linear'
+    moveCameraTargetPercent: 0, 0, 0, 100, 0, 0, 0, 1000, 0, 0, s32'linear', s32'linear'
+    moveCameraSplinePosRate: 0, 1000, 0, 1000, 0, 0, 0, 200, 0, 0, s32'linear', s32'linear'
+    moveCameraSpline: s32'zat_damnedfang2', 0, 0, 0, 1000, 0, 200, s32'brake'
+    moveCameraFOV: 0, 88, 0, 60, 0, 162, 0, 32, s32'accel_brake', s32'brake'
+    resetDOF: 1, 1
+    focalDistance: -1, 700, 0
+    focalRegion: -1, 0, 0
+    focalNearTransition: -1, 0, 0
+    focalFarTransition: -1, 500, 0
+    focalNearBlurSize: -1, 0, 0
+    focalFarBlurSize: -1, 20, 10
+    resetDiffusion: 1, 1
+    setDiffusionLuminance: -1, 1400, 40
+    setDiffusionThreshold: -1, 0, 40
+  endUpon: 
+  sprite: s32'null', 42
+  sprite: s32'null', 148
+  moveCameraTargetPosOffset: 0, 60000, 0, 0, 0, 230000, 0, 148, 0, 1000, 0, 0, s32'accel_brake', s32'accel_brake'
+  sprite: s32'null', 32
+  moveCameraTargetPosOffset: 0, 110000, 0, 0, 0, 70000, 0, 16, 0, 60, 0, 0, s32'accel_brake', s32'accel_brake'
+  sprite: s32'null', 32
+  moveCameraTargetCameraOnBlend: 4, 32, s32'brake'
+  moveCameraTargetPosRate: 0, 1000, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetRotRate: 0, 1000, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraSplinePosRate: 0, 1000, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraSpline: s32'zat_damnedfang2', 0, 0, 0, 1000, 0, 32, s32'brake'
+  moveCameraFOV: 0, 65, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  resetDOF: 0, 30
+  resetDiffusion: 0, 30
+endState: 
+
+beginState: s32'Cam_Throw'
+  upon: (IMMEDIATE)
+    setPosXBetweenObject: 3, 22
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1100000), Val(1100000), Val(-1200000), Val(1200000)
+    moveCameraTargetCameraOnBlend: 4, 36, s32'accel_brake'
+    moveCameraBasePosOffset: 0, 20000, 0, 380000, 0, 135000, 0, 20, 0, 1000, 0, 0, s32'accel_brake', s32'linear'
+    moveCameraTargetPosOffset: 0, 20000, 0, 0, 0, 110000, 0, 20, 0, 1000, 0, 0, s32'accel_brake', s32'accel_brake'
+    moveCameraTargetRotRate: 0, 1000, 0, 1000, 0, 20, 0, 1000, 0, 0, s32'linear', s32'linear'
+    moveCameraTargetPosRate: 0, 1000, 0, 1000, 0, 20, 0, 1000, 0, 0, s32'linear', s32'linear'
+    moveCameraTargetPercent: 0, 0, 0, 100, 0, 0, 0, 1000, 0, 0, s32'linear', s32'linear'
+    moveCameraTrackUp: 0, 0, 0, 12000, 0, 36, 0, 0, 0, 36, s32'brake', s32'accel_brake'
+    moveCameraFOV: 0, 62, 0, 12, 0, 30, 0, 0, s32'linear', s32'brake'
+    resetDOF: 1, 0
+    focalDistance: -1, 2000, 30
+    focalRegion: -1, 0, 0
+    focalNearTransition: -1, 0, 0
+    focalFarTransition: -1, 500, 30
+    focalNearBlurSize: -1, 0, 0
+    focalFarBlurSize: -1, 15, 30
+    resetDiffusion: 1, 1
+    setDiffusionLuminance: -1, 1400, 30
+    setDiffusionThreshold: -1, 0, 30
+  endUpon: 
+  sprite: s32'null', 28
+  sprite: s32'null', 8
+  moveCameraBasePosOffset: 0, 20000, 0, 400000, 0, 135000, 0, 8, 0, 1000, 0, 0, s32'linear', s32'linear'
+  moveCameraTargetPosOffset: 0, 20000, 0, 0, 0, 110000, 0, 8, 0, 1000, 0, 0, s32'accel_brake', s32'accel_brake'
+  moveCameraTargetPosOffset: 0, 80000, 0, 0, 0, 135000, 0, 8, 0, 1000, 0, 0, s32'accel_brake', s32'accel_brake'
+  moveCameraTargetPosRate: 0, 1000, 0, 0, 0, 8, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetRotRate: 0, 1000, 0, 0, 0, 8, 0, 0, 0, 0, s32'brake', s32'brake'
+  resetDOF: 0, 8
+  resetDiffusion: 0, 8
+  sprite: s32'null', 8
+  moveCameraFOV: 0, 65, 0, 8, 0, 0, 0, 0, s32'linear', s32'brake'
+  sprite: s32'null', 30
+  moveCameraOrthoCurve: s32'orthoone', 0, 0, s32'orthoone'
+endState: 
+
+beginState: s32'Cam_AirThrow'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1500000), Val(1500000), Val(-1500000), Val(1500000)
+    moveCameraTargetCameraOnBlend: 4, 40, s32'accel_brake'
+    moveCameraTargetPosOffset: 0, 130000, 0, 0, 0, 135000, 0, 0, 0, 120, 0, 0, s32'accel_brake', s32'accel_brake'
+    moveCameraBasePosOffset: 0, 130000, 0, 460000, 0, 105000, 0, 0, 0, 120, 0, 0, s32'brake', s32'brake'
+    moveCameraTargetRotRate: 0, 1000, 0, 1000, 0, 0, 0, 120, 0, 0, s32'brake', s32'brake'
+    moveCameraTargetPosRate: 0, 1000, 0, 1000, 0, 0, 0, 120, 0, 0, s32'brake', s32'brake'
+    moveCameraTargetPercent: 0, 100, 0, 100, 0, 0, 0, 120, 0, 0, s32'brake', s32'brake'
+    moveCameraSplinePosRate: 0, 1000, 0, 1000, 0, 0, 0, 40, 0, 0, s32'accel_brake', s32'brake'
+    moveCameraSpline: s32'zat_airthrow', 0, 0, 0, 1000, 0, 40, s32'accel_brake'
+    resetDOF: 1, 0
+    focalDistance: -1, 2000, 30
+    focalRegion: -1, 0, 0
+    focalNearTransition: -1, 0, 0
+    focalFarTransition: -1, 500, 30
+    focalNearBlurSize: -1, 0, 0
+    focalFarBlurSize: -1, 15, 30
+    resetDiffusion: 1, 1
+    setDiffusionLuminance: -1, 1400, 30
+    setDiffusionThreshold: -1, 0, 30
+  endUpon: 
+  sprite: s32'null', 40
+  sprite: s32'null', 32
+  moveCameraTargetPosOffset: 0, 0, 0, 0, 0, 135000, 0, 32, 0, 0, 0, 0, s32'accel_brake', s32'accel_brake'
+  moveCameraTargetCameraOnBlend: 4, 32, s32'brake'
+  moveCameraTargetPosRate: 0, 1000, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetRotRate: 0, 1000, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraSplinePosRate: 0, 1000, 0, 0, 0, 32, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraSpline: s32'zat_airthrow', 0, 0, 0, 1000, 0, 32, s32'brake'
+  callSubroutine: s32'cmnCam_CommonCameraEnd'
+  resetDOF: 0, 20
+  resetDiffusion: 0, 20
+endState: 
+
+beginState: s32'Cam_SunVoid'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1500000), Val(1200000), Val(-1350000), Val(1200000)
+    moveCameraTargetCameraOnBlend: 4, 24, s32'brake'
+    moveCameraTargetPosOffset: 0, 0, 0, 0, 0, 135000, 0, 0, 0, 90, 0, 0, s32'accel_brake', s32'brake'
+    moveCameraTargetPosRate: 0, 0, 0, 1000, 0, 0, 0, 90, 0, 0, s32'accel_brake', s32'accel_brake'
+    moveCameraTargetRotRate: 0, 0, 0, 1000, 0, 0, 0, 90, 0, 0, s32'accel_brake', s32'linear'
+    moveCameraTargetPercent: 0, 100, 0, 100, 0, 0, 0, 90, 0, 0, s32'accel_brake', s32'brake'
+    moveCameraSplinePosRate: 0, 0, 0, 1000, 0, 0, 0, 90, 0, 0, s32'linear', s32'brake'
+    moveCameraSpline: s32'zat_sunvoid2', 0, 0, 0, 1000, 0, 90, s32'linear'
+    moveCameraFOV: 0, 95, 0, 0, 0, 120, 0, 0, s32'accel_brake', s32'brake'
+    moveCameraTargetRotRoll: 0, 0, 0, -1500, 0, 24, 0, 41, 0, 24, s32'accel_brake', s32'brake'
+    ignoreSuperFreeze: 1
+    resetDOF: 1, 1
+    focalDistance: -1, 700, 0
+    focalRegion: -1, 0, 0
+    focalNearTransition: -1, 0, 0
+    focalFarTransition: -1, 500, 0
+    focalNearBlurSize: -1, 0, 0
+    focalFarBlurSize: -1, 10, 10
+    resetDiffusion: 1, 1
+    setDiffusionLuminance: -1, 1400, 40
+    setDiffusionThreshold: -1, 0, 40
+  endUpon: 
+  sprite: s32'null', 50
+  moveCameraTargetPosOffset: 0, 22000, 0, 0, 0, 175000, 0, 65, 0, 90, 0, 0, s32'linear', s32'brake'
+  sprite: s32'null', 5
+  moveCameraTargetPosOffset: 0, 202000, 0, -80000, 0, 55000, 0, 16, 0, 90, 0, 0, s32'linear', s32'brake'
+  moveCameraTargetRotRoll: 0, 0, 0, -1500, 0, 0, 0, 0, 0, 16, s32'accel_brake', s32'brake'
+  sprite: s32'null', 20
+  moveCameraTargetPosRate: 0, 1000, 0, 0, 0, 20, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetRotRate: 0, 1000, 0, 0, 0, 20, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraSplinePosRate: 0, 0, 0, 1000, 0, 0, 0, 0, 0, 20, s32'linear', s32'brake'
+  moveCameraSpline: s32'zat_sunvoid2', 0, 0, 0, 1000, 0, 20, s32'linear'
+  moveCameraStop: 20, s32'brake'
+  moveCameraFOV: 0, 65, 0, 14, 0, 0, 0, 0, s32'linear', s32'brake'
+  moveCameraOrthoCurve: s32'orthoone', 0, 0, s32'orthoone'
+  resetDOF: 0, 20
+  resetDiffusion: 0, 20
+endState: 
+
+beginState: s32'Cam_AirSunVoid'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1500000), Val(1200000), Val(-1350000), Val(1200000)
+    moveCameraTargetCameraOnBlend: 4, 24, s32'brake'
+    moveCameraTargetPosOffset: 0, 0, 0, 0, 0, 135000, 0, 0, 0, 90, 0, 0, s32'accel_brake', s32'brake'
+    moveCameraTargetPosRate: 0, 0, 0, 1000, 0, 0, 0, 90, 0, 0, s32'accel_brake', s32'accel_brake'
+    moveCameraTargetRotRate: 0, 0, 0, 1000, 0, 0, 0, 90, 0, 0, s32'accel_brake', s32'linear'
+    moveCameraTargetPercent: 0, 100, 0, 100, 0, 0, 0, 90, 0, 0, s32'accel_brake', s32'brake'
+    moveCameraSplinePosRate: 0, 0, 0, 1000, 0, 0, 0, 90, 0, 0, s32'linear', s32'brake'
+    moveCameraSpline: s32'zat_sunvoid2', 0, 0, 0, 1000, 0, 90, s32'linear'
+    moveCameraFOV: 0, 95, 0, 0, 0, 120, 0, 0, s32'accel_brake', s32'brake'
+    moveCameraTargetRotRoll: 0, 0, 0, -1500, 0, 24, 0, 41, 0, 24, s32'accel_brake', s32'brake'
+    ignoreSuperFreeze: 1
+    resetDOF: 1, 1
+    focalDistance: -1, 700, 0
+    focalRegion: -1, 0, 0
+    focalNearTransition: -1, 0, 0
+    focalFarTransition: -1, 500, 0
+    focalNearBlurSize: -1, 0, 0
+    focalFarBlurSize: -1, 10, 10
+    resetDiffusion: 1, 1
+    setDiffusionLuminance: -1, 1400, 40
+    setDiffusionThreshold: -1, 0, 40
+  endUpon: 
+  sprite: s32'null', 50
+  moveCameraTargetPosOffset: 0, 22000, 0, 0, 0, 175000, 0, 65, 0, 90, 0, 0, s32'linear', s32'brake'
+  sprite: s32'null', 5
+  moveCameraTargetPosOffset: 0, 202000, 0, -80000, 0, 55000, 0, 16, 0, 90, 0, 0, s32'linear', s32'brake'
+  moveCameraTargetRotRoll: 0, 0, 0, -1500, 0, 0, 0, 0, 0, 16, s32'accel_brake', s32'brake'
+  sprite: s32'null', 20
+  moveCameraTargetPosRate: 0, 1000, 0, 0, 0, 20, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetRotRate: 0, 1000, 0, 0, 0, 20, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraSplinePosRate: 0, 0, 0, 1000, 0, 0, 0, 0, 0, 20, s32'linear', s32'brake'
+  moveCameraSpline: s32'zat_sunvoid2', 0, 0, 0, 1000, 0, 20, s32'linear'
+  moveCameraStop: 20, s32'brake'
+  moveCameraFOV: 0, 65, 0, 14, 0, 0, 0, 0, s32'linear', s32'brake'
+  moveCameraOrthoCurve: s32'orthoone', 0, 0, s32'orthoone'
+  resetDOF: 0, 20
+  resetDiffusion: 0, 20
+  callSubroutine: s32'cmnCam_CommonCameraEnd'
+endState: 
+
+beginState: s32'Cam_SunVoidShot'
+  upon: (IMMEDIATE)
+    setPosXBetweenObject: 3, 22
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1400000), Val(1400000), Val(-1400000), Val(1400000)
+    moveCameraTargetCameraOnBlend: 4, 24, s32'brake'
+    moveCameraOrthoCurve: s32'orthoone', 0, 0, s32'orthoone'
+    moveCameraTrackUp: 0, 0, 0, -14000, 0, 24, 0, 30, 0, 30, s32'brake', s32'accel_brake'
+    moveCameraFOV: 0, 70, 0, 26, 0, 30, 0, 30, s32'brake', s32'brake'
+    ignoreSuperFreeze: 1
+    resetDOF: 1, 1
+    focalDistance: -1, 700, 0
+    focalRegion: -1, 0, 0
+    focalNearTransition: -1, 0, 0
+    focalFarTransition: -1, 500, 0
+    focalNearBlurSize: -1, 0, 0
+    focalFarBlurSize: -1, 10, 10
+    resetDiffusion: 1, 1
+    setDiffusionLuminance: -1, 1400, 40
+    setDiffusionThreshold: -1, 0, 40
+  endUpon: 
+  sprite: s32'null', 65
+  sprite: s32'null', 1
+  resetDOF: 0, 16
+  resetDiffusion: 0, 16
+endState: 
+
+beginState: s32'Cam_Finish_Amorphous'
+  callSubroutineWithArgs: s32'cmn_FinishCamera_Init', Val(7), Val(0), Val(0), Val(0)
+endState: 
+
+beginState: s32'Cam_Finish_Sunvoid'
+  callSubroutineWithArgs: s32'cmn_FinishCamera_Init', Val(2), Val(0), Val(0), Val(0)
+endState: 
+
+beginState: s32'DUMMY'
+  sprite: s32'e0ea04_01', 2
+endState: 
+

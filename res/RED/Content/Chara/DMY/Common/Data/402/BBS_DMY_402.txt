@@ -1,0 +1,12 @@
+beginSubroutine: s32'PreInit'
+  charaName: s16'dmy'
+endSubroutine: 
+
+beginState: s32'CmnActStand'
+  sprite: s32'null', 2147483647
+endState: 
+
+beginState: s32'DUMMY'
+  sprite: s32'e0ea04_01', 2
+endState: 
+
