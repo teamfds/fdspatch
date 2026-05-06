@@ -16,6 +16,7 @@ if len(sys.argv) < 4:
     sys.exit(1)
 
 broken_version = os.path.basename(sys.argv[1])
+broken_version_txt = sys.argv[1]
 broken_version_uasset = f"{sys.argv[1]}.uasset"
 broken_version_uexp = f"{sys.argv[1]}.uexp"
 
@@ -31,10 +32,17 @@ os.makedirs(out_dir, exist_ok=True)
 shutil.copy(current_version_uasset, out_dir)
 shutil.copy(current_version_uexp, out_dir)
 
-unpack_dest = f"{out_dir}/{broken_version}.bbscript"
+print(broken_version)
+if broken_version.endswith(".txt"):
+    rebuilt_file = f"{out_dir}/{broken_version}".replace(".txt", ".bbscript")
+    tools.bbscript(["rebuild", "--game", "ggst", "--overwrite", broken_version_txt, rebuilt_file])
+    tools.bbspack(["inject", rebuilt_file, f"{out_dir}/{current_version}.uexp", f"{out_dir}/{current_version}.uasset"])
 
-print(broken_version_uexp)
-tools.bbspack(["extract", broken_version_uexp, unpack_dest])
-tools.bbspack(["inject", unpack_dest, f"{out_dir}/{current_version}.uexp", f"{out_dir}/{current_version}.uasset"])
+    os.remove(rebuilt_file)
+else:
+    unpack_dest = f"{out_dir}/{broken_version}.bbscript"
 
-os.remove(unpack_dest)
+    tools.bbspack(["extract", broken_version_uexp, unpack_dest])
+    tools.bbspack(["inject", unpack_dest, f"{out_dir}/{current_version}.uexp", f"{out_dir}/{current_version}.uasset"])
+
+    os.remove(unpack_dest)

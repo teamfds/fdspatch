@@ -18,7 +18,7 @@ if len(sys.argv) < 2:
 target = sys.argv[1]
 current = re.sub(r'_\d+$', "", target)
 
-target_path = glob(f'{mod_root}/res/**/*{target}.uasset', recursive=True)[0].removesuffix(".uasset")
+target_path = glob(f'{mod_root}/res/**/*{target}.txt', recursive=True)[0]
 current_path = glob(f'{mod_root}/res/**/*{current}.uasset', recursive=True)[0].removesuffix(".uasset")
 out_dir = os.path.dirname(current_path.replace(f'res/RED/Content', "src"))
 
