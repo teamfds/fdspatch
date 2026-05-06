@@ -1,52 +1,58 @@
+#!/usr/bin/env python3
 import shutil
 import os
-import subprocess
 from glob import glob
 from pathlib import Path
-from sys import platform
+import tools
+import sys
+
+# tools.load_env_file()
 
 mod_name = "FDSPatch"
 mod_root = Path(__file__).parent.resolve()
 mod_build_root = f"build/{mod_name}"
 mod_build_content = f"{mod_build_root}/RED/Content"
 
-res_files = [y for x in os.walk(f"{mod_root}/res/Content") for y in glob(os.path.join(x[0], 'BBS_*'))]
-src_files = [y for x in os.walk(f"{mod_root}/src") for y in glob(os.path.join(x[0], 'BBS_*'))]
+uasset_files = [y for x in os.walk(f"{mod_root}/src") for y in glob(os.path.join(x[0], '*.uasset'))]
+script_files = [y for x in os.walk(f"{mod_root}/src") for y in glob(os.path.join(x[0], 'BBS_*.txt'))]
 
+install_flag = sys.argv[1] if len(sys.argv) > 1 else ""
 os.chdir(mod_root)
 
 os.makedirs(mod_build_content, exist_ok=True)
 
-for file in res_files:
-    dest = file.replace("res/Content", mod_build_content)
-    os.makedirs(os.path.dirname(dest), exist_ok=True)
-    shutil.copy(file, dest)
+for uasset in uasset_files:
+    uasset_dest = uasset.replace("src", mod_build_content)
+    uexp = uasset.replace(".uasset", ".uexp")
+    uexp_dest = uexp.replace("src", mod_build_content)
 
-for file in src_files:
-    rebuilt_file = file.replace("src", mod_build_content).replace(".txt", ".bbscript")
-    uasset = file.replace("src", mod_build_content).replace(".txt", ".uasset")
-    uexp = file.replace("src", mod_build_content).replace(".txt", ".uexp")
-    
-    subprocess.run(["tools/bbscript/target/debug/bbscript", "rebuild",
-        "--game", "ggst",
-        "--overwrite",
-        file, rebuilt_file
-    ])
-    subprocess.run(["tools/bbs_unpacker/target/debug/ggst-bbs-unpacker", "inject", rebuilt_file, uexp, uasset])
+    os.makedirs(os.path.dirname(uasset_dest), exist_ok=True)
+    shutil.copy(uasset, uasset_dest)
+    shutil.copy(uexp, uexp_dest)
+
+for script in script_files:
+    rebuilt_file = script.replace("src", mod_build_content).replace(".txt", ".bbscript")
+    uasset = script.replace("src", mod_build_content).replace(".txt", ".uasset")
+    uexp = script.replace("src", mod_build_content).replace(".txt", ".uexp")
+
+    tools.bbscript(["rebuild", "--game", "ggst", "--overwrite", script, rebuilt_file])
+    tools.bbspack(["inject", rebuilt_file, uexp, uasset])
     os.remove(rebuilt_file)
 
 
-if platform == 'linux':
-    subprocess.run(["tools/u4pak/u4pak", "pack", 
-        f"build/{mod_name}.pak", 
-        f":none,rename=/RED:build/{mod_name}/RED",
-        "--mount-point=../../..",
-        "--version=3"
-    ])
-elif platform == 'win32':
-    subprocess.run(["tools/u4pak/u4pak.exe", "pack", f"build/{mod_name}.pak", f":none,rename=/RED:build/{mod_name}/RED"])
-else:
-    print("Se mata negao")
-    
-shutil.copy("res/Content/pakchunk0-WindowsNoEditor.sig", f"build/{mod_name}.sig")
-# shutil.rmtree(mod_build_root)
+tools.u4pak(["pack",
+    f"build/{mod_name}.pak",
+    f":none,rename=/RED:build/{mod_name}/RED",
+    "--mount-point=../../..",
+    "--version=3"
+])
+
+shutil.copy("src/pakchunk0-WindowsNoEditor.sig", f"build/{mod_name}.sig")
+shutil.rmtree(mod_build_root)
+
+game_path = os.getenv("GAME_PATH")
+if install_flag == "-I" and game_path:
+    install_path = f"{game_path}/~mods/{mod_name}"
+    os.makedirs(install_path)
+    shutil.copy(f"build/{mod_name}.sig", f"{install_path}/{mod_name}.sig")
+    shutil.copy(f"build/{mod_name}.pak", f"{install_path}/{mod_name}.pak")
