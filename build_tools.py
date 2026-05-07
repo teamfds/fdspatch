@@ -11,7 +11,10 @@ env = os.environ.copy()
 # 2. Adiciona ou sobrescreve o RUSTFLAGS
 env["RUSTFLAGS"] = "-A warnings"
 
-subprocess.run(["git", "submodule", "update", "--remote", "--recursive"])
+if len(os.listdir("tools/bbscript")) == 0:
+    subprocess.run(["git", "submodule", "update", "--init", "--recursive"])
+else:
+    subprocess.run(["git", "submodule", "update", "--remote", "--recursive"])
 # BBSPack
 subprocess.run(["cargo", "build", "--release", "--manifest-path", "tools/bbspack/Cargo.toml"], env=env, check=True)
 # BBScript
