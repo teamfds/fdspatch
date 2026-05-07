@@ -6,10 +6,9 @@
 # 1. Extract all BBS → txt
 python3 tools/meu_saco.py
 
-# 2. Copy assets to src (strip RED/Content/ prefix)
-cp res/RED/Content/Chara/TST/Common/Data/BBS_TST.uasset src/Chara/TST/Common/Data/
-cp res/RED/Content/Chara/TST/Common/Data/BBS_TST.uexp   src/Chara/TST/Common/Data/
-cp build/parsed_bbs/RED/Content/Chara/TST/Common/Data/BBS_TST.txt src/Chara/TST/Common/Data/
+# 2. Copy parsed .txt to src (build.py auto-grabs uasset/uexp from res/)
+cp res/RED/Content/Chara/TST/Common/Data/BBS_TST.txt src/Chara/TST/Common/Data/
+cp res/RED/Content/Chara/TST/Common/Data/BBS_TSTEF.txt src/Chara/TST/Common/Data/
 
 # 3. Edit .txt in src/
 #    (damage, hitbox, guard crush, blockstun, etc)
@@ -18,14 +17,14 @@ cp build/parsed_bbs/RED/Content/Chara/TST/Common/Data/BBS_TST.txt src/Chara/TST/
 python3 build.py
 ```
 
-**Path diff**: `res/` = `RED/Content/Chara/...`, `src/` = `Chara/...`. `build.py` replaces `src` → `build/FDSPatch/RED/Content`.
+**Path diff**: `res/RED/Content/Chara/...`, `src/Chara/...`. `build.py` substitutes `src` → `build/FDSPatch/RED/Content` and pulls uasset/uexp from matching `res/` path.
 
-**For EF files** (projectiles/effects): same flow, use `BBS_TSTEF` instead.
+**For EF files** (projectiles/effects): same flow, use `BBS_TSTEF.txt` instead of `BBS_TST.txt`.
 
 ## Character Codes
 | Char  | Code |
 |-------|------|
-| Testment | TST |
+| Testament | TST |
 | (Main BBS = BBS_TST, Effect BBS = BBS_TSTEF) |
 
 ## BBS File Types
@@ -97,18 +96,18 @@ setGravity: 2100
 | `cmn_screenshake` | Screenshake on hit |
 | `cmn_motionblur_ex` | Motion blur effect |
 
-## Mod: Testment 214P (TST_Special7) — Guard Crush +20
+## Examples
 
-### Changes in `src/Chara/TST/Common/Data/BBS_TSTEF.txt`:
+### Guard Crush on Projectile (214P / TST_Special7) ~ +20
+File: `src/Chara/TST/Common/Data/BBS_TSTEF.txt`
+- **CrowSpecialAtk state**: add `upon: (ENEMY_GUARD)` handler with `setGuardCrushDuration: 36` + `cmn_AtkGuardBreak`
+- **UnHolyAtkFunc subroutine**: add `blockstunAmount: 12` after `cmn_AtkLv0`
+- Net: 36f guard crush + 12f blockstun - ~28f remaining recovery ≈ +20
 
-**CrowSpecialAtk state** (around line 1299):
-- Added `upon: (ENEMY_GUARD)` handler with `setGuardCrushDuration: 36` + `cmn_AtkGuardBreak`
-
-**UnHolyAtkFunc subroutine** (around line 1412):
-- Added `blockstunAmount: 12` after `cmn_AtkLv0` (default 9 → 12, combined with 36f guard crush ≈ +20 total)
-
-### Note
-Guard crush and blockstun may stack additively. 36f guard crush + 12f blockstun = 48f total lockout. TST_Special7 has ~28f remaining recovery after crow hitbox activates → net ~+20.
+### Guard Crush on Direct Hit (236H / TST_Special2) ~ +30
+File: `src/Chara/TST/Common/Data/BBS_TST.txt`
+- **TST_Special2 state**: add `blockstunAmount: 12` after `cmn_hosei`, add `upon: (ENEMY_GUARD)` handler
+- Net: 36f guard crush + 12f blockstun - ~18f remaining recovery ≈ +30
 
 ## Links
 - [BBScript doc](https://docs.google.com/document/d/14T_P-HyA2ndJB70zzNrBTKu2RdDxQy6xwXRnuwyvczE/edit?tab=t.0#heading=h.tmz2kdhixz7m)
