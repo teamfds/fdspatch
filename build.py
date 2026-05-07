@@ -6,7 +6,7 @@ from pathlib import Path
 import tools
 import sys
 
-# tools.load_env_file()
+tools.load_env_file()
 
 mod_name = "FDSPatch"
 mod_root = Path(__file__).parent.resolve()
