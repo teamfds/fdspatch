@@ -31,24 +31,20 @@ def u4pak(args: list[str]):
 
 def fix_version(args: list[str]):
     subprocess.run([sys.executable, f"{tools_root}/fix_version.py", *args])
+    
 def load_env_file(filepath: str = ".env"):
     if not os.path.exists(filepath):
         return
 
     with open(filepath, "r") as f:
         for line in f:
-            # Remove espaços e ignora linhas vazias ou comentários
             line = line.strip()
             if not line or line.startswith("#"):
                 continue
-
-            # Divide a linha no primeiro '=' encontrado
+                
             if "=" in line:
                 key, value = line.split("=", 1)
-
-                # Remove aspas se existirem (ex: "valor" ou 'valor')
                 key = key.strip()
                 value = value.strip().strip('"').strip("'")
-
-                # Define a variável no ambiente
+                
                 os.environ[key] = value
