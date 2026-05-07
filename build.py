@@ -23,6 +23,11 @@ os.chdir(mod_root)
 
 os.makedirs(mod_build_content, exist_ok=True)
 
+def abort(e: RuntimeError):
+    print(e)
+    print("\033[31mAborting build\033[0m")
+    sys.exit()
+    
 def ensure_assets(files: list[str], ext: str):
     for f in files:
         f_build = f.replace(mod_src, mod_build_content)
@@ -41,30 +46,39 @@ ensure_assets(script_files, "txt")
 
 for script in script_files:
     build_path = script.replace(mod_src, mod_build_content)
-    print(build_path)
+    print(f"\033[33m{build_path}\033[0m")
     
     rebuilt_script = build_path.replace(".txt", ".bbscript")
     uasset = build_path.replace(".txt", ".uasset")
     uexp = build_path.replace(".txt", ".uexp")
     
-    tools.bbscript(["rebuild", "--game", "ggst", "--overwrite", script, rebuilt_script])
-    tools.bbspack(["inject", rebuilt_script, uexp, uasset])
-    os.remove(rebuilt_script)
-
+    try:
+        tools.bbscript(["rebuild", "--game", "ggst", "--overwrite", script, rebuilt_script])
+        tools.bbspack(["inject", rebuilt_script, uexp, uasset])
+        os.remove(rebuilt_script)
+    except RuntimeError as e:
+        abort(e)
+        
 for pac in pac_files:
     build_path = pac.replace(mod_src, mod_build_content)
-    print(build_path)
+    print(f"\033[33m{build_path}\033[0m")
     
     uasset_pac = build_path.replace(".pac", ".uasset")
     uexp_pac = build_path.replace(".pac", ".uexp")
-    tools.bbspack(["inject", pac, uexp_pac, uasset_pac])
+    try:
+        tools.bbspack(["inject", pac, uexp_pac, uasset_pac])
+    except RuntimeError as e:
+        abort(e)
 
-tools.u4pak(["pack",
-    f"build/{mod_name}.pak",
-    f":none,rename=/RED:build/{mod_name}/RED",
-    "--mount-point=../../..",
-    "--version=3"
-])
+try:
+    tools.u4pak(["pack",
+        f"build/{mod_name}.pak",
+        f":none,rename=/RED:build/{mod_name}/RED",
+        "--mount-point=../../..",
+        "--version=3"
+    ])
+except RuntimeError as e:
+    abort(e)
 
 shutil.copy("src/pakchunk0-WindowsNoEditor.sig", f"build/{mod_name}.sig")
 shutil.rmtree(mod_build_root)
