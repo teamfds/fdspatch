@@ -10,7 +10,7 @@ def check_result(result: subprocess.CompletedProcess[str]):
     if result.returncode != 0: 
         raise RuntimeError(f"\033[31m{stdout}\033[0m") 
     elif len(result.stdout) > 0:
-        print(f"\033[34m{stdout}||\033[0m") 
+        print(f"\033[34m{stdout}\033[0m") 
         
 def bbscript(args: list[str]):
     if sys.platform == 'linux':

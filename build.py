@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
+import re
 import shutil
 import os
 from glob import glob
 from pathlib import Path
+from datetime import datetime
 import tools
 import sys
 
@@ -14,6 +16,14 @@ mod_build_root = f"{mod_root}/build/{mod_name}"
 mod_build_content = f"{mod_build_root}/RED/Content"
 mod_res_content = f"{mod_root}/res/RED/Content"
 mod_src = f"{mod_root}/src"
+
+old_build_name = re.sub(
+    r"\.((pak)|(sig))$", "", 
+    next((f for f in os.listdir(f"{mod_root}/build") if re.search(rf"{mod_name}\.\d+\.((pak)|(sig))", f)), "")
+)
+build_name = f"{mod_name}.{datetime.now().strftime("%Y%m%d%H%M%S%f")}"
+while build_name == old_build_name:
+    build_name = f"{mod_name}.{datetime.now().strftime("%Y%m%d%H%M%S%f")}"
 
 script_files = [y for x in os.walk(mod_src) for y in glob(os.path.join(x[0], 'BBS_*.txt'))]
 pac_files = [y for x in os.walk(mod_src) for y in glob(os.path.join(x[0], '*.pac'))]
@@ -72,7 +82,7 @@ for pac in pac_files:
 
 try:
     tools.u4pak(["pack",
-        f"build/{mod_name}.pak",
+        f"build/{build_name}.pak",
         f":none,rename=/RED:build/{mod_name}/RED",
         "--mount-point=../../..",
         "--version=3"
@@ -80,12 +90,16 @@ try:
 except RuntimeError as e:
     abort(e)
 
-shutil.copy("src/pakchunk0-WindowsNoEditor.sig", f"build/{mod_name}.sig")
+shutil.copy("src/pakchunk0-WindowsNoEditor.sig", f"build/{build_name}.sig")
 shutil.rmtree(mod_build_root)
 
 game_path = os.getenv("GAME_PATH")
 if install_flag == "-I" and game_path:
     install_path = f"{game_path}/~mods/{mod_name}"
     os.makedirs(install_path, exist_ok=True)
-    shutil.copy(f"build/{mod_name}.sig", f"{install_path}/{mod_name}.sig")
-    shutil.copy(f"build/{mod_name}.pak", f"{install_path}/{mod_name}.pak")
+    shutil.copy(f"build/{build_name}.sig", f"{install_path}/{build_name}.sig")
+    shutil.copy(f"build/{build_name}.pak", f"{install_path}/{build_name}.pak")
+
+if old_build_name != "":
+    os.remove(f"{mod_root}/build/{old_build_name}.pak")
+    os.remove(f"{mod_root}/build/{old_build_name}.sig")
