@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 from pathlib import Path
 import sys
@@ -7,9 +8,27 @@ import shutil
 sys.path.append(str(Path(__file__).parent.parent))
 import tools
 
+tools.load_env_file()
+
 mod_root = Path(__file__).parent.parent.resolve()
 os.chdir(mod_root)
 
+GAME_PATH = os.getenv("GAME_PATH")
+
+if GAME_PATH is None:
+    print("Missing GAME_PATH environment variable")
+    sys.exit()
+    
+tools.quickbms([
+    "-o", "-Y", 
+    "-f", "{}/Chara/{}Data/{}BBS_{}",
+    "-f", "{}/Chara/{}Data/{}COL_{}",
+    "tools/quickbms/ggst.bms",
+    f"{GAME_PATH}/pakchunk0-WindowsNoEditor.pak",
+    f"{mod_root}/res"
+])
+
+# python3 tools/meu_saco.py
 for root, _, files in os.walk(f"{mod_root}/res"):
     for file in files:
         if not re.match(r'((BBS)|(COL))_.*\.uexp', file):

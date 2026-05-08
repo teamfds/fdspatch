@@ -41,7 +41,15 @@ def u4pak(args: list[str]):
         return print("Se mata negao")
     
     check_result(result)
-        
+
+def quickbms(args: list[str]):
+    if sys.platform == 'linux':
+        subprocess.run([f"{tools_root}/quickbms/quickbms_4gb_files", *args])
+    elif sys.platform == 'win32':
+        subprocess.run([f"{tools_root}/quickbms/quickbms_4gb_files.exe", *args])
+    else:
+        return print("Se mata negao")
+    
 def fix_version(args: list[str]):
     result = subprocess.run([sys.executable, f"{tools_root}/fix_version.py", *args], capture_output=True, text=True)
     
