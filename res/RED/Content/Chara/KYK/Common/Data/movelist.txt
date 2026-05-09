@@ -1,0 +1,81 @@
+( CmnVJump ): { input: ; sprite: ; }
+( CmnFJump ): { input: ; sprite: ; }
+( CmnBJump ): { input: ; sprite: ; }
+( CmnVHighJump ): { input: ; sprite: ; }
+( CmnFHighJump ): { input: ; sprite: ; }
+( CmnBHighJump ): { input: ; sprite: ; }
+( CmnFWalk ): { input: ; sprite: ; }
+( CmnBWalk ): { input: ; sprite: ; }
+( CmnFDash ): { input: ; sprite: ; }
+( CmnBDash ): { input: ; sprite: ; }
+( CmnFAirDash ): { input: ; sprite: ; }
+( CmnBAirDash ): { input: ; sprite: ; }
+( NmlAtk5A ): { input: ; sprite: kyk200_00; }
+( NmlAtk2A ): { input: ; sprite: kyk230_00; }
+( NmlAtk6A ): { input: ; sprite: kyk210_00; }
+( NmlAtk5B ): { input: ; sprite: kyk201_00; }
+( NmlAtk2B ): { input: ; sprite: kyk231_00; }
+( NmlAtk6B ): { input: ; sprite: kyk211_00; }
+( NmlAtk5CNear ): { input: ; sprite: kyk202_00; }
+( NmlAtk5CFar ): { input: ; sprite: kyk203_00; }
+( NmlAtk2C ): { input: ; sprite: kyk232_00; }
+( NmlAtk5D ): { input: ; sprite: kyk204_00; }
+( NmlAtk6D ): { input: ; sprite: kyk213_00; }
+( NmlAtk2D ): { input: ; sprite: kyk233_00; }
+( NmlAtk2E ): { input: ; sprite: kyk234_00; }
+Stun Edge( StunEdge1 ): { input: ; sprite: kyk401_00; }
+Charged Stun Edge( StunEdge2 ): { input: ; sprite: kyk402_00; }
+^mAtkS; Aerial Stun Edge( AirStunEdge1 ): { input: ; sprite: kyk403_00; }
+^mAtkHS; Aerial Stun Edge( AirStunEdge2 ): { input: ; sprite: kyk403_00; }
+^mAtkS; Vapor Thrust( VaporThrustC ): { input: ; sprite: kyk405_00; }
+^mAtkHS; Vapor Thrust( VaporThrustD ): { input: ; sprite: kyk406_00; }
+^mAtkS; Vapor Thrust (no ar)( AirVaporThrustC ): { input: ; sprite: kyk405_00; }
+^mAtkHS; Vapor Thrust (no ar)( AirVaporThrustD ): { input: ; sprite: kyk406_00; }
+Stun Dipper( StunDipper ): { input: ; sprite: kyk400_00; }
+Dire Eclat( Diaekura ): { input: ; sprite: kyk407_00; }
+Foudre Arc( FadulArc ): { input: ; sprite: kyk404_00; }
+( NmlAtkThrow ): { input: ; sprite: kyk311_00; }
+( NmlAtkBackThrow ): { input: ; sprite: ; }
+( NmlAtkAirThrow ): { input: ; sprite: kyk321_00; }
+( NmlAtkAirBackThrow ): { input: ; sprite: ; }
+( RC_CmnNamepuA ): { input: ; sprite: ; }
+( RC_CmnNamepuB ): { input: ; sprite: ; }
+( RC_CmnNamepuC ): { input: ; sprite: ; }
+( StunEdge1_yoga ): { input: ; sprite: ; }
+( StunEdge2_yoga ): { input: ; sprite: ; }
+( AirStunEdge1_yoga ): { input: ; sprite: ; }
+( AirStunEdge2_yoga ): { input: ; sprite: ; }
+( CmnMaximumBurst ): { input: ; sprite: ; }
+( CmnDamageBurst ): { input: ; sprite: ; }
+Wild Assault( WildAssault ): { input: ; sprite: kyk360_00; }
+( FaultlessPressureLand ): { input: ; sprite: ; }
+Deflect Shield( FaultlessPressureAir ): { input: ; sprite: ; }
+( NmlAtk5E ): { input: ; sprite: kyk205_00; }
+Dragon Install( DragonInstall ): { input: ; sprite: kyk533_00; }
+Ride the Lightning( RideTheLightning ): { input: ; sprite: kyk530_00; }
+Ride the Lightning (no ar)( AirRideTheLightning ): { input: ; sprite: kyk531_00; }
+Sacred Edge( SacredEdge ): { input: ; sprite: kyk502_00; }
+( RC_CmnNage ): { input: ; sprite: ; }
+( RC_CmnDashShikomiNage ): { input: ; sprite: ; }
+( RC_CmnJumpHighSlash ): { input: ; sprite: ; }
+( RC_CmnJumpDashHighSlash ): { input: ; sprite: ; }
+( RC_HiroiFromGreedA ): { input: ; sprite: ; }
+( RC_HiroiFromGreedB ): { input: ; sprite: ; }
+( RC_HomingJumpCombo ): { input: ; sprite: ; }
+( RC_BonusA ): { input: ; sprite: ; }
+( RC_BonusB ): { input: ; sprite: ; }
+( RC_BonusC ): { input: ; sprite: ; }
+( RC_BerserkA ): { input: ; sprite: ; }
+( RC_BerserkB ): { input: ; sprite: ; }
+( RC_BerserkC ): { input: ; sprite: ; }
+Sequência Aérea( HomingJump ): { input: j; sprite: kyk205_09; }
+TAUNT( NmlAtk5F ): { input: TAUNT; sprite: kyk300_00; }
+6TAUNT( NmlAtk6F ): { input: 6TAUNT; sprite: kyk305_00; }
+j.P( NmlAtkAir5A ): { input: j.P; sprite: kyk250_00; }
+j.K( NmlAtkAir5B ): { input: j.K; sprite: kyk251_00; }
+j.S( NmlAtkAir5C ): { input: j.S; sprite: kyk252_00; }
+j.H( NmlAtkAir5D ): { input: j.H; sprite: kyk253_00; }
+j.D( NmlAtkAir5E ): { input: j.D; sprite: kyk254_00; }
+j.D( DustFinish_shot ): { input: j.D; sprite: ; }
+Lightning Strike( Lightning ): { input: 214P; sprite: kyk408_00; }
+4P( Lightning_easy ): { input: 4P; sprite: ; }

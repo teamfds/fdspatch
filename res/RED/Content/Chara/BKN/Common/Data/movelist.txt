@@ -1,0 +1,34 @@
+5P( NmlAtk5A ): { input: 5P; sprite: bkn200_00; }
+6P( NmlAtk6A ): { input: 6P; sprite: bkn210_00; }
+2P( NmlAtk2A ): { input: 2P; sprite: bkn230_00; }
+5K( NmlAtk5B ): { input: 5K; sprite: bkn201_00; }
+6K( NmlAtk6B ): { input: 6K; sprite: bkn211_00; }
+2K( NmlAtk2B ): { input: 2K; sprite: bkn231_00; }
+c.S( NmlAtk5CNear ): { input: c.S; sprite: bkn202_00; }
+f.S( NmlAtk5CFar ): { input: f.S; sprite: bkn203_00; }
+2S( NmlAtk2C ): { input: 2S; sprite: bkn232_00; }
+5H( NmlAtk5D ): { input: 5H; sprite: bkn204_00; }
+6H( NmlAtk6D ): { input: 6H; sprite: bkn213_00; }
+2H( NmlAtk2D ): { input: 2H; sprite: bkn233_00; }
+5D( NmlAtk5E ): { input: 5D; sprite: bkn205_00; }
+Sequência Aérea( HomingJump ): { input: j; sprite: bkn205_07; }
+2D( NmlAtk2E ): { input: 2D; sprite: bkn234_00; }
+TAUNT( NmlAtk5F ): { input: TAUNT; sprite: bkn300_00; }
+6TAUNT( NmlAtk6F ): { input: 6TAUNT; sprite: bkn305_00; }
+j.P( NmlAtkAir5A ): { input: j.P; sprite: bkn250_00; }
+j.K( NmlAtkAir5B ): { input: j.K; sprite: bkn251_00; }
+j.S( NmlAtkAir5C ): { input: j.S; sprite: bkn252_00; }
+j.H( NmlAtkAir5D ): { input: j.H; sprite: bkn253_00; }
+j.D( NmlAtkAir5E ): { input: j.D; sprite: bkn254_00; }
+Tatami Gaeshi( TatamiLand ): { input: 236K; sprite: bkn400_00; }
+Tatami Gaeshi (no ar)( TatamiAir ): { input: j.236K; sprite: bkn401_00; }
+Youzansen( YouZanSen ): { input: j.236S; sprite: bkn402_00; }
+Hiiragi( Atemi ): { input: 236P; sprite: bkn403_00; }
+236P( Atemi_G ): { input: 236P; sprite: ; }
+^mAtkHS; Kabari( Kabari ): { input: 41236H; sprite: bkn410_00; }
+^mAtkHS; Kabari (2º acerto)( KabariHasei ): { input: DISALLOW_DOWNH; sprite: bkn411_00; }
+^mAtkS; Kabari( HimoKabari ): { input: 41236S; sprite: bkn410_00; }
+66BOOLEAN_OR5DASHBOOLEAN_OR6DASH( BKN_SpecialCancel_FDash ): { input: 66BOOLEAN_OR5DASHBOOLEAN_OR6DASH; sprite: bkn032_00; }
+Tsurane Sanzu-watashi( TsuraneSanzuWatashi ): { input: 236236S; sprite: bkn530_00; }
+Kenjyu( KenjyuLand ): { input: 214214P; sprite: bkn501_00; }
+Kenjyu (no ar)( KenjyuAir ): { input: j.214214P; sprite: bkn502_00; }

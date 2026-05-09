@@ -1,0 +1,63 @@
+5P( NmlAtk5A ): { input: 5P; sprite: jko200_00; }
+6P( NmlAtk6A ): { input: 6P; sprite: jko210_00; }
+2P( NmlAtk2A ): { input: 2P; sprite: jko230_00; }
+5K( NmlAtk5B ): { input: 5K; sprite: jko201_00; }
+2K( NmlAtk2B ): { input: 2K; sprite: jko231_00; }
+c.S( NmlAtk5CNear ): { input: c.S; sprite: jko202_00; }
+f.S( NmlAtk5CFar ): { input: f.S; sprite: jko203_00; }
+2S( NmlAtk2C ): { input: 2S; sprite: jko232_00; }
+5H( NmlAtk5D ): { input: 5H; sprite: jko204_00; }
+6H( NmlAtk6D ): { input: 6H; sprite: jko213_00; }
+2H( NmlAtk2D ): { input: 2H; sprite: jko233_00; }
+Sequência Aérea( HomingJump ): { input: j; sprite: jko205_09; }
+5D( NmlAtk5E ): { input: 5D; sprite: jko205_00; }
+2D( NmlAtk2E ): { input: 2D; sprite: jko234_00; }
+TAUNT( NmlAtk5F ): { input: TAUNT; sprite: jko300_00; }
+6TAUNT( NmlAtk6F ): { input: 6TAUNT; sprite: jko305_00; }
+j.P( NmlAtkAir5A ): { input: j.P; sprite: jko250_00; }
+j.K( NmlAtkAir5B ): { input: j.K; sprite: jko251_00; }
+j.S( NmlAtkAir5C ): { input: j.S; sprite: jko252_00; }
+j.H( NmlAtkAir5D ): { input: j.H; sprite: jko253_00; }
+j.D( NmlAtkAir5E ): { input: j.D; sprite: jko254_00; }
+j.D( DustFinish_shot ): { input: j.D; sprite: ; }
+Pegar Servo( PickUpGhost ): { input: 2P; sprite: jko400_11; }
+Invocar Servo( SummonGhostA ): { input: 236P; sprite: jko400_00; }
+236P( SummonGhostB ): { input: 236P; sprite: ; }
+236P( SummonGhostC ): { input: 236P; sprite: ; }
+Ordem de Ataque( AtkOrderGhost ): { input: 214K; sprite: jko430_00; }
+Ordem de Ataque (no ar)( AirAtkOrderGhost ): { input: j.214K; sprite: jko431_00; }
+Ordem de Ataque( PickAtkOrderGhost ): { input: KNOT_8_ELM; sprite: jko425_00; }
+Ordem de Ataque (no ar)( AirPickAtkOrderGhost ): { input: j.K; sprite: jko426_00; }
+Contagem( JibakuGhost ): { input: 214H; sprite: jko434_00; }
+Contagem (no ar)( AirJibakuGhost ): { input: j.214H; sprite: jko435_00; }
+Contagem( PickJibakuGhost ): { input: HNOT_8_ELM; sprite: jko425_00; }
+Contagem (no ar)( AirPickJibakuGhost ): { input: j.H; sprite: jko426_00; }
+Ordem de Defesa( AtemiGhost ): { input: 214S; sprite: jko436_00; }
+Ordem de Defesa (no ar)( AirAtemiGhost ): { input: j.214S; sprite: jko437_00; }
+Ordem de Defesa( PickAtemiGhost ): { input: SNOT_8_ELM; sprite: jko425_00; }
+Ordem de Defesa (no ar)( AirPickAtemiGhost ): { input: j.S; sprite: jko426_00; }
+Chutar Servo( KickGhost ): { input: 236K; sprite: jko402_00; }
+Chutar Servo (no ar)( AirKickGhost ): { input: j.236K; sprite: jko403_00; }
+Chutar Servo( PickKickGhost ): { input: 236K; sprite: jko421_00; }
+j.236K( AirPickkickGhost ): { input: j.236K; sprite: jko422_00; }
+Arremessar Servo( ThrowGhostP ): { input: 6NOT_9P; sprite: ; }
+Arremessar Servo( ThrowGhostK ): { input: 6NOT_9K; sprite: ; }
+Arremessar Servo( ThrowGhostS ): { input: 6NOT_9S; sprite: ; }
+Arremessar Servo( ThrowGhostHS ): { input: 6NOT_9H; sprite: ; }
+Arremessar Servo( ThrowGhostD ): { input: 6NOT_9D; sprite: ; }
+Arremessar Servo (no ar)( AirThrowGhostP ): { input: j.6P; sprite: ; }
+Arremessar Servo (no ar)( AirThrowGhostK ): { input: j.6K; sprite: ; }
+Arremessar Servo (no ar)( AirThrowGhostS ): { input: j.6S; sprite: ; }
+Arremessar Servo (no ar)( AirThrowGhostHS ): { input: j.6H; sprite: ; }
+Arremessar Servo (no ar)( AirThrowGhostD ): { input: j.6D; sprite: ; }
+Recuperar( ReturnGhost ): { input: 214P; sprite: jko432_00; }
+Recuperar (no ar)( AirReturnGhost ): { input: j.214P; sprite: jko433_00; }
+Recuperar( PickReturnGhost ): { input: PNOT_8_ELM; sprite: jko423_00; }
+Recuperar (no ar)( AirPickReturnGhost ): { input: j.P; sprite: jko424_00; }
+Soltar Servo( ReleaseGhost ): { input: DNOT_8_ELMBOOLEAN_ORHOLD_DNOT_8_ELM; sprite: jko427_00; }
+66BOOLEAN_OR5DASHBOOLEAN_OR6DASH( JKO_SpecialCancel_FDash ): { input: 66BOOLEAN_OR5DASHBOOLEAN_OR6DASH; sprite: jko032_00; }
+j.66BOOLEAN_OR5DASHBOOLEAN_OR6DASHBOOLEAN_OR8DASHBOOLEAN_OR9DASH( JKO_SP_AirFDash ): { input: j.66BOOLEAN_OR5DASHBOOLEAN_OR6DASHBOOLEAN_OR8DASHBOOLEAN_OR9DASH; sprite: ; }
+Soltar Servo (no ar)( AirReleaseGhost ): { input: j.DBOOLEAN_ORHOLD_D; sprite: jko428_00; }
+Forever Elysion Driver( ElysionDriver ): { input: 632146P; sprite: jko530_00; }
+236236S( PowerUp_S ): { input: 236236S; sprite: ; }
+236236H( PowerUp_HS ): { input: 236236H; sprite: ; }

@@ -1,0 +1,51 @@
+5P( NmlAtk5A ): { input: 5P; sprite: bgt200_00; }
+6P( NmlAtk6A ): { input: 6P; sprite: bgt210_00; }
+2P( NmlAtk2A ): { input: 2P; sprite: bgt230_00; }
+5K( NmlAtk5B ): { input: 5K; sprite: bgt201_00; }
+6K( NmlAtk6B ): { input: 6K; sprite: bgt211_00; }
+2K( NmlAtk2B ): { input: 2K; sprite: bgt231_00; }
+c.S( NmlAtk5CNear ): { input: c.S; sprite: bgt202_00; }
+f.S( NmlAtk5CFar ): { input: f.S; sprite: bgt203_00; }
+5S( NmlAtk5CFar_2nd ): { input: 5S; sprite: bgt271_00; }
+2S( NmlAtk2C ): { input: 2S; sprite: bgt232_00; }
+5H( NmlAtk5D ): { input: 5H; sprite: bgt204_00; }
+5H( NmlAtk5D_2nd ): { input: 5H; sprite: bgt272_00; }
+6H( NmlAtk6D ): { input: 6H; sprite: bgt213_00; }
+2H( NmlAtk2D ): { input: 2H; sprite: bgt233_00; }
+5D( NmlAtk5E ): { input: 5D; sprite: bgt205_00; }
+Sequência Aérea( HomingJump ): { input: j; sprite: bgt205_07; }
+2D( NmlAtk2E ): { input: 2D; sprite: bgt234_00; }
+TAUNT( NmlAtk5F ): { input: TAUNT; sprite: bgt300_00; }
+6TAUNT( NmlAtk6F ): { input: 6TAUNT; sprite: bgt305_00; }
+j.P( NmlAtkAir5A ): { input: j.P; sprite: bgt250_00; }
+j.K( NmlAtkAir5B ): { input: j.K; sprite: bgt251_00; }
+j.S( NmlAtkAir5C ): { input: j.S; sprite: bgt252_00; }
+j.H( NmlAtkAir5D ): { input: j.H; sprite: bgt253_00; }
+j.D( NmlAtkAir5E ): { input: j.D; sprite: bgt254_00; }
+Kick Start My Heart( KSMH ): { input: 236K; sprite: bgt401_00; }
+Brake( KSMH_P ): { input: 5P; sprite: bgt402_00; }
+Shoot( KSMH_K ): { input: 5K; sprite: bgt403_00; }
+Roger Dive( FallAtk ): { input: j.236K; sprite: bgt404_00; }
+^mAtkS; Stop and Dash( YOYO_236S_Land ): { input: 236S; sprite: bgt420_00; }
+^mAtkHS; Stop and Dash( YOYO_236H_Land ): { input: 236H; sprite: bgt421_00; }
+^mAtkS; Stop and Dash( YOYO_214S_Land ): { input: 214S; sprite: bgt420_00; }
+^mAtkHS; Stop and Dash( YOYO_214H_Land ): { input: 214H; sprite: bgt421_00; }
+^mAtkS; Stop and Dash (no ar)( YOYO_236S_Air ): { input: j.236S; sprite: bgt422_00; }
+^mAtkHS; Stop and Dash (no ar)( YOYO_236H_Air ): { input: j.236H; sprite: bgt422_00; }
+^mAtkS; Stop and Dash (no ar)( YOYO_214S_Air ): { input: j.214S; sprite: bgt422_00; }
+^mAtkHS; Stop and Dash (no ar)( YOYO_214H_Air ): { input: j.214H; sprite: bgt422_00; }
+214K( Rolling ): { input: 214K; sprite: bgt405_00; }
+Rolling Movement (no ar)( Rolling_Air ): { input: j.214K; sprite: ; }
+5K( RollingEasy ): { input: 5K; sprite: ; }
+j.K( RollingEasy_Air ): { input: j.K; sprite: ; }
+Starship( StarShip ): { input: 623P; sprite: bgt400_00; }
+Rock the Baby( RockTheBaby_Land ): { input: 63214P; sprite: bgt410_00; }
+Rock the Baby (no ar)( RockTheBaby_Air ): { input: j.63214P; sprite: bgt412_00; }
+j.JUMP( RollingVAirJump ): { input: j.JUMP; sprite: ; }
+j.4JUMP( RollingBAirJump ): { input: j.4JUMP; sprite: ; }
+j.6JUMP( RollingFAirJump ): { input: j.6JUMP; sprite: ; }
+j.44BOOLEAN_OR4DASHBOOLEAN_OR7DASH( RollingBAirDash ): { input: j.44BOOLEAN_OR4DASHBOOLEAN_OR7DASH; sprite: ; }
+j.66BOOLEAN_OR5DASHBOOLEAN_OR6DASHBOOLEAN_OR8DASHBOOLEAN_OR9DASH( RollingFAirDash ): { input: j.66BOOLEAN_OR5DASHBOOLEAN_OR6DASHBOOLEAN_OR8DASHBOOLEAN_OR9DASH; sprite: ; }
+Return of the Killing Machine( KillMachine_Land ): { input: 632146H; sprite: bgt501_00; }
+Return of the Killing Machine (no ar)( KillMachine_Air ): { input: j.632146H; sprite: bgt502_00; }
+Loop the Loop( LoopTheLoop ): { input: 632146S; sprite: bgt530_00; }

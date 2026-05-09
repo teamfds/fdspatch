@@ -1,0 +1,91 @@
+5P( NmlAtk5A ): { input: 5P; sprite: chp200_00; }
+6P( NmlAtk6A ): { input: 6P; sprite: chp210_00; }
+2P( NmlAtk2A ): { input: 2P; sprite: chp230_00; }
+5K( NmlAtk5B ): { input: 5K; sprite: chp201_00; }
+6K( NmlAtk6B ): { input: 6K; sprite: chp211_00; }
+2K( NmlAtk2B ): { input: 2K; sprite: chp231_00; }
+c.S( NmlAtk5CNear ): { input: c.S; sprite: chp202_00; }
+f.S( NmlAtk5CFar ): { input: f.S; sprite: chp203_00; }
+2S( NmlAtk2C ): { input: 2S; sprite: chp232_00; }
+5H( NmlAtk5D ): { input: 5H; sprite: chp204_00; }
+6H( NmlAtk6D ): { input: 6H; sprite: chp213_00; }
+2H( NmlAtk2D ): { input: 2H; sprite: chp233_00; }
+5D( NmlAtk5E ): { input: 5D; sprite: chp205_00; }
+Sequência Aérea( HomingJump ): { input: j; sprite: chp205_07; }
+2D( NmlAtk2E ): { input: 2D; sprite: chp234_00; }
+TAUNT( NmlAtk5F ): { input: TAUNT; sprite: chp300_00; }
+6TAUNT( NmlAtk6F ): { input: 6TAUNT; sprite: chp305_00; }
+j.P( NmlAtkAir5A ): { input: j.P; sprite: chp250_00; }
+j.K( NmlAtkAir5B ): { input: j.K; sprite: chp251_00; }
+j.2K( NmlAtkAir2B ): { input: j.2K; sprite: chp270_00; }
+j.S( NmlAtkAir5C ): { input: j.S; sprite: chp252_00; }
+j.H( NmlAtkAir5D ): { input: j.H; sprite: chp253_00; }
+j.D( NmlAtkAir5E ): { input: j.D; sprite: chp254_00; }
+Alpha Blade (Diagonal)( AlphaBlade ): { input: 236K; sprite: chp401_00; }
+Alpha Blade (Diagonal) (adicional)( AlphaBlade_Cancel ): { input: 5K; sprite: chp401_00; }
+Alpha Blade (Horizontal)( AlphaBlade_yoko ): { input: 236P; sprite: chp400_00; }
+Alpha Blade (Diagonal) (no ar)( AirAlphaBlade ): { input: j.236K; sprite: chp403_00; }
+Aerial Alpha Blade (Diagonal) (adicional)( AirAlphaBlade_Cancel ): { input: j.K; sprite: chp403_00; }
+Alpha Blade (Horizontal) (no ar)( AirAlphaBlade_yoko ): { input: j.236P; sprite: chp402_00; }
+Resshou( Sushi ): { input: 236S; sprite: chp404_00; }
+41236S( Sushi_yoga ): { input: 41236S; sprite: ; }
+Rokusai( Sukiyaki ): { input: 236S; sprite: chp010_00; }
+Senshuu( Banzai ): { input: 236K; sprite: chp406_00; }
+Beta Blade( BetaBlade ): { input: 623S; sprite: chp407_00; }
+Beta Blade (no ar)( AirBetaBlade ): { input: j.623S; sprite: chp407_00; }
+Gamma Blade( GammaBlade ): { input: 236H; sprite: chp410_00; }
+Shuriken( Shuriken ): { input: j.214P; sprite: chp412_00; }
+Genrouzan( Genrouzan ): { input: 63214S; sprite: chp408_00; }
+j.4BOOLEAN_ORHOLD_DASH( HaritsukiL_wall ): { input: j.4BOOLEAN_ORHOLD_DASH; sprite: chp424_00; }
+j.6BOOLEAN_ORHOLD_DASH( HaritsukiR_wall ): { input: j.6BOOLEAN_ORHOLD_DASH; sprite: chp424_00; }
+j.HOLD_K( HaritsukiL_wall_LandKAlpha ): { input: j.HOLD_K; sprite: ; }
+j.HOLD_P( HaritsukiL_wall_AirPAlpha ): { input: j.HOLD_P; sprite: ; }
+j.4BOOLEAN_ORHOLD_DASH( HaritsukiL_wall_Down ): { input: j.4BOOLEAN_ORHOLD_DASH; sprite: chp424_00; }
+j.HOLD_K( HaritsukiR_wall_LandKAlpha ): { input: j.HOLD_K; sprite: ; }
+j.HOLD_P( HaritsukiR_wall_AirPAlpha ): { input: j.HOLD_P; sprite: ; }
+j.6BOOLEAN_ORHOLD_DASH( HaritsukiR_wall_Down ): { input: j.6BOOLEAN_ORHOLD_DASH; sprite: chp424_00; }
+4BOOLEAN_ORHOLD_DASH( HaritsukiL_Landwall ): { input: 4BOOLEAN_ORHOLD_DASH; sprite: keep; }
+HOLD_P( HaritsukiL_Landwall_LandPAlpha ): { input: HOLD_P; sprite: ; }
+6BOOLEAN_ORHOLD_DASH( HaritsukiR_Landwall ): { input: 6BOOLEAN_ORHOLD_DASH; sprite: keep; }
+HOLD_P( HaritsukiR_Landwall_LandPAlpha ): { input: HOLD_P; sprite: ; }
+Wall Run( WallRun ): { input: j.; sprite: chp420_00; }
+j.( WallRun_Down ): { input: j.; sprite: chp432_00; }
+( WallRun_land ): { input: ; sprite: chp420_00; }
+^mAtkP; Wall Run Attack( WallRun_6P ): { input: j.P; sprite: chp428_00; }
+^mAtkK; Wall Run Attack( WallRun_K ): { input: j.K; sprite: chp424_00; }
+^mAtkS; Perto Wall Run Attack( WallRun_S ): { input: j.S; sprite: chp425_00; }
+^mAtkS; Longe Wall Run Attack( WallRun_SFar ): { input: j.S; sprite: chp426_00; }
+^mAtkHS; Wall Run Attack( WallRun_HS ): { input: j.H; sprite: chp427_00; }
+^mAtk6;^mAtkHS; Wall Run Attack( WallRun_6HS ): { input: j.6H; sprite: chp429_00; }
+Escape( WallRun_jump ): { input: j.42BOOLEAN_OR; sprite: chp422_00; }
+Tightrope Run (acima)( ThreadRun ): { input: j.; sprite: chp431_00; }
+Tightrope Run (acima)( ThreadRun_Up ): { input: j.; sprite: ; }
+Tightrope Run (abaixo)( ThreadRun_Down ): { input: j.2; sprite: chp434_00; }
+j.( ThreadRun_Down_Force ): { input: j.; sprite: ; }
+Release( ThreadRun_4Jump ): { input: j.4HOLD_D; sprite: ; }
+j.4HOLD_D( ThreadRun_4Jump_Down ): { input: j.4HOLD_D; sprite: ; }
+j.HOLD_D( ThreadRun_8Jump ): { input: j.HOLD_D; sprite: ; }
+j.HOLD_D( ThreadRun_8Jump_Down ): { input: j.HOLD_D; sprite: ; }
+j.HOLD_D( ThreadRun_2Jump ): { input: j.HOLD_D; sprite: ; }
+j.HOLD_D( ThreadRun_2Jump_Down ): { input: j.HOLD_D; sprite: ; }
+j.( ThreadRun_ForceJump ): { input: j.; sprite: ; }
+^mAtkP; Tightrope Run Attack (acima)( ThreadRun_6P ): { input: j.P; sprite: chp210_00ex; }
+^mAtkP; Tightrope Run Attack (abaixo)( ThreadRun_6P_Down ): { input: j.P; sprite: chp439_00; }
+^mAtkK; Tightrope Run Attack (acima)( ThreadRun_K ): { input: j.K; sprite: chp201_00ex; }
+^mAtkK; Tightrope Run Attack (abaixo)( ThreadRun_K_Down ): { input: j.K; sprite: chp435_00; }
+Close ^mAtkS; Tightrope Run Attack (acima)( ThreadRun_S ): { input: j.S; sprite: chp202_00ex; }
+Close ^mAtkS; Tightrope Run Attack (abaixo)( ThreadRun_S_Down ): { input: j.S; sprite: chp436_00; }
+Far ^mAtkS; Tightrope Run Attack (acima)( ThreadRun_SFar ): { input: f.j.S; sprite: chp203_00ex; }
+Far ^mAtkS; Tightrope Run Attack (abaixo)( ThreadRun_SFar_Down ): { input: f.j.S; sprite: chp437_00; }
+^mAtkHS; Tightrope Run Attack (acima)( ThreadRun_HS ): { input: j.H; sprite: chp204_00ex; }
+^mAtkHS; Tightrope Run Attack (abaixo)( ThreadRun_HS_Down ): { input: j.H; sprite: chp438_00; }
+^mAtk6;^mAtkHS; Tightrope Run Attack (acima)( ThreadRun_6HS ): { input: j.6H; sprite: chp213_00ex; }
+^mAtk6;^mAtkHS; Tightrope Run Attack (abaixo)( ThreadRun_6HS_Down ): { input: j.6H; sprite: chp440_00; }
+Reverse( ThreadRun_Reverse2 ): { input: j.2_ELM_TRG; sprite: ; }
+Reverse( ThreadRun_Reverse8 ): { input: j.8_ELM_TRG; sprite: ; }
+Reverse( ThreadRun_Reverse_Down2 ): { input: j.2_ELM_TRG; sprite: ; }
+Reverse( ThreadRun_Reverse_Down8 ): { input: j.8_ELM_TRG; sprite: ; }
+Tightrope( ItoAtk ): { input: 214H; sprite: chp430_00; }
+Zansei Rouga( ZanseiRouga ): { input: 632146H; sprite: chp500_00; }
+j.632146H( ZanseiRouga_air ): { input: j.632146H; sprite: ; }
+Banki Messai( BankiMessai ): { input: 236236P; sprite: chp501_00; }

@@ -1,0 +1,34 @@
+5P( NmlAtk5A ): { input: 5P; sprite: sly200_00; }
+6P( NmlAtk6A ): { input: 6P; sprite: sly210_00; }
+2P( NmlAtk2A ): { input: 2P; sprite: sly230_00; }
+5K( NmlAtk5B ): { input: 5K; sprite: sly201_00; }
+6K( NmlAtk6B ): { input: 6K; sprite: sly211_00; }
+2K( NmlAtk2B ): { input: 2K; sprite: sly231_00; }
+c.S( NmlAtk5CNear ): { input: c.S; sprite: sly202_00; }
+f.S( NmlAtk5CFar ): { input: f.S; sprite: sly203_00; }
+2S( NmlAtk2C ): { input: 2S; sprite: sly232_00; }
+5H( NmlAtk5D ): { input: 5H; sprite: sly204_00; }
+6H( NmlAtk6D ): { input: 6H; sprite: sly213_00; }
+2H( NmlAtk2D ): { input: 2H; sprite: sly233_00; }
+5D( NmlAtk5E ): { input: 5D; sprite: sly205_00; }
+Sequência Aérea( HomingJump ): { input: j; sprite: sly205_10; }
+2D( NmlAtk2E ): { input: 2D; sprite: sly234_00; }
+TAUNT( NmlAtk5F ): { input: TAUNT; sprite: sly300_00; }
+6TAUNT( NmlAtk6F ): { input: 6TAUNT; sprite: sly305_00; }
+j.P( NmlAtkAir5A ): { input: j.P; sprite: sly250_00; }
+j.K( NmlAtkAir5B ): { input: j.K; sprite: sly251_00; }
+j.S( NmlAtkAir5C ): { input: j.S; sprite: sly252_00; }
+j.H( NmlAtkAir5D ): { input: j.H; sprite: sly253_00; }
+j.D( NmlAtkAir5E ): { input: j.D; sprite: sly254_00; }
+^mAtkP;Mappa Hunch( sly_SP_01 ): { input: 236P; sprite: sly401_00; }
+^mAtkK;Mappa Hunch( sly_SP_02 ): { input: 236K; sprite: sly401_00; }
+^mAtkP;Dandy Step( sly_SP_03 ): { input: 214P; sprite: sly402_00; }
+^mAtkK;Dandy Step( sly_SP_04 ): { input: 214K; sprite: sly403_00; }
+Pilebunker( sly_SP_05 ): { input: 5P; sprite: sly404_00; }
+Bump Ahead( sly_SP_06 ): { input: 5K; sprite: sly405_00; }
+It's Late( sly_SP_07 ): { input: 5S; sprite: sly406_00; }
+Master's Hammer( sly_SP_08 ): { input: 5H; sprite: sly407_00; }
+Bloodsucking Universe( sly_SP_09 ): { input: 63214H; sprite: sly408_00; }
+Hand of Doom( sly_SP_10 ): { input: 6S; sprite: sly271_00; }
+Super Mappa Hunch( sly_ULT_01 ): { input: 236236H; sprite: sly500_00; }
+Last Horizon( sly_ULT_02 ): { input: 632146S; sprite: sly502_00; }

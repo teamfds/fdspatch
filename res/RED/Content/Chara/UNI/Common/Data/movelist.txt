@@ -1,0 +1,67 @@
+5P( NmlAtk5A ): { input: 5P; sprite: uni200_00; }
+6P( NmlAtk6A ): { input: 6P; sprite: uni210_00; }
+2P( NmlAtk2A ): { input: 2P; sprite: uni230_00; }
+5K( NmlAtk5B ): { input: 5K; sprite: uni201_00; }
+2K( NmlAtk2B ): { input: 2K; sprite: uni231_00; }
+c.S( NmlAtk5CNear ): { input: c.S; sprite: uni202_00; }
+f.S( NmlAtk5CFar ): { input: f.S; sprite: uni203_00; }
+2S( NmlAtk2C ): { input: 2S; sprite: uni232_00; }
+5S( NmlAtkC_5C ): { input: 5S; sprite: uni270_00; }
+2S( NmlAtkC_2C ): { input: 2S; sprite: uni272_00; }
+5H( NmlAtk5D ): { input: 5H; sprite: uni204_00; }
+6H( NmlAtk6D ): { input: 6H; sprite: uni274_00; }
+2H( NmlAtk2D ): { input: 2H; sprite: uni233_00; }
+5H( NmlAtkD_5D ): { input: 5H; sprite: uni271_00; }
+2H( NmlAtkD_2D ): { input: 2H; sprite: uni273_00; }
+5D( NmlAtk5E ): { input: 5D; sprite: uni205_00; }
+Sequência Aérea( HomingJump ): { input: j; sprite: uni205_07; }
+2D( NmlAtk2E ): { input: 2D; sprite: uni234_00; }
+66BOOLEAN_OR5DASHBOOLEAN_OR6DASH( UNI_SpecialCancel_FDash ): { input: 66BOOLEAN_OR5DASHBOOLEAN_OR6DASH; sprite: uni032_00; }
+TAUNT( NmlAtk5F ): { input: TAUNT; sprite: uni300_00; }
+6TAUNT( NmlAtk6F ): { input: 6TAUNT; sprite: uni305_00; }
+j.P( NmlAtkAir5A ): { input: j.P; sprite: uni250_00; }
+j.K( NmlAtkAir5B ): { input: j.K; sprite: uni251_00; }
+j.S( NmlAtkAir5C ): { input: j.S; sprite: uni252_00; }
+j.H( NmlAtkAir5D ): { input: j.H; sprite: uni253_00; }
+j.D( NmlAtkAir5E ): { input: j.D; sprite: uni254_00; }
+j.D( DustFinish_shot ): { input: j.D; sprite: ; }
+A.M.T.G. Streak( UNI_SP00_Edge ): { input: 236H; sprite: uni400_00; }
+A.A.T.G. Blitz( UNI_SP01_AirEdge ): { input: j.236H; sprite: uni401_00; }
+A.C.T.G. Blast-Off( UNI_SP02_Thrust ): { input: 623S; sprite: uni402_00; }
+A.T.T.G. Penetrate( UNI_SP03_Dipper ): { input: 236K; sprite: uni403_00; }
+A.T.T.G. Top-Attack( UNI_SP04_Sever ): { input: 214K; sprite: uni404_00; }
+Blaze a Trail( UNI_SP05_Slash ): { input: 214S; sprite: uni405_00; }
+6H( UNI_SP00_Edge_easy ): { input: 6H; sprite: ; }
+j.6H( UNI_SP01_AirEdge_easy ): { input: j.6H; sprite: ; }
+6S( UNI_SP02_Thrust_easy ): { input: 6S; sprite: ; }
+6K( UNI_SP03_Dipper_easy ): { input: 6K; sprite: ; }
+4K( UNI_SP04_Sever_easy ): { input: 4K; sprite: ; }
+4S( UNI_SP05_Slash_easy ): { input: 4S; sprite: ; }
+Megadeath Buster( UNI_ULT00_MDBuster ): { input: 632146S; sprite: uni500_00; }
+Weapons Free( UNI_ULT01_WFree ): { input: 214214H; sprite: uni510_00; }
+j.( UNI_ULT01_Fly ): { input: j.; sprite: uni512_00; }
+j.( UNI_ULT01_Turn ): { input: j.; sprite: uni513_00; }
+^mAtkP; durante Weapons Free( UNI_ULT01_P ): { input: j.P; sprite: uni514_00; }
+^mAtkK; durante Weapons Free( UNI_ULT01_K ): { input: j.K; sprite: uni515_00; }
+^mAtkS; durante Weapons Free( UNI_ULT01_S ): { input: j.S; sprite: uni516_00; }
+^mAtkHS; durante Weapons Free( UNI_ULT01_HS ): { input: j.H; sprite: uni517_00; }
+^mAtk1;^mAtkD; durante Weapons Free( UNI_ULT01_D1 ): { input: j.1DBOOLEAN_OR1DASH; sprite: ; }
+^mAtk2;^mAtkD; durante Weapons Free( UNI_ULT01_D2 ): { input: j.2DBOOLEAN_OR2DASH; sprite: ; }
+^mAtk3;^mAtkD; durante Weapons Free( UNI_ULT01_D3 ): { input: j.3DBOOLEAN_OR3DASH; sprite: ; }
+^mAtk4;^mAtkD; durante Weapons Free( UNI_ULT01_D4 ): { input: j.4DBOOLEAN_OR4DASH; sprite: ; }
+^mAtk5;^mAtkD; durante Weapons Free( UNI_ULT01_D5 ): { input: j.5DBOOLEAN_OR5DASH; sprite: ; }
+^mAtk6;^mAtkD; durante Weapons Free( UNI_ULT01_D6 ): { input: j.6DBOOLEAN_OR6DASH; sprite: ; }
+^mAtk7;^mAtkD; durante Weapons Free( UNI_ULT01_D7 ): { input: j.7DBOOLEAN_OR7DASH; sprite: ; }
+^mAtk8;^mAtkD; durante Weapons Free( UNI_ULT01_D8 ): { input: j.8DBOOLEAN_OR8DASH; sprite: ; }
+^mAtk9;^mAtkD; durante Weapons Free( UNI_ULT01_D9 ): { input: j.9DBOOLEAN_OR9DASH; sprite: ; }
+Star Deviation( UNI_ULT01_SDeviation ): { input: j.; sprite: uni519_00; }
+Star Deviation: Annihilate( UNI_ULT02_SDAnnihilate_AB ): { input: j.PK; sprite: ; }
+Star Deviation: Annihilate( UNI_ULT02_SDAnnihilate_AC ): { input: j.PS; sprite: ; }
+Star Deviation: Annihilate( UNI_ULT02_SDAnnihilate_AD ): { input: j.PH; sprite: ; }
+Star Deviation: Annihilate( UNI_ULT02_SDAnnihilate_AE ): { input: j.PD; sprite: ; }
+Star Deviation: Annihilate( UNI_ULT02_SDAnnihilate_BC ): { input: j.KS; sprite: ; }
+Star Deviation: Annihilate( UNI_ULT02_SDAnnihilate_BD ): { input: j.KH; sprite: ; }
+Star Deviation: Annihilate( UNI_ULT02_SDAnnihilate_BE ): { input: j.KD; sprite: ; }
+Star Deviation: Annihilate( UNI_ULT02_SDAnnihilate_CD ): { input: j.SH; sprite: ; }
+Star Deviation: Annihilate( UNI_ULT02_SDAnnihilate_CE ): { input: j.SD; sprite: ; }
+Star Deviation: Annihilate( UNI_ULT02_SDAnnihilate_DE ): { input: j.HD; sprite: ; }

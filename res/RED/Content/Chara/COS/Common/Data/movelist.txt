@@ -1,0 +1,44 @@
+5P( NmlAtk5A ): { input: 5P; sprite: cos200_00; }
+6P( NmlAtk6A ): { input: 6P; sprite: cos210_00; }
+2P( NmlAtk2A ): { input: 2P; sprite: cos230_00; }
+5K( NmlAtk5B ): { input: 5K; sprite: cos201_00; }
+2K( NmlAtk2B ): { input: 2K; sprite: cos231_00; }
+6K( NmlAtk6B ): { input: 6K; sprite: cos211_00; }
+c.S( NmlAtk5CNear ): { input: c.S; sprite: cos202_00; }
+f.S( NmlAtk5CFar ): { input: f.S; sprite: cos203_00; }
+2S( NmlAtk2C ): { input: 2S; sprite: cos232_00; }
+6S( NmlAtk6C ): { input: 6S; sprite: cos212_00; }
+5H( NmlAtk5D ): { input: 5H; sprite: ; }
+6H( NmlAtk6D ): { input: 6H; sprite: ; }
+2H( NmlAtk2D ): { input: 2H; sprite: ; }
+5D( NmlAtk5E ): { input: 5D; sprite: cos205_00; }
+Sequência Aérea( HomingJump ): { input: j; sprite: cos205_08; }
+2D( NmlAtk2E ): { input: 2D; sprite: cos234_00; }
+TAUNT( NmlAtk5F ): { input: TAUNT; sprite: cos300_00; }
+6TAUNT( NmlAtk6F ): { input: 6TAUNT; sprite: cos305_00; }
+j.P( NmlAtkAir5A ): { input: j.P; sprite: cos250_00; }
+j.K( NmlAtkAir5B ): { input: j.K; sprite: cos251_00; }
+j.S( NmlAtkAir5C ): { input: j.S; sprite: cos252_00; }
+j.2K( NmlAtkAir2B ): { input: j.2K; sprite: cos254_00; }
+j.H( NmlAtkAir5D ): { input: j.H; sprite: cos254_00; }
+j.D( NmlAtkAir5E ): { input: j.D; sprite: cos253_00; }
+At the Ready( HoldGunAtk ): { input: 5H; sprite: cos213_00; }
+Focus( Routine ): { input: 214P; sprite: cos400_00; }
+Steady Aim( Sniper ): { input: 214S; sprite: cos410_00; }
+2P( Reload_Easy ): { input: 2P; sprite: ; }
+4P( Routine_Easy ): { input: 4P; sprite: ; }
+6P( Mark_Easy ): { input: 6P; sprite: ; }
+4K( ForwardRoll_Easy ): { input: 4K; sprite: ; }
+6K( Decoy_Easy ): { input: 6K; sprite: ; }
+4S( SniperEnd_Easy ): { input: 4S; sprite: ; }
+Cancel Aim( SniperEnd ): { input: 214S; sprite: cos411_00; }
+33( SniperEmptyEndForce ): { input: 33; sprite: ; }
+Cancel Aim( SniperEndForce ): { input: ; sprite: ; }
+Roll( ForwardRoll ): { input: 214K; sprite: cos401_00; }
+Scapegoat( Decoy ): { input: 236K; sprite: cos402_00; }
+Curse( Mark ): { input: 236P; sprite: cos405_00; }
+Reload( Reload ): { input: 22P; sprite: cos274_12; }
+Deus Ex Machina( COS_Ultimate1 ): { input: 632146S; sprite: cos213_00; }
+Super Focus( Routine_Super ): { input: 214214P; sprite: cos505_00; }
+( Conce_End ): { input: ; sprite: cos273_00; }
+29( HoldMiss ): { input: 29; sprite: cos271_00; }
