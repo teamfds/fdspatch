@@ -13348,12 +13348,14 @@ beginState: s32'CounterBlitz'
   characterSfx: s32'SE_BTL_CHP_03'
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(3), Val(0), Val(0), Val(0)
   hitStop: 20
+  pushbackX: 90
   groundHitEffect: (CRUMPLE)
   airHitEffect: (AIR_FACE_UP)
   hitAirPushbackX: Val(10000)
-  hitAirPushbackY: Val(15000)
+  hitAirPushbackY: Val(-15000)
   groundBounceCount: 1
-  groundBounceYVelocity: 15000
+  groundBounceXVelocity: 2500
+  groundBounceYVelocity: 25000
   hit: 
   upon: (HIT_OR_GUARD)
     clearRegisteredUponCode: (HIT_OR_GUARD)
@@ -13385,10 +13387,10 @@ beginState: s32'CounterBlitz'
   atkAngle: 90
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (AIR_STRONG)
-  hitAirPushbackX: Val(25000)
+  hitAirPushbackX: Val(14000)
   hitAirPushbackXOverTime: Val(80), Val(6), Val(14)
-  hitAirPushbackY: Val(70000)
-  hitAirPushbackYOverTime: Val(80), Val(7), Val(17)
+  hitAirPushbackY: Val(55000)
+  hitAirPushbackYOverTime: Val(80), Val(7), Val(12)
   hitGravity: Val(500)
   hitGravityOverTime: Val(100), Val(10), Val(30)
   hit: 

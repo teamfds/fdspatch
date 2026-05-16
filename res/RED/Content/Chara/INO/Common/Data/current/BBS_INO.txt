@@ -8311,7 +8311,7 @@ beginState: s32'CounterBlitz'
   sprite: s32'ino402_03', 2
   sprite: s32'ino402_04', 2
   sprite: s32'ino402_05', 2
-  physicsXImpulse: 0, 40000
+  physicsXImpulse: 0, 45000
   createObject: s32'INO_402_ShotSmokeLink', (PLAYER)
   runOnObject: (PREVIOUS)
     addNamerakaMoveX: -100000
@@ -8320,7 +8320,7 @@ beginState: s32'CounterBlitz'
   commonBankSfx: 0, s32'SE_BTL_CMN_Dash_Sprint_LP', 100
   sprite: s32'ino402_06', 2
   sprite: s32'ino402_07', 2
-  physicsXImpulse: 0, 35000
+  physicsXImpulse: 0, 40000
   sprite: s32'ino402_08', 2
   sprite: s32'ino402_09', 2
   sprite: s32'ino402_10', 2
@@ -8333,10 +8333,10 @@ beginState: s32'CounterBlitz'
   hitStop: 18
   hitEffectSlash: 1
   atkAngle: 90
+  pushbackX: 55
   groundHitEffect: (CRUMPLE)
   airHitEffect: (TAILSPIN)
-  hitAirPushbackX: Val(8000)
-  hitAirPushbackXOverTime: Val(90), Val(8), Val(16)
+  hitAirPushbackX: Val(3000)
   hitAirPushbackY: Val(33000)
   hit: 
   setCrouch: 0
@@ -8361,7 +8361,7 @@ beginState: s32'CounterBlitz'
   sprite: s32'ino204_05', 3
   cmnSfx: s32'SE_BTL_CMN_Swing_Hammer_Heavy_L'
   physicsXImpulse: 0, 45000
-  velocityXPercentEachFrame: 80
+  velocityXPercentEachFrame: 75
   sprite: s32'ino204_06', 2
   exPointFReset: (PLAYER), 190000, 0
   createParticle: s32'ino_guitarhit', (EX_POINT_F)
@@ -8374,7 +8374,7 @@ beginState: s32'CounterBlitz'
   hitAirPushbackY: Val(-55000)
   groundBounceCount: 1
   groundBounceGravity: 1000
-  groundBounceXVelocity: 10000
+  groundBounceXVelocity: 5000
   groundBounceYVelocity: 22000
   groundBounceNextAction: s32'CmnActBlowoff'
   hit: 

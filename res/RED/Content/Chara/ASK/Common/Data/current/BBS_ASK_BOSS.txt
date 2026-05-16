@@ -17999,13 +17999,15 @@ beginState: s32'CounterBlitz'
   sprite: s32'ask204_04', 3
   sprite: s32'ask204_05', 1
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(3), Val(0), Val(0), Val(0)
+  pushbackX: 60
   hitEffectSlash: 1
   groundHitEffect: (CRUMPLE)
   airHitEffect: (AIR_FACE_UP)
-  hitAirPushbackX: Val(5000)
-  hitAirPushbackY: Val(25000)
+  hitAirPushbackX: Val(4000)
+  hitAirPushbackY: Val(-15000)
   groundBounceCount: 1
-  groundBounceYVelocity: 12000
+  groundBounceYVelocity: 32000
+  groundBounceXVelocity: 4000
   hit: 
   upon: (HIT_OR_GUARD)
     clearRegisteredUponCode: (HIT_OR_GUARD)
@@ -18034,7 +18036,7 @@ beginState: s32'CounterBlitz'
   exitState: 
   beginLabel: s32'next'
   sprite: s32'ask213_00', 3
-  addInertia: 10000
+  addInertia: 15000
   displayMesh: s32'Wand_fk', 1
   displayMesh: s32'Book_bake', 1
   displayMesh: s32'Sword', 0
@@ -18051,19 +18053,24 @@ beginState: s32'CounterBlitz'
   atkAngle: -70
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (AIR_FACE_UP)
-  hitAirPushbackX: Val(20000)
+  hitAirPushbackX: Val(10000)
   hitAirPushbackXOverTime: Val(70), Val(6), Val(10)
   hitAirPushbackY: Val(-100000)
   hitAirPushbackYOverTime: Val(50), Val(4), Val(6)
   hitGravity: Val(0)
   groundBounceGravity: 0
   hitGravityOverTime: Val(100), Val(8), Val(25)
-  groundBounceXVelocity: 20000
+  groundBounceXVelocity: 10000
   groundBounceYVelocity: 40000
   groundBounceYVelocityPercent: 100
   groundBounceCount: 1
   groundBounceNextAction: s32'CmnActBlowoff'
   hit: 
+  upon: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    groundBounceXVelocity: 26000
+    groundBounceYVelocity: 55000
+  endUpon: 
   cmnSfx: s32'SE_BTL_CMN_Swing_Hammer_Heavy_L'
   characterSfx: s32'SE_BTL_ASK_08_1'
   createObject: s32'ASK_213_bake', (PLAYER)

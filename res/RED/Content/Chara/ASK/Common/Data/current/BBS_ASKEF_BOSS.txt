@@ -2296,6 +2296,30 @@ beginState: s32'MP'
         modifyVar: (SUB), Mem(ExGauge0), Mem(SignalParam)
         ifOperation: (IS_LESSER_OR_EQUAL), Mem(ExGauge0), Val(0)
           storeValue: Mem(ExGauge0), Val(0)
+          ifOperationInObject: (IS_EQUAL), (PLAYER), Mem(ActReg0), Val(2)
+            checkCurrentStateName: (PLAYER), s32'Magic'
+            if: Mem(Tmp)
+              storeValue: Mem(ExGauge0), Val(1)
+            endIf: 
+            checkCurrentStateName: (PLAYER), s32'Magic_air'
+            if: Mem(Tmp)
+              storeValue: Mem(ExGauge0), Val(1)
+            endIf: 
+          endIf: 
+          ifOperationInObject: (IS_EQUAL), (PLAYER), Mem(ActReg0), Val(3)
+            checkCurrentStateName: (PLAYER), s32'Magic'
+            if: Mem(Tmp)
+              storeValue: Mem(ExGauge0), Val(1)
+            endIf: 
+            checkCurrentStateName: (PLAYER), s32'Magic_air'
+            if: Mem(Tmp)
+              storeValue: Mem(ExGauge0), Val(1)
+            endIf: 
+          endIf: 
+          checkCurrentStateName: (PLAYER), s32'ASK_Ultimate2'
+          if: Mem(Tmp)
+            storeValue: Mem(ExGauge0), Val(1)
+          endIf: 
         endIf: 
       endIf: 
       ifOperation: (IS_EQUAL), Mem(SignalID), Val(2)
@@ -2322,7 +2346,9 @@ beginState: s32'MP'
       endIf: 
       ifOperation: (IS_EQUAL), Mem(SignalID), Val(7)
         ifNot: Mem(PlayerDamageOrGuard)
-          modifyVar: (ADD), Mem(ExGauge0), Mem(SignalParam)
+          if: Mem(ExGauge0)
+            modifyVar: (ADD), Mem(ExGauge0), Mem(SignalParam)
+          endIf: 
         endIf: 
       endIf: 
       ifOperation: (IS_EQUAL), Mem(SignalID), Val(3)

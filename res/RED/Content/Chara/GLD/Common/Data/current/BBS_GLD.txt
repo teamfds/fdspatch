@@ -10553,7 +10553,7 @@ beginState: s32'CounterBlitz'
   sprite: s32'gld213_01', 3
   sprite: s32'gld213_02', 4
   sprite: s32'gld213_03', 4
-  physicsXImpulse: 0, 30000
+  physicsXImpulse: 0, 35000
   velocityXPercentEachFrame: 95
   createParticle: s32'cmn_dash_cancel', (PLAYER)
   commonBankSfx: 0, s32'SE_BTL_CMN_Dash_Sprint_LP', 100
@@ -10572,8 +10572,9 @@ beginState: s32'CounterBlitz'
   hit: 
   cmnSfx: s32'SE_BTL_CMN_Swing_Hammer_Heavy_M'
   characterSfx: s32'SE_BTL_GLD_04'
+  extendPushboxX: 100000
+  pushbackX: 90
   sprite: s32'gld213_07', 4
-  extendPushboxX: 0
   endLabel: 
   gotoLabelIf: s32'next', Mem(ActReg7)
   sprite: s32'gld213_08', 4
@@ -10593,6 +10594,8 @@ beginState: s32'CounterBlitz'
   deactivateObjectByName: s32'GLD_213_Strike'
   haltMomentum: 1
   velocityXPercentEachFrame: 100
+  addInertia: 12000
+  extendPushboxX: 0
   sprite: s32'gld415_01', 4
   sprite: s32'gld415_02', 4
   characterSfx: s32'SE_BTL_GLD_02'
@@ -10607,9 +10610,9 @@ beginState: s32'CounterBlitz'
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(4), Val(0), Val(0), Val(0)
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (AIR_STRONG)
-  hitAirPushbackX: Val(25000)
+  hitAirPushbackX: Val(15000)
   hitAirPushbackXOverTime: Val(80), Val(6), Val(16)
-  hitAirPushbackY: Val(73000)
+  hitAirPushbackY: Val(70000)
   hitAirPushbackYOverTime: Val(85), Val(5), Val(17)
   hitGravity: Val(500)
   hitGravityOverTime: Val(150), Val(14), Val(20)

@@ -8088,11 +8088,14 @@ beginState: s32'CounterBlitz'
   exPointFReset: (PLAYER), 280000, 310000
   createObject: s32'pot_hammer_hit', (EX_POINT_F)
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(3), Val(0), Val(0), Val(0)
+  pushbackX: 55
   groundHitEffect: (CRUMPLE)
   airHitEffect: (AIR_FACE_UP)
-  hitAirPushbackX: Val(8000)
-  hitAirPushbackXOverTime: Val(90), Val(8), Val(16)
-  hitAirPushbackY: Val(35000)
+  hitAirPushbackX: Val(7000)
+  hitAirPushbackY: Val(-5000)
+  groundBounceCount: 1
+  groundBounceXVelocity: 2000
+  groundBounceYVelocity: 20000
   hit: 
   extendPushboxX: 120000
   characterSfx: s32'SE_BTL_POT_08'
@@ -8113,6 +8116,7 @@ beginState: s32'CounterBlitz'
   exitState: 
   beginLabel: s32'next'
   sprite: s32'pot233_00', 4
+  addInertia: 15000
   spriteBlend: s32'pot405_18', 0, 200
   sprite: s32'pot233_00', 4
   sprite: s32'pot233_01', 4
@@ -8126,7 +8130,7 @@ beginState: s32'CounterBlitz'
   atkAngle: 90
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (AIR_STRONG)
-  hitAirPushbackX: Val(25000)
+  hitAirPushbackX: Val(23000)
   hitAirPushbackXOverTime: Val(80), Val(6), Val(16)
   hitAirPushbackY: Val(55000)
   hitAirPushbackYOverTime: Val(85), Val(5), Val(17)

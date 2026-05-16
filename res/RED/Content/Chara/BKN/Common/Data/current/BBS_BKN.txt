@@ -9059,10 +9059,10 @@ beginState: s32'CounterBlitz'
   sprite: s32'bkn411_01', 3
   sprite: s32'bkn411_02', 2
   sprite: s32'bkn411_03', 4
-  physicsXImpulse: 0, 110000
+  physicsXImpulse: 0, 65000
   createObject: s32'BKN_411_Dashline', (PLAYER)
   createObject: s32'BKN_411_Dash', (PLAYER)
-  velocityXPercentEachFrame: 86
+  velocityXPercentEachFrame: 90
   characterSfx: s32'SE_BTL_BKN_05'
   characterSfx: s32'SE_BTL_BKN_15'
   createParticle: s32'cmn_dash_cancel', (PLAYER)
@@ -9075,12 +9075,15 @@ beginState: s32'CounterBlitz'
   sprite: s32'bkn411_08', 3
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(3), Val(0), Val(0), Val(0)
   hitStop: 18
+  pushbackX: 90
   hitEffectSlash: 1
   groundHitEffect: (CRUMPLE)
-  airHitEffect: (TAILSPIN)
-  hitAirPushbackX: Val(8000)
-  hitAirPushbackXOverTime: Val(90), Val(8), Val(16)
-  hitAirPushbackY: Val(35000)
+  airHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: Val(7000)
+  hitAirPushbackY: Val(-15000)
+  groundBounceCount: 1
+  groundBounceXVelocity: 2500
+  groundBounceYVelocity: 30000
   hit: 
   physicsXImpulse: 0, 5000
   createObject: s32'BKN_411_Slash', (PLAYER)
@@ -9091,7 +9094,6 @@ beginState: s32'CounterBlitz'
     extendPushboxX: 100000
   endUpon: 
   sprite: s32'bkn411_09', 4
-  velocityXPercentEachFrame: 90
   extendPushboxX: 0
   endLabel: 
   gotoLabelIf: s32'next', Mem(ActReg7)
@@ -9107,6 +9109,7 @@ beginState: s32'CounterBlitz'
   exitState: 
   beginLabel: s32'next'
   sprite: s32'bkn213_00', 5
+  addInertia: 5000
   deactivateObjectByName: s32'BKN_411_Slash'
   sprite: s32'bkn213_01', 5
   sprite: s32'bkn213_02', 4
@@ -9119,13 +9122,18 @@ beginState: s32'CounterBlitz'
   hitEffectSlash: 1
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (AIR_FACE_UP)
-  hitAirPushbackX: Val(10000)
+  hitAirPushbackX: Val(2000)
   hitAirPushbackY: Val(-55000)
   groundBounceCount: 1
   groundBounceGravity: 1000
-  groundBounceXVelocity: 10000
+  groundBounceXVelocity: 3000
   groundBounceYVelocity: 20000
   groundBounceNextAction: s32'CmnActBlowoff'
+  upon: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    groundBounceGravity: 1500
+    groundBounceYVelocity: 32000
+  endUpon: 
   hit: 
   createObject: s32'BKN_213_Slash', (PLAYER)
   exPointFReset: (PLAYER), 140000, 0

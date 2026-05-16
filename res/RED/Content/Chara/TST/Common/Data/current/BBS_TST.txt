@@ -9410,17 +9410,18 @@ beginState: s32'CounterBlitz'
   sprite: s32'tst213_07', 3
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(3), Val(0), Val(0), Val(0)
   atkAngle: -55
+  pushbackX: 60
   hitEffectSlash: 1
   callSubroutine: s32'cmn_fuwafuwafuwa'
-  groundHitEffect: (AIR_FACE_UP)
-  hitAirPushbackX: Val(20000)
+  groundHitEffect: (CRUMPLE)
+  hitAirPushbackX: Val(2000)
   hitAirPushbackXOverTime: Val(70), Val(6), Val(10)
   hitAirPushbackY: Val(-100000)
   hitAirPushbackYOverTime: Val(50), Val(4), Val(6)
   hitGravity: Val(0)
   groundBounceGravity: 0
   hitGravityOverTime: Val(100), Val(8), Val(25)
-  groundBounceXVelocity: 10000
+  groundBounceXVelocity: 8000
   groundBounceYVelocity: 40000
   groundBounceYVelocityPercent: 100
   groundBounceCount: 1
@@ -9470,12 +9471,17 @@ beginState: s32'CounterBlitz'
   atkAngle: 45
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (TAILSPIN)
-  hitAirPushbackX: Val(14000)
+  hitAirPushbackX: Val(8000)
   hitAirPushbackXOverTime: Val(80), Val(6), Val(10)
-  hitAirPushbackY: Val(50000)
+  hitAirPushbackY: Val(60000)
   hitAirPushbackYOverTime: Val(80), Val(2), Val(17)
   hitGravity: Val(500)
   hitGravityOverTime: Val(150), Val(17), Val(20)
+  upon: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    hitAirPushbackX: Val(12000)
+    hitAirPushbackY: Val(90000)
+  endUpon: 
   hit: 
   upon: (HIT_OR_GUARD)
     extendPushboxX: 100000

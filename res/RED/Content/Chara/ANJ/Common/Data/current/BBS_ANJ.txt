@@ -8249,9 +8249,8 @@ beginState: s32'CounterBlitz'
   hitStop: 20
   groundHitEffect: (CRUMPLE)
   airHitEffect: (TAILSPIN)
-  hitAirPushbackX: Val(10000)
-  hitAirPushbackXOverTime: Val(90), Val(8), Val(16)
-  hitAirPushbackY: Val(36000)
+  hitAirPushbackX: Val(4000)
+  hitAirPushbackY: Val(40000)
   hit: 
   createObject: s32'ANJ_403_Wind', (PLAYER)
   characterSfx: s32'SE_BTL_ANJ_03'
@@ -8284,12 +8283,17 @@ beginState: s32'CounterBlitz'
   hitEffectSlash: 1
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (AIR_STRONG)
-  hitAirPushbackX: Val(25000)
+  hitAirPushbackX: Val(18000)
   hitAirPushbackXOverTime: Val(80), Val(6), Val(16)
-  hitAirPushbackY: Val(55000)
+  hitAirPushbackY: Val(50000)
   hitAirPushbackYOverTime: Val(85), Val(5), Val(17)
   hitGravity: Val(500)
   hitGravityOverTime: Val(150), Val(14), Val(20)
+  upon: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    hitAirPushbackX: Val(22000)
+    hitAirPushbackY: Val(52000)
+  endUpon: 
   hit: 
   createObject: s32'ANJ_233', (PLAYER)
   cmnSfx: s32'SE_BTL_CMN_Swing_Grap_Sharp_M'

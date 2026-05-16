@@ -11979,8 +11979,8 @@ beginState: s32'CounterBlitz'
   sprite: s32'luc500_30', 13
   sprite: s32'luc401_01', 2
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(2), Val(0), Val(0), Val(0)
-  physicsXImpulse: 0, 40000
-  velocityXPercentEachFrame: 95
+  physicsXImpulse: 0, 38000
+  velocityXPercentEachFrame: 85
   addNamerakaMoveX: 20000
   privateSE: s32'SE_BTL_LUC_11'
   displayMesh: s32'wirer', 0
@@ -12003,18 +12003,19 @@ beginState: s32'CounterBlitz'
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(3), Val(0), Val(0), Val(0)
   groundHitEffect: (CRUMPLE)
   airHitEffect: (AIR_FACE_UP)
-  hitAirPushbackX: Val(8000)
-  hitAirPushbackY: Val(20000)
+  hitAirPushbackX: Val(2000)
+  hitAirPushbackY: Val(-15000)
   groundBounceCount: 1
-  groundBounceYVelocity: 18000
+  groundBounceXVelocity: 3500
+  groundBounceYVelocity: 27000
   hit: 
   createObject: s32'luc_401_wire_hibana', (PLAYER)
   createObject: s32'luc_401_ground', (PLAYER)
   cmnSfx: s32'SE_BTL_CMN_Swing_Grap_Sharp_M'
   sprite: s32'luc401_08', 4
   displayMesh: s32'wirel', 1
+  addInertia: 6000
   sprite: s32'luc401_09', 5
-  haltMomentum: 1
   sprite: s32'luc401_10', 3
   endLabel: 
   gotoLabelIf: s32'next', Mem(ActReg7)
@@ -12027,7 +12028,6 @@ beginState: s32'CounterBlitz'
   exitState: 
   beginLabel: s32'next'
   sprite: s32'luc205_00', 3
-  addInertia: 10000
   displayMesh: s32'wirel', 0
   sprite: s32'luc205_01', 2
   addNamerakaMoveX: 80000
@@ -12042,12 +12042,17 @@ beginState: s32'CounterBlitz'
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (TAILSPIN)
   airHitEffect: (TAILSPIN)
-  hitAirPushbackX: Val(25500)
+  hitAirPushbackX: Val(10000)
   hitAirPushbackXOverTime: Val(80), Val(6), Val(10)
   hitAirPushbackY: Val(50000)
   hitAirPushbackYOverTime: Val(80), Val(5), Val(17)
   hitGravity: Val(500)
   hitGravityOverTime: Val(150), Val(17), Val(20)
+  upon: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    hitAirPushbackX: Val(18000)
+    hitAirPushbackY: Val(55000)
+  endUpon: 
   hit: 
   callSubroutineWithArgs: s32'cmn_screenshake', Val(1), Val(0), Val(0), Val(0)
   createObject: s32'LUC_205_wind', (PLAYER)

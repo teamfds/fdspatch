@@ -24,7 +24,7 @@
     "Gun Flame (Feint)( GunFlameFeint )": { "input": "214P", "sprite": "sol400_00" },
     "Bandit Revolver( BanditRevolver_Land )": { "input": "236K", "sprite": "sol402_00" },
     "Bandit Revolver (mid-air)( BanditRevolver_Air )": { "input": "j.236K", "sprite": "sol403_00" },
-    "Side Winder Ignited( NewSidewinder )": { "input": "j.6H", "sprite": "sol416_00" },
+    "Sidewinder Ignited( NewSidewinder )": { "input": "j.6H", "sprite": "sol416_00" },
     "Bandit Bringer( BanditBringer_Land )": { "input": "214K", "sprite": "sol404_00" },
     "Bandit Bringer (mid-air)( BanditBringer_Air )": { "input": "j.214K", "sprite": "sol404_04" },
     "S Volcanic Viper( VolcanicViperLandS )": { "input": "623S", "sprite": "sol408_00" },

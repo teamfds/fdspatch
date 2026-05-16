@@ -1,0 +1,5266 @@
+beginState: s32'ArcadeEvtDZY_A'
+endState: 
+
+beginState: s32'ArcadeEvtDZY_B'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 90
+  eventSetAction: s32'Event640_release', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_111', 30, 0
+  eventSetAction: s32'Event615_mitume2', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_112', 45, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_113', 30, 1
+  eventSetAction: s32'Event640_onaka', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_114', 30, 0
+  eventSetAction: s32'Event615_toclose', 0
+  sprite: s32'null', 200
+  eventMessageToDelay: s16'AC_DZY_L1_115', 30, 1
+  sprite: s32'null', 40
+  eventSetAction: s32'Event640_onaka_ugoki3', 1
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event615_tomitume', 0
+  sprite: s32'null', 150
+  eventMessageToDelay: s16'AC_DZY_L1_116', 45, 0
+  eventSetAction: s32'Event615_modori', 0
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event_nayami', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_117', 60, 1
+  eventSetAction: s32'Event640_DZY_L1_117_2', 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtDZY_C'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 90
+  eventSetAction: s32'Event640_release', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_101', 30, 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_102', 45, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_103', 50, 1
+  eventSetAction: s32'Event640_onaka', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_104', 45, 0
+  eventSetAction: s32'Event615_open', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_105', 45, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_106', 45, 1
+  eventSetAction: s32'Event640_onaka_ugoki3', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_107', 30, 0
+  eventSetAction: s32'Event615_toclose3', 0
+  sprite: s32'null', 150
+  eventMessageToDelay: s16'AC_DZY_L1_108', 40, 0
+  eventSetAction: s32'Event615_modori3', 0
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event_nayami', 0
+  sprite: s32'null', 90
+  eventMessageToDelay: s16'AC_DZY_L1_109', 30, 1
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event640_onaka_ugoki3_2', 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtDZY_D'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+    eventSetAction: s32'EventFall', 2
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_201', 30, 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_202', 30, 0
+  sprite: s32'null', 1
+  eventSetAction: s32'CmnActStand', 0
+  eventSetAction: s32'CmnActStand', 1
+  eventSetAction: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginSubroutine: s32'Setup_ArcadeEvtDZY_E'
+  runOnObject: (To3_ENEMY_MAIN_PLAYER)
+    addPositionX: 0, -300000
+  endRunOnObject: 
+  eventSetAction: s32'EventStand_Back_DZY_E', 2
+endSubroutine: 
+
+beginState: s32'ArcadeEvtDZY_E'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand_NEAR', 0
+    eventSetAction: s32'Event085', 1
+    eventSetAction: s32'EventStand_Back_DZY_E', 2
+  endUpon: 
+  sprite: s32'null', 120
+  sprite: s32'null', 60
+  eventSetAction: s32'EventStand_NEAR_E', 0
+  sprite: s32'null', 90
+  eventSetAction: s32'Event305_stand_DZY_E2', 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_211', 30, 2
+  eventSetAction: s32'Event003_2_E', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_212', 30, 0
+  eventSetAction: s32'Event615_mitume_E', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_213', 30, 2
+  eventSetAction: s32'Event305_stand_DZY_E_2', 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_215', 50, 0
+  eventSetAction: s32'Event615_toclose_E', 0
+  sprite: s32'null', 120
+  eventMessageToDelay: s16'AC_DZY_L1_216', 30, 2
+  eventSetAction: s32'Event305_stand_DZY_E_3', 2
+  sprite: s32'null', 45
+  eventSetAction: s32'Event305_stand_DZY_E_4', 2
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event615_tomitume_E', 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtDZY_F'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'Event300_Threat_end02', 1
+    eventSetAction: s32'EventStand_toumei_kotei', 2
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_401', 45, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_402', 30, 0
+  sprite: s32'null', 120
+  eventMessageToDelay: s16'AC_DZY_L1_403', 30, 1
+  eventSetAction: s32'615_040', 1
+  sprite: s32'null', 240
+  eventSetAction: s32'Event030_DZY_L1_403', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_404', 30, 0
+  eventSetAction: s32'Event615_mitume', 0
+  sprite: s32'null', 75
+  eventSetAction: s32'EventFall_toumeiowari', 2
+  sprite: s32'null', 30
+  eventMessageToDelay: s16'AC_DZY_L1_406', 30, 2
+  sprite: s32'null', 30
+  eventSetAction: s32'Event615_modori_furi', 0
+  sprite: s32'null', 210
+  eventSetAction: s32'Event306_chira_start', 0
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event000_nomeri', 2
+  sprite: s32'null', 30
+  eventMessageToDelay: s16'AC_DZY_L1_407', 30, 1
+  eventSetAction: s32'040_003', 1
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event306_DZY_L2_414_look', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_408', 30, 2
+  eventSetAction: s32'Event001', 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_409', 30, 1
+  eventSetAction: s32'408_angry_04', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_410', 30, 0
+  eventSetAction: s32'Event500_zenkei', 0
+  sprite: s32'null', 50
+  eventSetAction: s32'Event500_zenkei_modori2', 0
+  eventSetAction: s32'408_angry_02_notmodori_3', 1
+  sprite: s32'null', 1
+  eventSetAction: s32'CmnActStand', 0
+  eventSetAction: s32'CmnActStand', 1
+  eventSetAction: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginSubroutine: s32'Setup_ArcadeEvtDZY_G'
+  eventSetAction: s32'EventStand', 0
+  eventSetAction: s32'040_guard2', 1
+  eventSetAction: s32'EventStand_toumei_kotei', 2
+endSubroutine: 
+
+beginState: s32'ArcadeEvtDZY_G'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'040_guard2', 1
+    eventSetAction: s32'EventStand_toumei_kotei', 2
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L2_401', 45, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L2_402', 30, 0
+  eventSetAction: s32'Event615_mitume3', 0
+  sprite: s32'null', 60
+  eventSetAction: s32'EventFall_toumeiowari', 2
+  sprite: s32'null', 45
+  eventMessageToDelay: s16'AC_DZY_L2_403', 30, 2
+  eventSetAction: s32'Event615_modori_furi', 0
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event306_chira_start', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L2_404', 30, 2
+  eventSetAction: s32'Event300', 2
+  sprite: s32'null', 45
+  eventMessageToDelay: s16'AC_DZY_L2_405', 30, 1
+  eventSetAction: s32'305_Zutuu_start', 1
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event306_DZY_L2_414_look', 0
+  sprite: s32'null', 120
+  eventMessageToDelay: s16'AC_DZY_L2_406', 30, 1
+  eventSetAction: s32'408_angry_02_notmodori_1', 1
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'408_angry_02_notmodori_2', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L2_407', 45, 0
+  eventSetAction: s32'Event500_zenkei', 0
+  sprite: s32'null', 50
+  eventSetAction: s32'Event500_zenkei_modori2', 0
+  eventSetAction: s32'408_angry_02_notmodori_3', 1
+  sprite: s32'null', 1
+  eventSetAction: s32'CmnActStand', 0
+  eventSetAction: s32'CmnActStand', 1
+  eventSetAction: s32'CmnActStand', 2
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginSubroutine: s32'Setup_ArcadeEvtDZY_H'
+  eventSetAction: s32'Event500_zenkei_keep', 0
+  eventSetAction: s32'062_stop', 1
+  eventSetAction: s32'EventStand_Back', 2
+endSubroutine: 
+
+beginState: s32'ArcadeEvtDZY_H'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'Event500_zenkei_keep', 0
+    eventSetAction: s32'062_stop', 1
+    eventSetAction: s32'EventStand_Back', 2
+  endUpon: 
+  sprite: s32'null', 180
+  eventSetAction: s32'064_toEventStand_short', 1
+  eventSetAction: s32'Event500_zenkei_modori3', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_411', 45, 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_412', 45, 1
+  eventSetAction: s32'Event300_Opponent_n', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_413', 30, 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_414', 30, 2
+  eventSetAction: s32'Event300', 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_415', 45, 1
+  eventSetAction: s32'408_angry_01_short', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_416', 45, 1
+  eventSetAction: s32'305_Zutuu_short2', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_417', 45, 0
+  eventSetAction: s32'Event615_mitume3', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_418', 45, 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_419', 45, 1
+  eventSetAction: s32'Event300_Opponent_toji2', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_420', 45, 0
+  eventSetAction: s32'Event615_toclose2', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_421', 45, 1
+  eventSetAction: s32'305_300', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_422', 45, 2
+  eventSetAction: s32'Event000_nokezori', 2
+  sprite: s32'null', 150
+  eventMessageToDelay: s16'AC_DZY_L1_423', 45, 0
+  eventSetAction: s32'Event615_modori3', 0
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event305_inori', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_424', 45, 1
+  eventSetAction: s32'Event300_Opponent_toji3', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_425', 30, 2
+  eventSetAction: s32'Event001', 2
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginSubroutine: s32'Setup_ArcadeEvtDZY_I'
+  eventSetAction: s32'Event306_chira_stop', 0
+  eventSetAction: s32'064_toEventStand_short2', 1
+  eventSetAction: s32'EventStand_Back', 2
+endSubroutine: 
+
+beginState: s32'ArcadeEvtDZY_I'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'Event306_chira_stop', 0
+    eventSetAction: s32'064_toEventStand_short2', 1
+    eventSetAction: s32'EventStand_Back', 2
+  endUpon: 
+  sprite: s32'null', 60
+  eventSetAction: s32'Event306_chira_stop', 0
+  sprite: s32'null', 75
+  eventSetAction: s32'Event306_chira_stop2', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L2_411', 45, 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L2_412', 45, 1
+  eventSetAction: s32'Event300_Opponent_n', 1
+  sprite: s32'null', 45
+  eventMessageToDelay: s16'AC_DZY_L2_413', 30, 2
+  eventSetAction: s32'Event300', 2
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event306_chira_s2_start', 0
+  sprite: s32'null', 313
+  eventMessageToDelay: s16'AC_DZY_L2_414', 30, 0
+  eventSetAction: s32'Event306_DZY_L2_414_look2', 0
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'EventStand_NEAR', 0
+  sprite: s32'null', 60
+  eventMessageToDelay: s16'AC_DZY_L2_415', 25, 2
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event000_shazai', 2
+  sprite: s32'null', 50
+  eventSetAction: s32'Event306_DZY_L2_414_look2_2', 0
+  eventSetAction: s32'EventStand', 2
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L2_416', 45, 0
+  sprite: s32'null', 120
+  eventMessageToDelay: s16'AC_DZY_L2_417', 45, 1
+  eventSetAction: s32'Event300_Opponent_toji3', 1
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event615_modori_look', 0
+  sprite: s32'null', 15
+  eventSetAction: s32'305_Stop_3', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L2_418', 60, 0
+  eventSetAction: s32'Event305_inori', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L2_419', 45, 0
+  eventSetAction: s32'Event305_inori_modori', 0
+  sprite: s32'null', 60
+  eventMessageToDelay: s16'AC_DZY_L2_420', 60, 0
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'EventStand_DZY_L2_420', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L2_421', 45, 1
+  eventSetAction: s32'305_Stop', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L2_422', 45, 2
+  eventSetAction: s32'Event001', 2
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtDZY_J'
+endState: 
+
+beginSubroutine: s32'Setup_ArcadeEvtDZY_K'
+  eventSetAction: s32'EventStand', 0
+  eventSetAction: s32'Event300_Opponent_stop', 1
+endSubroutine: 
+
+beginState: s32'ArcadeEvtDZY_K'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'Event300_Opponent_stop', 1
+  endUpon: 
+  sprite: s32'null', 30
+  sprite: s32'null', 120
+  eventMessageToDelay: s16'AC_DZY_L1_431', 40, 1
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event300_Opponent_2', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_432', 45, 0
+  eventSetAction: s32'Event615_mitume2', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_433', 60, 0
+  eventSetAction: s32'Event615_toclose', 0
+  sprite: s32'null', 45
+  eventMessageToDelay: s16'AC_DZY_L1_434', 45, 1
+  eventSetAction: s32'Event300_Opponent_toji2', 1
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event615_tomitume', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_435', 45, 0
+  eventSetAction: s32'Event615_modori', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_436', 15, 0
+  eventSetAction: s32'Event305_inori_uttori', 0
+  sprite: s32'null', 15
+  eventSetAction: s32'Event300_Opponent_notchira', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_437', 45, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_438', 45, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_439', 30, 0
+  eventSetAction: s32'Event305_inori_u_modori', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_440', 45, 1
+  eventSetAction: s32'Event300_Opponent_toji3', 1
+  sprite: s32'null', 120
+  eventMessageToDelay: s16'AC_DZY_L1_441', 40, 1
+  eventSetAction: s32'615_Start', 1
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event310_kiduki', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L1_442', 30, 0
+  eventSetAction: s32'Event700_kiduki2', 0
+  sprite: s32'null', 30
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginSubroutine: s32'Setup_ArcadeEvtDZY_L'
+  eventSetAction: s32'EventStand', 0
+  eventSetAction: s32'040_guard_stop', 1
+endSubroutine: 
+
+beginState: s32'ArcadeEvtDZY_L'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'040_guard_stop', 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_401', 30, 1
+  eventSetAction: s32'040_guard_stop', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_402', 30, 0
+  eventSetAction: s32'Event615_mitume3', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_403', 30, 1
+  sprite: s32'null', 45
+  eventSetAction: s32'FrameOut2', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_404', 30, 0
+  eventSetAction: s32'Event034', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_405', 15, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_406', 15, 0
+  eventSetAction: s32'Event500_zenkei', 0
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtDZY_M'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'EventStand', 1
+  endUpon: 
+  sprite: s32'null', 30
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_301', 50, 1
+  eventSetAction: s32'Event001', 1
+  sprite: s32'null', 100
+  eventMessageToDelay: s16'AC_DZY_L3_302', 30, 0
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event204', 0
+  sprite: s32'null', 45
+  sprite: s32'null', 1
+  eventSetAction: s32'CmnActStand', 0
+  eventSetAction: s32'CmnActStand', 1
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginSubroutine: s32'Setup_ArcadeEvtDZY_N'
+  eventSetAction: s32'EventStand', 0
+  eventSetAction: s32'Event640_stand', 1
+endSubroutine: 
+
+beginState: s32'ArcadeEvtDZY_N'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'Event640_stand', 1
+  endUpon: 
+  sprite: s32'null', 45
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_331', 45, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_332', 45, 1
+  eventSetAction: s32'Event640_onaka', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_333', 30, 0
+  eventSetAction: s32'Event615_mitume2', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_334', 50, 1
+  eventSetAction: s32'Event640_onaka2', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_335', 45, 0
+  eventSetAction: s32'Event615_toclose', 0
+  sprite: s32'null', 180
+  eventMessageToDelay: s16'AC_DZY_L3_336', 50, 0
+  eventSetAction: s32'Event615_tomitume', 0
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event615_modori', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_337', 45, 0
+  eventSetAction: s32'Event305_inori2', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_338', 45, 1
+  eventSetAction: s32'Event640_onaka2_ugoki', 1
+  sprite: s32'null', 10
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtDZY_O'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'EventStand', 0
+    eventSetAction: s32'Event640_release', 1
+  endUpon: 
+  sprite: s32'null', 90
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_311', 30, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_312', 45, 0
+  eventSetAction: s32'Event615_mitume', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_313', 40, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_314', 45, 1
+  eventSetAction: s32'Event640_onaka', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_315', 45, 0
+  eventSetAction: s32'Event615_mitume_kashige', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_316', 30, 0
+  eventSetAction: s32'Event615_m_kashige_pachi', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_317', 45, 1
+  eventSetAction: s32'Event640_onaka2', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_318', 45, 0
+  eventSetAction: s32'Event615_modori', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_319', 45, 0
+  eventSetAction: s32'Event305_inori2', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_320', 30, 1
+  eventSetAction: s32'Event640_onaka2_ugoki', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_321', 30, 1
+  eventSetAction: s32'Event640_onaka2_ugoki_2', 1
+  sprite: s32'null', 30
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'ArcadeEvtDZY_P'
+endState: 
+
+beginSubroutine: s32'Setup_ArcadeEvtDZY_Q'
+  eventSetAction: s32'EventStand', 0
+  eventSetAction: s32'615_Lookground_stop', 1
+endSubroutine: 
+
+beginState: s32'ArcadeEvtDZY_Q'
+  upon: (IMMEDIATE)
+    eventSetAction: s32'615_Lookground_stop', 1
+  endUpon: 
+  sprite: s32'null', 60
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_501', 30, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_502', 30, 0
+  eventSetAction: s32'Event615_mitume', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_503', 30, 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_504', 45, 0
+  eventSetAction: s32'Event615_toclose', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_505', 45, 1
+  eventSetAction: s32'615_Lookground_up', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_506', 45, 0
+  eventSetAction: s32'Event615_tomitume', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_507', 30, 0
+  eventSetAction: s32'Event615_mitume_kashige', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_508', 45, 1
+  eventSetAction: s32'615_Lookground_daran', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_509', 45, 0
+  eventSetAction: s32'Event615_m_kashige_modori', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_510', 45, 1
+  eventSetAction: s32'305_Stop_2', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_511', 60, 0
+  eventSetAction: s32'Event305_inori', 0
+  sprite: s32'null', 60
+  eventMessageToDelay: s16'AC_DZY_L3_512', 45, 1
+  eventSetAction: s32'305_Stop', 1
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'Event305_inori_modori', 0
+  sprite: s32'null', 120
+  eventMessageToDelay: s16'AC_DZY_L3_513', 45, 1
+  sprite: s32'null', 2147483647
+  eventSetAction: s32'305_Stop_2', 1
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_514', 60, 0
+  eventSetAction: s32'EventStand306_smile', 0
+  sprite: s32'null', 2147483647
+  eventMessageToDelay: s16'AC_DZY_L3_515', 30, 1
+  eventSetAction: s32'615_Start', 1
+  sprite: s32'null', 30
+  sprite: s32'null', 1
+  eventEndSignal: 
+endState: 
+
+beginState: s32'RomanCancel_Mirage'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'cmnRomanCancel_Mirage'
+    linkModelSelfTeam: s32'dzy', s32''
+    beginMeshSet: s32'RomanCancel_Mirage'
+    addToMeshSet: s32'Body'
+    addToMeshSet: s32'Head_Low'
+    addToMeshSet: s32'Siwa'
+    endMeshSet: 
+    swapMeshSet: s32'RomanCancel_Mirage'
+    setDefaultMeshSet: s32'RomanCancel_Mirage'
+  endUpon: 
+  gotoLabelIfNot: s32'air', Mem(SentToObject0)
+  sprite: s32'dzy350_01', 6
+  sprite: s32'dzy350_02', 3
+  sprite: s32'dzy350_03', 3
+  sprite: s32'dzy350_04', 3
+  sprite: s32'dzy350_05', 3
+  sprite: s32'dzy350_06', 3
+  sprite: s32'dzy350_07', 3
+  sprite: s32'dzy350_08', 2
+  sprite: s32'dzy350_09', 2
+  sprite: s32'dzy350_11', 2
+  sprite: s32'dzy350_12', 3
+  sprite: s32'dzy350_13', 3
+  sprite: s32'dzy350_14', 3
+  sprite: s32'dzy350_12', 3
+  sprite: s32'dzy350_15', 2
+  sprite: s32'dzy350_16', 2
+  sprite: s32'dzy350_17', 2
+  endLabel: 
+  exitState: 
+  beginLabel: s32'air'
+  sprite: s32'dzy351_01', 6
+  sprite: s32'dzy351_02', 3
+  sprite: s32'dzy351_03', 3
+  sprite: s32'dzy351_04', 3
+  sprite: s32'dzy351_05', 3
+  sprite: s32'dzy351_06', 3
+  sprite: s32'dzy351_07', 3
+  sprite: s32'dzy351_08', 2
+  sprite: s32'dzy351_09', 2
+  sprite: s32'dzy351_11', 2
+  sprite: s32'dzy351_12', 3
+  sprite: s32'dzy351_13', 3
+  sprite: s32'dzy351_14', 3
+  sprite: s32'dzy351_15', 3
+  sprite: s32'dzy351_16', 2
+  sprite: s32'dzy351_17', 2
+endState: 
+
+beginState: s32'ranbu_Zanzou'
+  upon: (IMMEDIATE)
+    linkModelSelfTeam: s32'dzy', s32''
+    beginMeshSet: s32'WildAssault_Zanzou'
+    addToMeshSet: s32'Body'
+    addToMeshSet: s32'Head_Low'
+    endMeshSet: 
+    callSubroutine: s32'cmn_CounterBlitzFunc_Zanzou'
+  endUpon: 
+  sprite: s32'null', 2
+  displayModel: 0
+  sprite: s32'dzy213_00', 3
+  displayMesh: s32'Kadokura', 1
+  sprite: s32'dzy213_01', 4
+  sprite: s32'dzy213_02', 3
+  displayModel: 1
+  sprite: s32'dzy213_03', 3
+  sprite: s32'dzy213_04', 1
+  sprite: s32'dzy213_05', 1
+  sprite: s32'dzy213_06', 1
+  sprite: s32'dzy213_07', 1
+  sprite: s32'dzy213_08', 1
+  sprite: s32'dzy213_09', 14
+  sprite: s32'dzy213_10', 9
+  displayModel: 0
+  sprite: s32'dzy213_11', 4
+  sprite: s32'dzy233_00', 2
+  displayMesh: s32'Kadokura', 0
+  displayMesh: s32'Nebody', 1
+  displayMesh: s32'Nehead_low', 1
+  displayMesh: s32'Nehalo', 1
+  displayMesh: s32'Neaxe', 1
+  displayMesh: s32'Netoge', 1
+  sprite: s32'dzy233_01', 2
+  sprite: s32'dzy233_02', 2
+  displayModel: 1
+  sprite: s32'dzy233_03', 2
+  sprite: s32'dzy233_04', 2
+  sprite: s32'dzy233_05', 3
+  sprite: s32'dzy233_06', 3
+  sprite: s32'dzy233_07', 14
+  sprite: s32'dzy233_08', 7
+  displayModel: 0
+  sprite: s32'dzy233_09', 3
+endState: 
+
+beginState: s32'WildAssault_Zanzou'
+  upon: (IMMEDIATE)
+    linkModelSelfTeam: s32'dzy', s32''
+    beginMeshSet: s32'WildAssault_Zanzou'
+    addToMeshSet: s32'Body'
+    addToMeshSet: s32'Head_Low'
+    addToMeshSet: s32'Tailcrystal'
+    endMeshSet: 
+    callSubroutine: s32'cmn_Initialize_WildAssault_Zanz'
+  endUpon: 
+  beginLabel: s32'loop'
+  sprite: s32'dzy360_02', 3
+  sprite: s32'dzy360_03', 3
+  endLabel: 
+  gotoLabel: s32'loop'
+  beginLabel: s32'attack1'
+  sprite: s32'keep', 3
+  endLabel: 
+  beginLabel: s32'attack2'
+  sprite: s32'dzy360_04', 3
+  sprite: s32'dzy360_05', 3
+endState: 
+
+beginState: s32'sly500cs'
+  upon: (IMMEDIATE)
+    linkModelEnemyTeam: s32'sly', s32'sly500cs_dzy'
+    callSubroutine: s32'cmn_sly500cs'
+  endUpon: 
+  sprite: s32'null', 300
+endState: 
+
+beginState: s32'dzy_040_iceguard01'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    setLinkObjectDestroyOnDamage: 3
+    reverseDisplay: 1
+    linkObjectZ: 3
+    ignoreSlowdown: 1
+    deactivateObjectByNameExceptSelf: s32'dzy_040_iceguard01'
+  endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticle: s32'dzy_040_iceguard01'
+endState: 
+
+beginState: s32'dzy_040_iceguard02'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    setLinkObjectDestroyOnDamage: 3
+    reverseDisplay: 1
+    linkObjectZ: 3
+    ignoreSlowdown: 1
+    deactivateObjectByNameExceptSelf: s32'dzy_040_iceguard02'
+    deactivateObjectByNameExceptSelf: s32'dzy_040_iceguard01'
+  endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticle: s32'dzy_040_iceguard02'
+endState: 
+
+beginState: s32'dzy_040_iceguard03'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    setLinkObjectDestroyOnDamage: 3
+    reverseDisplay: 1
+    linkObjectZ: 3
+    ignoreSlowdown: 1
+    deactivateObjectByNameExceptSelf: s32'dzy_040_iceguard03'
+    deactivateObjectByNameExceptSelf: s32'dzy_040_iceguard02'
+    deactivateObjectByNameExceptSelf: s32'dzy_040_iceguard01'
+  endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticle: s32'dzy_040_iceguard03'
+endState: 
+
+beginState: s32'dzy_040_iceguard_end'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    setLinkObjectDestroyOnDamage: 3
+    reverseDisplay: 1
+    linkObjectZ: 3
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticle: s32'dzy_040_iceguard_end'
+endState: 
+
+beginState: s32'dzy_045_iceguard01'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    setLinkObjectDestroyOnDamage: 3
+    reverseDisplay: 1
+    linkObjectZ: 3
+    ignoreSlowdown: 1
+    deactivateObjectByNameExceptSelf: s32'dzy_045_iceguard01'
+  endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticle: s32'dzy_045_iceguard01'
+endState: 
+
+beginState: s32'dzy_045_iceguard02'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    setLinkObjectDestroyOnDamage: 3
+    reverseDisplay: 1
+    linkObjectZ: 3
+    ignoreSlowdown: 1
+    deactivateObjectByNameExceptSelf: s32'dzy_045_iceguard02'
+    deactivateObjectByNameExceptSelf: s32'dzy_045_iceguard01'
+  endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticle: s32'dzy_045_iceguard02'
+endState: 
+
+beginState: s32'dzy_045_iceguard03'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    setLinkObjectDestroyOnDamage: 3
+    reverseDisplay: 1
+    linkObjectZ: 3
+    ignoreSlowdown: 1
+    deactivateObjectByNameExceptSelf: s32'dzy_045_iceguard03'
+    deactivateObjectByNameExceptSelf: s32'dzy_045_iceguard02'
+    deactivateObjectByNameExceptSelf: s32'dzy_045_iceguard01'
+  endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticle: s32'dzy_045_iceguard03'
+endState: 
+
+beginState: s32'dzy_045_iceguard_end'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    setLinkObjectDestroyOnDamage: 3
+    reverseDisplay: 1
+    linkObjectZ: 3
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticle: s32'dzy_045_iceguard_end'
+endState: 
+
+beginState: s32'DZY_200_atk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    upon: (NO_STOP_IDLING)
+      ifOperationInObject: (IS_EQUAL), (To3_ENEMY_MAIN_PLAYER), Mem(HitPoint), Val(0)
+        ifNot: Mem(CmnCharaReg3)
+          modifyVar: (ADD), Mem(ActReg0), Val(1)
+          ifOperation: (IS_EQUAL), Mem(ActReg0), Val(2)
+            clearRegisteredUponCode: (NO_STOP_IDLING)
+            linkObjectZ: 0
+            zLine: (FAR_DISTANCE), 5
+          endIf: 
+        endIf: 
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 20
+  linkParticle: s32'dzy_200atk'
+endState: 
+
+beginState: s32'DZY_201_ribbon'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 200
+  linkParticle: s32'dzy_201_atk'
+endState: 
+
+beginState: s32'DZY_202_atk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_202_atk01'
+  privateSE: s32'SE_BTL_DZY_02'
+  sprite: s32'null', 2
+  linkParticle: s32'dzy_202_atk02'
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_202_atk03'
+  initializeDestroy: 
+  destroyOnPlayerStateChange: 1
+  destroyOnPlayerEnemy: 1
+  upon: (ON_DESTROY)
+    clearRegisteredUponCode: (ON_DESTROY)
+    gotoLabelRequests: s32'koware'
+  endUpon: 
+  endLabel: 
+  beginLabel: s32'koware'
+  sprite: s32'null', 2
+  linkParticle: s32'dzy_202_break'
+  ignoreSuperFreeze: 1
+  stopLinkObject: 0
+  linkObjPosition: 0
+  initializeDestroy: 
+  clearRegisteredUponCode: (ON_DESTROY)
+  sprite: s32'null', 50
+endState: 
+
+beginState: s32'DZY_202_flash'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'dzy_202_spe'
+  privateSE: s32'SE_BTL_DZY_10'
+endState: 
+
+beginState: s32'DZY_202_kira'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'dzy_202_twinkle'
+endState: 
+
+beginState: s32'DZY_203_atk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    setLinkObjectDestroyOnDamage: 2
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    initializeDestroy: 
+    destroyOnPlayerStateChange: 1
+    destroyOnPlayerEnemy: 1
+    upon: (ON_DESTROY)
+      clearRegisteredUponCode: (ON_DESTROY)
+      gotoLabelRequests: s32'koware'
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 2
+  linkParticle: s32'dzy_203_atk01'
+  privateSE: s32'SE_BTL_DZY_02'
+  sprite: s32'null', 2
+  linkParticle: s32'dzy_203_atk02'
+  sprite: s32'null', 2
+  linkParticle: s32'dzy_203_atk03'
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_203_atk04'
+  endLabel: 
+  beginLabel: s32'koware'
+  sprite: s32'null', 50
+  ignoreSuperFreeze: 1
+  stopLinkObject: 0
+  linkObjPosition: 0
+  linkParticle: s32'dzy_203_atk_break'
+  privateSE: s32'SE_BTL_DZY_10_2'
+  initializeDestroy: 
+  clearRegisteredUponCode: (ON_DESTROY)
+endState: 
+
+beginState: s32'DZY_204_atk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 18
+  linkParticle: s32'dzy_204_atk'
+  privateSE: s32'SE_BTL_DZY_03'
+  sprite: s32'null', 36
+  linkObjPosition: 0
+endState: 
+
+beginState: s32'DZY_205_stone'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(1), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_205_stone01'
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_205_stone02'
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_205_stone03'
+  sprite: s32'null', 8
+  linkParticle: s32'dzy_205_stone04'
+endState: 
+
+beginState: s32'DZY_205_stone_impact'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    ignoreSuperFreeze: 1
+    zLine: (NEAR_DISTANCE), 5
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    upon: (PLAYER_RECEIVE_ATTACK)
+      clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+      linkObjPosition: 0
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 2
+  linkParticle: s32'dzy_205_stone05'
+  privateSE: s32'SE_BTL_DZY_01_1'
+  sprite: s32'null', 80
+  checkCurrentStateName: (PLAYER), s32'HomingJump'
+  ifNot: Mem(Tmp)
+    ifNot: Mem(CmnCharaReg3)
+      linkObjPosition: 0
+    endIf: 
+  endIf: 
+  else: 
+    upon: (IDLING)
+      ifOperation: (IS_EQUAL), Mem(OnIdlingTime), Val(17)
+        clearRegisteredUponCode: (IDLING)
+        linkObjPosition: 0
+      endIf: 
+    endUpon: 
+  endElse: 
+endState: 
+
+beginState: s32'DZY_205_atk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_205_impact01'
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_205_impact02'
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_205_impact03'
+endState: 
+
+beginState: s32'DZY_210_atk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 20
+  linkParticle: s32'dzy_210atk'
+endState: 
+
+beginState: s32'DZY_213_atk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(1), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_213_atk01'
+  sprite: s32'null', 15
+  linkParticle: s32'dzy_213_atk02'
+endState: 
+
+beginState: s32'DZY_213_kira'
+  upon: (IMMEDIATE)
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'dzy_213_twinkle'
+endState: 
+
+beginState: s32'DZY_230_atk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    upon: (NO_STOP_IDLING)
+      ifOperationInObject: (IS_EQUAL), (To3_ENEMY_MAIN_PLAYER), Mem(HitPoint), Val(0)
+        ifNot: Mem(CmnCharaReg3)
+          modifyVar: (ADD), Mem(ActReg0), Val(1)
+          ifOperation: (IS_EQUAL), Mem(ActReg0), Val(2)
+            clearRegisteredUponCode: (NO_STOP_IDLING)
+            linkObjectZ: 0
+            zLine: (FAR_DISTANCE), 5
+          endIf: 
+        endIf: 
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 20
+  linkParticle: s32'dzy_230atk'
+endState: 
+
+beginState: s32'DZY_232_atk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(1), Val(0), Val(0), Val(0)
+    upon: (NO_STOP_IDLING)
+      ifNotInObject: (To3_ENEMY_MAIN_PLAYER), Mem(HitPoint)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        zLine: (FAR_DISTANCE), 5
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_232bake_01'
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_232bake_02'
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_232bake_03'
+endState: 
+
+beginState: s32'DZY_232_line'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'dzy_232kidou'
+  privateSE: s32'SE_BTL_DZY_00'
+endState: 
+
+beginState: s32'dzy_234_bake'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    upon: (NO_STOP_IDLING)
+      ifOperationInObject: (IS_EQUAL), (To3_ENEMY_MAIN_PLAYER), Mem(HitPoint), Val(0)
+        ifNot: Mem(CmnCharaReg3)
+          modifyVar: (ADD), Mem(ActReg0), Val(1)
+          ifOperation: (IS_EQUAL), Mem(ActReg0), Val(2)
+            clearRegisteredUponCode: (NO_STOP_IDLING)
+            linkObjectZ: 0
+            zLine: (FAR_DISTANCE), 5
+          endIf: 
+        endIf: 
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_234_bake_n01'
+  privateSE: s32'SE_BTL_DZY_19'
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_234_bake_n02'
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_234_bake_n03'
+endState: 
+
+beginState: s32'DZY_233_floorstone'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    ignoreSuperFreeze: 1
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_233_stone01'
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_233_stone02'
+  privateSE: s32'SE_BTL_DZY_01_1'
+  sprite: s32'null', 50
+  linkParticle: s32'dzy_233_stone03'
+endState: 
+
+beginState: s32'DZY_233_bake'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+    ignoreSuperFreeze: 1
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_233bake_01'
+  privateSE: s32'SE_BTL_DZY_01'
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_233bake_02'
+  privateSE: s32'SE_BTL_DZY_19'
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_233bake_03'
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_233bake_04'
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_233bake_05'
+endState: 
+
+beginState: s32'DZY_233_atk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    ignoreSuperFreeze: 1
+  endUpon: 
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_233_impact'
+  privateSE: s32'SE_BTL_DZY_00_1'
+  sprite: s32'null', 70
+  linkObjPosition: 0
+endState: 
+
+beginState: s32'dzy_234_n01'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_234_ptc_n01'
+endState: 
+
+beginState: s32'DZY_250_atk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    upon: (NO_STOP_IDLING)
+      ifOperationInObject: (IS_EQUAL), (To3_ENEMY_MAIN_PLAYER), Mem(HitPoint), Val(0)
+        ifNot: Mem(CmnCharaReg3)
+          modifyVar: (ADD), Mem(ActReg0), Val(1)
+          ifOperation: (IS_EQUAL), Mem(ActReg0), Val(2)
+            clearRegisteredUponCode: (NO_STOP_IDLING)
+            linkObjectZ: 0
+            zLine: (FAR_DISTANCE), 5
+          endIf: 
+        endIf: 
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 20
+  linkParticle: s32'dzy_250atk'
+endState: 
+
+beginState: s32'DZY_252_start'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 12
+  linkParticle: s32'dzy_252_start'
+endState: 
+
+beginState: s32'DZY_252_atk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    ignoreSuperFreeze: 1
+  endUpon: 
+  sprite: s32'null', 12
+  linkParticle: s32'dzy_252_atk'
+  privateSE: s32'SE_BTL_DZY_02_1'
+endState: 
+
+beginState: s32'DZY_252_break'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    ignoreSuperFreeze: 1
+  endUpon: 
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_252_break'
+  privateSE: s32'SE_BTL_DZY_10_2'
+  sprite: s32'null', 70
+  linkObjPosition: 0
+endState: 
+
+beginState: s32'dzy_253_bake'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_253_bake_n01'
+  privateSE: s32'SE_BTL_DZY_00'
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_253_bake_n02'
+endState: 
+
+beginState: s32'dzy_253_ptc_n01'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_253_ptc_n01'
+endState: 
+
+beginState: s32'dzy_254_charge'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 13
+  linkParticle: s32'dzy_254_charge'
+endState: 
+
+beginState: s32'dzy_254_shoot'
+  upon: (IMMEDIATE)
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'dzy_254_shoot'
+endState: 
+
+beginState: s32'DZY_320_ice'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    setObjectSize: 850
+  endUpon: 
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_throw_ice01'
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_throw_ice02'
+  privateSE: s32'SE_BTL_DZY_02'
+  sprite: s32'null', 90
+  linkParticle: s32'dzy_throw_ice03'
+  privateSE: s32'SE_BTL_DZY_09_1'
+endState: 
+
+beginState: s32'DZY_320_ice_break'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    setLinkObjectDestroyOnDamage: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    ignoreSuperFreeze: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    setObjectSize: 850
+  endUpon: 
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_throw_ice_break'
+  privateSE: s32'SE_BTL_DZY_10_1'
+  sprite: s32'null', 70
+  linkObjPosition: 0
+endState: 
+
+beginState: s32'DZY_320_ice_Dust'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    setLinkObjectDestroyOnDamage: 3
+    reverseDisplay: 1
+    ignoreSuperFreeze: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    addPositionX: 0, -3926
+    addPositionY: 0, -61178
+    addDepth: 0, 29431
+    upon: (NO_STOP_IDLING)
+      ifNot: Mem(BattleDoing)
+        linkObjPosition: 0
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_throwdust_ice01'
+  privateSE: s32'SE_BTL_DZY_10_1'
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_throwdust_ice02'
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_throwdust_ice03'
+endState: 
+
+beginState: s32'DZY_360_atk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 50
+  linkParticle: s32'dzy_360_break'
+endState: 
+
+beginState: s32'DZY_403_hit_eff'
+  upon: (IMMEDIATE)
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    ignoreSuperFreeze: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 65
+  linkParticle: s32'dzy_403_hit_n01'
+  commonSE: s32'SE_BTL_CMN_Impact_Electro'
+  commonSE: s32'SE_BTL_CMN_Expl_Shock'
+endState: 
+
+beginState: s32'dzy_403_bake_s'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    upon: (NO_STOP_IDLING)
+      ifNotInObject: (To3_ENEMY_MAIN_PLAYER), Mem(HitPoint)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        stopLinkObject: 0
+        ignoreFinishStop: 1
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_403_bake_n01'
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_403_bake_n02'
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_403_bake_n03'
+endState: 
+
+beginState: s32'dzy_403_sparks_n01'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_403_sparks_n01'
+  privateSE: s32'SE_BTL_DZY_08'
+endState: 
+
+beginState: s32'dzy_403_sparks_n02'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_403_sparks_n02'
+endState: 
+
+beginState: s32'dzy_403_sparks_n03'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_403_sparks_n03'
+endState: 
+
+beginState: s32'dzy_403_sparks_n04'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_403_sparks_n04'
+endState: 
+
+beginState: s32'dzy_403_sword_del'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'dzy_sword_del01'
+endState: 
+
+beginState: s32'DZY_404_hit_eff'
+  upon: (IMMEDIATE)
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    ignoreSuperFreeze: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 65
+  linkParticle: s32'dzy_404_hit_n01'
+  commonSE: s32'SE_BTL_CMN_Impact_Electro'
+  commonSE: s32'SE_BTL_CMN_Expl_Shock'
+endState: 
+
+beginState: s32'dzy_404_bake_hs'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    upon: (NO_STOP_IDLING)
+      ifNotInObject: (To3_ENEMY_MAIN_PLAYER), Mem(HitPoint)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        stopLinkObject: 0
+        ignoreFinishStop: 1
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 2
+  linkParticle: s32'dzy_404_bake_n01'
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_404_bake_n02'
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_404_bake_n03'
+endState: 
+
+beginState: s32'dzy_404_sparks_n01'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_404_sparks_n01'
+  privateSE: s32'SE_BTL_DZY_08'
+endState: 
+
+beginState: s32'dzy_404_sparks_n02'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_404_sparks_n02'
+endState: 
+
+beginState: s32'dzy_404_sparks_n03'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_404_sparks_n03'
+endState: 
+
+beginState: s32'dzy_404_sparks_n04'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_404_sparks_n04'
+endState: 
+
+beginState: s32'dzy_404_sparks_n05'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_404_sparks_n05'
+endState: 
+
+beginState: s32'dzy_404_sparks_n06'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_404_sparks_n06'
+endState: 
+
+beginState: s32'dzy_404_sword_del'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'dzy_sword_del02'
+endState: 
+
+beginState: s32'DZY_500_iceblock_loop'
+  upon: (IMMEDIATE)
+    stopLinkObject: 3
+    reverseDisplay: 1
+    linkObjectZ: 32
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    setAngleY: 5600
+    setObjectSize: 1120
+    setObjectDepth: 1500
+    addDepth: 0, 20000
+    zLine: (FAR_DISTANCE), 5
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 12
+  linkParticle: s32'dzy_500_ice_start'
+  privateSE: s32'SE_BTL_DZY_11'
+  sprite: s32'null', 90
+  linkParticle: s32'dzy_500_ice_loop'
+  sprite: s32'null', 90
+  linkParticle: s32'dzy_500_ice_break'
+endState: 
+
+beginState: s32'DZY_500_cold_breath_start'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 3
+    setLinkObjectDestroyOnStateChange: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    callSubroutine: s32'cmn_Effect_NoLink'
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (SIGNAL0)
+      linkObjPosition: 0
+    endUpon: 
+    upon: (SIGNAL1)
+      clearRegisteredUponCode: (SIGNAL1)
+      setLinkObjectDestroyOnStateChange: 0
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 100
+  linkParticle: s32'dzy_500_cold_breath_start'
+  privateSE: s32'SE_BTL_DZY_kAKUSEI_00'
+endState: 
+
+beginState: s32'DZY_500_cold_breath_hit'
+  upon: (IMMEDIATE)
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 300
+  linkParticle: s32'dzy_500_cold_breath_hit'
+  privateSE: s32'SE_BTL_DZY_kAKUSEI_01'
+  privateSE: s32'SE_BTL_DZY_09'
+endState: 
+
+beginState: s32'DZY_501_cold_breath_miss'
+  upon: (IMMEDIATE)
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 100
+  linkParticle: s32'dzy_501_cold_breath_miss'
+endState: 
+
+beginState: s32'dzy_500_necro_charge'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    linkParticle: s32'dzy_500_necro_charge'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 48
+  setPositionX: 34500
+  setPositionY: 330000
+  setDepth: 80000
+  setObjectWidth: 100
+  setObjectHeight: 100
+  setObjectDepth: 100
+  privateSE: s32'SE_BTL_DZY_kAKUSEI_02'
+  sprite: s32'null', 4
+  setPositionX: 38000
+  setPositionY: 300000
+  setDepth: 80000
+  setObjectWidth: 100
+  setObjectHeight: 100
+  setObjectDepth: 100
+  sprite: s32'null', 4
+  setPositionX: 39000
+  setPositionY: 295000
+  setDepth: 80000
+  setObjectWidth: 100
+  setObjectHeight: 100
+  setObjectDepth: 100
+  sprite: s32'null', 140
+  setPositionX: 39000
+  setPositionY: 295000
+  setDepth: 80000
+  setObjectWidth: 100
+  setObjectHeight: 100
+  setObjectDepth: 100
+endState: 
+
+beginState: s32'dzy_500_necro_charge_flash'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    addPositionX: 0, 39000
+    addPositionY: 0, 295000
+    addDepth: 0, 80000
+    setObjectWidth: 500
+    setObjectHeight: 500
+    setObjectDepth: 500
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 300
+  linkParticle: s32'dzy_500_necro_charge_flash'
+  privateSE: s32'SE_BTL_DZY_kAKUSEI_03'
+endState: 
+
+beginState: s32'dzy_500_necro_impact'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    linkParticle: s32'dzy_500_necro_impact'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 4
+  setPositionX: 40000
+  setPositionY: 300000
+  setDepth: 80000
+  setObjectSize: 500
+  sprite: s32'null', 4
+  setPositionX: 80000
+  setPositionY: 354000
+  setDepth: 80000
+  setObjectSize: 550
+  sprite: s32'null', 4
+  setPositionX: 30000
+  setPositionY: 430000
+  setDepth: 80000
+  setObjectSize: 600
+  sprite: s32'null', 4
+  setPositionX: 0
+  setPositionY: 453000
+  setDepth: 80000
+  setObjectSize: 650
+  sprite: s32'null', 4
+  setPositionX: -28000
+  setPositionY: 465000
+  setDepth: 80000
+  setObjectSize: 700
+  sprite: s32'null', 4
+  setPositionX: -40000
+  setPositionY: 475000
+  setDepth: 80000
+  sprite: s32'null', 160
+  setPositionX: -47000
+  setPositionY: 476000
+  setDepth: 80000
+endState: 
+
+beginState: s32'dzy_500_smoke_n01'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    addPositionX: 0, 350000
+    setObjectWidth: 400
+    setObjectHeight: 400
+    setObjectDepth: 400
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'dzy_500_smoke'
+endState: 
+
+beginState: s32'dzy_500_brokengrounds'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    addPositionX: 0, 350000
+    setObjectWidth: 400
+    setObjectHeight: 400
+    setObjectDepth: 400
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 600
+  linkParticle: s32'dzy_500_brokenground'
+  privateSE: s32'SE_BTL_DZY_01_1'
+endState: 
+
+beginState: s32'dzy_500_explosion'
+  upon: (IMMEDIATE)
+    linkObjPosition: 0
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    addPositionX: 0, 430000
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 600
+  linkParticle: s32'dzy_500_explosion'
+  privateSE: s32'SE_BTL_DZY_kAKUSEI_04'
+  privateSE: s32'SE_BTL_DZY_KAKUSEI_04_1'
+endState: 
+
+beginState: s32'dzy_500_explosion_n01'
+  upon: (IMMEDIATE)
+    linkObjPosition: 0
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    addPositionX: 0, 350000
+    addPositionY: 0, 5000
+    setObjectWidth: 400
+    setObjectHeight: 400
+    setObjectDepth: 400
+  endUpon: 
+  sprite: s32'null', 600
+  linkParticle: s32'dzy_explosion_test'
+endState: 
+
+beginState: s32'dzy_500_explosion_n02'
+  upon: (IMMEDIATE)
+    linkObjPosition: 0
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    addPositionX: 0, 700000
+    addPositionY: 0, 5000
+    setObjectWidth: 400
+    setObjectHeight: 400
+    setObjectDepth: 400
+  endUpon: 
+  sprite: s32'null', 600
+  linkParticle: s32'dzy_explosion_test'
+  commonSE: s32'SE_BTL_CMN_Expl_Fire_S'
+endState: 
+
+beginState: s32'dzy_500_explosion_n03'
+  upon: (IMMEDIATE)
+    linkObjPosition: 0
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    addPositionX: 0, 1050000
+    addPositionY: 0, 5000
+    setObjectWidth: 400
+    setObjectHeight: 400
+    setObjectDepth: 400
+  endUpon: 
+  sprite: s32'null', 600
+  linkParticle: s32'dzy_explosion_test'
+  commonSE: s32'SE_BTL_CMN_Expl_Fire_M'
+endState: 
+
+beginState: s32'dzy_500_explosion_n04'
+  upon: (IMMEDIATE)
+    linkObjPosition: 0
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    addPositionX: 0, 1400000
+    addPositionY: 0, 5000
+    setObjectWidth: 400
+    setObjectHeight: 400
+    setObjectDepth: 400
+  endUpon: 
+  sprite: s32'null', 600
+  linkParticle: s32'dzy_explosion_test'
+  commonSE: s32'SE_BTL_CMN_Expl_Fire_L'
+endState: 
+
+beginState: s32'DZY_500_scr_white'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'dzy_scr_white'
+endState: 
+
+beginState: s32'DZY_502_finalbloom'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'dzy_gamma_bloom'
+endState: 
+
+beginState: s32'DZY_500_scr_white_circle'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'dzy_scr_white_circle'
+endState: 
+
+beginState: s32'DZY_500_scr_black'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 16
+  linkParticle: s32'dzy_scr_black'
+endState: 
+
+beginState: s32'DZY_502_flash_eff'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'DZY_502_flash'
+endState: 
+
+beginState: s32'DZY_502_laser_S_eff'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    addPositionY: 0, 260000
+    initializeDestroy: 
+    destroyOnPlayerEnemy: 1
+    destroyOnPlayerStateChange: 1
+    upon: (ON_DESTROY)
+      clearRegisteredUponCode: (ON_DESTROY)
+      gotoLabelRequests: s32'koware'
+    endUpon: 
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (SIGNAL0)
+      requestDestroy: (SELF)
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'DZY_502_laser_S'
+  characterSfx: s32'SE_BTL_DZY_KAKUSEI_05_1'
+  endLabel: 
+  beginLabel: s32'koware'
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_502_laser_S_end'
+  linkObjPosition: 0
+  stopLinkObject: 0
+  ignoreSuperFreeze: 1
+endState: 
+
+beginState: s32'DZY_502_ring_eff'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    addPositionY: 0, 260000
+    initializeDestroy: 
+    destroyOnPlayerEnemy: 1
+    destroyOnPlayerStateChange: 1
+    upon: (ON_DESTROY)
+      clearRegisteredUponCode: (ON_DESTROY)
+      gotoLabelRequests: s32'koware'
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'DZY_502_ring'
+  endLabel: 
+  beginLabel: s32'koware'
+  sprite: s32'null', 12
+  linkObjPosition: 0
+  stopLinkObject: 0
+  ignoreSuperFreeze: 1
+endState: 
+
+beginState: s32'DZY_502_laser_L_eff'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    addPositionY: 0, 200000
+    zLine: (FAR_DISTANCE), 5
+    initializeDestroy: 
+    destroyOnPlayerEnemy: 1
+    destroyOnPlayerStateChange: 1
+    upon: (ON_DESTROY)
+      clearRegisteredUponCode: (ON_DESTROY)
+      gotoLabelRequests: s32'koware'
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 66
+  linkParticle: s32'DZY_502_laser_L'
+  privateSE: s32'SE_BTL_DZY_KAKUSEI_08'
+  sprite: s32'null', 120
+  initializeDestroy: 
+  clearRegisteredUponCode: (ON_DESTROY)
+  endLabel: 
+  exitState: 
+  beginLabel: s32'koware'
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_502_laser_L_end'
+  linkObjPosition: 0
+  stopLinkObject: 0
+  ignoreSuperFreeze: 1
+endState: 
+
+beginState: s32'DZY_502_gareki_eff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(1), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'DZY_502_gareki'
+  privateSE: s32'SE_BTL_DZY_KAKUSEI_04'
+endState: 
+
+beginState: s32'DZY_CS502_scr_laser'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    ignoreSuperFreezeFromAlly: 1
+    reverseDisplay: 1
+    ifNotInObject: (PLAYER), Mem(Afro)
+      linkParticle: s32'dzy_502CS_laser'
+    endIf: 
+    else: 
+      linkParticle: s32'dzy_502CS_laser'
+    endElse: 
+    ignoreHideAllButSelf: 1
+  endUpon: 
+  sprite: s32'null', 550
+  privateSE: s32'SE_BTL_DZY_KAKUSEI_06'
+endState: 
+
+beginState: s32'winCS_feather'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    ignoreHiddenByDisplayOnlySelf: 3, 1
+    reverseDisplay: 1
+    linkParticle: s32'dzy_winCS_feather'
+    addPositionX: 0, -281526
+    addPositionY: 0, -89732
+    addDepth: 0, -451993
+    setAngleY: 316000
+  endUpon: 
+  sprite: s32'null', 2147483647
+endState: 
+
+beginState: s32'winCS_flash'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    ignoreHiddenByDisplayOnlySelf: 3, 1
+    reverseDisplay: 1
+    linkParticle: s32'dzy_winCS_flash'
+    addPositionX: 0, -242169
+    addPositionY: 0, 169774
+    addDepth: 0, -300335
+    setAngleY: 316000
+  endUpon: 
+  sprite: s32'null', 300
+endState: 
+
+beginState: s32'winCS_whiteout'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    ignoreHiddenByDisplayOnlySelf: 3, 1
+    reverseDisplay: 1
+    linkParticle: s32'dzy_winCS_whiteout'
+    addPositionX: 0, -438415
+    addPositionY: 0, 218340
+    addDepth: 0, -407579
+    setAngleX: 34000
+    setAngleY: 322000
+    setAngle: 354000
+  endUpon: 
+  sprite: s32'null', 79
+  privateSE: s32'SE_BTL_DZY_MatchWin_00'
+  sprite: s32'null', 400
+  setPositionX: -104636
+  setPositionY: -33743
+  setDepth: -543378
+  setAngleX: 34000
+  setAngleY: 112000
+  setAngle: 354000
+endState: 
+
+beginState: s32'DZY_petal_tojo'
+  upon: (IMMEDIATE)
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'dzy_petal_tojo'
+endState: 
+
+beginState: s32'DZY_petal_stand'
+  upon: (IMMEDIATE)
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'dzy_petal_stand'
+endState: 
+
+beginState: s32'DZY_petal_crouch'
+  upon: (IMMEDIATE)
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'dzy_petal_crouch'
+endState: 
+
+beginState: s32'DZY_petal_walk'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 0
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 15
+  linkParticle: s32'dzy_petal_walk'
+  sprite: s32'null', 140
+  linkObjPosition: 0
+endState: 
+
+beginState: s32'DZY_petal_dash'
+  upon: (IMMEDIATE)
+    stopLinkObject: 0
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'dzy_petal_dash'
+endState: 
+
+beginState: s32'DZY_011_risu_tojo'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 50
+  linkParticle: s32'dzy_011_risu_tojo'
+endState: 
+
+beginState: s32'DZY_011_risu_mnp'
+  upon: (IMMEDIATE)
+    linkObjPosition: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 50
+  linkParticle: s32'dzy_011_risu_mnp'
+endState: 
+
+beginState: s32'DZY_011_risu_panic'
+  upon: (IMMEDIATE)
+    linkObjPosition: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    if: Mem(Dir)
+      linkParticle: s32'dzy_011_risu_panic_2P'
+    endIf: 
+    else: 
+      linkParticle: s32'dzy_011_risu_panic_1P'
+    endElse: 
+  endUpon: 
+  sprite: s32'null', 100
+endState: 
+
+beginState: s32'DZY_300_mnp01'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 75
+  linkParticle: s32'dzy_300_mnp01'
+endState: 
+
+beginState: s32'DZY_300_mnp02'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 100
+  linkParticle: s32'dzy_300_mnp02'
+endState: 
+
+beginState: s32'DZY_301_mnp01'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 100
+  linkParticle: s32'dzy_301_mnp01'
+endState: 
+
+beginState: s32'DZY_305_flower_start'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    ignoreSlowdown: 1
+    reverseDisplay: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+    upon: (NO_STOP_IDLING)
+      ifOperationInObject: (IS_EQUAL), (To3_ENEMY_MAIN_PLAYER), Mem(HitPoint), Val(0)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        zLine: (FAR_DISTANCE), 5
+      endIf: 
+    endUpon: 
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (SIGNAL0)
+      gotoLabelRequests: s32'end'
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 8
+  linkParticle: s32'dzy_305_flower_start'
+  sprite: s32'null', 992
+  linkObjPosition: 0
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 50
+  createObject: s32'DZY_305_flower_end', (PLAYER)
+endState: 
+
+beginState: s32'DZY_305_flower_end'
+  upon: (IMMEDIATE)
+    linkObjPosition: 0
+    ignoreSlowdown: 1
+    reverseDisplay: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+    upon: (NO_STOP_IDLING)
+      ifOperationInObject: (IS_EQUAL), (To3_ENEMY_MAIN_PLAYER), Mem(HitPoint), Val(0)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        zLine: (FAR_DISTANCE), 5
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 50
+  linkParticle: s32'dzy_305_flower_end'
+endState: 
+
+beginState: s32'DZY_305_hanafubuki'
+  upon: (IMMEDIATE)
+    ignoreSlowdown: 1
+    reverseDisplay: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+    upon: (NO_STOP_IDLING)
+      ifOperationInObject: (IS_EQUAL), (To3_ENEMY_MAIN_PLAYER), Mem(HitPoint), Val(0)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        zLine: (FAR_DISTANCE), 5
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 200
+  linkParticle: s32'dzy_305_hanafubuki'
+endState: 
+
+beginState: s32'DZY_310_impact'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 100
+  linkParticle: s32'dzy_310_impact'
+  characterSfx: s32'SE_BTL_DZY_17'
+endState: 
+
+beginState: s32'DZY_310_throw'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 2
+    setLinkObjectDestroyOnDamage: 2
+    setLinkObjectDestroyOnStateChange: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 5
+  linkParticle: s32'dzy_310_throw01'
+  privateSE: s32'SE_BTL_DZY_19'
+  sprite: s32'null', 7
+  linkParticle: s32'dzy_310_throw02'
+  sprite: s32'null', 8
+  linkParticle: s32'dzy_310_throw03'
+endState: 
+
+beginState: s32'DZY_616_feather'
+  upon: (IMMEDIATE)
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 300
+  linkParticle: s32'dzy_616_feather'
+endState: 
+
+beginState: s32'DZY011_RISU'
+  upon: (IMMEDIATE)
+    worldOutToEliminate: 1
+    linkPawnWithAnimation: s32'Risu', s32''
+    displayMesh: s32'Risu', 1
+    linkObjPosition: 3
+    linkObjectZ: 3
+    ignoreSlowdown: 1
+    setLinkObjectDestroyOnStateChange: 3
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (SIGNAL0)
+      deactivateCurrentObject: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'risu011_00', 5
+  createObject: s32'DZY_011_risu_tojo', (PLAYER)
+  sprite: s32'risu011_01', 5
+  sprite: s32'risu011_02', 5
+  sprite: s32'risu011_03', 5
+  sprite: s32'risu011_04', 5
+  sprite: s32'risu011_05', 5
+  sprite: s32'risu011_06', 15
+  sprite: s32'risu011_07', 5
+  sprite: s32'risu011_08', 5
+  setLinkObjectDestroyOnStateChange: 0
+  clearRegisteredUponCode: (SIGNAL0)
+  upon: (SIGNAL0)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+    clearRegisteredUponCode: (AFTER_EXIT)
+    clearRegisteredUponCode: (SIGNAL0)
+    linkObjPosition: 0
+    linkObjectZ: 0
+    ifOperation: (IS_EQUAL), Mem(ActReg1), Val(0)
+      gotoLabelRequests: s32'run_far_1'
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(ActReg1), Val(1)
+      gotoLabelRequests: s32'run_far_2'
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(ActReg1), Val(2)
+      gotoLabelRequests: s32'run_near_1'
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(ActReg1), Val(3)
+      gotoLabelRequests: s32'run_near_2'
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(ActReg1), Val(4)
+      gotoLabelRequests: s32'run_near_3'
+    endIf: 
+  endUpon: 
+  upon: (AFTER_EXIT)
+    clearRegisteredUponCode: (AFTER_EXIT)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+    clearRegisteredUponCode: (SIGNAL0)
+    linkObjPosition: 0
+    linkObjectZ: 0
+    ifOperation: (IS_EQUAL), Mem(ActReg1), Val(0)
+      gotoLabelRequests: s32'run_far_1'
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(ActReg1), Val(1)
+      gotoLabelRequests: s32'run_far_2'
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(ActReg1), Val(2)
+      gotoLabelRequests: s32'run_near_1'
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(ActReg1), Val(3)
+      gotoLabelRequests: s32'run_near_2'
+    endIf: 
+    ifOperation: (IS_EQUAL), Mem(ActReg1), Val(4)
+      gotoLabelRequests: s32'run_near_3'
+    endIf: 
+  endUpon: 
+  upon: (PLAYER_RECEIVE_ATTACK)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+    clearRegisteredUponCode: (AFTER_EXIT)
+    clearRegisteredUponCode: (SIGNAL0)
+    linkObjPosition: 0
+    linkObjectZ: 0
+    ifOperation: (IS_LESSER_OR_EQUAL), Mem(ActReg1), Val(1)
+      gotoLabelRequests: s32'damage_far'
+    endIf: 
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(ActReg1), Val(2)
+      gotoLabelRequests: s32'damage_near'
+    endIf: 
+  endUpon: 
+  storeValue: Mem(ActReg1), Val(2)
+  sprite: s32'risu011_09', 5
+  sprite: s32'risu011_10', 5
+  sprite: s32'risu011_11', 5
+  storeValue: Mem(ActReg1), Val(3)
+  sprite: s32'risu011_12', 5
+  storeValue: Mem(ActReg0), Val(40000)
+  sprite: s32'risu011_13', 5
+  storeValue: Mem(ActReg0), Val(0)
+  storeValue: Mem(ActReg1), Val(0)
+  sprite: s32'risu011_14', 5
+  sprite: s32'risu011_15', 5
+  sprite: s32'risu011_16', 5
+  sprite: s32'risu011_17', 5
+  sprite: s32'risu011_18', 5
+  sprite: s32'risu011_19', 5
+  sprite: s32'risu011_20', 5
+  sprite: s32'risu011_21', 5
+  sprite: s32'risu011_22', 5
+  storeValue: Mem(ActReg0), Val(-100000)
+  storeValue: Mem(ActReg1), Val(1)
+  sprite: s32'risu011_23', 5
+  sprite: s32'risu011_24', 5
+  linkObjPosition: 0
+  linkObjectZ: 0
+  zLine: (NEAREST_DISTANCE), 5
+  storeValue: Mem(ActReg1), Val(4)
+  sprite: s32'risu011_25', 5
+  sprite: s32'risu011_26', 5
+  storeValue: Mem(ActReg0), Val(-40000)
+  sprite: s32'risu011_27', 5
+  storeValue: Mem(ActReg0), Val(-10000)
+  sprite: s32'risu011_28', 5
+  storeValue: Mem(ActReg0), Val(40000)
+  sprite: s32'risu011_29', 5
+  storeValue: Mem(ActReg0), Val(80000)
+  sprite: s32'risu011_30', 5
+  sprite: s32'risu011_31', 5
+  storeValue: Mem(ActReg0), Val(20000)
+  sprite: s32'risu011_32', 5
+  sprite: s32'risu011_33', 5
+  storeValue: Mem(ActReg0), Val(40000)
+  sprite: s32'risu011_34', 5
+  storeValue: Mem(ActReg0), Val(80000)
+  sprite: s32'risu011_35', 5
+  sprite: s32'risu011_36', 5
+  sprite: s32'risu011_37', 5
+  sprite: s32'risu011_38', 25
+  sprite: s32'risu011_39', 5
+  sprite: s32'risu011_40', 5
+  sprite: s32'risu011_41', 5
+  sprite: s32'risu011_42', 5
+  clearRegisteredUponCode: (AFTER_EXIT)
+  clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+  clearRegisteredUponCode: (SIGNAL0)
+  sprite: s32'risu011_43', 5
+  sprite: s32'risu011_44', 5
+  sprite: s32'risu011_45', 5
+  sprite: s32'risu011_46', 5
+  sprite: s32'risu011_47', 5
+  sprite: s32'risu011_48', 5
+  sprite: s32'risu011_49', 5
+  sprite: s32'risu011_50', 5
+  sprite: s32'risu011_51', 5
+  sprite: s32'risu011_52', 5
+  sprite: s32'risu011_53', 5
+  sprite: s32'risu011_54', 5
+  sprite: s32'risu011_55', 5
+  sprite: s32'risu011_56', 5
+  sprite: s32'risu011_57', 5
+  sprite: s32'risu011_58', 5
+  sprite: s32'risu011_59', 5
+  sprite: s32'risu011_60', 5
+  endLabel: 
+  addNamerakaMoveX: 30000
+  beginLabel: s32'loop'
+  sprite: s32'risu011_61', 5
+  addNamerakaMoveX: -50000
+  sprite: s32'risu011_62', 5
+  addNamerakaMoveX: -50000
+  endLabel: 
+  gotoLabel: s32'loop'
+  exitState: 
+  beginLabel: s32'damage_far'
+  sprite: s32'risu012_06', 3
+  zLine: (FAR_DISTANCE), 5
+  addPositionX: 2, 45
+  addVelocityX: 0, -30000
+  velocityXPercentEachFrame: 80
+  createObject: s32'DZY_011_risu_mnp', (PLAYER)
+  sprite: s32'risu012_07', 3
+  sprite: s32'risu012_08', 15
+  sprite: s32'risu012_09', 5
+  createObject: s32'DZY_011_risu_panic', (PLAYER)
+  sprite: s32'risu012_10', 3
+  sprite: s32'risu012_11', 5
+  addNamerakaMoveX: -10000
+  addVelocityX: 0, -40000
+  velocityXPercentEachFrame: 95
+  endLabel: 
+  gotoLabel: s32'loop2'
+  beginLabel: s32'run_far_1'
+  sprite: s32'risu012_09', 10
+  zLine: (FAR_DISTANCE), 5
+  addPositionX: 2, 45
+  endLabel: 
+  gotoLabel: s32'loop2'
+  beginLabel: s32'run_far_2'
+  sprite: s32'risu012_09', 5
+  zLine: (NEAREST_DISTANCE), 5
+  addPositionX: 2, 45
+  endLabel: 
+  beginLabel: s32'loop2'
+  sprite: s32'risu012_10', 3
+  addNamerakaMoveX: -20000
+  velocityXPercentEachFrame: 80
+  sprite: s32'risu012_11', 5
+  addNamerakaMoveX: -10000
+  addVelocityX: 0, -12000
+  velocityXPercentEachFrame: 95
+  endLabel: 
+  gotoLabel: s32'loop2'
+  beginLabel: s32'damage_near'
+  sprite: s32'risu012_06', 3
+  zLine: (NEAREST_DISTANCE), 5
+  addPositionX: 2, 45
+  addVelocityX: 0, -30000
+  velocityXPercentEachFrame: 80
+  setDepth: 120000
+  sendValuesToObject: 0, 1, 0, 0
+  createObjectWithArg: s32'DZY_011_risu_mnp', (PLAYER)
+  sprite: s32'risu012_07', 3
+  sprite: s32'risu012_08', 15
+  sprite: s32'risu012_09', 5
+  sendValuesToObject: 0, 1, 0, 0
+  createObjectWithArg: s32'DZY_011_risu_panic', (PLAYER)
+  sprite: s32'risu012_10', 3
+  sprite: s32'risu012_11', 5
+  addNamerakaMoveX: -10000
+  addVelocityX: 0, -40000
+  velocityXPercentEachFrame: 95
+  endLabel: 
+  gotoLabel: s32'loop3'
+  beginLabel: s32'run_near_1'
+  sprite: s32'risu011_10', 6
+  zLine: (NEAREST_DISTANCE), 5
+  physicsYImpulse: 0, -12000
+  velocityYPercentEachFrame: 110
+  sprite: s32'risu012_09', 5
+  haltMomentum: 1
+  setPositionY: 0
+  setDepth: 120000
+  endLabel: 
+  gotoLabel: s32'loop3'
+  beginLabel: s32'run_near_2'
+  sprite: s32'risu011_12', 8
+  zLine: (NEAREST_DISTANCE), 5
+  physicsXImpulse: 0, 15000
+  velocityXPercentEachFrame: 90
+  physicsYImpulse: 0, -6000
+  velocityYPercentEachFrame: 110
+  sprite: s32'risu012_09', 5
+  haltMomentum: 1
+  setPositionY: 0
+  setDepth: 120000
+  endLabel: 
+  gotoLabel: s32'loop3'
+  beginLabel: s32'run_near_3'
+  sprite: s32'risu012_09', 5
+  addPositionX: 2, 45
+  setDepth: 120000
+  endLabel: 
+  beginLabel: s32'loop3'
+  sprite: s32'risu012_10', 3
+  addNamerakaMoveX: -20000
+  velocityXPercentEachFrame: 80
+  sprite: s32'risu012_11', 5
+  addNamerakaMoveX: -10000
+  addVelocityX: 0, -12000
+  velocityXPercentEachFrame: 95
+  endLabel: 
+  gotoLabel: s32'loop3'
+endState: 
+
+beginState: s32'DZY_JD_obj'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    setLinkObjectDestroyOnStateChange: 3
+    normalAttack: 
+    addMoveForceDisableFlag: 1
+    callSubroutineWithArgs: s32'cmn_AtkLv2', Val(0), Val(0), Val(0), Val(1)
+    setProjectileDurability: 1
+    damage: Val(36)
+    hitEffectFire: 1
+    shortHitstop: 1
+    forceHitSignal: 1
+    attackIgnoreCaution: 1
+    ignoreSlowdown: 1
+    storeValue: Mem(CmnCharaReg11), Val(1000010000)
+    storeValue: Mem(CmnCharaReg12), Val(0)
+    storeValue: Mem(CmnCharaReg13), Val(1)
+    callSubroutine: s32'cmn_hosei'
+    hitAirPushbackX: Val(20000)
+    hitAirPushbackY: Val(20000)
+    initializeDestroy: 
+    numberOfHits: 1
+    destroyOnClash: 1
+    destroyOnPlayerEnemy: 1
+    upon: (ON_DESTROY)
+      clearRegisteredUponCode: (ON_DESTROY)
+      linkObjPosition: 0
+      gotoLabelRequests: s32'koware'
+    endUpon: 
+    upon: (HIT_OR_GUARD_ANY_OBJECT)
+      clearRegisteredUponCode: (HIT_OR_GUARD_ANY_OBJECT)
+      gotoLabelRequests: s32'hit'
+    endUpon: 
+    upon: (PLAYER_AFTER_EXECUTE_DAMAGE)
+      clearRegisteredUponCode: (PLAYER_AFTER_EXECUTE_DAMAGE)
+      sendSignal: (PLAYER), (SIGNAL0)
+      upon: (NO_STOP_IDLING)
+        modifyVar: (ADD), Mem(ActReg1), Val(1)
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(ActReg1), Val(2)
+          checkLastAttackHitStateName: 32, s32'DZY_JD_obj'
+          if: Mem(Tmp)
+            ifNotInObject: (To3_ENEMY_MAIN_PLAYER), Mem(CheckStop)
+              clearRegisteredUponCode: (NO_STOP_IDLING)
+              sendSignal: (PLAYER), (SIGNAL1)
+            endIf: 
+          endIf: 
+          else: 
+            clearRegisteredUponCode: (NO_STOP_IDLING)
+            sendSignal: (PLAYER), (SIGNAL1)
+          endElse: 
+        endIf: 
+      endUpon: 
+      upon: (AFTER_EXIT)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+      endUpon: 
+    endUpon: 
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (PLAYER_AFTER_EXECUTE_DAMAGE)
+      clearRegisteredUponCode: (NO_STOP_IDLING)
+    endUpon: 
+    upon: (WALL_BREAK)
+      clearRegisteredUponCode: (WALL_BREAK)
+      requestDestroy: (SELF)
+    endUpon: 
+    statsActionName: s32'NmlAtkAir5E'
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    finishCameraRequest: s32'cmn_FinishCamera_Pattern_ex'
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_254_n01'
+  addPositionY: 0, -35000
+  setObjectSize: 80
+  setObjectSizeScaleSpeed: 5
+  sprite: s32'null', 10
+  setLinkObjectDestroyOnStateChange: 0
+  sprite: s32'_jumpd', 26
+  linkObjPosition: 0
+  setObjectSizeScaleSpeed: 0
+  setObjectSize: 1000
+  addPositionX: 0, 20000
+  addPositionY: 0, 40000
+  physicsXImpulse: 0, 10000
+  velocityXPercentEachFrame: 98
+  hit: 
+  upon: (IDLING)
+    ifOperation: (IS_LESSER_OR_EQUAL), Mem(FrontWallDistance), Val(100000)
+      clearRegisteredUponCode: (IDLING)
+      velocityXPercentEachFrame: 90
+    endIf: 
+  endUpon: 
+  privateSE: s32'SE_BTL_DZY_07'
+  sprite: s32'_jumpd', 30
+  velocityXPercentEachFrame: 96
+  endLabel: 
+  beginLabel: s32'koware'
+  sprite: s32'null', 65
+  clearRegisteredUponCode: (ON_DESTROY)
+  haltMomentum: 1
+  recoveryState: 
+  linkParticle: s32'dzy_254_koware'
+  privateSE: s32'SE_BTL_DZY_07_2'
+  deleteMoveForceDisableFlag: 1
+  endLabel: 
+  exitState: 
+  beginLabel: s32'hit'
+  sprite: s32'null', 30
+  clearRegisteredUponCode: (ON_DESTROY)
+  haltMomentum: 1
+  recoveryState: 
+  linkParticle: s32'dzy_254_n02'
+  commonSE: s32'SE_BTL_CMN_Impact_Fire'
+  deleteMoveForceDisableFlag: 1
+endState: 
+
+beginState: s32'DZY_SAKANA_obj'
+  upon: (IMMEDIATE)
+    checkScreenCollision: 1
+    worldCollision: 1
+    ignoreSlowdown: 1
+    zLine: (NEAR_DISTANCE), 5
+    specialAttack: 
+    addMoveForceDisableFlag: 2
+    callSubroutine: s32'cmn_AtkLv4'
+    damage: Val(50)
+    setProjectileDurability: 3
+    atkAngle: 90
+    pushbackX: 50
+    hitEffectTsuki: 1
+    shortHitstop: 1
+    attackReflect: 0
+    hitSoftKnockdown: 0
+    forceHitSignal: 1
+    attackIgnoreCaution: 1
+    damageEffect: (EX_POINT_4), s32'cmn_hit_sp_simple'
+    attackRange: 400000, -400000, -1, -1
+    storeValue: Mem(CmnCharaReg11), Val(10001)
+    storeValue: Mem(CmnCharaReg12), Val(0)
+    storeValue: Mem(CmnCharaReg13), Val(1)
+    callSubroutine: s32'cmn_hosei'
+    callSubroutineWithArgs: s32'cmn_SameAttack', Val(2), Val(0), Val(0), Val(0)
+    groundHitEffect: (AIR_LAUNCH)
+    airHitEffect: (AIR_LAUNCH)
+    hitAirPushbackX: Val(5000)
+    hitAirPushbackY: Val(30000)
+    hitSoundEffect: s32'SE_BTL_CMN_Hit_Grap_L'
+    upon: (HIT)
+      atkFrozen: 0, 0
+    endUpon: 
+    upon: (MAIN_PLAYER_RECEIVE_ATTACK)
+      clearRegisteredUponCode: (MAIN_PLAYER_RECEIVE_ATTACK)
+      ifNotInObject: (DEFENDER), Mem(FrozenDrone)
+        checkCurrentStateName: (DEFENDER), s32'CmnActWallHaritsuki'
+        ifNot: Mem(Tmp)
+          checkCurrentStateName: (DEFENDER), s32'CmnActWallHaritsukiLand'
+          ifNot: Mem(Tmp)
+            disableWallBreak: 1
+            atkFrozen: 1, 0
+            frozenTime: 60
+            hitAirPushbackY: Val(0)
+            storeValue: Mem(ActReg7), Val(1)
+          endIf: 
+        endIf: 
+      endIf: 
+    endUpon: 
+    upon: (HIT_OR_GUARD)
+      clearRegisteredUponCode: (HIT_OR_GUARD)
+      recoveryState: 
+    endUpon: 
+    wallBlowoffType: (BLOWOFF_UP)
+    initializeDestroy: 
+    numberOfHits: 1
+    destroyOnClash: 1
+    destroyOnPlayerEnemy: 1
+    upon: (ON_DESTROY)
+      clearRegisteredUponCode: (ON_DESTROY)
+      storeValue: Mem(ActReg0), Val(1)
+    endUpon: 
+    if: Mem(SentToObject1)
+      statsActionName: s32'DZY_Special1_HS_obj'
+      storeValue: Mem(ActReg1), Val(1)
+      attackMissionDrawName: s32'DZY_Special1_HS_obj'
+    endIf: 
+    else: 
+      statsActionName: s32'DZY_Special1_S_obj'
+      attackMissionDrawName: s32'DZY_Special1_S_obj'
+    endElse: 
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+    finishCameraRequest: s32'cmn_FinishCamera_Pattern_ex'
+    storeValue: Mem(ActReg2), Val(1)
+  endUpon: 
+  sprite: s32'null', 1
+  linkParticle: s32'dzy_400_sakana_start'
+  privateSE: s32'SE_BTL_DZY_09'
+  privateSE: s32'SE_BTL_DZY_09'
+  sprite: s32'null', 8
+  checkScreenCollision: 0
+  worldCollision: 0
+  endLabel: 
+  gotoLabelIf: s32'end', Mem(ActReg0)
+  sprite: s32'_sakana', 16
+  linkParticle: s32'dzy_400_sakana01'
+  hit: 
+  upon: (ON_DESTROY)
+    clearRegisteredUponCode: (ON_DESTROY)
+    clearRegisteredUponCode: (SIGNAL0)
+    gotoLabelRequests: s32'end'
+  endUpon: 
+  upon: (SIGNAL0)
+    clearRegisteredUponCode: (SIGNAL0)
+    clearRegisteredUponCode: (ON_DESTROY)
+    gotoLabelRequests: s32'hasei'
+  endUpon: 
+  sprite: s32'_sakana', 20
+  sprite: s32'null', 10
+  recoveryState: 
+  linkParticle: s32'dzy_400_sakana01_break'
+  storeValue: Mem(ActReg3), Val(1)
+  deleteMoveForceDisableFlag: 2
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 60
+  recoveryState: 
+  storeValue: Mem(ActReg2), Val(0)
+  clearRegisteredUponCode: (ON_DESTROY)
+  ifNot: Mem(ActReg3)
+    linkParticle: s32'dzy_400_sakana01_break'
+  endIf: 
+  deleteMoveForceDisableFlag: 2
+  ifNot: Mem(ActReg7)
+    privateSE: s32'SE_BTL_DZY_09_2'
+  endIf: 
+  else: 
+    ifNot: Mem(BattleDoing)
+      privateSE: s32'SE_BTL_DZY_09_2'
+    endIf: 
+  endElse: 
+  endLabel: 
+  exitState: 
+  beginLabel: s32'hasei'
+  sprite: s32'null', 2
+  recoveryState: 
+  storeValue: Mem(ActReg2), Val(0)
+  sprite: s32'null', 1
+  linkParticle: s32''
+  if: Mem(ActReg1)
+    sendValuesToObject: 0, 0, 0, 1
+  endIf: 
+  createObjectWithArg: s32'DZY_SAKANALAND_obj', (PLAYER)
+  stackObjectEx: (PLAYER), (STACK1), 23, (PREVIOUS)
+endState: 
+
+beginState: s32'DZY_SAKANALAND_obj'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmn_maincheck', Val(1), Val(0), Val(0), Val(0)
+    ifNot: Mem(ReturnValue)
+      deactivateObjectByNameAll: s32'DZY_SAKANALAND_obj'
+      groundFrozen: 0
+    endIf: 
+    SetFloorAttribute: 0x0100000064000000070000000000000000127A00
+    SetFloorSfx: 0x0100000064000000060000000000000000127A00
+    upon: (ON_DELETE)
+      createObject: s32'LandFrozen_End', (PLAYER)
+    endUpon: 
+    if: Mem(SentToObject1)
+      statsActionName: s32'DZY_Special1_HS_Add'
+    endIf: 
+    else: 
+      statsActionName: s32'DZY_Special1_S_Add'
+    endElse: 
+    upon: (SIGNAL0)
+      checkCurrentStateName: (To3_ENEMY_MAIN_PLAYER), s32'CmnActDownGroundFrozen'
+      if: Mem(Tmp)
+        sendValuesToObject: 0, 0, 0, 0
+        createObjectWithArg: s32'cmn_GroundFrozenAtk', (ENEMY_LAND)
+      endIf: 
+      checkCurrentStateName: (To3_MAIN_PLAYER), s32'CmnActDownGroundFrozen'
+      if: Mem(Tmp)
+        sendValuesToObject: 0, 1, 0, 0
+        exPointFResetObject: (PLAYER), (PLAYER_LAND), 0, 0
+        createObjectWithArg: s32'cmn_GroundFrozenAtk', (EX_POINT_F)
+      endIf: 
+      gotoLabelRequests: s32'end'
+      privateSE: s32'SE_BTL_DZY_09_1'
+      privateSE: s32'SE_BTL_DZY_10_1'
+      privateSE: s32'SE_BTL_DZY_11_1'
+    endUpon: 
+    upon: (SIGNAL1)
+      storeValue: Mem(ActReg1), Val(1)
+      gotoLabelRequests: s32'end'
+    endUpon: 
+    upon: (WALL_BREAK)
+      ignoreSuperFreeze: 1
+      gotoLabelRequests: s32'end'
+    endUpon: 
+    upon: (NO_STOP_IDLING)
+      if: Mem(CmnCharaReg3)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        ignoreSuperFreeze: 1
+        gotoLabelRequests: s32'end'
+      endIf: 
+      checkCurrentStateName: (To3_ENEMY_MAIN_PLAYER), s32'HomingJump'
+      if: Mem(Tmp)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        ignoreSuperFreeze: 1
+        gotoLabelRequests: s32'end'
+      endIf: 
+      checkCurrentStateName: (PLAYER), s32'HomingJump'
+      if: Mem(Tmp)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        ignoreSuperFreeze: 1
+        gotoLabelRequests: s32'end'
+      endIf: 
+      callSubroutineWithArgs: s32'cmn_maincheck', Val(1), Val(0), Val(0), Val(0)
+      if: Mem(ReturnValue)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        ignoreSuperFreeze: 1
+        gotoLabelRequests: s32'end'
+      endIf: 
+    endUpon: 
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'dzy_400_sakana02'
+  cameraShakeEX: s32'Horizontal', 600, 0, 70, 0, s32'shake_easeout'
+  privateSE: s32'SE_BTL_DZY_10'
+  privateSE: s32'SE_BTL_DZY_11'
+  sprite: s32'null', 270
+  linkParticle: s32'dzy_400_sakana_loop'
+  deactivateObjectByNameExceptSelf: s32'DZY_SAKANALAND_obj'
+  storeValue: Mem(ActReg0), Val(1)
+  upon: (IDLING)
+    if: Mem(ActReg0)
+      getTrainingItemVal: s32'TRP_DZY', 2, 157
+      ifOperation: (AND), Mem(TrainingValue), Mem(IsMainPlayerSelf)
+        spriteTimeAdd: 1
+      endIf: 
+    endIf: 
+    ifNot: Mem(BattleDoing)
+      ignoreSuperFreeze: 1
+      gotoLabelRequests: s32'end'
+    endIf: 
+  endUpon: 
+  sprite: s32'null', 10
+  storeValue: Mem(ActReg0), Val(0)
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 1
+  SetFloorSfx: 0x00000000640000000600000000000000404B4C00
+  clearRegisteredUponCode: (WALL_BREAK)
+  clearRegisteredUponCode: (SIGNAL0)
+  clearRegisteredUponCode: (SIGNAL1)
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (NO_STOP_IDLING)
+  clearRegisteredUponCode: (ON_DELETE)
+  ifNot: Mem(ActReg1)
+    createObject: s32'LandFrozen_End', (PLAYER)
+  endIf: 
+endState: 
+
+beginState: s32'LandFrozen_End'
+  upon: (IMMEDIATE)
+    linkParticle: s32'dzy_400_sakana_end'
+    ignoreSlowdown: 1
+    reverseDisplay: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutine: s32'cmnWSB_Event_Settings'
+    upon: (SIGNAL0)
+      checkCurrentStateName: (To3_ENEMY_MAIN_PLAYER), s32'CmnActDownGroundFrozen'
+      if: Mem(Tmp)
+        sendValuesToObject: 0, 0, 0, 0
+        createObjectWithArg: s32'cmn_GroundFrozenAtk', (ENEMY_LAND)
+      endIf: 
+      checkCurrentStateName: (To3_MAIN_PLAYER), s32'CmnActDownGroundFrozen'
+      if: Mem(Tmp)
+        sendValuesToObject: 0, 1, 0, 0
+        exPointFResetObject: (PLAYER), (PLAYER_LAND), 0, 0
+        createObjectWithArg: s32'cmn_GroundFrozenAtk', (EX_POINT_F)
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 1
+  sprite: s32'null', 59
+  clearRegisteredUponCode: (SIGNAL0)
+endState: 
+
+beginSubroutine: s32'dzy_kinomi_atk01'
+  specialAttack: 
+  callSubroutineWithArgs: s32'cmn_AtkLv4', Val(3), Val(3), Val(0), Val(0)
+  setProjectileDurability: 3
+  damage: Val(15)
+  pushbackX: 70
+  hitEffectFire: 1
+  attackReflect: 0
+  attackRange: 250000, -250000, -1, -1
+  storeValue: Mem(CmnCharaReg11), Val(10000)
+  storeValue: Mem(CmnCharaReg12), Val(0)
+  storeValue: Mem(CmnCharaReg13), Val(3)
+  callSubroutine: s32'cmn_hosei'
+  callSubroutineWithArgs: s32'cmn_SameAttack', Val(2), Val(0), Val(0), Val(0)
+  callSubroutine: s32'cmn_fuwafuwafuwa'
+  groundHitEffect: (AIR_STRONG)
+  airHitEffect: (AIR_STRONG)
+  hitAirPushbackX: Val(10000)
+  hitAirPushbackY: Val(30000)
+  attackMissionDrawName: s32'DZY_Special2_obj'
+endSubroutine: 
+
+beginSubroutine: s32'dzy_kinomi_atk02'
+  specialAttack: 
+  callSubroutineWithArgs: s32'cmn_AtkLv2', Val(3), Val(3), Val(0), Val(0)
+  damage: Val(10)
+  pushbackX: 200
+  hitEffectFire: 1
+  shortHitstop: 1
+  attackReflect: 0
+  attackRange: 250000, -250000, -1, -1
+  storeValue: Mem(CmnCharaReg11), Val(10000)
+  storeValue: Mem(CmnCharaReg12), Val(0)
+  storeValue: Mem(CmnCharaReg13), Val(3)
+  callSubroutine: s32'cmn_hosei'
+  callSubroutineWithArgs: s32'cmn_SameAttack', Val(2), Val(0), Val(0), Val(0)
+  groundHitEffect: (AIR_LAUNCH)
+  airHitEffect: (AIR_LAUNCH)
+  hitAirPushbackX: Val(10000)
+  hitAirPushbackY: Val(10000)
+  hitGravity: Val(1000)
+  attackMissionDrawName: s32'DZY_Special2_obj'
+endSubroutine: 
+
+beginSubroutine: s32'dzy_kinomi_atk03'
+  specialAttack: 
+  callSubroutineWithArgs: s32'cmn_AtkLv2', Val(3), Val(3), Val(0), Val(0)
+  setProjectileDurability: 2
+  damage: Val(30)
+  hitEffectFire: 1
+  shortHitstop: 1
+  attackReflect: 0
+  attackRange: 250000, -250000, -1, -1
+  hitSoftKnockdown: 0
+  storeValue: Mem(CmnCharaReg11), Val(10000)
+  storeValue: Mem(CmnCharaReg12), Val(0)
+  storeValue: Mem(CmnCharaReg13), Val(2)
+  callSubroutine: s32'cmn_hosei'
+  callSubroutineWithArgs: s32'cmn_SameAttack', Val(2), Val(0), Val(0), Val(0)
+  airHitEffect: (AIR_LAUNCH)
+  hitAirPushbackX: Val(10000)
+  hitAirPushbackY: Val(10000)
+  hitGravity: Val(1000)
+  attackMissionDrawName: s32'DZY_Special2_obj'
+endSubroutine: 
+
+beginSubroutine: s32'dzy_kinomi_atk04'
+  specialAttack: 
+  callSubroutineWithArgs: s32'cmn_AtkLv2', Val(3), Val(3), Val(0), Val(0)
+  setProjectileDurability: 2
+  damage: Val(45)
+  pushbackX: 70
+  hitEffectFire: 1
+  shortHitstop: 1
+  attackReflect: 1
+  attackRange: 250000, -250000, -1, -1
+  hitSoftKnockdown: 0
+  storeValue: Mem(CmnCharaReg11), Val(10000)
+  storeValue: Mem(CmnCharaReg12), Val(0)
+  storeValue: Mem(CmnCharaReg13), Val(2)
+  callSubroutine: s32'cmn_hosei'
+  callSubroutineWithArgs: s32'cmn_SameAttack', Val(2), Val(0), Val(0), Val(0)
+  groundHitEffect: (AIR_FACE_UP)
+  airHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: Val(25000)
+  hitAirPushbackY: Val(6000)
+  attackMissionDrawName: s32'DZY_Special2_obj'
+endSubroutine: 
+
+beginState: s32'DZY_KINOMI_obj'
+  upon: (IMMEDIATE)
+    ignoreSlowdown: 1
+    attackIgnoreCaution: 1
+    addMoveForceDisableFlag: 16
+    initializeDestroy: 
+    numberOfHits: 1
+    destroyOnClash: 1
+    destroyOnPlayerEnemy: 1
+    upon: (ON_DESTROY)
+      clearRegisteredUponCode: (ON_DESTROY)
+      createObject: s32'DZY_KINOMI_Eff_koware', (PLAYER)
+      velocityXPercent: 50
+      velocityYPercent: 50
+      velocityXPercentEachFrame: 80
+      velocityYPercentEachFrame: 80
+      gotoLabelRequests: s32'end'
+      cameraShakeEX: s32'Impact', 200, 0, 30, 0, s32'shake_easeout'
+    endUpon: 
+    landingHeight: 0
+    upon: (TOUCH_GROUND)
+      haltMomentum: 1
+      requestDestroy: (SELF)
+    endUpon: 
+    upon: (HIT_OR_GUARD_ANY_OBJECT)
+      cameraShakeEX: s32'Impact', 100, 0, 30, 0, s32'shake_easeout'
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        clearRegisteredUponCode: (FRAME_STEP)
+        stopLinkObject: 0
+        ignoreSuperFreeze: 1
+        ignoreFinishStop: 1
+        landingHeight: -268435455
+        requestDestroy: (SELF)
+      endIf: 
+    endUpon: 
+    linkObjPosition: 3
+    upon: (AFTER_EXIT)
+      clearRegisteredUponCode: (AFTER_EXIT)
+      linkObjPosition: 0
+      stopLinkObject: 0
+    endUpon: 
+    statsActionName: s32'DZY_Special2_obj'
+  endUpon: 
+  sprite: s32'null', 3
+  createObject: s32'DZY_KINOMI_Eff01', (PLAYER)
+  sprite: s32'_kinomi', 6
+  createObject: s32'DZY_KINOMI_Eff02', (PLAYER)
+  stopLinkObject: 3
+  physicsXImpulse: 0, 3000
+  physicsYImpulse: 0, 2000
+  callSubroutine: s32'dzy_kinomi_atk01'
+  sprite: s32'_kinomi', 4
+  createObject: s32'DZY_KINOMI_Eff03', (PLAYER)
+  stopLinkObject: 0
+  setAngle: 50000
+  setAngleSpeed: 20000
+  angleSpeedPercent: 90
+  upon: (IDLING)
+    setSpeedByAngle: 80000, 0
+  endUpon: 
+  velocityXPercentEachFrame: 85
+  velocityYPercentEachFrame: 82
+  attackOff: 
+  sprite: s32'_kinomi', 8
+  linkObjPosition: 0
+  setAngle: 0
+  setAngleSpeed: 0
+  createObject: s32'DZY_KINOMI_Eff04', (PLAYER)
+  homing: (FIXED_ACCELERATION), (To3_ENEMY_MAIN_PLAYER), (PLAYER), 0, -50000, 0, 200000, 0, 10000, 0, 0
+  ignoreSpeed: 1
+  addPositionX: 0, -30000
+  addPositionY: 0, 70000
+  clearRegisteredUponCode: (IDLING)
+  upon: (IDLING)
+    setAngleBySpeed: 0
+    addPositionX: 0, -2000
+    addPositionY: 0, 2000
+  endUpon: 
+  callSubroutine: s32'dzy_kinomi_atk03'
+  hit: 
+  sprite: s32'_kinomi', 8
+  sprite: s32'_kinomi_shot', 8
+  createObject: s32'DZY_KINOMI_Eff05', (PLAYER)
+  worldOutToEliminate: 1
+  homingClear: 
+  ignoreSpeed: 0
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (FRAME_STEP)
+  clearRegisteredUponCode: (WALL_BREAK)
+  setSpeedByAngle: 20000, 0
+  velocityXPercentEachFrame: 120
+  velocityYPercentEachFrame: 120
+  callSubroutine: s32'dzy_kinomi_atk04'
+  hit: 
+  upon: (HIT_OR_GUARD_ANY_OBJECT)
+    clearRegisteredUponCode: (HIT_OR_GUARD_ANY_OBJECT)
+    clearRegisteredUponCode: (ON_DESTROY)
+    clearRegisteredUponCode: (TOUCH_GROUND)
+    velocityXPercent: 50
+    velocityYPercent: 50
+    velocityXPercentEachFrame: 80
+    velocityYPercentEachFrame: 80
+    createObject: s32'DZY_KINOMI_DAMAGE_EN_eff', (PLAYER)
+    gotoLabelRequests: s32'end'
+    cameraShakeEX: s32'Impact', 400, 0, 30, 0, s32'shake_easeout'
+  endUpon: 
+  callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  sprite: s32'_kinomi_shot', 300
+  velocityXPercentEachFrame: 100
+  velocityYPercentEachFrame: 100
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 5
+  clearRegisteredUponCode: (ON_DESTROY)
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (HIT)
+  recoveryState: 
+  setAngleSpeed: 0
+  deleteMoveForceDisableFlag: 16
+  sprite: s32'null', 40
+  deactivateObjectByName: s32'DZY_KINOMI_Eff01'
+  deactivateObjectByName: s32'DZY_KINOMI_Eff02'
+  deactivateObjectByName: s32'DZY_KINOMI_Eff03'
+  deactivateObjectByName: s32'DZY_KINOMI_Eff04'
+  deactivateObjectByName: s32'DZY_KINOMI_Eff05'
+endState: 
+
+beginState: s32'DZY_KINOMI_Eff01'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 2
+    linkObjPosition: 2
+    stopLinkObject: 2
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(1), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 3
+  linkParticle: s32'dzy_402_ball_n01'
+  privateSE: s32'SE_BTL_DZY_06'
+endState: 
+
+beginState: s32'DZY_KINOMI_Eff02'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 2
+    linkObjPosition: 2
+    stopLinkObject: 2
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(1), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 6
+  linkParticle: s32'dzy_402_ball_n02'
+  privateSE: s32'SE_BTL_DZY_06'
+endState: 
+
+beginState: s32'DZY_KINOMI_Eff03'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 2
+    linkObjPosition: 2
+    stopLinkObject: 2
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 4
+  linkParticle: s32'dzy_402_ball_n03'
+  privateSE: s32'SE_BTL_DZY_07_1'
+endState: 
+
+beginState: s32'DZY_KINOMI_Eff04'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 2
+    linkObjPosition: 2
+    stopLinkObject: 2
+    linkObjectAngle: 2
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 21
+  linkParticle: s32'dzy_402_ball_n04'
+endState: 
+
+beginState: s32'DZY_KINOMI_Eff05'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 2
+    linkObjPosition: 2
+    linkObjectDirection: 2
+    linkObjectAngle: 2
+    ignoreSlowdown: 1
+    upon: (NO_STOP_IDLING)
+      if: Mem(CmnCharaReg3)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        ignoreSuperFreeze: 1
+        ignoreFinishStop: 1
+        gotoLabelRequests: s32'end'
+        ifNot: Mem(BattleDoing)
+          deactivateCurrentObject: 
+        endIf: 
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 300
+  linkParticle: s32'dzy_402_ball_n05'
+  privateSE: s32'SE_BTL_DZY_07'
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 10
+endState: 
+
+beginState: s32'DZY_KINOMI_Eff_koware'
+  upon: (IMMEDIATE)
+    linkObjPosition: 2
+    linkObjectAngle: 2
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 45
+  linkParticle: s32'dzy_402_ball_koware'
+endState: 
+
+beginState: s32'DZY_KINOMI_DAMAGE_EN_eff'
+  upon: (IMMEDIATE)
+    linkObjPosition: 2
+    linkObjectAngle: 2
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 45
+  linkParticle: s32'dzy_402_ball_n06'
+endState: 
+
+beginState: s32'DZY_KINOMI_sousaiobj'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    stopLinkObject: 3
+    setLinkObjectDestroyOnStateChange: 3
+    ignoreSlowdown: 1
+    specialAttack: 
+    callSubroutine: s32'cmn_AtkLv2'
+    setProjectileDurability: 3
+    clashOnly: 1
+    attackIgnoreCaution: 1
+    damage: Val(0)
+    tensionGainOnConnect: 0
+    addPositionX: 0, 150000
+    addPositionY: 0, 200000
+  endUpon: 
+  sprite: s32'_kinomi_sousai', 19
+  hit: 
+  sprite: s32'null', 30
+endState: 
+
+beginSubroutine: s32'dzy_hanashiaite_atk'
+  specialAttack: 
+  callSubroutine: s32'cmn_AtkLv2'
+  damage: Val(34)
+  setProjectileDurability: 2
+  hitEffectSlash: 1
+  attackReflect: 0
+  storeValue: Mem(CmnCharaReg11), Val(10000)
+  storeValue: Mem(CmnCharaReg12), Val(0)
+  storeValue: Mem(CmnCharaReg13), Val(1)
+  callSubroutine: s32'cmn_hosei'
+  airHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: Val(10000)
+  hitAirPushbackY: Val(35000)
+  upon: (HIT_OR_GUARD_ANY_OBJECT)
+    cameraShakeEX: s32'Impact', 200, 0, 30, 0, s32'shake_easeout'
+  endUpon: 
+endSubroutine: 
+
+beginSubroutine: s32'dzy_hanashiaite_distcheck'
+  ifNot: Mem(FuncArg0)
+    calcDistanceEx: (DISTANCE_X_FRONT), (SELF), (PLAYER), (To3_ENEMY_MAIN_PLAYER), (PLAYER)
+    storeValue: Mem(ActReg1), Mem(Tmp)
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(ActReg1), Val(-150000)
+      ifOperation: (IS_LESSER_OR_EQUAL), Mem(ActReg1), Val(400000)
+        faceOpponent: 
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(ActReg1), Val(0)
+          gotoLabelRequests: s32'contact'
+        endIf: 
+        else: 
+          setAngleY: 90000
+          gotoLabelRequests: s32'contact_reverse'
+        endElse: 
+      endIf: 
+    endIf: 
+  endIf: 
+  else: 
+    ifOperation: (IS_EQUAL), Mem(SentToObject0), Val(2)
+      calcDistanceEx: (DISTANCE_X_FRONT), (SELF), (PLAYER), (To3_ENEMY_MAIN_PLAYER), (PLAYER)
+      storeValue: Mem(ActReg1), Mem(Tmp)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(ActReg1), Val(-150000)
+        ifOperation: (IS_LESSER_OR_EQUAL), Mem(ActReg1), Val(400000)
+          ifOperation: (IS_GREATER_OR_EQUAL), Mem(ActReg1), Val(0)
+          endIf: 
+          else: 
+            storeValue: Mem(ActReg3), Val(1)
+          endElse: 
+        endIf: 
+      endIf: 
+    endIf: 
+  endElse: 
+endSubroutine: 
+
+beginState: s32'DZY_HANASHIAITE_P_obj'
+  upon: (IMMEDIATE)
+    linkObjPosition: 0
+    attackIgnoreCaution: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    callSubroutine: s32'dzy_hanashiaite_atk'
+    upon: (PLAYER_RECEIVE_ATTACK)
+      clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+      gotoLabelRequests: s32'end'
+    endUpon: 
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (SIGNAL0)
+      gotoLabelRequests: s32'end'
+    endUpon: 
+    upon: (NO_STOP_IDLING)
+      if: Mem(CmnCharaReg3)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        haltMomentum: 1
+        homingClear: 
+        gotoLabelRequests: s32'end'
+      endIf: 
+      checkCurrentStateName: (PLAYER), s32'HomingJump'
+      if: Mem(Tmp)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        haltMomentum: 1
+        homingClear: 
+        gotoLabelRequests: s32'end'
+      endIf: 
+    endUpon: 
+    statsActionName: s32'DZY_Special3_P_obj'
+    attackMissionDrawName: s32'DZY_Special3_P_obj'
+  endUpon: 
+  sprite: s32'null', 20
+  linkParticle: s32'dzy_401_hanashi_start'
+  privateSE: s32'SE_BTL_DZY_04'
+  endLabel: 
+  privateSE: s32'SE_BTL_DZY_05'
+  sprite: s32'_hanashiaite', 20
+  linkObjPosition: 0
+  physicsXImpulse: 0, 2000
+  ifOperation: (IS_EQUAL), Mem(SentToObject0), Val(1)
+    physicsXImpulse: 0, -10000
+  endIf: 
+  ifOperation: (IS_EQUAL), Mem(SentToObject0), Val(2)
+    physicsXImpulse: 0, 15000
+  endIf: 
+  physicsYImpulse: 0, 10000
+  velocityYPercentEachFrame: 90
+  invulnForce: 0
+  naguriNagurareru: 1
+  initializeDestroy: 
+  numberOfHits: 1
+  destroyOnDamageCollision: 1
+  upon: (ON_DESTROY)
+    clearRegisteredUponCode: (ON_DESTROY)
+    invulnForce: 1
+    naguriNagurareru: 0
+    gotoLabelRequests: s32'koware'
+  endUpon: 
+  ifOperation: (IS_EQUAL), Mem(SentToObject0), Val(2)
+    upon: (IDLING)
+      checkMoveFlag: (ENEMY_AIRBORNE)
+      if: Mem(Tmp)
+        checkCurrentStateName: (To3_ENEMY_MAIN_PLAYER), s32'CmnActFloatDamage'
+        ifNot: Mem(Tmp)
+          callSubroutineWithArgs: s32'dzy_hanashiaite_distcheck', Val(1), Val(0), Val(0), Val(0)
+        endIf: 
+      endIf: 
+    endUpon: 
+  endIf: 
+  sprite: s32'_hanashiaite', 360
+  linkParticle: s32'dzy_401_hanashi_loop'
+  physicsXImpulse: 0, 8000
+  physicsYImpulse: 0, 0
+  addPositionX: 0, -9000
+  setPositionY: 480000
+  velocityYPercentEachFrame: 100
+  upon: (IDLING)
+    ifNot: Mem(ActReg3)
+      checkMoveFlag: (ENEMY_AIRBORNE)
+      if: Mem(Tmp)
+        checkCurrentStateName: (To3_ENEMY_MAIN_PLAYER), s32'CmnActFloatDamage'
+        ifNot: Mem(Tmp)
+          callSubroutine: s32'dzy_hanashiaite_distcheck'
+        endIf: 
+      endIf: 
+    endIf: 
+    else: 
+      faceOpponent: 
+      setAngleY: 90000
+      gotoLabelRequests: s32'contact_reverse'
+    endElse: 
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(SpeedX), Val(100)
+      ifOperation: (IS_LESSER_OR_EQUAL), Mem(FrontWallDistance), Val(160000)
+        velocityXPercent: 90
+      endIf: 
+    endIf: 
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(SpeedY), Val(300)
+      storeValue: Mem(ObjReg0), Val(1)
+    endIf: 
+    ifOperation: (IS_LESSER_OR_EQUAL), Mem(SpeedY), Val(-300)
+      storeValue: Mem(ObjReg0), Val(0)
+    endIf: 
+    ifNot: Mem(ObjReg0)
+      addVelocityY: 0, 50
+    endIf: 
+    else: 
+      addVelocityY: 0, -50
+    endElse: 
+  endUpon: 
+  endLabel: 
+  gotoLabel: s32'end'
+  beginLabel: s32'contact'
+  sprite: s32'_hanashiaite', 10
+  linkParticle: s32'dzy_401_hanashi_move'
+  setPositionY: 480000
+  physicsXImpulse: 0, -50000
+  velocityXPercentEachFrame: 80
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+  destroyOnPlayerEnemy: 1
+  privateSE: s32'SE_BTL_DZY_05_1'
+  sprite: s32'_hanashiaite', 10
+  velocityXPercentEachFrame: 100
+  homing: (ACCELERATE_TO_SPEED), (To3_ENEMY_MAIN_PLAYER), (PLAYER), 0, 0, 0, 200000, 0, 50000, 0, 10000
+  upon: (IDLING)
+    ifOperation: (IS_LESSER_OR_EQUAL), Mem(EnemyCenterDistance), Val(200000)
+      gotoLabelRequests: s32'attack'
+    endIf: 
+  endUpon: 
+  sprite: s32'_hanashiaite', 10
+  homingClear: 
+  endLabel: 
+  gotoLabel: s32'attack'
+  beginLabel: s32'contact_reverse'
+  sprite: s32'_hanashiaite', 2
+  linkParticle: s32'dzy_401_hanashi_move'
+  setPositionY: 480000
+  physicsXImpulse: 0, -50000
+  velocityXPercentEachFrame: 80
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+  destroyOnPlayerEnemy: 1
+  privateSE: s32'SE_BTL_DZY_05_1'
+  sprite: s32'_hanashiaite', 3
+  setAngleY: 60000
+  sprite: s32'_hanashiaite', 5
+  setAngleY: 30000
+  sprite: s32'_hanashiaite', 10
+  setAngleY: 0
+  velocityXPercentEachFrame: 100
+  homing: (ACCELERATE_TO_SPEED), (To3_ENEMY_MAIN_PLAYER), (PLAYER), 0, 0, 0, 200000, 0, 50000, 0, 10000
+  upon: (IDLING)
+    ifOperation: (IS_LESSER_OR_EQUAL), Mem(EnemyCenterDistance), Val(200000)
+      gotoLabelRequests: s32'attack'
+    endIf: 
+  endUpon: 
+  sprite: s32'_hanashiaite', 10
+  homingClear: 
+  endLabel: 
+  beginLabel: s32'attack'
+  sprite: s32'_hanashiaite', 10
+  linkParticle: s32'dzy_401_hanashi_atk'
+  homingClear: 
+  physicsXImpulse: 0, 40000
+  velocityXPercentEachFrame: 80
+  velocityYPercentEachFrame: 80
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (SIGNAL0)
+  hit: 
+  privateSE: s32'SE_BTL_DZY_05_2'
+  sprite: s32'_hanashiaite', 10
+  recoveryState: 
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_401_hanashi_end'
+  haltMomentum: 1
+  clearRegisteredUponCode: (SIGNAL0)
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (ON_DESTROY)
+  clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+  clearRegisteredUponCode: (NO_STOP_IDLING)
+  invulnForce: 1
+  naguriNagurareru: 0
+  recoveryState: 
+  homingClear: 
+  endLabel: 
+  exitState: 
+  beginLabel: s32'koware'
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_401_hanashi_koware'
+  homingClear: 
+  haltMomentum: 1
+  clearRegisteredUponCode: (SIGNAL0)
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (ON_DESTROY)
+  clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+  clearRegisteredUponCode: (NO_STOP_IDLING)
+  invulnForce: 1
+  naguriNagurareru: 0
+  recoveryState: 
+endState: 
+
+beginState: s32'DZY_HANASHIAITE_K_obj'
+  upon: (IMMEDIATE)
+    linkObjPosition: 0
+    attackIgnoreCaution: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    callSubroutine: s32'dzy_hanashiaite_atk'
+    upon: (PLAYER_RECEIVE_ATTACK)
+      clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+      gotoLabelRequests: s32'end'
+    endUpon: 
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (SIGNAL0)
+      gotoLabelRequests: s32'end'
+    endUpon: 
+    upon: (NO_STOP_IDLING)
+      if: Mem(CmnCharaReg3)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        haltMomentum: 1
+        homingClear: 
+        gotoLabelRequests: s32'end'
+      endIf: 
+      checkCurrentStateName: (PLAYER), s32'HomingJump'
+      if: Mem(Tmp)
+        clearRegisteredUponCode: (NO_STOP_IDLING)
+        haltMomentum: 1
+        homingClear: 
+        gotoLabelRequests: s32'end'
+      endIf: 
+    endUpon: 
+    statsActionName: s32'DZY_Special3_K_obj'
+    attackMissionDrawName: s32'DZY_Special3_K_obj'
+  endUpon: 
+  sprite: s32'null', 20
+  linkParticle: s32'dzy_401_hanashi_start'
+  privateSE: s32'SE_BTL_DZY_04'
+  endLabel: 
+  privateSE: s32'SE_BTL_DZY_05'
+  sprite: s32'_hanashiaite', 20
+  linkObjPosition: 0
+  physicsXImpulse: 0, 2000
+  ifOperation: (IS_EQUAL), Mem(SentToObject0), Val(1)
+    physicsXImpulse: 0, -10000
+  endIf: 
+  ifOperation: (IS_EQUAL), Mem(SentToObject0), Val(2)
+    physicsXImpulse: 0, 15000
+  endIf: 
+  physicsYImpulse: 0, -20000
+  velocityYPercentEachFrame: 90
+  invulnForce: 0
+  naguriNagurareru: 1
+  initializeDestroy: 
+  numberOfHits: 1
+  destroyOnDamageCollision: 1
+  upon: (ON_DESTROY)
+    clearRegisteredUponCode: (ON_DESTROY)
+    invulnForce: 1
+    naguriNagurareru: 0
+    gotoLabelRequests: s32'koware'
+  endUpon: 
+  ifOperation: (IS_EQUAL), Mem(SentToObject0), Val(2)
+    upon: (IDLING)
+      checkMoveFlag: (ENEMY_AIRBORNE)
+      ifNot: Mem(Tmp)
+        callSubroutineWithArgs: s32'dzy_hanashiaite_distcheck', Val(1), Val(0), Val(0), Val(0)
+      endIf: 
+      checkCurrentStateName: (To3_ENEMY_MAIN_PLAYER), s32'CmnActFloatDamage'
+      if: Mem(Tmp)
+        callSubroutineWithArgs: s32'dzy_hanashiaite_distcheck', Val(1), Val(0), Val(0), Val(0)
+      endIf: 
+    endUpon: 
+  endIf: 
+  sprite: s32'_hanashiaite', 360
+  linkParticle: s32'dzy_401_hanashi_loop'
+  physicsXImpulse: 0, 8000
+  physicsYImpulse: 0, 0
+  addPositionX: 0, -9000
+  setPositionY: 240000
+  velocityYPercentEachFrame: 100
+  upon: (IDLING)
+    ifNot: Mem(ActReg3)
+      checkMoveFlag: (ENEMY_AIRBORNE)
+      ifNot: Mem(Tmp)
+        callSubroutine: s32'dzy_hanashiaite_distcheck'
+      endIf: 
+      checkCurrentStateName: (To3_ENEMY_MAIN_PLAYER), s32'CmnActFloatDamage'
+      if: Mem(Tmp)
+        callSubroutine: s32'dzy_hanashiaite_distcheck'
+      endIf: 
+    endIf: 
+    else: 
+      faceOpponent: 
+      setAngleY: 90000
+      gotoLabelRequests: s32'contact_reverse'
+    endElse: 
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(SpeedX), Val(100)
+      ifOperation: (IS_LESSER_OR_EQUAL), Mem(FrontWallDistance), Val(150000)
+        velocityXPercent: 90
+      endIf: 
+    endIf: 
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(SpeedY), Val(300)
+      storeValue: Mem(ObjReg0), Val(1)
+    endIf: 
+    ifOperation: (IS_LESSER_OR_EQUAL), Mem(SpeedY), Val(-300)
+      storeValue: Mem(ObjReg0), Val(0)
+    endIf: 
+    ifNot: Mem(ObjReg0)
+      addVelocityY: 0, 50
+    endIf: 
+    else: 
+      addVelocityY: 0, -50
+    endElse: 
+  endUpon: 
+  endLabel: 
+  gotoLabel: s32'end'
+  beginLabel: s32'contact'
+  sprite: s32'_hanashiaite', 10
+  linkParticle: s32'dzy_401_hanashi_move'
+  setPositionY: 240000
+  physicsXImpulse: 0, -50000
+  velocityXPercentEachFrame: 80
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+  destroyOnPlayerEnemy: 1
+  privateSE: s32'SE_BTL_DZY_05_1'
+  sprite: s32'_hanashiaite', 10
+  velocityXPercentEachFrame: 100
+  homing: (ACCELERATE_TO_SPEED), (To3_ENEMY_MAIN_PLAYER), (PLAYER), 0, 0, 0, 200000, 0, 50000, 0, 10000
+  upon: (IDLING)
+    ifOperation: (IS_LESSER_OR_EQUAL), Mem(EnemyCenterDistance), Val(200000)
+      gotoLabelRequests: s32'attack'
+    endIf: 
+  endUpon: 
+  sprite: s32'_hanashiaite', 10
+  homingClear: 
+  endLabel: 
+  gotoLabel: s32'attack'
+  beginLabel: s32'contact_reverse'
+  sprite: s32'_hanashiaite', 2
+  linkParticle: s32'dzy_401_hanashi_move'
+  setPositionY: 240000
+  physicsXImpulse: 0, -50000
+  velocityXPercentEachFrame: 80
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+  destroyOnPlayerEnemy: 1
+  privateSE: s32'SE_BTL_DZY_05_1'
+  sprite: s32'_hanashiaite', 3
+  setAngleY: 60000
+  sprite: s32'_hanashiaite', 5
+  setAngleY: 30000
+  sprite: s32'_hanashiaite', 10
+  setAngleY: 0
+  velocityXPercentEachFrame: 100
+  homing: (ACCELERATE_TO_SPEED), (To3_ENEMY_MAIN_PLAYER), (PLAYER), 0, 0, 0, 200000, 0, 50000, 0, 10000
+  upon: (IDLING)
+    ifOperation: (IS_LESSER_OR_EQUAL), Mem(EnemyCenterDistance), Val(200000)
+      gotoLabelRequests: s32'attack'
+    endIf: 
+  endUpon: 
+  sprite: s32'_hanashiaite', 10
+  homingClear: 
+  endLabel: 
+  beginLabel: s32'attack'
+  sprite: s32'_hanashiaite', 10
+  linkParticle: s32'dzy_401_hanashi_atk'
+  homingClear: 
+  physicsXImpulse: 0, 40000
+  velocityXPercentEachFrame: 80
+  velocityYPercentEachFrame: 80
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (SIGNAL0)
+  hit: 
+  privateSE: s32'SE_BTL_DZY_05_2'
+  sprite: s32'_hanashiaite', 10
+  recoveryState: 
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_401_hanashi_end'
+  haltMomentum: 1
+  clearRegisteredUponCode: (SIGNAL0)
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (ON_DESTROY)
+  clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+  clearRegisteredUponCode: (NO_STOP_IDLING)
+  invulnForce: 1
+  naguriNagurareru: 0
+  recoveryState: 
+  homingClear: 
+  endLabel: 
+  exitState: 
+  beginLabel: s32'koware'
+  sprite: s32'null', 60
+  linkParticle: s32'dzy_401_hanashi_koware'
+  homingClear: 
+  haltMomentum: 1
+  clearRegisteredUponCode: (SIGNAL0)
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (ON_DESTROY)
+  clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK)
+  clearRegisteredUponCode: (NO_STOP_IDLING)
+  invulnForce: 1
+  naguriNagurareru: 0
+  recoveryState: 
+endState: 
+
+beginState: s32'DZY_SHINE_MASTER'
+  upon: (IMMEDIATE)
+    deactivateObjectByNameExceptSelf: s32'DZY_SHINE_MASTER'
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkObjectDirection: 3
+    linkObjectZ: 3
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    ignoreFinishStop: 1
+    ignoreSlowdown: 1
+    homing: (DISTANCE_ACCELERATION), (PLAYER), (CHEST_3D), 0, 0, 0, -270000, 0, 10, 0, 0
+    upon: (NO_STOP_IDLING)
+      ifNot: Mem(CheckStop)
+        ifOperation: (MOD_EQUALS_0), Mem(ActionTime), Val(60)
+          ifOperation: (IS_GREATER_OR_EQUAL), Mem(ObjReg2), Val(0)
+            setRandom: Mem(ObjReg0), Val(-10), Val(-1)
+          endIf: 
+          else: 
+            setRandom: Mem(ObjReg0), Val(0), Val(10)
+          endElse: 
+          ifOperation: (IS_GREATER_OR_EQUAL), Mem(ObjReg3), Val(0)
+            setRandom: Mem(ObjReg1), Val(-10), Val(-1)
+          endIf: 
+          else: 
+            setRandom: Mem(ObjReg1), Val(0), Val(10)
+          endElse: 
+        endIf: 
+        modifyVar: (ADD), Mem(ObjReg2), Mem(ObjReg0)
+        modifyVar: (ADD), Mem(ObjReg3), Mem(ObjReg1)
+        addPositionX: 2, 55
+        addPositionY: 2, 56
+      endIf: 
+      checkCurrentStateName: (PLAYER), s32'HomingJump'
+      if: Mem(Tmp)
+        ifNot: Mem(ObjReg4)
+          setAngleY: 320000
+        endIf: 
+        modifyVar: (ADD), Mem(ObjReg4), Val(1)
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(ObjReg4), Val(16)
+          ifOperation: (IS_LESSER_OR_EQUAL), Mem(ObjReg4), Val(32)
+            setPositionX: 250000
+            setPositionY: 100000
+            setDepth: 50000
+          endIf: 
+        endIf: 
+      endIf: 
+      ifOperation: (IS_NOT_EQUAL), Mem(Dir), Mem(ObjReg5)
+        storeValue: Mem(ObjReg6), Val(1)
+        setAngleY: 55000
+      endIf: 
+      storeValue: Mem(ObjReg5), Mem(Dir)
+      if: Mem(ObjReg6)
+        modifyVar: (ADD), Mem(ObjReg6), Val(1)
+        ifOperation: (IS_EQUAL), Mem(ObjReg6), Val(6)
+          setAngleY: 45000
+        endIf: 
+        ifOperation: (IS_EQUAL), Mem(ObjReg6), Val(7)
+          setAngleY: 35000
+        endIf: 
+        ifOperation: (IS_EQUAL), Mem(ObjReg6), Val(8)
+          setAngleY: 25000
+        endIf: 
+        ifOperation: (IS_EQUAL), Mem(ObjReg6), Val(9)
+          setAngleY: 15000
+        endIf: 
+        ifOperation: (IS_EQUAL), Mem(ObjReg6), Val(10)
+          setAngleY: 5000
+        endIf: 
+        ifOperation: (IS_EQUAL), Mem(ObjReg6), Val(11)
+          setAngleY: -3000
+        endIf: 
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(ObjReg6), Val(12)
+          setAngleY: 0
+          storeValue: Mem(ObjReg6), Val(0)
+        endIf: 
+      endIf: 
+      if: Mem(PlayerVal1)
+        ifNot: Mem(CmnCharaReg3)
+          ifNot: Mem(CmnCharaReg5)
+            storeValue: Mem(PlayerVal1), Val(0)
+          endIf: 
+        endIf: 
+      endIf: 
+    endUpon: 
+    storeValue: Mem(PlayerVal0), Val(0)
+    upon: (WALL_BREAK)
+      clearRegisteredUponCode: (WALL_BREAK)
+      requestDestroy: (SELF)
+      storeValue: Mem(PlayerVal0), Val(1)
+      homingClear: 
+      haltMomentum: 1
+      if: Mem(CmnCharaReg5)
+        checkCurrentStateName: (PLAYER), s32'DustFinish'
+        ifNot: Mem(Tmp)
+          deactivateCurrentObject: 
+        endIf: 
+      endIf: 
+    endUpon: 
+    upon: (ON_DESTROY)
+      gotoLabelRequests: s32'koware'
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 15
+  createObject: s32'DZY_SHINE_COUNT_eff', (PLAYER)
+  sprite: s32'null', 51
+  setLinkObjectDestroyOnStateChange: 0
+  initializeDestroy: 
+  numberOfHits: 1
+  destroyOnPlayerEnemy: 1
+  upon: (IDLING)
+    ifNot: Mem(Tension)
+      requestDestroy: (SELF)
+    endIf: 
+    ifNot: Mem(BattleDoing)
+      checkCurrentStateName: (PLAYER), s32'DustFinish'
+      ifNot: Mem(Tmp)
+        requestDestroy: (SELF)
+      endIf: 
+    endIf: 
+    callSubroutineWithArgs: s32'cmn_maincheck', Val(1), Val(0), Val(0), Val(0)
+    if: Mem(ReturnValue)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(OnIdlingTime), Val(30)
+        requestDestroy: (SELF)
+      endIf: 
+    endIf: 
+  endUpon: 
+  sprite: s32'null', 360
+  deactivateObjectByName: s32'DZY_SHINE_COUNT_eff'
+  createObject: s32'DZY_SHINE_COUNT_LOOP_eff', (PLAYER)
+  sprite: s32'null', 180
+  deactivateObjectByName: s32'DZY_SHINE_COUNT_LOOP_eff'
+  createObject: s32'DZY_SHINE_START_eff', (PLAYER)
+  sprite: s32'null', 50
+  exPointFResetObject: (PLAYER), (PLAYER), 0, 0
+  createObject: s32'DZY_SHINE_START_eff_doom', (EX_POINT_F)
+  exPointFResetObject: (PLAYER), (PLAYER), 0, 0
+  createObject: s32'DZY_SHINE_DAMAGE_eff_doom', (EX_POINT_F)
+  exPointFResetObject: (PLAYER), (PLAYER), 0, 0
+  createObject: s32'DZY_SHINE_DAMAGE_obj', (EX_POINT_F)
+  stackObjectEx: (PLAYER), (STACK2), 23, (PREVIOUS)
+  sprite: s32'null', 2147483647
+  createObject: s32'DZY_SHINE_DAMAGE_eff', (PLAYER)
+  endLabel: 
+  beginLabel: s32'koware'
+  sprite: s32'null', 120
+  clearRegisteredUponCode: (ON_DESTROY)
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (NO_STOP_IDLING)
+  clearRegisteredUponCode: (WALL_BREAK)
+  linkObjPosition: 0
+  homingClear: 
+  haltMomentum: 1
+  sendSignalToAction: s32'DZY_SHINE_DAMAGE_obj', (SIGNAL0)
+  deactivateObjectByName: s32'DZY_SHINE_COUNT_eff'
+  deactivateObjectByName: s32'DZY_SHINE_COUNT_LOOP_eff'
+  deactivateObjectByName: s32'DZY_SHINE_START_eff'
+  deactivateObjectByName: s32'DZY_SHINE_START_eff_doom'
+  deactivateObjectByName: s32'DZY_SHINE_DAMAGE_eff'
+  deactivateObjectByName: s32'DZY_SHINE_DAMAGE_eff_doom'
+  createObject: s32'DZY_SHINE_END_eff', (PLAYER)
+  storeValue: Mem(ActReg0), Val(1)
+  ifNot: Mem(BattleDoing)
+    storeValue: Mem(PlayerVal0), Val(0)
+  endIf: 
+endState: 
+
+beginState: s32'DZY_SHINE_DAMAGE_obj'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 2
+    linkObjPosition: 3
+    specialAttack: 
+    attackIgnoreCaution: 1
+    hitMainPlayerOnly: 1
+    attackRange: 500000, -500000, 200000, -200000
+    ignoreSlowdown: 1
+    upon: 104
+      hpDamage: (ATTACK_SLAVE_CHECKONLY), Val(3), Val(100)
+    endUpon: 
+    upon: (IDLING)
+      modifyVar: (SUB), Mem(Tension), Val(56)
+      storeValue: Mem(ActReg0), Val(0)
+      calcDistanceEx: (DISTANCE_X), (SELF), (PLAYER), (To3_ENEMY_MAIN_PLAYER), (PLAYER)
+      ifOperation: (IS_LESSER_OR_EQUAL), Mem(Tmp), Val(500000)
+        calcDistanceEx: (DISTANCE_Y), (SELF), (PLAYER), (To3_ENEMY_MAIN_PLAYER), (PLAYER)
+        ifOperation: (IS_LESSER_OR_EQUAL), Mem(Tmp), Val(200000)
+          storeValue: Mem(ActReg0), Val(1)
+        endIf: 
+      endIf: 
+    endUpon: 
+    upon: (SIGNAL0)
+      clearRegisteredUponCode: (IDLING)
+      clearRegisteredUponCode: (SIGNAL0)
+      clearRegisteredUponCode: 104
+      storeValue: Mem(ActReg0), Val(0)
+      gotoLabelRequests: s32'end'
+    endUpon: 
+    exPointFResetObject: (To3_ENEMY_MAIN_PLAYER), (CHEST_3D), 0, 0
+    createObject: s32'DZY_SHINE_DAMAGE_EN_eff', (EX_POINT_F)
+    statsActionName: s32'DZY_Special5_obj'
+  endUpon: 
+  beginLabel: s32'loop'
+  sprite: s32'_shinedamage', 2
+  reAttackInterupt: 1
+  endLabel: 
+  gotoLabel: s32'loop'
+  beginLabel: s32'end'
+  sprite: s32'null', 1
+  recoveryState: 
+endState: 
+
+beginState: s32'DZY_SHINE_COUNT_eff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 2
+    linkObjPosition: 2
+    linkObjectDirection: 2
+    stopLinkObject: 2
+    linkObjectZ: 2
+    linkObjectAngle: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'dzy_405_wings_n01'
+  privateSE: s32'SE_BTL_DZY_13'
+endState: 
+
+beginState: s32'DZY_SHINE_COUNT_LOOP_eff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 2
+    linkObjPosition: 2
+    linkObjectDirection: 2
+    stopLinkObject: 2
+    linkObjectZ: 2
+    linkObjectAngle: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 360
+  linkParticle: s32'dzy_405_roop'
+endState: 
+
+beginState: s32'DZY_SHINE_START_eff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 2
+    linkObjPosition: 2
+    linkObjectDirection: 2
+    stopLinkObject: 2
+    linkObjectZ: 2
+    linkObjectAngle: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 260
+  linkParticle: s32'dzy_405_transform'
+  privateBankSfx: 2, s32'SE_BTL_DZY_15', 100
+endState: 
+
+beginState: s32'DZY_SHINE_START_eff_doom'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 2
+    linkObjPosition: 3
+    linkObjectDirection: 2
+    stopLinkObject: 2
+    linkObjectZ: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 100
+  linkParticle: s32'dzy_405_transform_doom'
+  privateSE: s32'SE_BTL_DZY_16'
+  privateSE: s32'SE_BTL_DZY_18'
+  privateSE: s32'SE_BTL_DZY_19'
+endState: 
+
+beginState: s32'DZY_SHINE_DAMAGE_eff'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 2
+    linkObjPosition: 2
+    linkObjectDirection: 2
+    stopLinkObject: 2
+    linkObjectZ: 2
+    linkObjectAngle: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticle: s32'dzy_405_wings_n02'
+  privateBankSfx: 1, s32'SE_BTL_DZY_24', 100
+endState: 
+
+beginState: s32'DZY_SHINE_DAMAGE_eff_doom'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnStateChange: 2
+    linkObjPosition: 3
+    linkObjectDirection: 2
+    stopLinkObject: 2
+    linkObjectZ: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    upon: (ON_DELETE)
+      createObject: s32'DZY_SHINE_END_eff_doom', (PLAYER)
+    endUpon: 
+    privateSE: s32'SE_BTL_DZY_23'
+  endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticle: s32'dzy_405_wings_n02_doom'
+endState: 
+
+beginState: s32'DZY_SHINE_DAMAGE_EN_eff'
+  upon: (IMMEDIATE)
+    storeValue: Mem(ActReg0), Val(0)
+    storeValue: Mem(ActReg1), Val(0)
+    setLinkObjectDestroyOnStateChange: 2
+    linkObjectDirection: 32
+    reverseDisplay: 1
+    zLine: (NEAREST_DISTANCE), 5
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    ignoreFinishStop: 1
+    ignoreSlowdown: 1
+    linkParticle: s32'dzy_405_SlipDamage'
+    upon: (NO_STOP_IDLING)
+      ifTrueInObject: (PARENT), Mem(ActReg0)
+        linkParticleStopSpawn: 1
+      endIf: 
+      else: 
+        linkParticleStopSpawn: 0
+      endElse: 
+      checkDisplayedMesh: (To3_ENEMY_MAIN_PLAYER), s32'Body'
+      if: Mem(Tmp)
+        ifNot: Mem(ActReg0)
+          detatchParticle: 
+          attatchParticle: 32, s32'Body', s32'chest', 1, 0, 0
+          storeValue: Mem(ActReg0), Val(1)
+          storeValue: Mem(ActReg1), Val(0)
+        endIf: 
+      endIf: 
+      ifOpponentCharacterMain: s16'bed'
+      if: Mem(Tmp)
+        ifNot: Mem(ActReg0)
+          detatchParticle: 
+          attatchParticle: 32, s32'Bedw_matress', s32'chest', 1, 0, 0
+          storeValue: Mem(ActReg0), Val(1)
+          storeValue: Mem(ActReg1), Val(0)
+        endIf: 
+      endIf: 
+      ifOpponentCharacterMain: s16'sol'
+      if: Mem(Tmp)
+        checkDisplayedMesh: (To3_ENEMY_MAIN_PLAYER), s32'Body_DI'
+        if: Mem(Tmp)
+          ifNot: Mem(ActReg1)
+            detatchParticle: 
+            attatchParticle: 32, s32'Body_DI', s32'chest', 1, 0, 0
+            storeValue: Mem(ActReg1), Val(1)
+            storeValue: Mem(ActReg0), Val(0)
+          endIf: 
+        endIf: 
+      endIf: 
+      ifOpponentCharacterMain: s16'kyk'
+      if: Mem(Tmp)
+        checkDisplayedMesh: (To3_ENEMY_MAIN_PLAYER), s32'Body_DI'
+        if: Mem(Tmp)
+          ifNot: Mem(ActReg1)
+            detatchParticle: 
+            attatchParticle: 32, s32'Body_DI', s32'chest', 1, 0, 0
+            storeValue: Mem(ActReg1), Val(1)
+            storeValue: Mem(ActReg0), Val(0)
+          endIf: 
+        endIf: 
+      endIf: 
+      ifOpponentCharacterMain: s16'zat'
+      if: Mem(Tmp)
+        checkDisplayedMesh: (To3_ENEMY_MAIN_PLAYER), s32'Edy_Body'
+        if: Mem(Tmp)
+          ifNot: Mem(ActReg1)
+            detatchParticle: 
+            attatchParticle: 32, s32'Edy_Body', s32'chest', 1, 0, 0
+            storeValue: Mem(ActReg1), Val(1)
+            storeValue: Mem(ActReg0), Val(0)
+          endIf: 
+        endIf: 
+      endIf: 
+      ifOpponentCharacterMain: s16'sly'
+      if: Mem(Tmp)
+        checkDisplayedMesh: (To3_ENEMY_MAIN_PLAYER), s32'Bodynaked'
+        if: Mem(Tmp)
+          ifNot: Mem(ActReg1)
+            detatchParticle: 
+            attatchParticle: 32, s32'Bodynaked', s32'chest', 1, 0, 0
+            storeValue: Mem(ActReg1), Val(1)
+            storeValue: Mem(ActReg0), Val(0)
+          endIf: 
+        endIf: 
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 2147483647
+endState: 
+
+beginState: s32'DZY_SHINE_END_eff'
+  upon: (IMMEDIATE)
+    linkObjPosition: 2
+    linkObjectDirection: 2
+    stopLinkObject: 2
+    linkObjectZ: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'dzy_405_disappear_n02'
+  privateSE: s32'SE_BTL_DZY_14'
+endState: 
+
+beginState: s32'DZY_SHINE_END_eff_doom'
+  upon: (IMMEDIATE)
+    linkObjPosition: 3
+    linkObjectDirection: 2
+    stopLinkObject: 2
+    linkObjectZ: 2
+    reverseDisplay: 1
+    ignoreSlowdown: 1
+  endUpon: 
+  sprite: s32'null', 120
+  linkParticle: s32'dzy_405_disappear_doom'
+endState: 
+
+beginState: s32'DZY_GAMMARAY_hit'
+  upon: (IMMEDIATE)
+    deactivateObjectByNameExceptSelf: s32'DZY_GAMMARAY_hit'
+    randomAddPositionX: 100000, -100000
+    randomAddPositionY: 100000, -100000
+    ignoreSuperFreeze: 1
+    ignoreFinishStop: 1
+  endUpon: 
+  sprite: s32'null', 30
+  linkParticle: s32'dzy_beam_hit'
+endState: 
+
+beginState: s32'DZY_GAMMARAY_01_obj'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkObjectAngle: 3
+    overdriveAttack: 
+    callSubroutineWithArgs: s32'cmn_AtkLv0', Val(11), Val(11), Val(0), Val(0)
+    setProjectileDurability: 5
+    damage: Val(1)
+    hitStop: 3
+    guardEffectEconomy: 1
+    ignoreSlowdown: 1
+    attackIgnoreCaution: 1
+    attackFrontDirection: (SELF)
+    damageEffect: (EX_POINT_2), s32'DZY_GAMMARAY_hit'
+    attackRange: 3000000, -50000, -1, -1
+    hitSoftKnockdown: 0
+    tensionGainOnConnect: 0
+    attackReflect: 0
+    callSubroutine: s32'cmnNohosei_kakusei'
+    storeValue: Mem(CmnCharaReg11), Val(1000000000)
+    storeValue: Mem(CmnCharaReg12), Val(0)
+    storeValue: Mem(CmnCharaReg13), Val(1)
+    callSubroutineWithArgs: s32'cmn_hosei', Val(1), Val(0), Val(0), Val(0)
+    groundHitEffect: (AIR_STRONG)
+    hitAirPushbackX: Val(20000)
+    hitAirPushbackY: Val(1000)
+    rollDuration: 1
+    rollCount: 1
+    statsActionName: s32'DZY_ULT2_obj'
+    upon: (HIT_OR_GUARD)
+      callSubroutineWithArgs: s32'cmn_screenshake', Val(1), Val(0), Val(0), Val(0)
+      finishCameraRequest: s32'Cam_Finish_Gamma_Half'
+    endUpon: 
+    upon: (HIT)
+      clearRegisteredUponCode: (HIT)
+      sendSignalToAction: s32'DZY_ULT2', (SIGNAL0)
+    endUpon: 
+    attackMissionDrawName: s32'DZY_ULT2_obj'
+  endUpon: 
+  beginLabel: s32'atkloop'
+  sprite: s32'_gammaray01', 4
+  hit: 
+  endLabel: 
+  modifyVar: (ADD), Mem(ActReg0), Val(1)
+  gotoIfOperation: s32'atkloop', (IS_LESSER), Mem(ActReg0), Val(11)
+endState: 
+
+beginState: s32'DZY_GAMMARAY_02_obj'
+  upon: (IMMEDIATE)
+    setLinkObjectDestroyOnDamage: 3
+    setLinkObjectDestroyOnStateChange: 3
+    linkObjPosition: 3
+    linkObjectAngle: 3
+    overdriveAttack: 
+    callSubroutineWithArgs: s32'cmn_AtkLv0', Val(33), Val(33), Val(0), Val(0)
+    setProjectileDurability: 5
+    damage: Val(1)
+    hitStop: 1
+    guardEffectEconomy: 1
+    ignoreSlowdown: 1
+    attackIgnoreCaution: 1
+    attackFrontDirection: (SELF)
+    damageEffect: (EX_POINT_2), s32'DZY_GAMMARAY_hit'
+    attackRange: 3000000, -50000, -1, -1
+    hitSoftKnockdown: 0
+    tensionGainOnConnect: 0
+    attackReflect: 0
+    callSubroutine: s32'cmnNohosei_kakusei'
+    storeValue: Mem(CmnCharaReg11), Val(1000000000)
+    storeValue: Mem(CmnCharaReg12), Val(0)
+    storeValue: Mem(CmnCharaReg13), Val(1)
+    callSubroutineWithArgs: s32'cmn_hosei', Val(1), Val(0), Val(0), Val(0)
+    groundHitEffect: (AIR_FACE_UP)
+    airHitEffect: (AIR_FACE_UP)
+    hitAirPushbackX: Val(10000)
+    hitAirPushbackY: Val(1000)
+    rollDuration: 1
+    rollCount: 1
+    statsActionName: s32'DZY_ULT2_obj2'
+    upon: (HIT_OR_GUARD)
+      clearRegisteredUponCode: (HIT_OR_GUARD)
+      finishCameraRequest: s32'Cam_Finish_Gamma'
+    endUpon: 
+    attackMissionDrawName: s32'DZY_ULT2_obj2'
+  endUpon: 
+  beginLabel: s32'atkloop'
+  sprite: s32'_gammaray02', 2
+  hit: 
+  endLabel: 
+  modifyVar: (ADD), Mem(ActReg0), Val(1)
+  gotoIfOperation: s32'atkloop', (IS_LESSER), Mem(ActReg0), Val(30)
+  sprite: s32'_gammaray02', 3
+  hit: 
+  damage: Val(239)
+  hitAirPushbackX: Val(80000)
+  hitAirPushbackY: Val(40000)
+  rollDuration: 10
+  callSubroutine: s32'cmn_AtkTemplWSB'
+  attackExHitParam: Val(0), 0, 0, 1, (DEFENDER), Mem(CmnCharaReg7)
+  forceWallBreak: 1
+  wallBreakLimitTime: 5
+  wallBlowoffType: (BLOWOFF_SLIDE)
+  sprite: s32'null', 2
+  recoveryState: 
+endState: 
+
+beginSubroutine: s32'Afro_Create'
+  runOnObject: (PREVIOUS)
+    storeValue: Mem(ObjReg0), Val(1)
+    linkPawnWithAnimation: s32'Afro', s32'Afro'
+    attachPawn: s32'Head_Low', s32'Afro'
+  endRunOnObject: 
+endSubroutine: 
+
+beginSubroutine: s32'Afro_CreateCS'
+  runOnObject: (PREVIOUS)
+    setLinkObjectDestroyOnStateChange: 3
+    storeValue: Mem(ObjReg0), Val(1)
+    linkPawnWithAnimation: s32'Afro', s32'Afro'
+    attachPawn: s32'Head_High', s32'Afro'
+  endRunOnObject: 
+endSubroutine: 
+
+beginSubroutine: s32'Afro_Delete'
+  createArgFromSocket: s32'Afro', 0, 3
+  createParticleWithArg2: s32'dzy_afro_end', (PLAYER)
+endSubroutine: 
+
+beginState: s32'Cam_Throw'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1200000), Val(1000000), Val(-1200000), Val(1000000)
+    moveCameraTargetCameraOnBlend: 4, 20, s32'accel_brake'
+    moveCameraBasePosOffset: 0, 78000, 0, 450000, 0, 115000, 0, 20, 0, 150, 0, 0, s32'accel_brake', s32'linear'
+    moveCameraTargetPosOffset: 0, 78000, 0, 85000, 0, 115000, 0, 20, 0, 150, 0, 0, s32'accel_brake', s32'accel_brake'
+    moveCameraTargetRotRate: 0, 0, 0, 0, 0, 20, 0, 150, 0, 0, s32'linear', s32'linear'
+    moveCameraTargetPosRateX: 0, 0, 0, 1000, 0, 20, 0, 150, 0, 0, s32'linear', s32'linear'
+    moveCameraTargetPosRateY: 0, 0, 0, 1000, 0, 20, 0, 150, 0, 0, s32'linear', s32'linear'
+    moveCameraTargetPosRateZ: 0, 0, 0, 0, 0, 20, 0, 150, 0, 0, s32'linear', s32'linear'
+    moveCameraTargetPercent: 0, 0, 0, 100, 0, 0, 0, 150, 0, 0, s32'linear', s32'linear'
+    moveCameraTrackUp: 0, 0, 0, 60000, 0, 116, 0, 16, 0, 23, s32'brake', s32'brake'
+    moveCameraOrthoCurve: s32'orthoone', 0, 151, s32'orthoone'
+    resetDOF: 1, 0
+    focalDistance: -1, 2000, 0
+    focalRegion: -1, 0, 0
+    focalNearTransition: -1, 0, 0
+    focalFarTransition: -1, 500, 30
+    focalNearBlurSize: -1, 0, 0
+    focalFarBlurSize: -1, 15, 30
+    resetDiffusion: 1, 1
+    setDiffusionLuminance: -1, 1600, 30
+    setDiffusionThreshold: -1, 0, 30
+  endUpon: 
+  sprite: s32'null', 132
+  sprite: s32'null', 24
+  moveCameraTargetCameraOnBlend: 4, 24, s32'brake'
+  moveCameraBasePosOffset: 0, 78000, 0, 460000, 0, 115000, 0, 0, 0, 24, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetPosOffset: 0, 78000, 0, 0, 0, 115000, 0, 24, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetPosRateX: 0, 1000, 0, 0, 0, 0, 0, 24, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetPosRateY: 0, 1000, 0, 0, 0, 0, 0, 24, 0, 0, s32'brake', s32'brake'
+  moveCameraTargetRotRate: 0, 1000, 0, 0, 0, 24, 0, 0, 0, 0, s32'brake', s32'brake'
+  moveCameraOrthoCurve: s32'orthoone', 0, 24, s32'orthoone'
+  resetDOF: 0, 24
+  resetDiffusion: 0, 24
+  moveCameraStop: 24, s32'brake'
+endState: 
+
+beginState: s32'Cam_Imperial_Start'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1300000), Val(1300000), Val(-1300000), Val(1300000)
+    moveCameraBasePosObject: (SELF)
+    moveCameraTargetCameraOnBlend: 23, 13, s32'brake'
+    moveCameraTargetPosOffset: 0, 70000, 0, 0, 0, 115000, 0, 0, 0, 200, 0, 0, s32'brake', s32'brake'
+    moveCameraBasePosOffset: 0, 90000, 0, 420000, 0, 85000, 0, 0, 0, 200, 0, 0, s32'brake', s32'brake'
+    moveCameraTargetRotRate: 0, 0, 0, 1000, 0, 0, 0, 200, 0, 0, s32'brake', s32'brake'
+    moveCameraTargetPosRateY: 0, 0, 0, 1000, 0, 0, 0, 200, 0, 0, s32'brake', s32'brake'
+    moveCameraTargetPosRateZ: 0, 0, 0, 1000, 0, 0, 0, 200, 0, 0, s32'brake', s32'brake'
+    moveCameraTargetPosRateX: 0, 0, 0, 0, 0, 0, 0, 200, 0, 0, s32'brake', s32'brake'
+    moveCameraTargetPercent: 0, 100, 0, 100, 0, 0, 0, 200, 0, 0, s32'brake', s32'brake'
+    resetDOF: 1, 1
+    focalDistance: -1, 700, 0
+    focalRegion: -1, 0, 0
+    focalNearTransition: -1, 0, 0
+    focalFarTransition: -1, 500, 0
+    focalNearBlurSize: -1, 0, 0
+    focalFarBlurSize: -1, 5, 10
+    resetDiffusion: 1, 1
+    setDiffusionLuminance: -1, 1400, 40
+    setDiffusionThreshold: -1, 0, 40
+    ignoreSuperFreeze: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmn_motionblur_ex', Val(6), Val(12), Val(0), Val(0)
+    moveCameraOrthoCurve: s32'orthoone', 0, 46, s32'orthoone'
+  endUpon: 
+  sprite: s32'null', 27
+  moveCameraBasePosOffset: 0, 90000, 0, 420000, 0, 85000, 0, 800, 0, 0, 0, 0, s32'brake', s32'accel'
+  moveCameraTrackUp: 0, 0, 0, 25000, 0, 50, 0, 10, 0, 0, s32'brake', s32'linear'
+  moveCameraTargetRotRate: 0, 0, 0, 1000, 0, 0, 0, 42, 0, 16, s32'brake', s32'accel'
+  moveCameraTargetPosRate: 0, 0, 0, 1000, 0, 0, 0, 42, 0, 16, s32'brake', s32'accel'
+  sprite: s32'null', 16
+  moveCameraStop: 16, s32'accel'
+  resetDOF: 0, 16
+  resetDiffusion: 0, 16
+  moveCameraTargetCameraOnBlend: 23, 16, s32'accel'
+  moveCameraTargetPosRateY: 0, 1000, 0, 0, 0, 16, 0, 0, 0, 0, s32'accel', s32'accel'
+  moveCameraTargetPosRateZ: 0, 1000, 0, 0, 0, 16, 0, 0, 0, 0, s32'accel', s32'accel'
+  moveCameraTrackUp: 0, 0, 0, 25000, 0, 0, 0, 0, 0, 16, s32'accel', s32'accel'
+  moveCameraFOV: 0, 65, 0, 1, 0, 0, 0, 0, s32'accel', s32'accel'
+endState: 
+
+beginState: s32'Cam_Gamma_Start'
+  upon: (IMMEDIATE)
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1300000), Val(1300000), Val(-1300000), Val(1300000)
+    moveCameraBasePosObject: (SELF)
+    moveCameraTargetCameraOnBlend: 23, 13, s32'brake'
+    moveCameraTargetPosOffset: 0, 70000, 0, 0, 0, 115000, 0, 0, 0, 200, 0, 0, s32'brake', s32'brake'
+    moveCameraBasePosOffset: 0, 90000, 0, 350000, 0, 85000, 0, 0, 0, 200, 0, 0, s32'brake', s32'brake'
+    moveCameraTargetRotRate: 0, 0, 0, 1000, 0, 0, 0, 200, 0, 0, s32'brake', s32'brake'
+    moveCameraTargetPosRate: 0, 0, 0, 1000, 0, 0, 0, 200, 0, 0, s32'brake', s32'brake'
+    moveCameraTargetPercent: 0, 100, 0, 100, 0, 0, 0, 200, 0, 0, s32'brake', s32'brake'
+    resetDOF: 1, 1
+    focalDistance: -1, 700, 0
+    focalRegion: -1, 0, 0
+    focalNearTransition: -1, 0, 0
+    focalFarTransition: -1, 500, 0
+    focalNearBlurSize: -1, 0, 0
+    focalFarBlurSize: -1, 5, 10
+    resetDiffusion: 1, 1
+    setDiffusionLuminance: -1, 1400, 40
+    setDiffusionThreshold: -1, 0, 40
+    ignoreSuperFreeze: 1
+    ignoreSlowdown: 1
+    callSubroutineWithArgs: s32'cmn_motionblur_ex', Val(6), Val(12), Val(0), Val(0)
+    moveCameraOrthoCurve: s32'orthoone', 0, 46, s32'orthoone'
+  endUpon: 
+  sprite: s32'null', 30
+  moveCameraBasePosOffset: 0, 90000, 0, 350000, 0, 85000, 0, 800, 0, 0, 0, 0, s32'brake', s32'accel'
+  moveCameraTrackUp: 0, 0, 0, 25000, 0, 50, 0, 10, 0, 0, s32'brake', s32'linear'
+  moveCameraTargetRotRate: 0, 0, 0, 1000, 0, 0, 0, 42, 0, 16, s32'brake', s32'accel'
+  moveCameraTargetPosRate: 0, 0, 0, 1000, 0, 0, 0, 42, 0, 16, s32'brake', s32'accel'
+  sprite: s32'null', 16
+  moveCameraStop: 16, s32'accel'
+  resetDOF: 0, 16
+  resetDiffusion: 0, 16
+  moveCameraTargetCameraOnBlend: 23, 16, s32'accel'
+  moveCameraTargetPosRate: 0, 1000, 0, 0, 0, 16, 0, 0, 0, 0, s32'accel', s32'accel'
+  moveCameraTrackUp: 0, 0, 0, 25000, 0, 0, 0, 0, 0, 16, s32'accel', s32'accel'
+  moveCameraFOV: 0, 65, 0, 1, 0, 0, 0, 0, s32'accel', s32'accel'
+endState: 
+
+beginState: s32'Cam_Imperial'
+  upon: (IMMEDIATE)
+    setPosXBetweenObject: 3, 32
+    callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1200000), Val(1200000), Val(-1200000), Val(1200000)
+    moveCameraBasePosObject: (SELF)
+    moveCameraTargetCameraOnBlend: 23, 60, s32'brake'
+    moveCameraTargetPosOffset: 0, 0, 0, 0, 0, 140000, 0, 0, 0, 200, 0, 20, s32'brake', s32'brake'
+    moveCameraBasePosOffset: 0, 0, 0, 460000, 0, 80000, 0, 0, 0, 200, 0, 20, s32'brake', s32'brake'
+    moveCameraTargetRotRate: 0, 0, 0, 1000, 0, 0, 0, 200, 0, 20, s32'brake', s32'brake'
+    moveCameraTargetPosRateX: 0, 0, 0, 1000, 0, 0, 0, 200, 0, 20, s32'brake', s32'brake'
+    moveCameraTargetPosRateY: 0, 0, 0, 0, 0, 0, 0, 200, 0, 20, s32'brake', s32'brake'
+    moveCameraTargetPosRateZ: 0, 0, 0, 0, 0, 0, 0, 200, 0, 20, s32'brake', s32'brake'
+    moveCameraTargetPercent: 0, 100, 0, 100, 0, 0, 0, 200, 0, 20, s32'brake', s32'brake'
+    upon: (AFTER_FRAME_STEP)
+      runOnObject: (STACK0)
+        setPosXBetweenObject: 32, 3
+      endRunOnObject: 
+      ifOperationInObject: (IS_GREATER), (STACK0), Mem(PosXRaw), Val(1200000)
+        runOnObject: (STACK0)
+          storeValue: Mem(PosXRaw), Val(1200000)
+        endRunOnObject: 
+      endIf: 
+      ifOperationInObject: (IS_LESSER), (STACK0), Mem(PosXRaw), Val(-1200000)
+        runOnObject: (STACK0)
+          storeValue: Mem(PosXRaw), Val(-1200000)
+        endRunOnObject: 
+      endIf: 
+      warpWithArg: (STACK0), (PLAYER), Val(0), Val(0), Val(16), 1
+    endUpon: 
+    moveCameraOrthoCurve: s32'orthoone', 0, 200, s32'orthoone'
+  endUpon: 
+  beginLabel: s32'extend'
+  sprite: s32'null', 170
+  sprite: s32'null', 30
+  clearRegisteredUponCode: (AFTER_FRAME_STEP)
+  moveCameraStop: 20, s32'brake'
+  callSubroutineWithArgs: s32'cmn_motionblur_ex', Val(9), Val(20), Val(0), Val(0)
+endState: 
+
+beginState: s32'Cam_Finish_Michael_S'
+  upon: (IMMEDIATE)
+    ifNot: Mem(CmnCharaReg3)
+      createObject: s32'cmn_FinishCamera_Zoom', (PLAYER)
+      fadeOutStart: 100, 10
+      ignoreFinishStop: 1
+    endIf: 
+    else: 
+      deactivateObjectById: (SELF)
+    endElse: 
+  endUpon: 
+  sprite: s32'null', 120
+  sprite: s32'null', 16
+  fadeInStart: 16
+endState: 
+
+beginState: s32'Cam_Finish_Michael_H'
+  upon: (IMMEDIATE)
+    ifNot: Mem(CmnCharaReg3)
+      createObject: s32'cmn_FinishCamera_Zoom', (PLAYER)
+      fadeOutStart: 100, 10
+      ignoreFinishStop: 1
+    endIf: 
+    else: 
+      deactivateObjectById: (SELF)
+    endElse: 
+  endUpon: 
+  sprite: s32'null', 120
+  sprite: s32'null', 16
+  fadeInStart: 16
+endState: 
+
+beginState: s32'Cam_Finish_Imperial'
+  ifNot: Mem(CmnCharaReg3)
+    createObject: s32'Cam_Finish_Imperial_Obj', (PLAYER)
+  endIf: 
+  callSubroutineWithArgs: s32'cmn_FinishCamera_Init', Val(-1), Val(0), Val(0), Val(0)
+  setAngleX: 8000
+  setAngleY: -124000
+  setDepth: -1500000
+endState: 
+
+beginState: s32'Cam_Finish_Gamma'
+  ifNot: Mem(CmnCharaReg3)
+    createObject: s32'Cam_Finish_Gamma_Obj', (PLAYER)
+  endIf: 
+  callSubroutineWithArgs: s32'cmn_FinishCamera_Init', Val(-1), Val(0), Val(0), Val(0)
+  setAngle: -30000
+  setAngleY: 24000
+  addPositionY: 0, 400000
+  addDepth: 0, 300000
+endState: 
+
+beginState: s32'Cam_Finish_Gamma_Half'
+  ifNot: Mem(CmnCharaReg3)
+    createObject: s32'Cam_Finish_Gamma_Half_Obj', (PLAYER)
+  endIf: 
+  callSubroutineWithArgs: s32'cmn_FinishCamera_Init', Val(-1), Val(0), Val(0), Val(0)
+  setAngle: -30000
+  setAngleY: 72000
+  addPositionY: 0, 400000
+  addDepth: 0, 300000
+  runOnObject: (PLAYER)
+    ignoreZLine: 0
+    zLine: (NEAREST_DISTANCE), 5
+  endRunOnObject: 
+  upon: (IDLING)
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(OnIdlingTime), Val(1)
+      clearRegisteredUponCode: (IDLING)
+      runOnObject: (PLAYER)
+        zLine: (FAR_DISTANCE), 5
+      endRunOnObject: 
+    endIf: 
+  endUpon: 
+endState: 
+
+beginState: s32'Cam_Finish_Gamma_Half_Obj'
+  upon: (IMMEDIATE)
+    ifNot: Mem(CmnCharaReg3)
+      callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1500000), Val(900000), Val(-1500000), Val(900000)
+      ignoreSuperFreeze: 1
+      ignoreFinishStop: 1
+      createObject: s32'cmn_FinishCamera_Screen_Effect', (PLAYER)
+    endIf: 
+    else: 
+      deactivateObjectById: (SELF)
+    endElse: 
+  endUpon: 
+  sprite: s32'null', 2
+  sprite: s32'null', 193
+  moveCameraTargetCameraOffBlend: 20, s32'brake'
+  moveCameraPos: 0, -313500, 0, 231000, 0, 76000, 0, 8, 0, 180, 0, 40, s32'brake', s32'brake'
+  moveCameraRot: 0, 1000, 0, 11900, 0, 900, 0, 8, 0, 180, 0, 40, s32'brake', s32'brake'
+  moveCameraFOV: 0, 62, 0, 8, 0, 180, 0, 40, s32'accel_brake', s32'brake'
+  cameraShakeEX: s32'Depth', 1400, 0, 90, 0, s32'shake_easeout'
+  moveCameraTrackUp: 0, 0, 0, 58000, 0, 188, 0, 0, 0, 40, s32'linear', s32'brake'
+  resetDOF: 1, 0
+  focalDistance: -1, 2000, 30
+  focalRegion: -1, 0, 0
+  focalNearTransition: -1, 0, 0
+  focalFarTransition: -1, 500, 30
+  focalNearBlurSize: -1, 0, 0
+  focalFarBlurSize: -1, 15, 30
+  resetDiffusion: 1, 1
+  setDiffusionLuminance: -1, 1600, 30
+  setDiffusionThreshold: -1, 0, 30
+  sprite: s32'null', 26
+  moveCameraOrthoCurve: s32'orthoone', 0, 26, s32'orthoone'
+  resetDOF: 0, 26
+  resetDiffusion: 0, 26
+endState: 
+
+beginState: s32'Cam_Finish_Gamma_Obj'
+  upon: (IMMEDIATE)
+    ifNot: Mem(CmnCharaReg3)
+      callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1500000), Val(900000), Val(-1500000), Val(900000)
+      ignoreSuperFreeze: 1
+      ignoreFinishStop: 1
+      createObject: s32'cmn_FinishCamera_Screen_Effect', (PLAYER)
+    endIf: 
+    else: 
+      deactivateObjectById: (SELF)
+    endElse: 
+  endUpon: 
+  sprite: s32'null', 2
+  sprite: s32'null', 213
+  moveCameraTargetCameraOffBlend: 8, s32'brake'
+  moveCameraPos: 0, -85000, 0, 460000, 0, 60000, 0, 8, 0, 200, 0, 40, s32'brake', s32'brake'
+  moveCameraRot: 0, 1200, 0, 3900, 0, 700, 0, 8, 0, 200, 0, 40, s32'brake', s32'brake'
+  cameraShakeEX: s32'Depth', 1400, 0, 90, 0, s32'shake_easeout'
+  moveCameraTrackUp: 0, 0, 0, 78000, 0, 200, 0, 0, 0, 40, s32'linear', s32'brake'
+  resetDOF: 1, 0
+  focalDistance: -1, 2000, 30
+  focalRegion: -1, 0, 0
+  focalNearTransition: -1, 0, 0
+  focalFarTransition: -1, 500, 30
+  focalNearBlurSize: -1, 0, 0
+  focalFarBlurSize: -1, 15, 30
+  resetDiffusion: 1, 1
+  setDiffusionLuminance: -1, 1600, 30
+  setDiffusionThreshold: -1, 0, 30
+  sprite: s32'null', 26
+  moveCameraOrthoCurve: s32'orthoone', 0, 26, s32'orthoone'
+  resetDOF: 0, 26
+  resetDiffusion: 0, 26
+endState: 
+
+beginState: s32'Cam_Finish_Imperial_Obj'
+  upon: (IMMEDIATE)
+    ifNot: Mem(CmnCharaReg3)
+      callSubroutineWithArgs: s32'cmnInitializeThrowBaseAndTarget', Val(-1500000), Val(900000), Val(-1500000), Val(900000)
+      ignoreSuperFreeze: 1
+      ignoreFinishStop: 1
+      createObject: s32'cmn_FinishCamera_Screen_Effect', (PLAYER)
+    endIf: 
+    else: 
+      deactivateObjectById: (SELF)
+    endElse: 
+  endUpon: 
+  sprite: s32'null', 2
+  sprite: s32'null', 213
+  moveCameraTargetCameraOffBlend: 8, s32'brake'
+  moveCameraPos: 0, -270000, 0, 430000, 0, 60000, 0, 8, 0, 192, 0, 40, s32'brake', s32'brake'
+  moveCameraRot: 0, 1200, 0, 7400, 0, 700, 0, 8, 0, 192, 0, 40, s32'brake', s32'brake'
+  moveCameraFOV: 0, 62, 0, 8, 0, 192, 0, 40, s32'accel_brake', s32'brake'
+  cameraShakeEX: s32'Depth', 1400, 0, 90, 0, s32'shake_easeout'
+  moveCameraTrackUp: 0, 0, 0, 78000, 0, 200, 0, 0, 0, 40, s32'linear', s32'brake'
+  resetDOF: 1, 0
+  focalDistance: -1, 2000, 30
+  focalRegion: -1, 0, 0
+  focalNearTransition: -1, 0, 0
+  focalFarTransition: -1, 500, 30
+  focalNearBlurSize: -1, 0, 0
+  focalFarBlurSize: -1, 15, 30
+  resetDiffusion: 1, 1
+  setDiffusionLuminance: -1, 1600, 30
+  setDiffusionThreshold: -1, 0, 30
+  sprite: s32'null', 26
+  moveCameraOrthoCurve: s32'orthoone', 0, 26, s32'orthoone'
+  resetDOF: 0, 26
+  resetDiffusion: 0, 26
+endState: 
+
+beginState: s32'to3_DZY_KINOMI_obj'
+  upon: (IMMEDIATE)
+    ignoreSlowdown: 1
+    attackIgnoreCaution: 1
+    addMoveForceDisableFlag: 16
+    initializeDestroy: 
+    numberOfHits: 1
+    destroyOnClash: 1
+    destroyOnPlayerEnemy: 1
+    upon: (ON_DESTROY)
+      clearRegisteredUponCode: (ON_DESTROY)
+      createObject: s32'DZY_KINOMI_Eff_koware', (PLAYER)
+      velocityXPercent: 50
+      velocityYPercent: 50
+      velocityXPercentEachFrame: 80
+      velocityYPercentEachFrame: 80
+      gotoLabelRequests: s32'end'
+    endUpon: 
+    landingHeight: 0
+    upon: (TOUCH_GROUND)
+      haltMomentum: 1
+      requestDestroy: (SELF)
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Effect_Angle', Val(0), Val(1), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+    upon: (FRAME_STEP)
+      if: Mem(CmnCharaReg3)
+        clearRegisteredUponCode: (FRAME_STEP)
+        stopLinkObject: 0
+        ignoreSuperFreeze: 1
+        ignoreFinishStop: 1
+        landingHeight: -268435455
+        requestDestroy: (SELF)
+      endIf: 
+    endUpon: 
+  endUpon: 
+  sprite: s32'null', 3
+  createObject: s32'DZY_KINOMI_Eff01', (PLAYER)
+  sprite: s32'_kinomi', 6
+  createObject: s32'DZY_KINOMI_Eff02', (PLAYER)
+  physicsXImpulse: 0, 3000
+  physicsYImpulse: 0, 2000
+  hit: 
+  specialAttack: 
+  callSubroutineWithArgs: s32'cmn_TO3_RannyuAtk_Init', Val(3), Val(5), Val(0), Val(0)
+  prorationTypeHistory: 1
+  setProjectileDurability: 3
+  damage: Val(10)
+  pushbackX: 70
+  shortHitstop: 0
+  hitEffectFire: 1
+  attackReflect: 0
+  attackRange: 250000, -250000, -1, -1
+  callSubroutine: s32'cmn_fuwafuwafuwa'
+  groundHitEffect: (AIR_STRONG)
+  airHitEffect: (AIR_STRONG)
+  hitAirPushbackX: Val(10000)
+  hitAirPushbackY: Val(30000)
+  sprite: s32'_kinomi', 4
+  createObject: s32'DZY_KINOMI_Eff03', (PLAYER)
+  setAngle: 50000
+  setAngleSpeed: 20000
+  angleSpeedPercent: 90
+  upon: (IDLING)
+    setSpeedByAngle: 80000, 0
+  endUpon: 
+  velocityXPercentEachFrame: 85
+  velocityYPercentEachFrame: 82
+  attackOff: 
+  sprite: s32'_kinomi', 8
+  setAngle: 0
+  setAngleSpeed: 0
+  createObject: s32'DZY_KINOMI_Eff04', (PLAYER)
+  homing: (FIXED_ACCELERATION), (To3_ENEMY_MAIN_PLAYER), (PLAYER), 0, -50000, 0, 200000, 0, 10000, 0, 0
+  ignoreSpeed: 1
+  addPositionX: 0, -30000
+  addPositionY: 0, 70000
+  clearRegisteredUponCode: (IDLING)
+  upon: (IDLING)
+    setAngleBySpeed: 0
+    addPositionX: 0, -2000
+    addPositionY: 0, 2000
+  endUpon: 
+  hit: 
+  specialAttack: 
+  callSubroutineWithArgs: s32'cmn_TO3_RannyuAtk_Init', Val(3), Val(5), Val(0), Val(0)
+  prorationTypeHistory: 1
+  setProjectileDurability: 2
+  damage: Val(20)
+  hitEffectFire: 1
+  shortHitstop: 1
+  attackReflect: 0
+  attackRange: 250000, -250000, -1, -1
+  airHitEffect: (AIR_LAUNCH)
+  hitAirPushbackX: Val(10000)
+  hitAirPushbackY: Val(10000)
+  hitGravity: Val(1000)
+  fuwafuwa: 0
+  sprite: s32'_kinomi', 8
+  sprite: s32'_kinomi', 8
+  createObject: s32'DZY_KINOMI_Eff05', (PLAYER)
+  worldOutToEliminate: 1
+  homingClear: 
+  ignoreSpeed: 0
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (FRAME_STEP)
+  clearRegisteredUponCode: (WALL_BREAK)
+  setSpeedByAngle: 20000, 0
+  velocityXPercentEachFrame: 120
+  velocityYPercentEachFrame: 120
+  hit: 
+  specialAttack: 
+  callSubroutineWithArgs: s32'cmn_TO3_RannyuAtk_Init', Val(3), Val(5), Val(0), Val(0)
+  prorationTypeHistory: 1
+  setProjectileDurability: 2
+  damage: Val(30)
+  pushbackX: 70
+  hitEffectFire: 1
+  shortHitstop: 1
+  attackReflect: 1
+  attackRange: 250000, -250000, -1, -1
+  fuwafuwa: 0
+  groundHitEffect: (AIR_FACE_UP)
+  airHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: Val(25000)
+  hitAirPushbackY: Val(6000)
+  upon: (HIT_OR_GUARD_ANY_OBJECT)
+    clearRegisteredUponCode: (HIT_OR_GUARD_ANY_OBJECT)
+    clearRegisteredUponCode: (ON_DESTROY)
+    clearRegisteredUponCode: (TOUCH_GROUND)
+    velocityXPercent: 50
+    velocityYPercent: 50
+    velocityXPercentEachFrame: 80
+    velocityYPercentEachFrame: 80
+    createObject: s32'DZY_KINOMI_DAMAGE_EN_eff', (PLAYER)
+    gotoLabelRequests: s32'end'
+  endUpon: 
+  callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  sprite: s32'_kinomi', 300
+  velocityXPercentEachFrame: 100
+  velocityYPercentEachFrame: 100
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 5
+  clearRegisteredUponCode: (ON_DESTROY)
+  clearRegisteredUponCode: (IDLING)
+  clearRegisteredUponCode: (HIT)
+  recoveryState: 
+  setAngleSpeed: 0
+  sprite: s32'null', 40
+  deactivateObjectByName: s32'DZY_KINOMI_Eff01'
+  deactivateObjectByName: s32'DZY_KINOMI_Eff02'
+  deactivateObjectByName: s32'DZY_KINOMI_Eff03'
+  deactivateObjectByName: s32'DZY_KINOMI_Eff04'
+  deactivateObjectByName: s32'DZY_KINOMI_Eff05'
+endState: 
+
+beginState: s32'to3_DZY_SAKANA_obj'
+  upon: (IMMEDIATE)
+    checkScreenCollision: 1
+    worldCollision: 1
+    ignoreSlowdown: 1
+    zLine: (NEAR_DISTANCE), 5
+    specialAttack: 
+    callSubroutineWithArgs: s32'cmn_TO3_RannyuAtk_Init', Val(4), Val(2), Val(0), Val(0)
+    prorationTypeHistory: 1
+    damage: Val(44)
+    atkAngle: 90
+    hitEffectTsuki: 1
+    shortHitstop: 1
+    attackReflect: 0
+    hitSoftKnockdown: 0
+    forceHitSignal: 1
+    attackIgnoreCaution: 1
+    damageEffect: (EX_POINT_4), s32'cmn_hit_sp_simple'
+    attackRange: 400000, -400000, -1, -1
+    groundHitEffect: (AIR_LAUNCH)
+    airHitEffect: (AIR_LAUNCH)
+    hitAirPushbackX: Val(5000)
+    hitAirPushbackY: Val(45000)
+    hitSoundEffect: s32'SE_BTL_CMN_Hit_Grap_L'
+    upon: (HIT)
+      clearRegisteredUponCode: (HIT)
+      ifNotInObject: (DEFENDER), Mem(FrozenDrone)
+        storeValue: Mem(ActReg7), Val(1)
+      endIf: 
+    endUpon: 
+    initializeDestroy: 
+    numberOfHits: 1
+    destroyOnClash: 1
+    destroyOnPlayerEnemy: 1
+    upon: (ON_DESTROY)
+      clearRegisteredUponCode: (ON_DESTROY)
+      storeValue: Mem(ActReg0), Val(1)
+    endUpon: 
+    callSubroutineWithArgs: s32'cmnWSB_Effect_NoStop_or_Delete', Val(0), Val(0), Val(0), Val(0)
+    callSubroutineWithArgs: s32'cmnWSB_Event_Settings', Val(2), Val(0), Val(0), Val(0)
+  endUpon: 
+  sprite: s32'null', 1
+  linkParticle: s32'dzy_400_sakana_start'
+  privateSE: s32'SE_BTL_DZY_09'
+  privateSE: s32'SE_BTL_DZY_09'
+  sprite: s32'null', 8
+  checkScreenCollision: 0
+  worldCollision: 0
+  endLabel: 
+  gotoLabelIf: s32'end', Mem(ActReg0)
+  sprite: s32'_sakana', 16
+  linkParticle: s32'dzy_400_sakana01'
+  hit: 
+  upon: (ON_DESTROY)
+    clearRegisteredUponCode: (ON_DESTROY)
+    clearRegisteredUponCode: (SIGNAL0)
+    gotoLabelRequests: s32'end'
+  endUpon: 
+  sprite: s32'null', 20
+  recoveryState: 
+  sprite: s32'null', 10
+  deleteMoveForceDisableFlag: 2
+  endLabel: 
+  beginLabel: s32'end'
+  sprite: s32'null', 60
+  storeValue: Mem(ActReg2), Val(0)
+  clearRegisteredUponCode: (ON_DESTROY)
+  linkParticle: s32'dzy_400_sakana01_break'
+  deleteMoveForceDisableFlag: 2
+  ifNot: Mem(ActReg7)
+    privateSE: s32'SE_BTL_DZY_09_2'
+  endIf: 
+  else: 
+    ifNot: Mem(BattleDoing)
+      privateSE: s32'SE_BTL_DZY_09_2'
+    endIf: 
+  endElse: 
+endState: 
+
+beginState: s32'DUMMY'
+  sprite: s32'e0ea04_01', 2
+endState: 
+

@@ -1449,7 +1449,15 @@ beginState: s32'Reticle'
   else: 
     checkMoveFlag: (ENEMY_GUARD)
     if: Mem(Tmp)
-      sendValuesToObject: 2, 115, 0, 1
+      ifNot: Mem(SentToObject0)
+        sendValuesToObject: 2, 115, 0, 1
+      endIf: 
+      else: 
+        sendValuesToObject: 2, 115, 0, 1
+        ifOperationInObject: (IS_EQUAL), (PLAYER), Mem(ActReg6), Val(0)
+          sendValuesToObject: 2, 115, 0, 0
+        endIf: 
+      endElse: 
     endIf: 
     else: 
       ifTrueInObject: (To3_ENEMY_MAIN_PLAYER), Mem(PlayerArmorHit)
@@ -1886,6 +1894,7 @@ beginState: s32'Re_ShootingObj'
       missionName: s32'Re_ShootingObj_8'
     endIf: 
     ifOperation: (IS_EQUAL), Mem(SentToObject0), Val(2)
+      pushbackX: 30
       atkAngle: -45
       hitSoftKnockdown: 0
       storeValue: Mem(CmnCharaReg11), Val(10001)
@@ -2053,7 +2062,15 @@ beginState: s32'Reticle_Appearance_Loop'
   else: 
     checkMoveFlag: (ENEMY_GUARD)
     if: Mem(Tmp)
-      storeValue: Mem(SentToObject1), Val(1)
+      ifNot: Mem(SentToObject0)
+        sendValuesToObject: 2, 115, 0, 1
+      endIf: 
+      else: 
+        storeValue: Mem(SentToObject1), Val(1)
+        ifOperationInObject: (IS_EQUAL), (PLAYER), Mem(ActReg6), Val(0)
+          storeValue: Mem(SentToObject1), Val(0)
+        endIf: 
+      endElse: 
     endIf: 
     else: 
       ifTrueInObject: (To3_ENEMY_MAIN_PLAYER), Mem(PlayerArmorHit)
@@ -2109,7 +2126,7 @@ beginState: s32'Reticle_Appearance_Loop'
   ifNot: Mem(ActReg1)
   endIf: 
   else: 
-    spriteTimeAdd: -40
+    spriteTimeAdd: -35
   endElse: 
   setSpriteTime: 0, Mem(SentToObject1)
   sprite: s32'null', 1

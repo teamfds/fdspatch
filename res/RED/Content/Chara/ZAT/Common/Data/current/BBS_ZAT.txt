@@ -10923,12 +10923,14 @@ beginState: s32'CounterBlitz'
   hit: 
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(3), Val(0), Val(0), Val(0)
   hitEffectTsuki: 1
+  pushbackX: 100
   groundHitEffect: (CRUMPLE)
   airHitEffect: (AIR_FACE_UP)
-  hitAirPushbackX: Val(3000)
-  hitAirPushbackY: Val(15000)
+  hitAirPushbackX: Val(10000)
+  hitAirPushbackY: Val(-15000)
   groundBounceCount: 1
-  groundBounceYVelocity: 17000
+  groundBounceXVelocity: 2500
+  groundBounceYVelocity: 25000
   cmnSfx: s32'SE_BTL_CMN_Swing_Grap_Heavy_L'
   sendSignalToAction: s32'204Cerberus', (SIGNAL0)
   upon: (HIT_OR_GUARD)
@@ -10958,7 +10960,7 @@ beginState: s32'CounterBlitz'
   beginLabel: s32'next'
   sprite: s32'zat205_00', 4
   createObject: s32'StandAtk_shadow_start02', (PLAYER)
-  addVelocityX: 0, 10000
+  addVelocityX: 0, 15000
   velocityXPercentEachFrame: 90
   exOutlineOn: 1, 0
   sprite: s32'zat205_01', 1
@@ -10981,12 +10983,16 @@ beginState: s32'CounterBlitz'
   atkAngle: 45
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (TAILSPIN)
-  hitAirPushbackX: Val(20000)
+  hitAirPushbackX: Val(10000)
   hitAirPushbackXOverTime: Val(80), Val(6), Val(10)
-  hitAirPushbackY: Val(45000)
+  hitAirPushbackY: Val(48000)
   hitAirPushbackYOverTime: Val(80), Val(5), Val(17)
   hitGravity: Val(500)
   hitGravityOverTime: Val(150), Val(14), Val(20)
+  upon: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    hitAirPushbackY: Val(62000)
+  endUpon: 
   sprite: s32'zat205_06', 3
   extendPushboxX: 0
   createObject: s32'205Atk02', (PLAYER)

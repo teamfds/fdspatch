@@ -11191,8 +11191,8 @@ beginState: s32'CounterBlitz'
   sprite: s32'jko204_05', 3
   createObject: s32'JKO_204_Bake01', (PLAYER)
   cmnSfx: s32'SE_BTL_CMN_Swing_Grap_Heavy_S'
-  physicsXImpulse: 0, 40000
-  velocityXPercentEachFrame: 95
+  physicsXImpulse: 0, 35000
+  velocityXPercentEachFrame: 90
   createParticle: s32'cmn_dash_cancel', (PLAYER)
   commonBankSfx: 0, s32'SE_BTL_CMN_Dash_Sprint_LP', 100
   sprite: s32'jko204_06', 3
@@ -11203,14 +11203,15 @@ beginState: s32'CounterBlitz'
   createObject: s32'JKO_204_Bake02', (PLAYER)
   cmnSfx: s32'SE_BTL_CMN_Swing_Grap_Heavy_M'
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(3), Val(0), Val(0), Val(0)
+  pushbackX: 100
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (CRUMPLE)
   airHitEffect: (TAILSPIN)
-  hitAirPushbackX: Val(20000)
-  hitAirPushbackXOverTime: Val(90), Val(8), Val(16)
-  hitAirPushbackY: Val(32000)
-  hitGravity: Val(500)
-  hitGravityOverTime: Val(250), Val(4), Val(16)
+  hitAirPushbackX: Val(6000)
+  hitAirPushbackXOverTime: Val(90), Val(8), Val(12)
+  hitAirPushbackY: Val(30000)
+  hitGravity: Val(1200)
+  hitGravityOverTime: Val(200), Val(6), Val(12)
   hit: 
   sprite: s32'jko204_08', 3
   sprite: s32'jko204_09', 4
@@ -11235,8 +11236,8 @@ beginState: s32'CounterBlitz'
   deactivateObjectByName: s32'JKO_204_Windring02'
   extendPushboxX: 100000
   sprite: s32'jko233_01', 2
-  physicsXImpulse: 0, 16000
-  velocityXPercentEachFrame: 96
+  physicsXImpulse: 0, 25000
+  velocityXPercentEachFrame: 92
   characterSfx: s32'SE_BTL_JKO_00_1'
   sprite: s32'jko233_02', 2
   sprite: s32'jko233_03', 4
@@ -11247,13 +11248,18 @@ beginState: s32'CounterBlitz'
   atkAngle: -90
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (AIR_FACE_UP)
-  hitAirPushbackX: Val(10000)
+  hitAirPushbackX: Val(4000)
   hitAirPushbackY: Val(-55000)
   groundBounceCount: 1
-  groundBounceGravity: 1000
-  groundBounceXVelocity: 10000
-  groundBounceYVelocity: 20000
+  groundBounceGravity: 1800
+  groundBounceXVelocity: 4000
+  groundBounceYVelocity: 33000
   groundBounceNextAction: s32'CmnActBlowoff'
+  upon: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    groundBounceXVelocity: 6000
+    groundBounceYVelocity: 37000
+  endUpon: 
   hit: 
   damageEffect: (EX_POINT_2), s32'Pumpkin_hit'
   createObject: s32'JKO_233_Strike', (PLAYER)

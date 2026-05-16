@@ -3827,12 +3827,12 @@ endSubroutine:
 
 beginSubroutine: s32'OnDamage'
   callSubroutine: s32'cmnOnDamage'
-  callSubroutine: s32'ResetYoyaku'
+  callSubroutineWithArgs: s32'ResetYoyaku', Val(0), Val(1), Val(0), Val(0)
 endSubroutine: 
 
 beginSubroutine: s32'OnGuard'
   callSubroutine: s32'cmnOnGuard'
-  callSubroutine: s32'ResetYoyaku'
+  callSubroutineWithArgs: s32'ResetYoyaku', Val(0), Val(1), Val(0), Val(0)
 endSubroutine: 
 
 beginSubroutine: s32'OnLanding'
@@ -4511,6 +4511,9 @@ beginSubroutine: s32'ResetYoyaku'
     endElse: 
   endIf: 
   storeValue: Mem(ExGauge0), Val(0)
+  if: Mem(FuncArg1)
+    deactivateObjectByName: s32'YoyakuKyouka'
+  endIf: 
 endSubroutine: 
 
 beginSubroutine: s32'Head_MeshSetCheck'
@@ -16277,7 +16280,7 @@ beginState: s32'CounterBlitz'
   sprite: s32'bed205_00', 2
   sendSignalToAction: s32'BED_yoyaku_encho', (SIGNAL0)
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(2), Val(0), Val(0), Val(0)
-  physicsXImpulse: 0, 40000
+  physicsXImpulse: 0, 38000
   velocityXPercentEachFrame: 90
   sprite: s32'bed205_01', 2
   sprite: s32'bed205_01', 1
@@ -16293,11 +16296,15 @@ beginState: s32'CounterBlitz'
   hit: 
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(3), Val(0), Val(0), Val(0)
   atkAngle: 45
+  pushbackX: 60
+  callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (CRUMPLE)
   airHitEffect: (TAILSPIN)
-  hitAirPushbackX: Val(3000)
-  hitAirPushbackY: Val(45000)
-  rollDuration: 20
+  hitAirPushbackX: Val(6000)
+  hitAirPushbackXOverTime: Val(90), Val(8), Val(12)
+  hitAirPushbackY: Val(30000)
+  hitGravity: Val(1200)
+  hitGravityOverTime: Val(200), Val(6), Val(12)
   overwriteLinkBone: s32'Bedw_head_crown', s32'G_Head_joint', s32'Bedw_spring', s32'G_Head_Attach'
   overwriteLinkBone: s32'Bedw_head', s32'G_Head_joint', s32'Bedw_spring', s32'G_Head_Attach'
   upon: (HIT_OR_GUARD)
@@ -16335,18 +16342,22 @@ beginState: s32'CounterBlitz'
   atkAngle: -75
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (AIR_FACE_UP)
-  hitAirPushbackX: Val(20000)
+  hitAirPushbackX: Val(5000)
   hitAirPushbackXOverTime: Val(80), Val(6), Val(10)
   hitAirPushbackY: Val(-100000)
   hitAirPushbackYOverTime: Val(80), Val(6), Val(12)
   hitGravity: Val(0)
-  groundBounceGravity: 1000
+  groundBounceGravity: 800
   hitGravityOverTime: Val(100), Val(15), Val(30)
   groundBounceYVelocityPercent: 50
-  groundBounceXVelocity: 15000
-  groundBounceYVelocity: 65000
+  groundBounceXVelocity: 8000
+  groundBounceYVelocity: 70000
   groundBounceCount: 1
   groundBounceNextAction: s32'CmnActBlowoff'
+  upon: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    groundBounceXVelocity: 13000
+  endUpon: 
   characterSfx: s32'SE_BTL_BED_00'
   characterSfx: s32'SE_BTL_BED_01'
   characterSfx: s32'SE_BTL_BED_37'

@@ -19580,7 +19580,7 @@ beginState: s32'CounterBlitz'
   sprite: s32'aba410_24', 2
   sprite: s32'aba402_00', 2
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(2), Val(0), Val(0), Val(0)
-  physicsXImpulse: 0, 40000
+  physicsXImpulse: 0, 45000
   velocityXPercentEachFrame: 90
   exPointFReset: (PLAYER), 90000, 0
   createParticleWithArg2: s32'bg_dash', (EX_POINT_F)
@@ -19598,12 +19598,15 @@ beginState: s32'CounterBlitz'
   createObject: s32'ABA_402_bandage', (PLAYER)
   hit: 
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(3), Val(0), Val(0), Val(0)
+  pushbackX: 60
   atkAngle: -50
   groundHitEffect: (CRUMPLE)
   airHitEffect: (AIR_FACE_UP)
-  hitAirPushbackX: Val(3000)
-  hitAirPushbackY: Val(30000)
-  rollDuration: 20
+  hitAirPushbackX: Val(10000)
+  hitAirPushbackY: Val(-15000)
+  groundBounceCount: 1
+  groundBounceXVelocity: 2000
+  groundBounceYVelocity: 30000
   upon: (HIT_OR_GUARD)
     clearRegisteredUponCode: (HIT_OR_GUARD)
     extendPushboxX: 100000
@@ -19627,6 +19630,7 @@ beginState: s32'CounterBlitz'
   exitState: 
   beginLabel: s32'next'
   sprite: s32'aba205_00', 2
+  addInertia: 8000
   displayMesh: s32'Siwa', 0
   displayMesh: s32'Bandage', 0
   callSubroutineWithArgs: s32'ABA_MorohaFace', Val(1), Val(0), Val(0), Val(0)
@@ -19644,19 +19648,24 @@ beginState: s32'CounterBlitz'
   sprite: s32'aba205_06', 2
   callSubroutineWithArgs: s32'ABA_MorohaFace', Val(4), Val(1), Val(0), Val(0)
   createObject: s32'ABA_205_floor', (PLAYER)
-  hit: 
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(4), Val(0), Val(0), Val(0)
   hitEffectSlash: 1
   atkAngle: 90
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (TAILSPIN)
-  hitAirPushbackX: Val(20000)
+  hitAirPushbackX: Val(11000)
   hitAirPushbackXOverTime: Val(80), Val(6), Val(10)
   hitAirPushbackY: Val(60000)
   hitAirPushbackYOverTime: Val(80), Val(5), Val(17)
   hitGravity: Val(500)
   hitGravityOverTime: Val(150), Val(14), Val(20)
   rollDuration: 20
+  upon: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    hitAirPushbackX: Val(17000)
+    hitAirPushbackY: Val(70000)
+  endUpon: 
+  hit: 
   cmnSfx: s32'SE_BTL_CMN_Swing_Grap_Heavy_L'
   sprite: s32'aba205_07', 1
   sprite: s32'aba205_08', 2
@@ -19756,7 +19765,7 @@ beginState: s32'CounterBlitz'
   sprite: s32'aba408_13', 3
   sprite: s32'aba402_00', 2
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(2), Val(0), Val(0), Val(0)
-  physicsXImpulse: 0, 40000
+  physicsXImpulse: 0, 45000
   velocityXPercentEachFrame: 90
   callSubroutineWithArgs: s32'ABA_MorohaFace', Val(-1), Val(0), Val(0), Val(0)
   callSubroutineWithArgs: s32'PAR_MorohaFace', Val(0), Val(0), Val(-1), Val(0)
@@ -19775,12 +19784,15 @@ beginState: s32'CounterBlitz'
   createObject: s32'ABA_402_bandage', (PLAYER)
   hit: 
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(3), Val(0), Val(0), Val(0)
+  pushbackX: 60
   atkAngle: -50
   groundHitEffect: (CRUMPLE)
   airHitEffect: (AIR_FACE_UP)
-  hitAirPushbackX: Val(3000)
-  hitAirPushbackY: Val(30000)
-  rollDuration: 20
+  hitAirPushbackX: Val(10000)
+  hitAirPushbackY: Val(-15000)
+  groundBounceCount: 1
+  groundBounceXVelocity: 2000
+  groundBounceYVelocity: 30000
   upon: (HIT_OR_GUARD)
     clearRegisteredUponCode: (HIT_OR_GUARD)
     extendPushboxX: 100000
@@ -19809,6 +19821,7 @@ beginState: s32'CounterBlitz'
   exitState: 
   beginLabel: s32'next_moroha'
   sprite: s32'aba205_00', 2
+  addInertia: 8000
   displayMesh: s32'Siwa', 0
   displayMesh: s32'Bandage', 0
   callSubroutineWithArgs: s32'ABA_MorohaFace', Val(1), Val(0), Val(0), Val(0)
@@ -19826,19 +19839,24 @@ beginState: s32'CounterBlitz'
   sprite: s32'aba205_06', 2
   callSubroutineWithArgs: s32'ABA_MorohaFace', Val(4), Val(1), Val(0), Val(0)
   createObject: s32'ABA_205_floor', (PLAYER)
-  hit: 
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(4), Val(0), Val(0), Val(0)
   hitEffectSlash: 1
   atkAngle: 90
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (TAILSPIN)
-  hitAirPushbackX: Val(20000)
+  hitAirPushbackX: Val(11000)
   hitAirPushbackXOverTime: Val(80), Val(6), Val(10)
   hitAirPushbackY: Val(60000)
   hitAirPushbackYOverTime: Val(80), Val(5), Val(17)
   hitGravity: Val(500)
   hitGravityOverTime: Val(150), Val(14), Val(20)
   rollDuration: 20
+  upon: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    hitAirPushbackX: Val(17000)
+    hitAirPushbackY: Val(70000)
+  endUpon: 
+  hit: 
   cmnSfx: s32'SE_BTL_CMN_Swing_Grap_Heavy_L'
   sprite: s32'aba205_07', 1
   sprite: s32'aba205_08', 2

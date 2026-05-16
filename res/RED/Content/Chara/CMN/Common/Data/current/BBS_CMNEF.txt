@@ -8073,6 +8073,12 @@ beginState: s32'cmn_MissionCMN_122'
         missionKeyStart: -1
       endIf: 
     endUpon: 
+    upon: (ENEMY_GUARD_AFTER_FIX_PARAM)
+      missionFail: s32'Tikaduke'
+    endUpon: 
+    upon: (ENEMY_RECEIVE_ATTACK_AFTER_FIX_PARAM)
+      missionFail: s32'Tikaduke'
+    endUpon: 
     upon: (PLAYER_RECEIVE_ATTACK_AFTER_FIX_PARAM)
       missionMiss: 
     endUpon: 
@@ -12190,6 +12196,7 @@ beginSubroutine: s32'cmn_SkillInit'
     moveInput: (INPUT_6)
     moveInput: (INPUT_DASH)
     moveAlias: s32'CmnActFDash'
+    forceDisableFlag: 33554432
     cpuEstimatePoint: 100
     cpuEstimateInterval: 150
     cpuEstimateAttackBox: -3000, -250, 2750, 250
@@ -12225,6 +12232,7 @@ beginSubroutine: s32'cmn_SkillInit'
     moveInput: (INPUT_4)
     moveInput: (INPUT_DASH)
     moveAlias: s32'CmnActBDash'
+    forceDisableFlag: 67108864
     cpuEstimatePoint: 100
     cpuEstimateAttackBox: -500, 0, 500, 0
     cpuEstimateInterval: 150
@@ -13395,6 +13403,72 @@ beginSubroutine: s32'cmnOnFrameStep'
   ifNot: Mem(PlayerDamage)
     storeValue: Mem(CmnCharaReg30), Val(0)
   endIf: 
+  checkInput: (INPUT_ANY_DOWN)
+  if: Mem(Tmp)
+    checkInput: (INPUT_DASH_STRICT)
+    if: Mem(Tmp)
+      storeValue: Mem(CmnCharaReg27), Val(6)
+      storeValue: Mem(CmnCharaReg28), Val(6)
+    endIf: 
+  endIf: 
+  checkInput: (INPUT_ANY_UP)
+  if: Mem(Tmp)
+    checkInput: (INPUT_DASH_STRICT)
+    if: Mem(Tmp)
+      storeValue: Mem(CmnCharaReg27), Val(6)
+      storeValue: Mem(CmnCharaReg28), Val(6)
+    endIf: 
+  endIf: 
+  deleteMoveForceDisableFlag: 67108864
+  if: Mem(CmnCharaReg27)
+    addMoveForceDisableFlag: 67108864
+    modifyVar: (ADD), Mem(CmnCharaReg27), Val(-1)
+    ifOperation: (IS_LESSER), Mem(CmnCharaReg27), Val(0)
+      storeValue: Mem(CmnCharaReg27), Val(0)
+    endIf: 
+    checkInput: (INPUT_4)
+    if: Mem(Tmp)
+      checkInput: (INPUT_DASH_STRICT)
+      if: Mem(Tmp)
+        deleteMoveForceDisableFlag: 67108864
+        storeValue: Mem(CmnCharaReg27), Val(0)
+      endIf: 
+    endIf: 
+    checkInput: (INPUT_44)
+    if: Mem(Tmp)
+      deleteMoveForceDisableFlag: 67108864
+      storeValue: Mem(CmnCharaReg27), Val(0)
+    endIf: 
+  endIf: 
+  deleteMoveForceDisableFlag: 33554432
+  if: Mem(CmnCharaReg28)
+    addMoveForceDisableFlag: 33554432
+    modifyVar: (ADD), Mem(CmnCharaReg28), Val(-1)
+    ifOperation: (IS_LESSER), Mem(CmnCharaReg28), Val(0)
+      storeValue: Mem(CmnCharaReg28), Val(0)
+    endIf: 
+    checkInput: (INPUT_6)
+    if: Mem(Tmp)
+      checkInput: (INPUT_DASH_STRICT)
+      if: Mem(Tmp)
+        deleteMoveForceDisableFlag: 33554432
+        storeValue: Mem(CmnCharaReg28), Val(0)
+      endIf: 
+    endIf: 
+    checkInput: (INPUT_5)
+    if: Mem(Tmp)
+      checkInput: (INPUT_DASH_STRICT)
+      if: Mem(Tmp)
+        deleteMoveForceDisableFlag: 33554432
+        storeValue: Mem(CmnCharaReg28), Val(0)
+      endIf: 
+    endIf: 
+    checkInput: (INPUT_66)
+    if: Mem(Tmp)
+      deleteMoveForceDisableFlag: 33554432
+      storeValue: Mem(CmnCharaReg28), Val(0)
+    endIf: 
+  endIf: 
 endSubroutine: 
 
 beginState: s32'cmnWSBDummy'
@@ -13475,32 +13549,14 @@ beginSubroutine: s32'cmn_wall_dir'
       if: Mem(IsTo3)
         checkScreenCollision: 0
       endIf: 
-      checkMoveFlag: (CLOSE_TO_LEFT_CORNER)
-      if: Mem(Tmp)
+      ifOperationInObject: (IS_LESSER_OR_EQUAL), (SELF), Mem(PosXRaw), Val(0)
         faceRight: 
       endIf: 
-      checkMoveFlag: (CLOSE_TO_RIGHT_CORNER)
-      if: Mem(Tmp)
+      ifOperationInObject: (IS_GREATER_OR_EQUAL), (SELF), Mem(PosXRaw), Val(0)
         faceLeft: 
       endIf: 
       screenAdditionalWidth: -10000
-      addPositionX: 0, -10000
-      checkLastAttackHitStateName: 3, s32'ABA_SP1_Land_exe'
-      if: Mem(Tmp)
-        addPositionX: 0, -50000
-      endIf: 
-      checkLastAttackHitStateName: 3, s32'ABA_SP1_Land_Moroha_exe'
-      if: Mem(Tmp)
-        addPositionX: 0, -50000
-      endIf: 
-      checkLastAttackHitStateName: 3, s32'ABA_SP1_Air_exe'
-      if: Mem(Tmp)
-        addPositionX: 0, -50000
-      endIf: 
-      checkLastAttackHitStateName: 3, s32'ABA_SP1_Air_Moroha_exe'
-      if: Mem(Tmp)
-        addPositionX: 0, -50000
-      endIf: 
+      setPositionXInBattle: -1525000
       addPositionY: 0, 1
       hitBeckReturnIgnoreAll: 1
       wallTouchTime: 
@@ -13569,14 +13625,13 @@ endSubroutine:
 beginState: s32'cmn_wall_col'
   upon: (IMMEDIATE)
     ignoreSuperFreeze: 1
-    checkMoveFlag: (CLOSE_TO_LEFT_CORNER)
-    if: Mem(Tmp)
+    ifOperationInObject: (IS_LESSER_OR_EQUAL), (SELF), Mem(PosXRaw), Val(0)
       faceRight: 
     endIf: 
-    checkMoveFlag: (CLOSE_TO_RIGHT_CORNER)
-    if: Mem(Tmp)
+    ifOperationInObject: (IS_GREATER_OR_EQUAL), (SELF), Mem(PosXRaw), Val(0)
       faceLeft: 
     endIf: 
+    setPositionXInBattle: -1515000
     exPointFReset: (PLAYER), -75000, 0
     createParticle: s32'cmn_wall_mahojin', (EX_POINT_F)
     exPointFReset: (PLAYER_LAND), -75000, 0
@@ -27581,13 +27636,11 @@ beginSubroutine: s32'cmn_wallbreak_eff'
   deactivateObjectByNameAll: s32'cmn_wallbreak_lv2'
   deactivateObjectByNameAll: s32'cmn_wallbreak_lv3'
   setObjectSize: 1250
-  checkMoveFlag: (CLOSE_TO_RIGHT_CORNER)
-  if: Mem(Tmp)
-    faceLeft: 
-  endIf: 
-  checkMoveFlag: (CLOSE_TO_LEFT_CORNER)
-  if: Mem(Tmp)
+  ifOperationInObject: (IS_LESSER_OR_EQUAL), (SELF), Mem(PosXRaw), Val(0)
     faceRight: 
+  endIf: 
+  ifOperationInObject: (IS_GREATER_OR_EQUAL), (SELF), Mem(PosXRaw), Val(0)
+    faceLeft: 
   endIf: 
   ifNot: Mem(SentToObject0)
     addPositionX: 0, -150000
@@ -32905,12 +32958,15 @@ beginState: s32'cmn_Afro_Timer'
     endIf: 
     ifOperation: (IS_NOT_EQUAL), Mem(ActReg3), Val(15)
       ifTrueInObject: (To3_ENEMY_MAIN_PLAYER), Mem(PlayerDamage)
-        stopLinkObject: 0
-        clearRegisteredUponCode: (IDLING)
-        clearRegisteredUponCode: (BEFORE_EXIT)
-        clearRegisteredUponCode: (PLAYER_GUARD_AFTER_FIX_PARAM)
-        clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK_AFTER_FIX_PARAM)
-        storeValueFromObject: (PLAYER), Mem(Afro), (SELF), Val(0)
+        callSubroutineWithArgs: s32'cmn_HajikareCheck', Val(1), Val(1), Val(0), Val(0)
+        ifNot: Mem(ReturnValue)
+          stopLinkObject: 0
+          clearRegisteredUponCode: (IDLING)
+          clearRegisteredUponCode: (BEFORE_EXIT)
+          clearRegisteredUponCode: (PLAYER_GUARD_AFTER_FIX_PARAM)
+          clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK_AFTER_FIX_PARAM)
+          storeValueFromObject: (PLAYER), Mem(Afro), (SELF), Val(0)
+        endIf: 
       endIf: 
     endIf: 
     ifNotInObject: (PLAYER), Mem(Afro)
@@ -34856,7 +34912,10 @@ beginSubroutine: s32'cmnWorldStop_End'
   enableRomanCancelMove: 1
   invulnForce: 0
   clearRegisteredUponCode: (WALL_BREAK)
-  tensionCooldown: 180
+  checkCurrentStateName: (PLAYER), s32'CounterBlitz'
+  ifNot: Mem(Tmp)
+    tensionCooldown: 180
+  endIf: 
   ignoreSpeed: 0
   if: Mem(FuncArg0)
     enableRomanCancelMove: 0
@@ -37832,12 +37891,13 @@ beginSubroutine: s32'cmn_CounterBlitzFunc'
         endIf: 
       endIf: 
     endUpon: 
-    ifOperation: (IS_LESSER_OR_EQUAL), Mem(FrontWallDistance), Val(205000)
+    ifOperationInObject: (IS_LESSER_OR_EQUAL), (DEFENDER), Mem(BackWallDistance), Val(350000)
       attackExHitParam: Val(2), 0, 2, 1, (DEFENDER), Mem(CmnCharaReg7)
       forceWallBreak: 1
-      wallBreakLimitTime: 10
+      wallBreakLimitTime: 2
       disableWallBreak: 1
       wallBlowoffType: (BLOWOFF_SLIDE)
+      attackHitPositionType: (EX_POINT_4), 450000, 60000
     endIf: 
     hitSoftKnockdown: 0
     attackIgnoreOutPower: 0
@@ -38284,14 +38344,92 @@ beginSubroutine: s32'cmn_HajikareCheck'
     checkCurrentStateName: (To3_ENEMY_MAIN_PLAYER), s32'CmnActHajikareStand'
     if: Mem(Tmp)
       returnValue: 0, 1
+      if: Mem(FuncArg1)
+        checkLastAttackHitStateName: 32, s32'cmnRomanCancel_Object'
+        if: Mem(Tmp)
+          returnValue: 0, 0
+        endIf: 
+        checkLastAttackHitStateName: 32, s32'cmnRomanCancel_Object_to3'
+        if: Mem(Tmp)
+          returnValue: 0, 0
+        endIf: 
+        checkLastAttackHitStateName: 32, s32'cmn_nagenuke'
+        if: Mem(Tmp)
+          returnValue: 0, 0
+        endIf: 
+        ifPlayerCharacter: s16'bkn'
+          checkLastAttackHitStateName: 32, s32'Atemi'
+          if: Mem(Tmp)
+            returnValue: 0, 0
+          endIf: 
+        endIf: 
+        ifPlayerCharacter: s16'leo'
+          checkLastAttackHitStateName: 32, s32'Semuke5E'
+          if: Mem(Tmp)
+            returnValue: 0, 0
+          endIf: 
+        endIf: 
+      endIf: 
     endIf: 
     checkCurrentStateName: (To3_ENEMY_MAIN_PLAYER), s32'CmnActHajikareCrouch'
     if: Mem(Tmp)
       returnValue: 0, 1
+      if: Mem(FuncArg1)
+        checkLastAttackHitStateName: 32, s32'cmnRomanCancel_Object'
+        if: Mem(Tmp)
+          returnValue: 0, 0
+        endIf: 
+        checkLastAttackHitStateName: 32, s32'cmnRomanCancel_Object_to3'
+        if: Mem(Tmp)
+          returnValue: 0, 0
+        endIf: 
+        checkLastAttackHitStateName: 32, s32'cmn_nagenuke'
+        if: Mem(Tmp)
+          returnValue: 0, 0
+        endIf: 
+        ifPlayerCharacter: s16'bkn'
+          checkLastAttackHitStateName: 32, s32'Atemi'
+          if: Mem(Tmp)
+            returnValue: 0, 0
+          endIf: 
+        endIf: 
+        ifPlayerCharacter: s16'leo'
+          checkLastAttackHitStateName: 32, s32'Semuke5E'
+          if: Mem(Tmp)
+            returnValue: 0, 0
+          endIf: 
+        endIf: 
+      endIf: 
     endIf: 
     checkCurrentStateName: (To3_ENEMY_MAIN_PLAYER), s32'CmnActHajikareAir'
     if: Mem(Tmp)
       returnValue: 0, 1
+      if: Mem(FuncArg1)
+        checkLastAttackHitStateName: 32, s32'cmnRomanCancel_Object'
+        if: Mem(Tmp)
+          returnValue: 0, 0
+        endIf: 
+        checkLastAttackHitStateName: 32, s32'cmnRomanCancel_Object_to3'
+        if: Mem(Tmp)
+          returnValue: 0, 0
+        endIf: 
+        checkLastAttackHitStateName: 32, s32'cmn_nagenuke'
+        if: Mem(Tmp)
+          returnValue: 0, 0
+        endIf: 
+        ifPlayerCharacter: s16'bkn'
+          checkLastAttackHitStateName: 32, s32'Atemi'
+          if: Mem(Tmp)
+            returnValue: 0, 0
+          endIf: 
+        endIf: 
+        ifPlayerCharacter: s16'leo'
+          checkLastAttackHitStateName: 32, s32'Semuke5E'
+          if: Mem(Tmp)
+            returnValue: 0, 0
+          endIf: 
+        endIf: 
+      endIf: 
     endIf: 
   endElse: 
 endSubroutine: 

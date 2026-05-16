@@ -10467,7 +10467,6 @@ beginState: s32'NAG_NewSpecial'
       storeValue: Mem(PlayerVal7), Val(0)
     endUpon: 
     callSubroutine: s32'BeginingMoveCheck'
-    callSubroutine: s32'NAG_NewSpecial_Cancel'
     zLine: (FAR_DISTANCE), 5
     wallBlowoffType: (BLOWOFF_SLIDE)
     storeValue: Mem(CmnCharaActReg0), Val(-300000)
@@ -12765,12 +12764,14 @@ beginState: s32'CounterBlitz'
   beginLabel: s32'landing'
   sprite: s32'nag403_06', 3
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(3), Val(0), Val(0), Val(0)
+  pushbackX: 90
   groundHitEffect: (CRUMPLE)
   airHitEffect: (AIR_FACE_UP)
-  hitAirPushbackX: Val(3000)
-  hitAirPushbackY: Val(15000)
+  hitAirPushbackX: Val(4000)
+  hitAirPushbackY: Val(-15000)
   groundBounceCount: 1
-  groundBounceYVelocity: 15000
+  groundBounceXVelocity: 2500
+  groundBounceYVelocity: 22000
   hit: 
   hitEffectSlash: 1
   atkAngle: -70
@@ -12783,12 +12784,12 @@ beginState: s32'CounterBlitz'
   createObject: s32'nag_403_Slash01', (PLAYER)
   createObject: s32'nag_403_Spin', (PLAYER)
   characterSfx: s32'SE_BTL_NAG_02'
+  velocityXPercentEachFrame: 88
   sprite: s32'nag403_07', 2
   sprite: s32'nag403_08', 1
   sprite: s32'nag403_09', 1
   sprite: s32'nag403_10', 2
   sprite: s32'nag403_11', 3
-  velocityXPercentEachFrame: 90
   sprite: s32'nag403_12', 3
   cmnSfx: s32'SE_BTL_CMN_Emotion_1'
   sprite: s32'nag403_13', 3
@@ -12805,6 +12806,7 @@ beginState: s32'CounterBlitz'
   exitState: 
   beginLabel: s32'next'
   sprite: s32'nag404_00', 2
+  velocityXPercentEachFrame: 90
   deactivateObjectByName: s32'nag_403_Slash01'
   deactivateObjectByName: s32'nag_403_Spin'
   sprite: s32'nag404_01', 3
@@ -12818,11 +12820,11 @@ beginState: s32'CounterBlitz'
   hitEffectSlash: 1
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (TAILSPIN)
-  hitAirPushbackX: Val(20000)
+  hitAirPushbackX: Val(7500)
   hitAirPushbackXOverTime: Val(80), Val(6), Val(10)
-  hitAirPushbackY: Val(45000)
+  hitAirPushbackY: Val(75000)
   hitAirPushbackYOverTime: Val(80), Val(5), Val(17)
-  hitGravity: Val(100)
+  hitGravity: Val(800)
   hitGravityOverTime: Val(150), Val(17), Val(20)
   hit: 
   createObject: s32'nag_404_Slash01', (PLAYER)

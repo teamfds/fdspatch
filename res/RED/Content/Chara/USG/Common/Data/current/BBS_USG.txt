@@ -13426,11 +13426,12 @@ beginState: s32'CounterBlitz'
   createObject: s32'usg_418Fire01', (PLAYER)
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(3), Val(0), Val(0), Val(0)
   groundHitEffect: (CRUMPLE)
-  airHitEffect: (TAILSPIN)
-  hitAirPushbackX: Val(5000)
-  hitAirPushbackXOverTime: Val(90), Val(8), Val(16)
-  hitAirPushbackY: Val(36000)
-  rollDuration: 20
+  airHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: Val(2000)
+  hitAirPushbackY: Val(-10000)
+  groundBounceCount: 1
+  groundBounceXVelocity: 3500
+  groundBounceYVelocity: 25000
   hit: 
   extendPushboxX: 100000
   sprite: s32'usg418_05', 3
@@ -13450,20 +13451,22 @@ beginState: s32'CounterBlitz'
   exitState: 
   beginLabel: s32'next'
   sprite: s32'usg205_00', 4
+  addInertia: 7000
   sprite: s32'usg205_01', 5
+  addNamerakaMoveX: 30000
   sprite: s32'usg205_02', 5
+  addNamerakaMoveX: 50000
   sprite: s32'usg205_03', 2
   sprite: s32'usg205_04', 2
   sprite: s32'usg205_05', 4
-  physicsXImpulse: 0, 30000
-  velocityXPercentEachFrame: 80
+  addNamerakaMoveX: 58000
   sprite: s32'usg205_06', 3
   createObject: s32'USG_205_atk', (PLAYER)
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(4), Val(0), Val(0), Val(0)
   atkAngle: 90
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (AIR_STRONG)
-  hitAirPushbackX: Val(20000)
+  hitAirPushbackX: Val(25000)
   hitAirPushbackXOverTime: Val(80), Val(6), Val(16)
   hitAirPushbackY: Val(45000)
   hitAirPushbackYOverTime: Val(85), Val(5), Val(17)

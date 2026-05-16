@@ -7132,10 +7132,15 @@ beginState: s32'Rolling'
       storeValue: Mem(ObjReg1), Val(1)
     endIf: 
     else: 
-      storeValue: Mem(ObjReg1), Val(0)
-      attackIgnoreCaution: 1
-      counterHitUkeru: 0
-      recoveryState: 
+      if: Mem(ActReg0)
+        storeValue: Mem(ObjReg1), Val(1)
+      endIf: 
+      else: 
+        storeValue: Mem(ObjReg1), Val(0)
+        attackIgnoreCaution: 1
+        counterHitUkeru: 0
+        recoveryState: 
+      endElse: 
     endElse: 
   endUpon: 
   sprite: s32'bgt405_00', 4
@@ -7145,6 +7150,9 @@ beginState: s32'Rolling'
   if: Mem(ObjReg1)
     createObject: s32'bgt_405_charge', (PLAYER)
   endIf: 
+  else: 
+    onSpriteChange: s32'bgt405_00ex'
+  endElse: 
   sprite: s32'bgt405_01', 4
   physicsXImpulse: 0, -2500
   velocityXPercentEachFrame: 90
@@ -9306,12 +9314,14 @@ beginState: s32'CounterBlitz'
   sprite: s32'bgt211_04', 2
   cmnSfx: s32'SE_BTL_CMN_Swing_Grap_Sharp_M'
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(3), Val(0), Val(0), Val(0)
+  pushbackX: 50
   groundHitEffect: (CRUMPLE)
   airHitEffect: (AIR_FACE_UP)
-  hitAirPushbackX: Val(8000)
-  hitAirPushbackY: Val(15000)
+  hitAirPushbackX: Val(5000)
+  hitAirPushbackY: Val(-15000)
   groundBounceCount: 1
-  groundBounceYVelocity: 10000
+  groundBounceYVelocity: 25000
+  groundBounceXVelocity: 3000
   hit: 
   upon: (HIT_OR_GUARD)
     clearRegisteredUponCode: (HIT_OR_GUARD)
@@ -9343,12 +9353,17 @@ beginState: s32'CounterBlitz'
   callSubroutineWithArgs: s32'cmn_CounterBlitzFunc', Val(4), Val(0), Val(0), Val(0)
   callSubroutine: s32'cmn_fuwafuwafuwa'
   groundHitEffect: (TAILSPIN)
-  hitAirPushbackX: Val(22000)
+  hitAirPushbackX: Val(12000)
   hitAirPushbackXOverTime: Val(80), Val(6), Val(10)
-  hitAirPushbackY: Val(47000)
+  hitAirPushbackY: Val(45000)
   hitAirPushbackYOverTime: Val(90), Val(5), Val(17)
   hitGravity: Val(1200)
   hitGravityOverTime: Val(150), Val(17), Val(20)
+  upon: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    hitAirPushbackX: Val(19000)
+    hitAirPushbackY: Val(50000)
+  endUpon: 
   hit: 
   damageEffect: (EX_POINT_2), s32'BGT_yoyo_hit_S'
   characterSfx: s32'SE_BTL_BGT_05'

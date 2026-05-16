@@ -11274,9 +11274,11 @@ beginState: s32'CounterBlitz'
   hitEffectSlash: 1
   groundHitEffect: (CRUMPLE)
   airHitEffect: (AIR_FACE_UP)
-  hitAirPushbackX: Val(3000)
-  hitAirPushbackY: Val(35000)
-  rollDuration: 20
+  hitAirPushbackX: Val(2000)
+  hitAirPushbackY: Val(-15000)
+  groundBounceCount: 1
+  groundBounceXVelocity: 500
+  groundBounceYVelocity: 25000
   cmnSfx: s32'SE_BTL_CMN_Swing_Grap_Heavy_L'
   floorEffect: 4, 100
   createObject: s32'Leo404slashEff', (PLAYER)
@@ -11299,8 +11301,8 @@ beginState: s32'CounterBlitz'
   exitState: 
   beginLabel: s32'next'
   sprite: s32'leo205_00', 2
-  addVelocityX: 0, 5000
-  velocityXPercentEachFrame: 80
+  addVelocityX: 0, 15000
+  velocityXPercentEachFrame: 90
   sprite: s32'leo205_01', 2
   sprite: s32'leo205_02', 2
   sprite: s32'leo205_03', 2
@@ -11325,6 +11327,11 @@ beginState: s32'CounterBlitz'
   hitGravity: Val(500)
   hitGravityOverTime: Val(80), Val(14), Val(20)
   rollDuration: 20
+  upon: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    clearRegisteredUponCode: (PLAYER_RECEIVE_ATTACK_GROUNDED)
+    hitAirPushbackX: Val(12000)
+    hitAirPushbackY: Val(60000)
+  endUpon: 
   cmnSfx: s32'SE_BTL_CMN_Swing_Grap_Heavy_L'
   sprite: s32'leo205_09', 4
   extendPushboxX: 0
