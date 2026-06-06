@@ -1,9 +1,0 @@
-[submodule "tools/bbspack"]
-	path = tools/bbspack
-	url = https://github.com/dobosken/bbspack
-[submodule "tools/bbscript"]
-	path = tools/bbscript
-	url = https://github.com/super-continent/bbscript
-[submodule "tools/u4pak"]
-	path = tools/u4pak
-	url = https://github.com/panzi/rust-u4pak

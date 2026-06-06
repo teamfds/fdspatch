@@ -1,0 +1,6 @@
+name = "FDSPatch"
+game = "ggst"
+
+src_dir = "src"
+ms_dir = "ggst"
+build_dir = "build"
